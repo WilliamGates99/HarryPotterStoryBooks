@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Harry Potter Story</string>
+
+    <!--Main Activity-->
+    <string name="string_main_menu_search">Search</string>
+
+</resources>
