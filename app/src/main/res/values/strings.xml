@@ -1,7 +1,244 @@
 <resources>
     <string name="app_name">Harry Potter Story</string>
 
-    <!--Main Activity-->
-    <string name="string_main_menu_search">Search</string>
+    <!--Books Activity-->
+    <string name="string_books_menu_bookmarks">Bookmarks</string>
+    <string name="string_books_continue_title">Continue reading</string>
+    <string name="string_books_continue_page">"Page "</string>
+    <string name="string_books_list_title">Books List</string>
+
+    Chapters Activity
+    <string name="string_chapters_page">" PAGE"</string>
+
+    <!--Books Title-->
+    <string name="string_books_title_1">Harry Potter and the Sorcerer\'s Stone</string>
+    <string name="string_books_title_2">Harry Potter and the Chamber of Secrets</string>
+    <string name="string_books_title_3">Harry Potter and the Prisoner of Azkaban</string>
+    <string name="string_books_title_4">Harry Potter and the Goblet of Fire</string>
+    <string name="string_books_title_5">Harry Potter and the Order of the Phoenix</string>
+    <string name="string_books_title_6">Harry Potter and the Half-Blood Prince</string>
+    <string name="string_books_title_7">Harry Potter and the Deathly Hallows</string>
+
+    <!--Books Gist-->
+    <string name="string_books_title_gist_1">Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter \'H\'.</string>
+    <string name="string_books_title_gist_2">There is a plot, Harry Potter. A plot to make most terrible things happen at Hogwarts School of Witchcraft and Wizardry this year.</string>
+    <string name="string_books_title_gist_3">Welcome to the Knight Bus, emergency transport for the stranded witch or wizard. Just stick out your wand hand, step on board and we can take you anywhere you want to go.</string>
+    <string name="string_books_title_gist_4">There will be three tasks, spaced throughout the school year, and they will test the champions in many different ways … their magical prowess - their daring - their powers of deduction - and, of course, their ability to cope with danger.</string>
+    <string name="string_books_title_gist_5">You are sharing the Dark Lord\'s thoughts and emotions. The Headmaster thinks it inadvisable for this to continue. He wishes me to teach you how to close your mind to the Dark Lord.</string>
+    <string name="string_books_title_gist_6">There it was, hanging in the sky above the school: the blazing green skull with a serpent tongue, the mark Death Eaters left behind whenever they had entered a building… wherever they had murdered…</string>
+    <string name="string_books_title_gist_7">Give me Harry Potter,\' said Voldemort\'s voice, \'and none shall be harmed. Give me Harry Potter, and I shall leave the school untouched. Give me Harry Potter, and you will be rewarded.</string>
+
+    <!--Book 1 Chapters Title-->
+    <string name="string_book_1_chapters_title_1">The Boy Who Lived</string>
+    <string name="string_book_1_chapters_title_2">The Vanishing Glass</string>
+    <string name="string_book_1_chapters_title_3">The Letters from No One</string>
+    <string name="string_book_1_chapters_title_4">The Keeper of the Keys</string>
+    <string name="string_book_1_chapters_title_5">Diagon Alley</string>
+    <string name="string_book_1_chapters_title_6">The Journey from Platform Nine and Three-quarters</string>
+    <string name="string_book_1_chapters_title_7">The Sorting Hat</string>
+    <string name="string_book_1_chapters_title_8">The Potions Master</string>
+    <string name="string_book_1_chapters_title_9">The Midnight Duel</string>
+    <string name="string_book_1_chapters_title_10">Halloween</string>
+    <string name="string_book_1_chapters_title_11">Quidditch</string>
+    <string name="string_book_1_chapters_title_12">The Mirror of Erised</string>
+    <string name="string_book_1_chapters_title_13">Nicholas Flamel</string>
+    <string name="string_book_1_chapters_title_14">Norbert the Norwegian Ridgeback</string>
+    <string name="string_book_1_chapters_title_15">The Forbidden Forest</string>
+    <string name="string_book_1_chapters_title_16">Through the Trapdoor</string>
+    <string name="string_book_1_chapters_title_17">The Man with Two Faces</string>
+
+    <!--Book 2 Chapters Title-->
+    <string name="string_book_2_chapters_title_1">The Worst Birthday</string>
+    <string name="string_book_2_chapters_title_2">Dobby’s Warning</string>
+    <string name="string_book_2_chapters_title_3">The Burrow</string>
+    <string name="string_book_2_chapters_title_4">At Flourish and Blotts</string>
+    <string name="string_book_2_chapters_title_5">The Whomping Willow</string>
+    <string name="string_book_2_chapters_title_6">Gilderoy Lockhart</string>
+    <string name="string_book_2_chapters_title_7">Mudbloods and Murmurs</string>
+    <string name="string_book_2_chapters_title_8">The Deathday Party</string>
+    <string name="string_book_2_chapters_title_9">The Writing on the Wall</string>
+    <string name="string_book_2_chapters_title_10">The Rogue Bludger</string>
+    <string name="string_book_2_chapters_title_11">The Dueling Club</string>
+    <string name="string_book_2_chapters_title_12">The Polyjuice Potion</string>
+    <string name="string_book_2_chapters_title_13">The Very Secret Diary</string>
+    <string name="string_book_2_chapters_title_14">Cornelius Fudge</string>
+    <string name="string_book_2_chapters_title_15">Aragog</string>
+    <string name="string_book_2_chapters_title_16">The Chamber of Secrets</string>
+    <string name="string_book_2_chapters_title_17">The Heir of Slytherin</string>
+    <string name="string_book_2_chapters_title_18">Dobby’s Reward</string>
+
+    <!--Book 3 Chapters Title-->
+    <string name="string_book_3_chapters_title_1">Owl Post</string>
+    <string name="string_book_3_chapters_title_2">Aunt Marge’s Big Mistake</string>
+    <string name="string_book_3_chapters_title_3">The Knight Bus</string>
+    <string name="string_book_3_chapters_title_4">The Leaky Cauldron</string>
+    <string name="string_book_3_chapters_title_5">The Dementor</string>
+    <string name="string_book_3_chapters_title_6">Talons and Tea Leaves</string>
+    <string name="string_book_3_chapters_title_7">The Boggart in the Wardrobe</string>
+    <string name="string_book_3_chapters_title_8">Flight of the Fat Lady</string>
+    <string name="string_book_3_chapters_title_9">Grim Defeat</string>
+    <string name="string_book_3_chapters_title_10">The Marauder’s Map</string>
+    <string name="string_book_3_chapters_title_11">The Firebolt</string>
+    <string name="string_book_3_chapters_title_12">The Patronus</string>
+    <string name="string_book_3_chapters_title_13">Gryffindor Versus Ravenclaw</string>
+    <string name="string_book_3_chapters_title_14">Snape’s Grudge</string>
+    <string name="string_book_3_chapters_title_15">The Quidditch Final</string>
+    <string name="string_book_3_chapters_title_16">Professor Trelawney’s Prediction</string>
+    <string name="string_book_3_chapters_title_17">Cat, Rat, and Dog</string>
+    <string name="string_book_3_chapters_title_18">Moony, Wormtail, Padfoot, and Prongs</string>
+    <string name="string_book_3_chapters_title_19">The Servant of Lord Voldemort</string>
+    <string name="string_book_3_chapters_title_20">The Dementor’s Kiss</string>
+    <string name="string_book_3_chapters_title_21">Hermione’s Secret</string>
+    <string name="string_book_3_chapters_title_22">Owl Post Again</string>
+
+    <!--Book 4 Chapters Title-->
+    <string name="string_book_4_chapters_title_1">The Riddle House</string>
+    <string name="string_book_4_chapters_title_2">The Scar</string>
+    <string name="string_book_4_chapters_title_3">The Invitation</string>
+    <string name="string_book_4_chapters_title_4">Back to the Burrow</string>
+    <string name="string_book_4_chapters_title_5">Weasleys’ Wizard Wheezes</string>
+    <string name="string_book_4_chapters_title_6">The Portkey</string>
+    <string name="string_book_4_chapters_title_7">Bagman and Crouch</string>
+    <string name="string_book_4_chapters_title_8">The Quidditch World Cup</string>
+    <string name="string_book_4_chapters_title_9">The Dark Mark</string>
+    <string name="string_book_4_chapters_title_10">Mayhem at the Ministry</string>
+    <string name="string_book_4_chapters_title_11">Aboard the Hogwarts Express</string>
+    <string name="string_book_4_chapters_title_12">The Triwizard Tournament</string>
+    <string name="string_book_4_chapters_title_13">Mad-Eye Moody</string>
+    <string name="string_book_4_chapters_title_14">The Unforgivable Curses</string>
+    <string name="string_book_4_chapters_title_15">Beauxbatons and Durmstrang</string>
+    <string name="string_book_4_chapters_title_16">The Goblet of Fire</string>
+    <string name="string_book_4_chapters_title_17">The Four Champions</string>
+    <string name="string_book_4_chapters_title_18">The Weighing of the Wands</string>
+    <string name="string_book_4_chapters_title_19">The Hungarian Horntail</string>
+    <string name="string_book_4_chapters_title_20">The First Task</string>
+    <string name="string_book_4_chapters_title_21">The House-Elf Liberation Front</string>
+    <string name="string_book_4_chapters_title_22">The Unexpected Task</string>
+    <string name="string_book_4_chapters_title_23">The Yule Ball</string>
+    <string name="string_book_4_chapters_title_24">Rita Skeeter’s Scoop</string>
+    <string name="string_book_4_chapters_title_25">The Egg and the Eye</string>
+    <string name="string_book_4_chapters_title_26">The Second Task</string>
+    <string name="string_book_4_chapters_title_27">Padfoot Returns</string>
+    <string name="string_book_4_chapters_title_28">The Madness of Mr. Crouch</string>
+    <string name="string_book_4_chapters_title_29">The Dream</string>
+    <string name="string_book_4_chapters_title_30">The Pensieve</string>
+    <string name="string_book_4_chapters_title_31">The Third Task</string>
+    <string name="string_book_4_chapters_title_32">Flesh, Blood, and Bone</string>
+    <string name="string_book_4_chapters_title_33">The Death Eaters</string>
+    <string name="string_book_4_chapters_title_34">Priori Incantatem</string>
+    <string name="string_book_4_chapters_title_35">Veritaserum</string>
+    <string name="string_book_4_chapters_title_36">The Parting of the Ways</string>
+    <string name="string_book_4_chapters_title_37">The Beginning</string>
+
+    <!--Book 5 Chapters Title-->
+    <string name="string_book_5_chapters_title_1">Dudley Demented</string>
+    <string name="string_book_5_chapters_title_2">A Peck of Owls</string>
+    <string name="string_book_5_chapters_title_3">The Advance Guard</string>
+    <string name="string_book_5_chapters_title_4">Number Twelve, Grimmauld Place</string>
+    <string name="string_book_5_chapters_title_5">The Order of the Phoenix</string>
+    <string name="string_book_5_chapters_title_6">The Noble and Most Ancient House of Black</string>
+    <string name="string_book_5_chapters_title_7">The Ministry of Magic</string>
+    <string name="string_book_5_chapters_title_8">The Hearing</string>
+    <string name="string_book_5_chapters_title_9">The Woes of Mrs. Weasley</string>
+    <string name="string_book_5_chapters_title_10">Luna Lovegood</string>
+    <string name="string_book_5_chapters_title_11">The Sorting Hat’s New Song</string>
+    <string name="string_book_5_chapters_title_12">Professor Umbridge</string>
+    <string name="string_book_5_chapters_title_13">Detention with Dolores</string>
+    <string name="string_book_5_chapters_title_14">Percy and Padfoot</string>
+    <string name="string_book_5_chapters_title_15">The Hogwarts High Inquisitor</string>
+    <string name="string_book_5_chapters_title_16">In the Hog’s Head</string>
+    <string name="string_book_5_chapters_title_17">Educational Decree Number Twenty-Four</string>
+    <string name="string_book_5_chapters_title_18">Dumbledore’s Army</string>
+    <string name="string_book_5_chapters_title_19">The Lion and the Serpent</string>
+    <string name="string_book_5_chapters_title_20">Hagrid’s Tale</string>
+    <string name="string_book_5_chapters_title_21">The Eye of the Snake</string>
+    <string name="string_book_5_chapters_title_22">St. Mungo’s Hospital for Magical Maladies and Injuries</string>
+    <string name="string_book_5_chapters_title_23">Christmas on the Closed Ward</string>
+    <string name="string_book_5_chapters_title_24">Occlumency</string>
+    <string name="string_book_5_chapters_title_25">The Beetle at Bay</string>
+    <string name="string_book_5_chapters_title_26">Seen and Unforeseen</string>
+    <string name="string_book_5_chapters_title_27">The Centaur and the Sneak</string>
+    <string name="string_book_5_chapters_title_28">Snape’s Worst Memory</string>
+    <string name="string_book_5_chapters_title_29">Career Advice</string>
+    <string name="string_book_5_chapters_title_30">Grawp</string>
+    <string name="string_book_5_chapters_title_31">O.W.L.s</string>
+    <string name="string_book_5_chapters_title_32">Out of the Fire</string>
+    <string name="string_book_5_chapters_title_33">Fight and Flight</string>
+    <string name="string_book_5_chapters_title_34">The Department of Mysteries</string>
+    <string name="string_book_5_chapters_title_35">Beyond the Veil</string>
+    <string name="string_book_5_chapters_title_36">The Only One He Ever Feared</string>
+    <string name="string_book_5_chapters_title_37">The Lost Prophecy</string>
+    <string name="string_book_5_chapters_title_38">The Second War Begins</string>
+
+    <!--Book 6 Chapters Title-->
+    <string name="string_book_6_chapters_title_1">The Other Minister</string>
+    <string name="string_book_6_chapters_title_2">Spinner’s End</string>
+    <string name="string_book_6_chapters_title_3">Will and Won’t</string>
+    <string name="string_book_6_chapters_title_4">Horace Slughorn</string>
+    <string name="string_book_6_chapters_title_5">An Excess of Phlegm</string>
+    <string name="string_book_6_chapters_title_6">Draco’s Detour</string>
+    <string name="string_book_6_chapters_title_7">The Slug Club</string>
+    <string name="string_book_6_chapters_title_8">Snape Victorious</string>
+    <string name="string_book_6_chapters_title_9">The Half-Blood Prince</string>
+    <string name="string_book_6_chapters_title_10">The House of Gaunt</string>
+    <string name="string_book_6_chapters_title_11">Hermione’s Helping Hand</string>
+    <string name="string_book_6_chapters_title_12">Silver and Opals</string>
+    <string name="string_book_6_chapters_title_13">The Secret Riddle</string>
+    <string name="string_book_6_chapters_title_14">Felix Felicis</string>
+    <string name="string_book_6_chapters_title_15">The Unbreakable Vow</string>
+    <string name="string_book_6_chapters_title_16">A Very Frosty Christmas</string>
+    <string name="string_book_6_chapters_title_17">A Sluggish Memory</string>
+    <string name="string_book_6_chapters_title_18">Birthday Surprises</string>
+    <string name="string_book_6_chapters_title_19">Elf Tails</string>
+    <string name="string_book_6_chapters_title_20">Lord Voldemort’s Request</string>
+    <string name="string_book_6_chapters_title_21">The Unknowable Room</string>
+    <string name="string_book_6_chapters_title_22">After the Burial</string>
+    <string name="string_book_6_chapters_title_23">Horcruxes</string>
+    <string name="string_book_6_chapters_title_24">Sectumsempra</string>
+    <string name="string_book_6_chapters_title_25">The Seer Overheard</string>
+    <string name="string_book_6_chapters_title_26">The Cave</string>
+    <string name="string_book_6_chapters_title_27">The Lightning Struck Tower</string>
+    <string name="string_book_6_chapters_title_28">Flight of the Prince</string>
+    <string name="string_book_6_chapters_title_29">The Phoenix Lament</string>
+    <string name="string_book_6_chapters_title_30">The White Tomb</string>
+
+    <!--Book 7 Chapters Title-->
+    <string name="string_book_7_chapters_title_1">The Dark Lord Ascending</string>
+    <string name="string_book_7_chapters_title_2">In Memoriam</string>
+    <string name="string_book_7_chapters_title_3">The Dursleys Departing</string>
+    <string name="string_book_7_chapters_title_4">The Seven Potters</string>
+    <string name="string_book_7_chapters_title_5">Fallen Warrior</string>
+    <string name="string_book_7_chapters_title_6">The Ghoul in Pajamas</string>
+    <string name="string_book_7_chapters_title_7">The Will of Albus Dumbledore</string>
+    <string name="string_book_7_chapters_title_8">The Wedding</string>
+    <string name="string_book_7_chapters_title_9">A Place to Hide</string>
+    <string name="string_book_7_chapters_title_10">Kreacher’s Tale</string>
+    <string name="string_book_7_chapters_title_11">The Bribe</string>
+    <string name="string_book_7_chapters_title_12">Magic is Might</string>
+    <string name="string_book_7_chapters_title_13">The Muggle-born Registration Commission</string>
+    <string name="string_book_7_chapters_title_14">The Thief</string>
+    <string name="string_book_7_chapters_title_15">The Goblin’s Revenge</string>
+    <string name="string_book_7_chapters_title_16">Godric’s Hollow</string>
+    <string name="string_book_7_chapters_title_17">Bathilda’s Secret</string>
+    <string name="string_book_7_chapters_title_18">The Life and Lies of Albus Dumbledore</string>
+    <string name="string_book_7_chapters_title_19">The Silver Doe</string>
+    <string name="string_book_7_chapters_title_20">Xenophilius Lovegood</string>
+    <string name="string_book_7_chapters_title_21">The Tale of the Three Brothers</string>
+    <string name="string_book_7_chapters_title_22">The Deathly Hallows</string>
+    <string name="string_book_7_chapters_title_23">Malfoy Manor</string>
+    <string name="string_book_7_chapters_title_24">The Wandmaker</string>
+    <string name="string_book_7_chapters_title_25">Shell Cottage</string>
+    <string name="string_book_7_chapters_title_26">Gringotts</string>
+    <string name="string_book_7_chapters_title_27">The Final Hiding Place</string>
+    <string name="string_book_7_chapters_title_28">The Missing Mirror</string>
+    <string name="string_book_7_chapters_title_29">The Lost Diadem</string>
+    <string name="string_book_7_chapters_title_30">The Sacking of Severus Snape</string>
+    <string name="string_book_7_chapters_title_31">The Battle of Hogwarts</string>
+    <string name="string_book_7_chapters_title_32">The Elder Wand</string>
+    <string name="string_book_7_chapters_title_33">The Prince’s Tale</string>
+    <string name="string_book_7_chapters_title_34">The Forest Again</string>
+    <string name="string_book_7_chapters_title_35">King’s Cross</string>
+    <string name="string_book_7_chapters_title_36">The Flaw in the Plan</string>
+    <string name="string_book_7_chapters_title_37">EPILOGUE - Nineteen Years Later</string>
 
 </resources>

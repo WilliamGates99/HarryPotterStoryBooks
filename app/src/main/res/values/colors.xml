@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorAccent">#3F7CF6</color>
+    <color name="colorAccentBlue">#3F7CF6</color>
+    <color name="colorAccentGreen">#00FF6D</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightGray">#E2E2E2</color>
+    <color name="colorMediumGray">#D5D5D5</color>
+    <color name="colorDarkGray">#7B7B7B</color>
+
 </resources>
