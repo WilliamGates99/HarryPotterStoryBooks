@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,24 +17,24 @@ import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.util.List;
 
-public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHolder> {
+public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.ViewHolder> {
 
     //    public static final String ITEM_KEY = "item_key";
     private List<DataItemChapters> mItems;
     private Context mContext;
 
-    public ChaptersAdapter(Context context, List<DataItemChapters> items) {
+    public FavoritesAdapter(Context context, List<DataItemChapters> items) {
         this.mContext = context;
         this.mItems = items;
     }
 
     @NonNull
     @Override
-    public ChaptersAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent,
-                                                         int viewType) {
+    public FavoritesAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent,
+                                                          int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        View itemView = inflater.inflate(R.layout.list_item_chapters, parent, false);
+        View itemView = inflater.inflate(R.layout.list_item_favorites, parent, false);
         return new ViewHolder(itemView);
     }
 
@@ -44,8 +43,9 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
         final DataItemChapters item = mItems.get(position);
 
         holder.numberTV.setText(item.getNumber());
+        holder.numberTV.setText(item.getNumber());
         holder.titleTV.setText(item.getTitle());
-        holder.pageTV.setText(item.getPage());
+        holder.bookTV.setText(item.getBookTitle());
 
         if (item.isFavorite()) {
             holder.bookmarkBlueIB.setVisibility(View.VISIBLE);
@@ -92,19 +92,19 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
         LinearLayout listLL;
         TextView numberTV;
         TextView titleTV;
-        TextView pageTV;
+        TextView bookTV;
         ImageButton bookmarkGrayIB;
         ImageButton bookmarkBlueIB;
 
         ViewHolder(View itemView) {
             super(itemView);
 
-            listLL = itemView.findViewById(R.id.ll_list_chapters);
-            numberTV = itemView.findViewById(R.id.tv_list_chapters_number);
-            titleTV = itemView.findViewById(R.id.tv_list_chapters_title);
-            pageTV = itemView.findViewById(R.id.tv_list_chapters_page);
-            bookmarkGrayIB = itemView.findViewById(R.id.ib_list_chapters_bookmark_gray);
-            bookmarkBlueIB = itemView.findViewById(R.id.ib_list_chapters_bookmark_blue);
+            listLL = itemView.findViewById(R.id.ll_list_favorites);
+            numberTV = itemView.findViewById(R.id.tv_list_favorites_number);
+            titleTV = itemView.findViewById(R.id.tv_list_favorites_title);
+            bookTV = itemView.findViewById(R.id.tv_list_favorites_book);
+            bookmarkGrayIB = itemView.findViewById(R.id.ib_list_favorites_bookmark_gray);
+            bookmarkBlueIB = itemView.findViewById(R.id.ib_list_favorites_bookmark_blue);
 
             mView = itemView;
         }

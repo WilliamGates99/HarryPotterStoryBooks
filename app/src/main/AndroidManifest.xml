@@ -22,7 +22,16 @@
         </activity>
         <activity
             android:name=".ChaptersActivity"
-            android:label="@string/app_name"
+            android:parentActivityName=".BooksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BooksActivity" />
+        </activity>
+        <activity
+            android:name=".FavoritesActivity"
+            android:label="@string/string_favorites_title"
             android:parentActivityName=".BooksActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

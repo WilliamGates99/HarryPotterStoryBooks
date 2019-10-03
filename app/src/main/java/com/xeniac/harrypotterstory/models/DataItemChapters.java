@@ -10,19 +10,19 @@ public class DataItemChapters implements Parcelable {
     private int title;
     private String page;
     private int bookTitle;
-    private boolean bookmark;
+    private boolean favorite;
 
     public DataItemChapters() {
     }
 
     public DataItemChapters(String id, String number, int title,
-                            String page, int bookTitle, boolean bookmark) {
+                            String page, int bookTitle, boolean favorite) {
         this.id = id;
         this.number = number;
         this.title = title;
         this.page = page;
         this.bookTitle = bookTitle;
-        this.bookmark = bookmark;
+        this.favorite = favorite;
     }
 
     public String getId() {
@@ -65,12 +65,12 @@ public class DataItemChapters implements Parcelable {
         this.bookTitle = bookTitle;
     }
 
-    public boolean isBookmark() {
-        return bookmark;
+    public boolean isFavorite() {
+        return favorite;
     }
 
-    public void setBookmark(boolean bookmark) {
-        this.bookmark = bookmark;
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
     }
 
     @Override
@@ -81,7 +81,7 @@ public class DataItemChapters implements Parcelable {
                 ", title=" + title +
                 ", page='" + page + '\'' +
                 ", bookTitle=" + bookTitle +
-                ", bookmark=" + bookmark +
+                ", favorite=" + favorite +
                 '}';
     }
 
@@ -97,7 +97,7 @@ public class DataItemChapters implements Parcelable {
         dest.writeInt(this.title);
         dest.writeString(this.page);
         dest.writeInt(this.bookTitle);
-        dest.writeByte(this.bookmark ? (byte) 1 : (byte) 0);
+        dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
     }
 
     protected DataItemChapters(Parcel in) {
@@ -106,7 +106,7 @@ public class DataItemChapters implements Parcelable {
         this.title = in.readInt();
         this.page = in.readString();
         this.bookTitle = in.readInt();
-        this.bookmark = in.readByte() != 0;
+        this.favorite = in.readByte() != 0;
     }
 
     public static final Creator<DataItemChapters> CREATOR = new Creator<DataItemChapters>() {

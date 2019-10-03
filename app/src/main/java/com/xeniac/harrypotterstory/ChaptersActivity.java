@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
@@ -60,10 +59,10 @@ public class ChaptersActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        chaptersRecyclerViews();
+        chaptersRecyclerView();
     }
 
-    private void chaptersRecyclerViews() {
+    private void chaptersRecyclerView() {
         List<DataItemChapters> dataItemChaptersList;
         ChaptersAdapter chaptersAdapter;
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);

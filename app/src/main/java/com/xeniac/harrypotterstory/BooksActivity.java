@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,8 +19,6 @@ import java.util.List;
 
 public class BooksActivity extends AppCompatActivity {
 
-    private List<DataItemBooks> dataItemBooksList = BooksDataProvider.dataItemBooksList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,18 +26,21 @@ public class BooksActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_books);
         setSupportActionBar(toolbar);
         booksInitializer();
-        booksRecyclerViews();
+        booksRecyclerView();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_books, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        //Todo Bookmarks List Intention Action methods
+
+        if (item.getItemId() == R.id.menu_books_favorites) {
+            startActivity(new Intent(this, FavoritesActivity.class));
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -48,7 +50,8 @@ public class BooksActivity extends AppCompatActivity {
         continueIV.setClipToOutline(true);
     }
 
-    private void booksRecyclerViews() {
+    private void booksRecyclerView() {
+        List<DataItemBooks> dataItemBooksList = BooksDataProvider.dataItemBooksList;
         BooksAdapter booksAdapter = new BooksAdapter(this, dataItemBooksList);
         RecyclerView booksRV = findViewById(R.id.rv_books);
         booksRV.setAdapter(booksAdapter);

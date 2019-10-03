@@ -2,13 +2,16 @@
     <string name="app_name">Harry Potter Story</string>
 
     <!--Books Activity-->
-    <string name="string_books_menu_bookmarks">Bookmarks</string>
+    <string name="string_books_menu_favorites">Favorites</string>
     <string name="string_books_continue_title">Continue reading</string>
     <string name="string_books_continue_page">"Page "</string>
     <string name="string_books_list_title">Books List</string>
 
-    Chapters Activity
+    <!--Chapters Activity-->
     <string name="string_chapters_page">" PAGE"</string>
+
+    <!--Favorites Activity-->
+    <string name="string_favorites_title">Favorites</string>
 
     <!--Books Title-->
     <string name="string_books_title_1">Harry Potter and the Sorcerer\'s Stone</string>
