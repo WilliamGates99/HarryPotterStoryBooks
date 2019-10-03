@@ -26,13 +26,8 @@ public class BooksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_books);
         Toolbar toolbar = findViewById(R.id.toolbar_books);
         setSupportActionBar(toolbar);
+        booksInitializer();
         booksRecyclerViews();
-
-
-        //Todo move it somewhere else
-        ImageView continueIV = findViewById(R.id.iv_books_continue);
-        continueIV.setClipToOutline(true);
-
     }
 
     @Override
@@ -46,6 +41,11 @@ public class BooksActivity extends AppCompatActivity {
         //Todo Bookmarks List Intention Action methods
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void booksInitializer() {
+        ImageView continueIV = findViewById(R.id.iv_books_continue);
+        continueIV.setClipToOutline(true);
     }
 
     private void booksRecyclerViews() {
