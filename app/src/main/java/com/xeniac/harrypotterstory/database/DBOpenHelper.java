@@ -11,7 +11,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     private static final String DB_FILE_NAME = "harry_potter_story.db";
     private static int DB_VERSION = 1;
 
-    public DBOpenHelper(@Nullable Context context) {
+    DBOpenHelper(@Nullable Context context) {
         super(context, DB_FILE_NAME, null, DB_VERSION);
     }
 

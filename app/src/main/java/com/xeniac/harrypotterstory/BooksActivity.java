@@ -16,8 +16,6 @@ import com.xeniac.harrypotterstory.dataProviders.BooksDataProvider;
 import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider;
 import com.xeniac.harrypotterstory.database.DataSource;
 
-import java.util.List;
-
 public class BooksActivity extends AppCompatActivity {
 
     private DataSource mDataSource;
@@ -72,6 +70,7 @@ public class BooksActivity extends AppCompatActivity {
     private void booksRecyclerView() {
         BooksAdapter booksAdapter = new BooksAdapter(this, BooksDataProvider.dataItemBooksList);
         RecyclerView booksRV = findViewById(R.id.rv_books);
+        booksRV.setHasFixedSize(true);
         booksRV.setAdapter(booksAdapter);
     }
 }

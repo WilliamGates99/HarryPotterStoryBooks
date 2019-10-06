@@ -75,7 +75,7 @@ public class DataItemBooks implements Parcelable {
         dest.writeString(this.image);
     }
 
-    protected DataItemBooks(Parcel in) {
+    private DataItemBooks(Parcel in) {
         this.id = in.readString();
         this.title = in.readInt();
         this.gist = in.readInt();

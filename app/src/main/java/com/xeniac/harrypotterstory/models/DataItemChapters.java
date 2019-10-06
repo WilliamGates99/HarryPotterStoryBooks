@@ -116,7 +116,7 @@ public class DataItemChapters implements Parcelable {
         dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
     }
 
-    protected DataItemChapters(Parcel in) {
+    private DataItemChapters(Parcel in) {
         this.id = in.readString();
         this.number = in.readString();
         this.title = in.readInt();

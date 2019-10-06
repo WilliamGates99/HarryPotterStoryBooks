@@ -61,6 +61,13 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
             mDataSource.updateFavorite(item);
             holder.bookmarkBlueIB.setVisibility(View.GONE);
             holder.bookmarkGrayIB.setVisibility(View.VISIBLE);
+            try {
+                mItems.remove(position);
+                notifyItemRemoved(position);
+                notifyItemRangeChanged(position, getItemCount());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         });
 
         holder.listLL.setOnClickListener(v -> {
