@@ -10,13 +10,7 @@ import android.widget.ImageView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider1;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider2;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider3;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider4;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider5;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider6;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider7;
+import com.xeniac.harrypotterstory.database.DataSource;
 import com.xeniac.harrypotterstory.models.DataItemBooks;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
@@ -27,6 +21,7 @@ import java.util.Objects;
 
 public class ChaptersActivity extends AppCompatActivity {
 
+    private DataSource mDataSource;
     private DataItemBooks itemBooks;
 
     @Override
@@ -47,7 +42,22 @@ public class ChaptersActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mDataSource.open();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mDataSource.close();
+    }
+
     private void chaptersInitializer() {
+        mDataSource = new DataSource(this);
+        mDataSource.open();
+
         setTitle(itemBooks.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
         try {
@@ -63,46 +73,11 @@ public class ChaptersActivity extends AppCompatActivity {
     }
 
     private void chaptersRecyclerView() {
-        List<DataItemChapters> dataItemChaptersList;
-        ChaptersAdapter chaptersAdapter;
-        RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
+        List<DataItemChapters> dataItemChaptersList =
+                mDataSource.getAllItems(itemBooks.getTitle(), false);
 
-        switch (itemBooks.getId()) {
-            case "book_1":
-                dataItemChaptersList = ChaptersDataProvider1.dataItemChaptersList;
-                chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
-                chaptersRV.setAdapter(chaptersAdapter);
-                break;
-            case "book_2":
-                dataItemChaptersList = ChaptersDataProvider2.dataItemChaptersList;
-                chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
-                chaptersRV.setAdapter(chaptersAdapter);
-                break;
-            case "book_3":
-                dataItemChaptersList = ChaptersDataProvider3.dataItemChaptersList;
-                chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
-                chaptersRV.setAdapter(chaptersAdapter);
-                break;
-            case "book_4":
-                dataItemChaptersList = ChaptersDataProvider4.dataItemChaptersList;
-                chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
-                chaptersRV.setAdapter(chaptersAdapter);
-                break;
-            case "book_5":
-                dataItemChaptersList = ChaptersDataProvider5.dataItemChaptersList;
-                chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
-                chaptersRV.setAdapter(chaptersAdapter);
-                break;
-            case "book_6":
-                dataItemChaptersList = ChaptersDataProvider6.dataItemChaptersList;
-                chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
-                chaptersRV.setAdapter(chaptersAdapter);
-                break;
-            case "book_7":
-                dataItemChaptersList = ChaptersDataProvider7.dataItemChaptersList;
-                chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
-                chaptersRV.setAdapter(chaptersAdapter);
-                break;
-        }
+        RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
+        ChaptersAdapter chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
+        chaptersRV.setAdapter(chaptersAdapter);
     }
 }

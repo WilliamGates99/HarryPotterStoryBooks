@@ -1,7 +1,10 @@
 package com.xeniac.harrypotterstory.models;
 
+import android.content.ContentValues;
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import com.xeniac.harrypotterstory.database.ChaptersTable;
 
 public class DataItemChapters implements Parcelable {
 
@@ -71,6 +74,19 @@ public class DataItemChapters implements Parcelable {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    public ContentValues toValues() {
+        ContentValues values = new ContentValues(6);
+
+        values.put(ChaptersTable.COLUMN_ID, id);
+        values.put(ChaptersTable.COLUMN_NUMBER, number);
+        values.put(ChaptersTable.COLUMN_TITLE, title);
+        values.put(ChaptersTable.COLUMN_PAGE, page);
+        values.put(ChaptersTable.COLUMN_BOOK_TITLE, bookTitle);
+        values.put(ChaptersTable.COLUMN_FAVORITE, favorite);
+
+        return values;
     }
 
     @Override

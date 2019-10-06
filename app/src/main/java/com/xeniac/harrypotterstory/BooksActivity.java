@@ -13,11 +13,14 @@ import android.widget.ImageView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.dataProviders.BooksDataProvider;
-import com.xeniac.harrypotterstory.models.DataItemBooks;
+import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider;
+import com.xeniac.harrypotterstory.database.DataSource;
 
 import java.util.List;
 
 public class BooksActivity extends AppCompatActivity {
+
+    private DataSource mDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,18 @@ public class BooksActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         booksInitializer();
         booksRecyclerView();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mDataSource.open();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mDataSource.close();
     }
 
     @Override
@@ -46,13 +61,16 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void booksInitializer() {
+        mDataSource = new DataSource(this);
+        mDataSource.open();
+        mDataSource.seedDataBase(ChaptersDataProvider.dataItemChaptersList);
+
         ImageView continueIV = findViewById(R.id.iv_books_continue);
         continueIV.setClipToOutline(true);
     }
 
     private void booksRecyclerView() {
-        List<DataItemBooks> dataItemBooksList = BooksDataProvider.dataItemBooksList;
-        BooksAdapter booksAdapter = new BooksAdapter(this, dataItemBooksList);
+        BooksAdapter booksAdapter = new BooksAdapter(this, BooksDataProvider.dataItemBooksList);
         RecyclerView booksRV = findViewById(R.id.rv_books);
         booksRV.setAdapter(booksAdapter);
     }

@@ -6,21 +6,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.FavoritesAdapter;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider1;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider2;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider3;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider4;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider5;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider6;
-import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider7;
+import com.xeniac.harrypotterstory.database.DataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.util.List;
 import java.util.Objects;
 
 public class FavoritesActivity extends AppCompatActivity {
+
+    private DataSource mDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,20 +24,33 @@ public class FavoritesActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_favorites);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
+        favoritesInitializer();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mDataSource.open();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mDataSource.close();
+    }
+
+    private void favoritesInitializer() {
+        mDataSource = new DataSource(this);
+        mDataSource.open();
         favoritesRecyclerView();
     }
 
     private void favoritesRecyclerView() {
-        List<DataItemChapters> dataItemChaptersList = ChaptersDataProvider1.dataItemChaptersList;
-        dataItemChaptersList.addAll(ChaptersDataProvider2.dataItemChaptersList);
-        dataItemChaptersList.addAll(ChaptersDataProvider3.dataItemChaptersList);
-        dataItemChaptersList.addAll(ChaptersDataProvider4.dataItemChaptersList);
-        dataItemChaptersList.addAll(ChaptersDataProvider5.dataItemChaptersList);
-        dataItemChaptersList.addAll(ChaptersDataProvider6.dataItemChaptersList);
-        dataItemChaptersList.addAll(ChaptersDataProvider7.dataItemChaptersList);
+        List<DataItemChapters> dataItemChaptersList =
+                mDataSource.getAllItems(0, true);
 
-        FavoritesAdapter favoritesAdapter = new FavoritesAdapter(this, dataItemChaptersList);
         RecyclerView favoritesRV = findViewById(R.id.rv_favorites);
+        FavoritesAdapter favoritesAdapter = new FavoritesAdapter(this, dataItemChaptersList);
         favoritesRV.setAdapter(favoritesAdapter);
     }
 }

@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.xeniac.harrypotterstory.R;
+import com.xeniac.harrypotterstory.database.DataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.util.List;
@@ -23,10 +23,13 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
     //    public static final String ITEM_KEY = "item_key";
     private List<DataItemChapters> mItems;
     private Context mContext;
+    private DataSource mDataSource;
 
     public ChaptersAdapter(Context context, List<DataItemChapters> items) {
         this.mContext = context;
         this.mItems = items;
+        mDataSource = new DataSource(mContext);
+        mDataSource.open();
     }
 
     @NonNull
@@ -55,22 +58,18 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
             holder.bookmarkGrayIB.setVisibility(View.VISIBLE);
         }
 
-        holder.bookmarkBlueIB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                item.setFavorite(false);
-                holder.bookmarkBlueIB.setVisibility(View.GONE);
-                holder.bookmarkGrayIB.setVisibility(View.VISIBLE);
-            }
+        holder.bookmarkBlueIB.setOnClickListener(v -> {
+            item.setFavorite(false);
+            mDataSource.updateFavorite(item);
+            holder.bookmarkBlueIB.setVisibility(View.GONE);
+            holder.bookmarkGrayIB.setVisibility(View.VISIBLE);
         });
 
-        holder.bookmarkGrayIB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                item.setFavorite(true);
-                holder.bookmarkBlueIB.setVisibility(View.VISIBLE);
-                holder.bookmarkGrayIB.setVisibility(View.GONE);
-            }
+        holder.bookmarkGrayIB.setOnClickListener(v -> {
+            item.setFavorite(true);
+            mDataSource.updateFavorite(item);
+            holder.bookmarkBlueIB.setVisibility(View.VISIBLE);
+            holder.bookmarkGrayIB.setVisibility(View.GONE);
         });
 
         holder.listLL.setOnClickListener(v -> {
