@@ -1,6 +1,7 @@
 package com.xeniac.harrypotterstory.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.xeniac.harrypotterstory.PagesActivity;
 import com.xeniac.harrypotterstory.R;
 import com.xeniac.harrypotterstory.database.DataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
@@ -20,7 +22,7 @@ import java.util.List;
 
 public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHolder> {
 
-    //    public static final String ITEM_KEY = "item_key";
+    public static final String ITEM_KEY = "item_key";
     private List<DataItemChapters> mItems;
     private Context mContext;
     private DataSource mDataSource;
@@ -73,10 +75,9 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
         });
 
         holder.listLL.setOnClickListener(v -> {
-            Toast.makeText(mContext, "Clicked", Toast.LENGTH_SHORT).show();
-//            Intent intent = new Intent(mContext, ChaptersActivity.class);
-//            intent.putExtra(ITEM_KEY, item);
-//            mContext.startActivity(intent);
+            Intent intent = new Intent(mContext, PagesActivity.class);
+            intent.putExtra(ITEM_KEY, item);
+            mContext.startActivity(intent);
         });
     }
 

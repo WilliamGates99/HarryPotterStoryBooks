@@ -61,7 +61,7 @@ public class ChaptersActivity extends AppCompatActivity {
         setTitle(itemBooks.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
         try {
-            String imageFile = itemBooks.getImage();
+            String imageFile = itemBooks.getCover();
             InputStream inputStream = getAssets().open(imageFile);
             Drawable drawable = Drawable.createFromStream(inputStream, null);
             coverIV.setImageDrawable(drawable);
@@ -69,6 +69,7 @@ public class ChaptersActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         chaptersRecyclerView();
     }
 

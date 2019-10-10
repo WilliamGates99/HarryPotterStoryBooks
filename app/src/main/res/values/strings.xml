@@ -13,6 +13,10 @@
     <!--Favorites Activity-->
     <string name="string_favorites_title">Favorites</string>
 
+    <!--Pages Activity-->
+    <string name="string_pages_chapter_title">"CHAPTER "</string>
+    <string name="string_pages_list_page_title">"PAGE "</string>
+
     <!--Books Title-->
     <string name="string_books_title_1">Harry Potter and the Sorcerer\'s Stone</string>
     <string name="string_books_title_2">Harry Potter and the Chamber of Secrets</string>
@@ -243,5 +247,28 @@
     <string name="string_book_7_chapters_title_35">King’s Cross</string>
     <string name="string_book_7_chapters_title_36">The Flaw in the Plan</string>
     <string name="string_book_7_chapters_title_37">EPILOGUE - Nineteen Years Later</string>
+
+    <!--Book 1 Pages-->
+    <string name="string_book_1_page_1">"Mr. and Mrs. Dursley, of number four, Privet Drive, were
+proud to say that they were perfectly normal, thank
+
+you very much. They were the last people you’d expect to be in-
+volved in anything strange or mysterious, because they just didn’t
+
+hold with such nonsense.
+Mr. Dursley was the director of a firm called Grunnings, which
+
+made drills. He was a big, beefy man with hardly any neck, al-
+though he did have a very large mustache. Mrs. Dursley was thin
+
+and blonde and had nearly twice the usual amount of neck, which
+came in very useful as she spent so much of her time craning over
+garden fences, spying on the neighbors. The Dursleys had a small
+
+son called Dudley and in their opinion there was no finer boy any-
+where.
+
+The Dursleys had everything they wanted, but they also had a
+secret, and their greatest fear was that somebody would discover it."</string>
 
 </resources>

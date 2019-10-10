@@ -13,18 +13,20 @@ public class DataItemChapters implements Parcelable {
     private int title;
     private String page;
     private int bookTitle;
+    private String cover;
     private boolean favorite;
 
     public DataItemChapters() {
     }
 
-    public DataItemChapters(String id, String number, int title,
-                            String page, int bookTitle, boolean favorite) {
+    public DataItemChapters(String id, String number, int title, String page,
+                            int bookTitle, String cover, boolean favorite) {
         this.id = id;
         this.number = number;
         this.title = title;
         this.page = page;
         this.bookTitle = bookTitle;
+        this.cover = cover;
         this.favorite = favorite;
     }
 
@@ -68,6 +70,14 @@ public class DataItemChapters implements Parcelable {
         this.bookTitle = bookTitle;
     }
 
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
+
     public boolean isFavorite() {
         return favorite;
     }
@@ -77,13 +87,14 @@ public class DataItemChapters implements Parcelable {
     }
 
     public ContentValues toValues() {
-        ContentValues values = new ContentValues(6);
+        ContentValues values = new ContentValues(7);
 
         values.put(ChaptersTable.COLUMN_ID, id);
         values.put(ChaptersTable.COLUMN_NUMBER, number);
         values.put(ChaptersTable.COLUMN_TITLE, title);
         values.put(ChaptersTable.COLUMN_PAGE, page);
         values.put(ChaptersTable.COLUMN_BOOK_TITLE, bookTitle);
+        values.put(ChaptersTable.COLUMN_COVER, cover);
         values.put(ChaptersTable.COLUMN_FAVORITE, favorite);
 
         return values;
@@ -97,6 +108,7 @@ public class DataItemChapters implements Parcelable {
                 ", title=" + title +
                 ", page='" + page + '\'' +
                 ", bookTitle=" + bookTitle +
+                ", cover='" + cover + '\'' +
                 ", favorite=" + favorite +
                 '}';
     }
@@ -113,6 +125,7 @@ public class DataItemChapters implements Parcelable {
         dest.writeInt(this.title);
         dest.writeString(this.page);
         dest.writeInt(this.bookTitle);
+        dest.writeString(this.cover);
         dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
     }
 
@@ -122,6 +135,7 @@ public class DataItemChapters implements Parcelable {
         this.title = in.readInt();
         this.page = in.readString();
         this.bookTitle = in.readInt();
+        this.cover = in.readString();
         this.favorite = in.readByte() != 0;
     }
 

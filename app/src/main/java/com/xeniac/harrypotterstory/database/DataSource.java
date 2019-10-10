@@ -83,6 +83,7 @@ public class DataSource {
             item.setTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TITLE)));
             item.setPage(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_PAGE)));
             item.setBookTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_TITLE)));
+            item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
             dataItemChaptersList.add(item);
         }
@@ -100,6 +101,7 @@ public class DataSource {
         values.put(ChaptersTable.COLUMN_TITLE, item.getTitle());
         values.put(ChaptersTable.COLUMN_PAGE, item.getPage());
         values.put(ChaptersTable.COLUMN_BOOK_TITLE, item.getBookTitle());
+        values.put(ChaptersTable.COLUMN_COVER, item.getCover());
         values.put(ChaptersTable.COLUMN_FAVORITE, item.isFavorite());
 
         mDatabase.update(ChaptersTable.TABLE_CHAPTERS, values,

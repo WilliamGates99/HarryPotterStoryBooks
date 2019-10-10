@@ -49,7 +49,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
         holder.titleTV.setText(item.getTitle());
         holder.gistTV.setText(item.getGist());
         try {
-            String imageFile = item.getImage();
+            String imageFile = item.getCover();
             InputStream inputStream = mContext.getAssets().open(imageFile);
             Drawable drawable = Drawable.createFromStream(inputStream, null);
             holder.coverIV.setImageDrawable(drawable);

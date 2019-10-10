@@ -8,16 +8,16 @@ public class DataItemBooks implements Parcelable {
     private String id;
     private int title;
     private int gist;
-    private String image;
+    private String cover;
 
     public DataItemBooks() {
     }
 
-    public DataItemBooks(String id, int title, int gist, String image) {
+    public DataItemBooks(String id, int title, int gist, String cover) {
         this.id = id;
         this.title = title;
         this.gist = gist;
-        this.image = image;
+        this.cover = cover;
     }
 
     public String getId() {
@@ -44,12 +44,12 @@ public class DataItemBooks implements Parcelable {
         this.gist = gist;
     }
 
-    public String getImage() {
-        return image;
+    public String getCover() {
+        return cover;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setCover(String cover) {
+        this.cover = cover;
     }
 
     @Override
@@ -58,7 +58,7 @@ public class DataItemBooks implements Parcelable {
                 "id='" + id + '\'' +
                 ", title=" + title +
                 ", gist=" + gist +
-                ", image='" + image + '\'' +
+                ", cover='" + cover + '\'' +
                 '}';
     }
 
@@ -72,14 +72,14 @@ public class DataItemBooks implements Parcelable {
         dest.writeString(this.id);
         dest.writeInt(this.title);
         dest.writeInt(this.gist);
-        dest.writeString(this.image);
+        dest.writeString(this.cover);
     }
 
     private DataItemBooks(Parcel in) {
         this.id = in.readString();
         this.title = in.readInt();
         this.gist = in.readInt();
-        this.image = in.readString();
+        this.cover = in.readString();
     }
 
     public static final Creator<DataItemBooks> CREATOR = new Creator<DataItemBooks>() {

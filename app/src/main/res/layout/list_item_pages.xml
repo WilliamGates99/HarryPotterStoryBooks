@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_list_pages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="40dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/string_pages_list_page_title"
+            android:textColor="@color/colorMediumGray"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_list_pages_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="22"
+            android:textColor="@color/colorMediumGray"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorMediumGray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_list_pages_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/georgia_regular"
+        android:justificationMode="none"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar. Ornare suspendisse sed nisi lacus sed viverra. Odio ut sem nulla pharetra diam sit. Mollis aliquam ut porttitor leo a diam sollicitudin. Enim ut sem viverra aliquet eget sit amet tellus cras. Neque ornare aenean euismod elementum nisi quis eleifend."
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText"
+        tools:targetApi="o" />
+
+</LinearLayout>
