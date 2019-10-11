@@ -8,6 +8,7 @@
     android:clipChildren="false"
     android:clipToPadding="false"
     android:orientation="vertical"
+    android:overScrollMode="never"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".FavoritesActivity"

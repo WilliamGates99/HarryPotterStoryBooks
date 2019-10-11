@@ -60,6 +60,7 @@ public class ChaptersActivity extends AppCompatActivity {
 
         setTitle(itemBooks.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
+
         try {
             String imageFile = itemBooks.getCover();
             InputStream inputStream = getAssets().open(imageFile);
