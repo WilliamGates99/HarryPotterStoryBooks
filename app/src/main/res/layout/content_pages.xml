@@ -1,124 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false"
     android:clipToPadding="false"
-    android:orientation="vertical"
-    android:overScrollMode="never"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".PagesActivity"
     tools:showIn="@layout/activity_pages">
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_pages_bottom_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/iv_pages_cover"
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="-70dp"
-            android:layout_marginBottom="25dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/shape_round_image"
-            android:contentDescription="Book Cover"
-            android:src="@drawable/ic_cover_books_1"
-            tools:ignore="HardcodedText" />
+        android:orientation="vertical"
+        android:overScrollMode="never">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/iv_pages_cover"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Circular Indicator"
-                android:src="@drawable/ic_indicator_circular"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="25dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/shape_round_image"
+                android:contentDescription="Book Cover"
+                android:src="@drawable/ic_cover_books_1"
                 tools:ignore="HardcodedText" />
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="Circular Indicator"
-                android:src="@drawable/ic_indicator_circular"
-                tools:ignore="HardcodedText" />
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="Circular Indicator"
-                android:src="@drawable/ic_indicator_circular"
-                tools:ignore="HardcodedText" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Circular Indicator"
+                    android:src="@drawable/ic_indicator_circular"
+                    tools:ignore="HardcodedText" />
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Circular Indicator"
+                    android:src="@drawable/ic_indicator_circular"
+                    tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/tv_pages_chapter_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/open_sans_bold"
-            android:gravity="center_horizontal"
-            android:text="St. Mungo’s Hospital for Magical Maladies and Injuries"
-            android:textAlignment="gravity"
-            android:textColor="@color/colorBlack"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Circular Indicator"
+                    android:src="@drawable/ic_indicator_circular"
+                    tools:ignore="HardcodedText" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+            </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_pages_chapter_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="@string/string_pages_chapter_title"
-                android:textColor="@color/colorDarkestGray"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv_pages_chapter_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="25"
-                android:textColor="@color/colorDarkestGray"
-                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:text="St. Mungo’s Hospital for Magical Maladies and Injuries"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/string_pages_chapter_title"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_pages_chapter_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="25"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_pages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_pages"
-            android:layout_width="match_parent"
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_pages_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:baselineAligned="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:weightSum="7.5">
+
+        <FrameLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
             android:clipChildren="false"
-            android:clipToPadding="false"
-            android:nestedScrollingEnabled="false"
-            android:orientation="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/ib_pages_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Up"
+                android:onClick="upOnClick"
+                android:padding="15dp"
+                android:rotation="270"
+                android:src="@drawable/ic_pages_arrow_blue"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/ib_pages_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Share"
+                android:onClick="shareOnClick"
+                android:padding="15dp"
+                android:src="@drawable/ic_pages_share_gray"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rl_list_chapters_bookmark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/ib_pages_bookmark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Bookmark"
+                android:onClick="bookmarkGrayOnClick"
+                android:padding="15dp"
+                android:src="@drawable/ic_bookmark_gray"
+                android:visibility="visible"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/ib_pages_bookmark_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Bookmark"
+                android:onClick="bookmarkBlueOnClick"
+                android:padding="15dp"
+                android:src="@drawable/ic_bookmark_blue"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/ib_pages_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Filter"
+                android:onClick="filterOnClick"
+                android:padding="15dp"
+                android:src="@drawable/ic_pages_filter_light"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
 
     </LinearLayout>
 
-</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

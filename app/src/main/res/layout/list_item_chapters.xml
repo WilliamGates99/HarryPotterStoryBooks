@@ -119,8 +119,8 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Bookmark"
-                android:padding="5dp"
-                android:src="@drawable/ic_list_bookmark_blue"
+                android:padding="10dp"
+                android:src="@drawable/ic_bookmark_blue"
                 android:visibility="gone"
                 tools:ignore="HardcodedText" />
 
@@ -130,8 +130,8 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Bookmark"
-                android:padding="5dp"
-                android:src="@drawable/ic_list_bookmark_gray"
+                android:padding="10dp"
+                android:src="@drawable/ic_bookmark_gray"
                 android:visibility="visible"
                 tools:ignore="HardcodedText" />
 

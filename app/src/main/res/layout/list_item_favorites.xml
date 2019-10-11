@@ -8,8 +8,6 @@
     android:layout_marginEnd="45dp"
     android:background="?attr/selectableItemBackground"
     android:clickable="true"
-    android:clipChildren="false"
-    android:clipToPadding="false"
     android:focusable="true"
     android:orientation="vertical"
     android:paddingTop="15dp">
@@ -17,8 +15,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clipChildren="false"
-        android:clipToPadding="false"
         android:padding="5dp">
 
         <TextView
@@ -48,7 +44,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="5dp"
-            android:layout_toStartOf="@+id/rl_list_favorites_bookmark"
+            android:layout_toStartOf="@+id/ib_list_favorites_bookmark_blue"
             android:layout_toEndOf="@+id/tv_list_favorites_number"
             android:gravity="center_vertical">
 
@@ -86,40 +82,18 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/rl_list_favorites_bookmark"
+        <ImageButton
+            android:id="@+id/ib_list_favorites_bookmark_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/tv_list_favorites_number"
             android:layout_alignBottom="@+id/tv_list_favorites_number"
             android:layout_alignParentEnd="true"
-            android:clipChildren="false"
-            android:clipToPadding="false"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/ib_list_favorites_bookmark_blue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Bookmark"
-                android:padding="5dp"
-                android:src="@drawable/ic_list_bookmark_blue"
-                android:visibility="visible"
-                tools:ignore="HardcodedText" />
-
-            <ImageButton
-                android:id="@+id/ib_list_favorites_bookmark_gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Bookmark"
-                android:padding="5dp"
-                android:src="@drawable/ic_list_bookmark_gray"
-                android:visibility="gone"
-                tools:ignore="HardcodedText" />
-
-        </RelativeLayout>
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Bookmark"
+            android:padding="5dp"
+            android:src="@drawable/ic_bookmark_blue"
+            tools:ignore="HardcodedText" />
 
     </RelativeLayout>
 

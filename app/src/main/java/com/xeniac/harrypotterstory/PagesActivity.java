@@ -1,12 +1,13 @@
 package com.xeniac.harrypotterstory;
 
-import androidx.annotation.IntegerRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.PagesAdapter;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1_1;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1_2;
+import com.xeniac.harrypotterstory.database.DataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 import com.xeniac.harrypotterstory.models.DataItemPages;
 
@@ -25,7 +27,10 @@ import java.util.Objects;
 
 public class PagesActivity extends AppCompatActivity {
 
+    private DataSource mDataSource;
     private DataItemChapters itemChapters;
+
+    private ImageButton bookmarkGrayIB, bookmarkBlueIB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,18 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        mDataSource.open();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mDataSource.close();
+    }
+
+    @Override
     public boolean onSupportNavigateUp() {
         super.onBackPressed();
         return false;
@@ -58,9 +75,23 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void pagesInitializer() {
+        mDataSource = new DataSource(this);
+        mDataSource.open();
+
         ImageView coverIV = findViewById(R.id.iv_pages_cover);
         TextView titleTV = findViewById(R.id.tv_pages_chapter_title);
         TextView numberTV = findViewById(R.id.tv_pages_chapter_number);
+
+        bookmarkGrayIB = findViewById(R.id.ib_pages_bookmark_gray);
+        bookmarkBlueIB = findViewById(R.id.ib_pages_bookmark_blue);
+
+        if (itemChapters.isFavorite()) {
+            bookmarkBlueIB.setVisibility(View.VISIBLE);
+            bookmarkGrayIB.setVisibility(View.GONE);
+        } else {
+            bookmarkBlueIB.setVisibility(View.GONE);
+            bookmarkGrayIB.setVisibility(View.VISIBLE);
+        }
 
         titleTV.setText(itemChapters.getTitle());
         numberTV.setText(itemChapters.getNumber());
@@ -91,5 +122,34 @@ public class PagesActivity extends AppCompatActivity {
                 pagesRV.setAdapter(pagesAdapter);
                 break;
         }
+    }
+
+    public void upOnClick(View view) {
+        //TODO edit
+        Toast.makeText(this, "Up", Toast.LENGTH_SHORT).show();
+    }
+
+    public void shareOnClick(View view) {
+        //TODO edit
+        Toast.makeText(this, "Shared.", Toast.LENGTH_SHORT).show();
+    }
+
+    public void bookmarkGrayOnClick(View view) {
+        itemChapters.setFavorite(true);
+        mDataSource.updateFavorite(itemChapters);
+        bookmarkBlueIB.setVisibility(View.VISIBLE);
+        bookmarkGrayIB.setVisibility(View.GONE);
+    }
+
+    public void bookmarkBlueOnClick(View view) {
+        itemChapters.setFavorite(false);
+        mDataSource.updateFavorite(itemChapters);
+        bookmarkBlueIB.setVisibility(View.GONE);
+        bookmarkGrayIB.setVisibility(View.VISIBLE);
+    }
+
+    public void filterOnClick(View view) {
+        //TODO edit
+        Toast.makeText(this, "Filter panel opened.", Toast.LENGTH_SHORT).show();
     }
 }

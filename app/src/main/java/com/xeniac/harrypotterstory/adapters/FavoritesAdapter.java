@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -52,16 +51,9 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
         holder.titleTV.setText(item.getTitle());
         holder.bookTV.setText(item.getBookTitle());
 
-        if (item.isFavorite()) {
-            holder.bookmarkBlueIB.setVisibility(View.VISIBLE);
-            holder.bookmarkGrayIB.setVisibility(View.GONE);
-        }
-
         holder.bookmarkBlueIB.setOnClickListener(v -> {
             item.setFavorite(false);
             mDataSource.updateFavorite(item);
-            holder.bookmarkBlueIB.setVisibility(View.GONE);
-            holder.bookmarkGrayIB.setVisibility(View.VISIBLE);
             try {
                 mItems.remove(position);
                 notifyItemRemoved(position);
@@ -90,7 +82,6 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
         TextView numberTV;
         TextView titleTV;
         TextView bookTV;
-        ImageButton bookmarkGrayIB;
         ImageButton bookmarkBlueIB;
 
         ViewHolder(View itemView) {
@@ -100,7 +91,6 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
             numberTV = itemView.findViewById(R.id.tv_list_favorites_number);
             titleTV = itemView.findViewById(R.id.tv_list_favorites_title);
             bookTV = itemView.findViewById(R.id.tv_list_favorites_book);
-            bookmarkGrayIB = itemView.findViewById(R.id.ib_list_favorites_bookmark_gray);
             bookmarkBlueIB = itemView.findViewById(R.id.ib_list_favorites_bookmark_blue);
 
             mView = itemView;
