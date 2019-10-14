@@ -2,6 +2,7 @@ package com.xeniac.harrypotterstory;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.drawable.Drawable;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.appbar.AppBarLayout;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.PagesAdapter;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1_1;
@@ -36,6 +38,8 @@ public class PagesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pages);
+        AppBarLayout appBarLayout = findViewById(R.id.appbar_pages);
+        appBarLayout.bringToFront();
         Toolbar toolbar = findViewById(R.id.toolbar_pages);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
@@ -107,8 +111,8 @@ public class PagesActivity extends AppCompatActivity {
         }
 
         List<DataItemPages> dataItemPagesList;
-        PagesAdapter pagesAdapter;
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
+        PagesAdapter pagesAdapter;
 
         switch (itemChapters.getId()) {
             case "book_1_chapter_1":
@@ -126,7 +130,8 @@ public class PagesActivity extends AppCompatActivity {
 
     public void upOnClick(View view) {
         //TODO edit
-        Toast.makeText(this, "Up", Toast.LENGTH_SHORT).show();
+        NestedScrollView nestedScrollView = findViewById(R.id.nsv_pages);
+        nestedScrollView.smoothScrollTo(0, 0);
     }
 
     public void shareOnClick(View view) {

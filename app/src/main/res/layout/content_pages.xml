@@ -11,6 +11,7 @@
     tools:showIn="@layout/activity_pages">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_pages"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/ll_pages_bottom_view"
