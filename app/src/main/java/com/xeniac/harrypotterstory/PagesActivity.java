@@ -129,13 +129,17 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void upOnClick(View view) {
-        //TODO edit
         NestedScrollView nestedScrollView = findViewById(R.id.nsv_pages);
         nestedScrollView.smoothScrollTo(0, 0);
     }
 
     public void shareOnClick(View view) {
         //TODO edit
+        /*
+        Gist
+        Invite text
+        Store link
+         */
         Toast.makeText(this, "Shared.", Toast.LENGTH_SHORT).show();
     }
 
