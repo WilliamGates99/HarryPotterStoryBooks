@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -114,6 +115,7 @@ public class PagesActivity extends AppCompatActivity {
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
         PagesAdapter pagesAdapter;
 
+        //TODO Complete the switch
         switch (itemChapters.getId()) {
             case "book_1_chapter_1":
                 dataItemPagesList = PagesDataProviderBook1_1.dataItemPagesList;
@@ -128,19 +130,31 @@ public class PagesActivity extends AppCompatActivity {
         }
     }
 
+    private String storeURLInitializer() {
+        return "https://play.google.com/store/apps/detiraails?id=" + getPackageName();
+    }
+
     public void upOnClick(View view) {
         NestedScrollView nestedScrollView = findViewById(R.id.nsv_pages);
         nestedScrollView.smoothScrollTo(0, 0);
     }
 
     public void shareOnClick(View view) {
-        //TODO edit
-        /*
-        Gist
-        Invite text
-        Store link
-         */
-        Toast.makeText(this, "Shared.", Toast.LENGTH_SHORT).show();
+        String gist = getResources().getString(R.string.string_book_1_page_1).substring(0, 200);
+
+//        String shareString = "Let's read " + getResources().getString(itemChapters.getTitle()) +
+//                " chapter of " + getResources().getString(itemChapters.getBookTitle()) +
+//                " book together." + "\n\n" + storeURLInitializer();
+
+        String shareString = gist + "…" + "\n\nContinue reading in " +
+                getResources().getString(R.string.app_name) + " app.\n\n" + storeURLInitializer();
+
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Result Sharing");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
+        startActivity(Intent.createChooser(
+                shareIntent, getString(R.string.string_pages_share_title)));
     }
 
     public void bookmarkGrayOnClick(View view) {

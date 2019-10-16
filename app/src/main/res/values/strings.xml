@@ -16,6 +16,8 @@
     <!--Pages Activity-->
     <string name="string_pages_chapter_title">"CHAPTER "</string>
     <string name="string_pages_list_page_title">"PAGE "</string>
+<!--    <string name="string_pages_share_text">"Download the Real Barrel's Unit Converter app from here:\n\n"</string>-->
+    <string name="string_pages_share_title">Share via…</string>
 
     <!--Books Title-->
     <string name="string_books_title_1">Harry Potter and the Sorcerer\'s Stone</string>
@@ -249,11 +251,7 @@
     <string name="string_book_7_chapters_title_37">EPILOGUE - Nineteen Years Later</string>
 
     <!--Book 1 Pages-->
-    <string name="string_book_1_page_1">"Mr. and Mrs. Dursley, of number four, Privet Drive, were
-proud to say that they were perfectly normal, thank
-
-you very much. They were the last people you’d expect to be in-
-volved in anything strange or mysterious, because they just didn’t
+    <string name="string_book_1_page_1">"Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t
 
 hold with such nonsense.
 Mr. Dursley was the director of a firm called Grunnings, which
