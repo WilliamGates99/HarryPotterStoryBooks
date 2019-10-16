@@ -47,6 +47,7 @@ public class ChaptersActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         mDataSource.open();
+        chaptersRecyclerView();
     }
 
     @Override

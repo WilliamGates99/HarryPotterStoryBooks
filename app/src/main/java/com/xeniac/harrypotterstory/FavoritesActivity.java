@@ -31,6 +31,7 @@ public class FavoritesActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         mDataSource.open();
+        favoritesRecyclerView();
     }
 
     @Override
