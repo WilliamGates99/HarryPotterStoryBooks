@@ -140,14 +140,15 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void shareOnClick(View view) {
+        /* Add these code for share highlighted text
         String gist = getResources().getString(R.string.string_book_1_page_1).substring(0, 200);
-
-//        String shareString = "Let's read " + getResources().getString(itemChapters.getTitle()) +
-//                " chapter of " + getResources().getString(itemChapters.getBookTitle()) +
-//                " book together." + "\n\n" + storeURLInitializer();
-
         String shareString = gist + "…" + "\n\nContinue reading in " +
                 getResources().getString(R.string.app_name) + " app.\n\n" + storeURLInitializer();
+                */
+
+        String shareString = "Let's read " + getResources().getString(itemChapters.getTitle()) +
+                " chapter of " + getResources().getString(itemChapters.getBookTitle()) +
+                " book together." + "\n\n" + storeURLInitializer();
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");

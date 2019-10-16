@@ -2,6 +2,7 @@ package com.xeniac.harrypotterstory;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.drawable.Drawable;
@@ -79,6 +80,7 @@ public class ChaptersActivity extends AppCompatActivity {
                 mDataSource.getAllItems(itemBooks.getTitle(), false);
 
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
+        chaptersRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         ChaptersAdapter chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
         chaptersRV.setAdapter(chaptersAdapter);
     }
