@@ -136,10 +136,11 @@
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_pages_filter_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/ll_pages_bottom_view"
-        android:layout_marginBottom="-15dp"
+        android:layout_marginBottom="-215dp"
         app:cardBackgroundColor="@color/colorAccentBlue"
         app:cardCornerRadius="15dp"
         app:cardPreventCornerOverlap="true"
@@ -413,15 +414,29 @@
             android:clipToPadding="false">
 
             <ImageButton
-                android:id="@+id/ib_pages_filter"
+                android:id="@+id/ib_pages_filter_black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Filter"
-                android:onClick="filterOnClick"
+                android:onClick="filterBlackOnClick"
                 android:padding="15dp"
-                android:src="@drawable/ic_pages_filter_light"
+                android:src="@drawable/ic_pages_filter_black"
+                android:visibility="visible"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/ib_pages_filter_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Filter"
+                android:onClick="filterBlueOnClick"
+                android:padding="15dp"
+                android:src="@drawable/ic_pages_filter_blue"
+                android:visibility="gone"
                 tools:ignore="HardcodedText" />
 
         </FrameLayout>

@@ -13,9 +13,9 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.card.MaterialCardView;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.PagesAdapter;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1_1;
@@ -35,6 +35,9 @@ public class PagesActivity extends AppCompatActivity {
     private DataItemChapters itemChapters;
 
     private ImageButton bookmarkGrayIB, bookmarkBlueIB;
+    private ImageButton filterBlackIB, filterBlueIB;
+
+    private MaterialCardView filterPanelCV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +93,11 @@ public class PagesActivity extends AppCompatActivity {
 
         bookmarkGrayIB = findViewById(R.id.ib_pages_bookmark_gray);
         bookmarkBlueIB = findViewById(R.id.ib_pages_bookmark_blue);
+
+        filterBlackIB = findViewById(R.id.ib_pages_filter_black);
+        filterBlueIB = findViewById(R.id.ib_pages_filter_blue);
+
+        filterPanelCV = findViewById(R.id.cv_pages_filter_panel);
 
         if (itemChapters.isFavorite()) {
             bookmarkBlueIB.setVisibility(View.VISIBLE);
@@ -173,9 +181,18 @@ public class PagesActivity extends AppCompatActivity {
         bookmarkGrayIB.setVisibility(View.VISIBLE);
     }
 
-    public void filterOnClick(View view) {
-        //TODO edit
-        Toast.makeText(this, "Filter panel opened.", Toast.LENGTH_SHORT).show();
+    public void filterBlackOnClick(View view) {
+        filterBlackIB.setVisibility(View.GONE);
+        filterBlueIB.setVisibility(View.VISIBLE);
+        float distance = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+                -200, getResources().getDisplayMetrics());
+        filterPanelCV.animate().translationY(distance);
+    }
+
+    public void filterBlueOnClick(View view) {
+        filterBlueIB.setVisibility(View.GONE);
+        filterBlackIB.setVisibility(View.VISIBLE);
+        filterPanelCV.animate().translationY(0);
     }
 
     public void fontIncreaseOnClick(View view) {
