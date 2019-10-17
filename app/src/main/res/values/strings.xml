@@ -15,8 +15,9 @@
 
     <!--Pages Activity-->
     <string name="string_pages_chapter_title">"CHAPTER "</string>
+    <string name="string_pages_filter_font">FONT SIZE</string>
+    <string name="string_pages_filter_mode">DARK MODE</string>
     <string name="string_pages_list_page_title">"PAGE "</string>
-<!--    <string name="string_pages_share_text">"Download the Real Barrel's Unit Converter app from here:\n\n"</string>-->
     <string name="string_pages_share_title">Share via…</string>
 
     <!--Books Title-->

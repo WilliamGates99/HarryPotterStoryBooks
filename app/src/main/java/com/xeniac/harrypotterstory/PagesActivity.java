@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -175,5 +176,15 @@ public class PagesActivity extends AppCompatActivity {
     public void filterOnClick(View view) {
         //TODO edit
         Toast.makeText(this, "Filter panel opened.", Toast.LENGTH_SHORT).show();
+    }
+
+    public void fontIncreaseOnClick(View view) {
+        TextView textTV = findViewById(R.id.tv_list_pages_text);
+        textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, textTV.getTextSize() + 5.0f);
+    }
+
+    public void fontDecreaseOnClick(View view) {
+        TextView textTV = findViewById(R.id.tv_list_pages_text);
+        textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, textTV.getTextSize() - 5.0f);
     }
 }
