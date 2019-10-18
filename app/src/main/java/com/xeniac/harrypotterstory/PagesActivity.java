@@ -18,8 +18,8 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.card.MaterialCardView;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.PagesAdapter;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1_1;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1_2;
+import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_1;
+import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_2;
 import com.xeniac.harrypotterstory.database.DataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 import com.xeniac.harrypotterstory.models.DataItemPages;
@@ -36,6 +36,7 @@ public class PagesActivity extends AppCompatActivity {
 
     private ImageButton bookmarkGrayIB, bookmarkBlueIB;
     private ImageButton filterBlackIB, filterBlueIB;
+    private ImageButton filterModeDarkIB, filterModeLightIB;
 
     private MaterialCardView filterPanelCV;
 
@@ -97,6 +98,12 @@ public class PagesActivity extends AppCompatActivity {
         filterBlackIB = findViewById(R.id.ib_pages_filter_black);
         filterBlueIB = findViewById(R.id.ib_pages_filter_blue);
 
+        filterModeDarkIB = findViewById(R.id.ib_pages_filter_mode_dark);
+        filterModeLightIB = findViewById(R.id.ib_pages_filter_mode_light);
+
+        //TODO Edit
+        filterModeLightIB.setImageState(FOCUSED_STATE_SET, true);
+
         filterPanelCV = findViewById(R.id.cv_pages_filter_panel);
 
         if (itemChapters.isFavorite()) {
@@ -120,6 +127,10 @@ public class PagesActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        pagesRecyclerView();
+    }
+
+    private void pagesRecyclerView() {
         List<DataItemPages> dataItemPagesList;
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
         PagesAdapter pagesAdapter;
@@ -196,12 +207,22 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void fontIncreaseOnClick(View view) {
+        //TODO Save via SharedPreference
         TextView textTV = findViewById(R.id.tv_list_pages_text);
         textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, textTV.getTextSize() + 5.0f);
     }
 
     public void fontDecreaseOnClick(View view) {
+        //TODO Save via SharedPreference
         TextView textTV = findViewById(R.id.tv_list_pages_text);
         textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, textTV.getTextSize() - 5.0f);
+    }
+
+    public void modeDarkOnClick(View view) {
+        //TODO Edit
+    }
+
+    public void modeLightOnClick(View view) {
+        //TODO Edit
     }
 }

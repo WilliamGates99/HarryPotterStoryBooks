@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -194,21 +193,6 @@
                         android:weightSum="2">
 
                         <ImageButton
-                            android:id="@+id/ib_pages_filter_font_increase"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="?attr/selectableItemBackgroundBorderless"
-                            android:contentDescription="Increase Font Size"
-                            android:onClick="fontIncreaseOnClick"
-                            android:paddingStart="20dp"
-                            android:paddingTop="15dp"
-                            android:paddingEnd="10dp"
-                            android:paddingBottom="15dp"
-                            android:src="@drawable/ic_pages_filter_font_increase"
-                            tools:ignore="HardcodedText" />
-
-                        <ImageButton
                             android:id="@+id/ib_pages_filter_font_decrease"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -216,11 +200,26 @@
                             android:background="?attr/selectableItemBackgroundBorderless"
                             android:contentDescription="Decrease Font Size"
                             android:onClick="fontDecreaseOnClick"
+                            android:paddingStart="20dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="15dp"
+                            android:src="@drawable/ic_pages_filter_font_decrease"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageButton
+                            android:id="@+id/ib_pages_filter_font_increase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Increase Font Size"
+                            android:onClick="fontIncreaseOnClick"
                             android:paddingStart="10dp"
                             android:paddingTop="15dp"
                             android:paddingEnd="20dp"
                             android:paddingBottom="15dp"
-                            android:src="@drawable/ic_pages_filter_font_decrease"
+                            android:src="@drawable/ic_pages_filter_font_increase"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -275,6 +274,7 @@
                             android:layout_weight="1"
                             android:background="?attr/selectableItemBackgroundBorderless"
                             android:contentDescription="Dark Mode"
+                            android:onClick="modeDarkOnClick"
                             android:paddingStart="20dp"
                             android:paddingTop="15dp"
                             android:paddingEnd="10dp"
@@ -288,7 +288,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="?attr/selectableItemBackgroundBorderless"
-                            android:contentDescription="Dark Mode"
+                            android:contentDescription="Light Mode"
+                            android:onClick="modeLightOnClick"
                             android:paddingStart="10dp"
                             android:paddingTop="15dp"
                             android:paddingEnd="20dp"
