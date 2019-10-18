@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
 
     <!--Book 1 Chapter 1 Pages-->
     <string name="string_book_1_chapter_1_page_1">"Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense.
@@ -9,11 +9,11 @@
         When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story starts, there was nothing about the cloudy sky outside to suggest that strange and mysterious things would soon be happening all over the country. Mr. Dursley hummed as he picked out his most boring tie for work, and Mrs. Dursley gossiped away happily as she wrestled a screaming Dudley into his high chair.
         None of them noticed a large, tawny owl flutter past the window.
         At half past eight, Mr. Dursley picked up his briefcase, pecked Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but missed, because Dudley was now having a tantrum and throwing his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left the house. He got into his car and backed out of number four’s drive.
-        It was on the corner of the street that he noticed the first sign of something peculiar — a cat reading a map. For a second, Mr. Dursley didn’t realize what he had seen — then he jerked his head around to look again. There was a tabby cat standing on the corner"</string>
-    <string name="string_book_1_chapter_1_page_3">"of Privet Drive, but there wasn’t a map in sight. What could he have been thinking of? It must have been a trick of the light. Mr. Dursley blinked and stared at the cat. It stared back. As Mr. Dursley drove around the corner and up the road, he watched the cat in his mirror. It was now reading the sign that said Privet Drive — no, looking at the sign; cats couldn’t read maps or signs. Mr. Dursley gave himself a little shake and put the cat out of his mind. As he drove toward town he thought of nothing except a large order of drills he was hoping to get that day.
+        It was on the corner of the street that he noticed the first sign of something peculiar — a cat reading a map. For a second, Mr. Dursley didn’t realize what he had seen — then he jerked his head around to look again."</string>
+    <string name="string_book_1_chapter_1_page_3">"There was a tabby cat standing on the corner of Privet Drive, but there wasn’t a map in sight. What could he have been thinking of? It must have been a trick of the light. Mr. Dursley blinked and stared at the cat. It stared back. As Mr. Dursley drove around the corner and up the road, he watched the cat in his mirror. It was now reading the sign that said Privet Drive — no, looking at the sign; cats couldn’t read maps or signs. Mr. Dursley gave himself a little shake and put the cat out of his mind. As he drove toward town he thought of nothing except a large order of drills he was hoping to get that day.
         But on the edge of town, drills were driven out of his mind by something else. As he sat in the usual morning traffic jam, he couldn’t help noticing that there seemed to be a lot of strangely dressed people about. People in cloaks. Mr. Dursley couldn’t bear people who dressed in funny clothes — the getups you saw on young people! He supposed this was some stupid new fashion. He drummed his fingers on the steering wheel and his eyes fell on a huddle of these weirdos standing quite close by. They were whispering excitedly together. Mr. Dursley was enraged to see that a couple of them weren’t young at all; why, that man had to be older than he was, and wearing an emerald-green cloak! The nerve of him! But then it struck Mr. Dursley that this was probably some silly stunt — these people were obviously collecting for something . . . yes, that would be it. The traffic moved on and a few minutes later, Mr. Dursley arrived in the Grunnings parking lot, his mind back on drills.
-        Mr. Dursley always sat with his back to the window in his office on the ninth floor. If he hadn’t, he might have found it harder to concentrate on drills that morning. He didn’t see the owls swooping"</string>
-    <string name="string_book_1_chapter_1_page_4">"past in broad daylight, though people down in the street did; they pointed and gazed open-mouthed as owl after owl sped overhead. Most of them had never seen an owl even at nighttime. Mr. Dursley, however, had a perfectly normal, owl-free morning. He yelled at five different people. He made several important telephone calls and shouted a bit more. He was in a very good mood until lunchtime, when he thought he’d stretch his legs and walk across the road to buy himself a bun from the bakery.
+        Mr. Dursley always sat with his back to the window in his office on the ninth floor. If he hadn’t, he might have found it harder to concentrate on drills that morning."</string>
+    <string name="string_book_1_chapter_1_page_4">"He didn’t see the owls swooping past in broad daylight, though people down in the street did; they pointed and gazed open-mouthed as owl after owl sped overhead. Most of them had never seen an owl even at nighttime. Mr. Dursley, however, had a perfectly normal, owl-free morning. He yelled at five different people. He made several important telephone calls and shouted a bit more. He was in a very good mood until lunchtime, when he thought he’d stretch his legs and walk across the road to buy himself a bun from the bakery.
         He’d forgotten all about the people in cloaks until he passed a group of them next to the baker’s. He eyed them angrily as he passed. He didn’t know why, but they made him uneasy. This bunch were whispering excitedly, too, and he couldn’t see a single collecting tin. It was on his way back past them, clutching a large doughnut in a bag, that he caught a few words of what they were saying.
         “The Potters, that’s right, that’s what I heard —”
         “— yes, their son, Harry —”
@@ -65,14 +65,14 @@
         “A what?”
         “A lemon drop. They’re a kind of Muggle sweet I’m rather fond of.”"</string>
     <string name="string_book_1_chapter_1_page_11">"“No, thank you,” said Professor McGonagall coldly, as though she didn’t think this was the moment for lemon drops. “As I say, even if You-Know-Who has gone —”
-        “My dear Professor, surely a sensible person like yourself can call him by his name? All this ‘You-Know-Who’ nonsense — for eleven years I have been trying to persuade people to call him by his proper name: Voldemort.” Professor McGonagall flinched, but Dum- bledore, who was unsticking two lemon drops, seemed not to no- tice. “It all gets so confusing if we keep saying ‘You-Know-Who.’ I have never seen any reason to be frightened of saying Voldemort’s name.”
-        “I know you haven’t,” said Professor McGonagall, sounding half exasperated, half admiring. “But you’re different. Everyone knows you’re the only one You-Know- oh, all right, Voldemort, was fright- ened of.”
+        “My dear Professor, surely a sensible person like yourself can call him by his name? All this ‘You-Know-Who’ nonsense — for eleven years I have been trying to persuade people to call him by his proper name: Voldemort.” Professor McGonagall flinched, but Dumbledore, who was unsticking two lemon drops, seemed not to no- tice. “It all gets so confusing if we keep saying ‘You-Know-Who.’ I have never seen any reason to be frightened of saying Voldemort’s name.”
+        “I know you haven’t,” said Professor McGonagall, sounding half exasperated, half admiring. “But you’re different. Everyone knows you’re the only one You-Know- oh, all right, Voldemort, was frightened of.”
         “You flatter me,” said Dumbledore calmly. “Voldemort had powers I will never have.”
         “Only because you’re too — well — noble to use them.”
         “It’s lucky it’s dark. I haven’t blushed so much since Madam Pomfrey told me she liked my new earmuffs.”
         Professor McGonagall shot a sharp look at Dumbledore and said, “The owls are nothing next to the rumors that are flying around. You know what everyone’s saying? About why he’s disap- peared? About what finally stopped him?”
-        It seemed that Professor McGonagall had reached the point she was most anxious to discuss, the real reason she had been waiting on a cold, hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a piercing stare as she did now. It was plain that whatever “everyone” was saying, she was not going"</string>
-    <string name="string_book_1_chapter_1_page_12">"to believe it until Dumbledore told her it was true. Dumbledore, however, was choosing another lemon drop and did not answer.
+        It seemed that Professor McGonagall had reached the point she was most anxious to discuss, the real reason she had been waiting on a cold, hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a piercing stare as she did now."</string>
+    <string name="string_book_1_chapter_1_page_12">"It was plain that whatever “everyone” was saying, she was not going to believe it until Dumbledore told her it was true. Dumbledore, however, was choosing another lemon drop and did not answer.
         “What they’re saying,” she pressed on, “is that last night Vol- demort turned up in Godric’s Hollow. He went to find the Pot- ters. The rumor is that Lily and James Potter are — are — that they’re — dead.”
         Dumbledore bowed his head. Professor McGonagall gasped.
         “Lily and James . . . I can’t believe it . . . I didn’t want to believe it . . . Oh, Albus . . .”
@@ -81,8 +81,8 @@
         Dumbledore nodded glumly.
         “It’s — it’s true?” faltered Professor McGonagall. “After all he’s done . . . all the people he’s killed . . . he couldn’t kill a little boy? It’s just astounding . . . of all the things to stop him . . . but how in the name of heaven did Harry survive?”
         “We can only guess,” said Dumbledore. “We may never know.”
-        Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles. Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it. It was a very odd watch. It had twelve hands but no numbers; in- stead, little planets were moving around the edge. It must have"</string>
-    <string name="string_book_1_chapter_1_page_13">"made sense to Dumbledore, though, because he put it back in his pocket and said, “Hagrid’s late. I suppose it was he who told you I’d be here, by the way?”
+        Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles. Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it. It was a very odd watch. It had twelve hands but no numbers; in- stead, little planets were moving around the edge."</string>
+    <string name="string_book_1_chapter_1_page_13">"It must have made sense to Dumbledore, though, because he put it back in his pocket and said, “Hagrid’s late. I suppose it was he who told you I’d be here, by the way?”
         “Yes,” said Professor McGonagall. “And I don’t suppose you’re going to tell me why you’re here, of all places?”
         “I’ve come to bring Harry to his aunt and uncle. They’re the only family he has left now.”
         “You don’t mean — you can’t mean the people who live here?” cried Professor McGonagall, jumping to her feet and pointing at number four. “Dumbledore — you can’t. I’ve been watching them all day. You couldn’t find two people who are less like us. And they’ve got this son — I saw him kicking his mother all the way up the street, screaming for sweets. Harry Potter come and live here!”
@@ -109,8 +109,8 @@
         “Could I — could I say good-bye to him, sir?” asked Hagrid. He bent his great, shaggy head over Harry and gave him what must have been a very scratchy, whiskery kiss. Then, suddenly, Hagrid let out a howl like a wounded dog.
         “Shhh!” hissed Professor McGonagall, “you’ll wake the Mug- gles!”
         “S-s-sorry,” sobbed Hagrid, taking out a large, spotted handker- chief and burying his face in it. “But I c-c-can’t stand it — Lily an’ James dead — an’ poor little Harry off ter live with Muggles —”
-        “Yes, yes, it’s all very sad, but get a grip on yourself, Hagrid, or we’ll be found,” Professor McGonagall whispered, patting Hagrid"</string>
-    <string name="string_book_1_chapter_1_page_16">"gingerly on the arm as Dumbledore stepped over the low garden wall and walked to the front door. He laid Harry gently on the doorstep, took a letter out of his cloak, tucked it inside Harry’s blankets, and then came back to the other two. For a full minute the three of them stood and looked at the little bundle; Hagrid’s shoulders shook, Professor McGonagall blinked furiously, and the twinkling light that usually shone from Dumbledore’s eyes seemed to have gone out.
+        “Yes, yes, it’s all very sad, but get a grip on yourself, Hagrid, or we’ll be found,” Professor McGonagall whispered, patting Hagrid gingerly on the arm as Dumbledore stepped over the low garden wall and walked to the front door."</string>
+    <string name="string_book_1_chapter_1_page_16">"He laid Harry gently on the doorstep, took a letter out of his cloak, tucked it inside Harry’s blankets, and then came back to the other two. For a full minute the three of them stood and looked at the little bundle; Hagrid’s shoulders shook, Professor McGonagall blinked furiously, and the twinkling light that usually shone from Dumbledore’s eyes seemed to have gone out.
         “Well,” said Dumbledore finally, “that’s that. We’ve no business staying here. We may as well go and join the celebrations.”
         “Yeah,” said Hagrid in a very muffled voice, “I’d best get this bike away. G’night, Professor McGonagall — Professor Dumble- dore, sir.”
         Wiping his streaming eyes on his jacket sleeve, Hagrid swung himself onto the motorcycle and kicked the engine into life; with a roar it rose into the air and off into the night.
@@ -120,19 +120,111 @@
     <string name="string_book_1_chapter_1_page_17">"A breeze ruffled the neat hedges of Privet Drive, which lay silent and tidy under the inky sky, the very last place you would expect astonishing things to happen. Harry Potter rolled over inside his blankets without waking up. One small hand closed on the letter beside him and he slept on, not knowing he was special, not know- ing he was famous, not knowing he would be woken in a few hours’ time by Mrs. Dursley’s scream as she opened the front door to put out the milk bottles, nor that he would spend the next few weeks being prodded and pinched by his cousin Dudley. . . . He couldn’t know that at this very moment, people meeting in secret all over the country were holding up their glasses and saying in hushed voices: “To Harry Potter — the boy who lived!”"</string>
 
     <!--Book 1 Chapter 2 Pages-->
-    <string name="string_book_1_chapter_2_page_1">""</string>
-    <string name="string_book_1_chapter_2_page_2">""</string>
-    <string name="string_book_1_chapter_2_page_3">""</string>
-    <string name="string_book_1_chapter_2_page_4">""</string>
-    <string name="string_book_1_chapter_2_page_5">""</string>
-    <string name="string_book_1_chapter_2_page_6">""</string>
-    <string name="string_book_1_chapter_2_page_7">""</string>
-    <string name="string_book_1_chapter_2_page_8">""</string>
-    <string name="string_book_1_chapter_2_page_9">""</string>
-    <string name="string_book_1_chapter_2_page_10">""</string>
-    <string name="string_book_1_chapter_2_page_11">""</string>
-    <string name="string_book_1_chapter_2_page_12">""</string>
-    <string name="string_book_1_chapter_2_page_13">""</string>
+    <string name="string_book_1_chapter_2_page_1">Nearly ten years had passed since the Dursleys had woken up to find their nephew on the front step, but Privet Drive had hardly changed at all. The sun rose on the same tidy front gar- dens and lit up the brass number four on the Dursleys’ front door; it crept into their living room, which was almost exactly the same as it had been on the night when Mr. Dursley had seen that fateful news report about the owls. Only the photographs on the mantel- piece really showed how much time had passed. Ten years ago, there had been lots of pictures of what looked like a large pink beach ball wearing different-colored bonnets — but Dudley Durs- ley was no longer a baby, and now the photographs showed a large blond boy riding his first bicycle, on a carousel at the fair, playing a computer game with his father, being hugged and kissed by his mother. The room held no sign at all that another boy lived in the house, too.</string>
+    <string name="string_book_1_chapter_2_page_2">"Yet Harry Potter was still there, asleep at the moment, but not for long. His Aunt Petunia was awake and it was her shrill voice that made the first noise of the day.
+        “Up! Get up! Now!”
+        Harry woke with a start. His aunt rapped on the door again.
+        “Up!” she screeched. Harry heard her walking toward the kitchen and then the sound of the frying pan being put on the stove. He rolled onto his back and tried to remember the dream he had been having. It had been a good one. There had been a flying motorcycle in it. He had a funny feeling he’d had the same dream before.
+        His aunt was back outside the door.
+        “Are you up yet?” she demanded.
+        “Nearly,” said Harry.
+        “Well, get a move on, I want you to look after the bacon. And don’t you dare let it burn, I want everything perfect on Duddy’s birthday.”
+        Harry groaned.
+        “What did you say?” his aunt snapped through the door.
+        “Nothing, nothing . . .”
+        Dudley’s birthday — how could he have forgotten? Harry got slowly out of bed and started looking for socks. He found a pair under his bed and, after pulling a spider off one of them, put them on. Harry was used to spiders, because the cupboard under the stairs was full of them, and that was where he slept."</string>
+    <string name="string_book_1_chapter_2_page_3">"When he was dressed he went down the hall into the kitchen. The table was almost hidden beneath all Dudley’s birthday pres- ents. It looked as though Dudley had gotten the new computer he wanted, not to mention the second television and the racing bike. Exactly why Dudley wanted a racing bike was a mystery to Harry, as Dudley was very fat and hated exercise — unless of course it in- volved punching somebody. Dudley’s favorite punching bag was Harry, but he couldn’t often catch him. Harry didn’t look it, but he was very fast.
+        Perhaps it had something to do with living in a dark cupboard, but Harry had always been small and skinny for his age. He looked even smaller and skinnier than he really was because all he had to wear were old clothes of Dudley’s, and Dudley was about four times bigger than he was. Harry had a thin face, knobbly knees, black hair, and bright green eyes. He wore round glasses held to- gether with a lot of Scotch tape because of all the times Dudley had punched him on the nose. The only thing Harry liked about his own appearance was a very thin scar on his forehead that was shaped like a bolt of lightning. He had had it as long as he could re- member, and the first question he could ever remember asking his Aunt Petunia was how he had gotten it.
+        “In the car crash when your parents died,” she had said. “And don’t ask questions.”
+        Don’t ask questions — that was the first rule for a quiet life with the Dursleys.
+        Uncle Vernon entered the kitchen as Harry was turning over the bacon.
+        “Comb your hair!” he barked, by way of a morning greeting.
+        About once a week, Uncle Vernon looked over the top of his newspaper and shouted that Harry needed a haircut."</string>
+    <string name="string_book_1_chapter_2_page_4">"Harry must have had more haircuts than the rest of the boys in his class put together, but it made no difference, his hair simply grew that way — all over the place.
+        Harry was frying eggs by the time Dudley arrived in the kitchen with his mother. Dudley looked a lot like Uncle Vernon. He had a large pink face, not much neck, small, watery blue eyes, and thick blond hair that lay smoothly on his thick, fat head. Aunt Petunia often said that Dudley looked like a baby angel — Harry often said that Dudley looked like a pig in a wig.
+        Harry put the plates of egg and bacon on the table, which was difficult as there wasn’t much room. Dudley, meanwhile, was counting his presents. His face fell.
+        “Thirty-six,” he said, looking up at his mother and father. “That’s two less than last year.”
+        “Darling, you haven’t counted Auntie Marge’s present, see, it’s here under this big one from Mommy and Daddy.”
+        “All right, thirty-seven then,” said Dudley, going red in the face. Harry, who could see a huge Dudley tantrum coming on, began wolfing down his bacon as fast as possible in case Dudley turned the table over.
+        Aunt Petunia obviously scented danger, too, because she said quickly, “And we’ll buy you another two presents while we’re out today. How’s that, popkin? Two more presents. Is that all right?”
+        Dudley thought for a moment. It looked like hard work. Finally he said slowly, “So I’ll have thirty . . . thirty . . .”
+        “Thirty-nine, sweetums,” said Aunt Petunia.
+        “Oh.” Dudley sat down heavily and grabbed the nearest parcel. “All right then.”
+        Uncle Vernon chuckled."</string>
+    <string name="string_book_1_chapter_2_page_5">"“Little tyke wants his money’s worth, just like his father. ’Atta boy, Dudley!” He ruffled Dudley’s hair.
+        At that moment the telephone rang and Aunt Petunia went to answer it while Harry and Uncle Vernon watched Dudley unwrap the racing bike, a video camera, a remote control airplane, sixteen new computer games, and a VCR. He was ripping the paper off a gold wristwatch when Aunt Petunia came back from the telephone looking both angry and worried.
+        “Bad news, Vernon,” she said. “Mrs. Figg’s broken her leg. She can’t take him.” She jerked her head in Harry’s direction.
+        Dudley’s mouth fell open in horror, but Harry’s heart gave a leap. Every year on Dudley’s birthday, his parents took him and a friend out for the day, to adventure parks, hamburger restaurants, or the movies. Every year, Harry was left behind with Mrs. Figg, a mad old lady who lived two streets away. Harry hated it there. The whole house smelled of cabbage and Mrs. Figg made him look at photographs of all the cats she’d ever owned.
+        “Now what?” said Aunt Petunia, looking furiously at Harry as though he’d planned this. Harry knew he ought to feel sorry that Mrs. Figg had broken her leg, but it wasn’t easy when he reminded himself it would be a whole year before he had to look at Tibbies, Snowy, Mr. Paws, and Tufty again.
+        “We could phone Marge,” Uncle Vernon suggested.
+        “Don’t be silly, Vernon, she hates the boy.”
+        The Dursleys often spoke about Harry like this, as though he wasn’t there — or rather, as though he was something very nasty that couldn’t understand them, like a slug.
+        “What about what’s-her-name, your friend — Yvonne?”"</string>
+    <string name="string_book_1_chapter_2_page_6">"“On vacation in Majorca,” snapped Aunt Petunia.
+        “You could just leave me here,” Harry put in hopefully (he’d be able to watch what he wanted on television for a change and maybe even have a go on Dudley’s computer).
+        Aunt Petunia looked as though she’d just swallowed a lemon.
+        “And come back and find the house in ruins?” she snarled.
+        “I won’t blow up the house,” said Harry, but they weren’t listening.
+        “I suppose we could take him to the zoo,” said Aunt Petunia slowly, “. . . and leave him in the car. . . .”
+        “That cars new, he’s not sitting in it alone. . . .”
+        Dudley began to cry loudly. In fact, he wasn’t really crying — it had been years since he’d really cried — but he knew that if he screwed up his face and wailed, his mother would give him any- thing he wanted.
+        “Dinky Duddydums, don’t cry, Mummy won’t let him spoil your special day!” she cried, flinging her arms around him.
+        “I . . . don’t . . . want . . . him . . . t-t-to come!” Dudley yelled between huge, pretend sobs. “He always sp-spoils everything!” He shot Harry a nasty grin through the gap in his mothers arms.
+        Just then, the doorbell rang — “Oh, good Lord, they’re here!” said Aunt Petunia frantically — and a moment later, Dudley’s best friend, Piers Polkiss, walked in with his mother. Piers was a scrawny boy with a face like a rat. He was usually the one who held people’s arms behind their backs while Dudley hit them. Dudley stopped pretending to cry at once.
+        Half an hour later, Harry, who couldn’t believe his luck, was sit- ting in the back of the Dursleys’ car with Piers and Dudley, on the way to the zoo for the first time in his life."</string>
+    <string name="string_book_1_chapter_2_page_7">"His aunt and uncle hadn’t been able to think of anything else to do with him, but be- fore they’d left, Uncle Vernon had taken Harry aside.
+        “I’m warning you,” he had said, putting his large purple face right up close to Harry’s, “I’m warning you now, boy — any funny business, anything at all — and you’ll be in that cupboard from now until Christmas.”
+        I’m not going to do anything,” said Harry, “honestly . . .”
+        But Uncle Vernon didn’t believe him. No one ever did.
+        The problem was, strange things often happened around Harry and it was just no good telling the Dursleys he didn’t make them happen.
+        Once, Aunt Petunia, tired of Harry coming back from the bar- bers looking as though he hadn’t been at all, had taken a pair of kitchen scissors and cut his hair so short he was almost bald except for his bangs, which she left “to hide that horrible scar.” Dudley had laughed himself silly at Harry, who spent a sleepless night imagining school the next day, where he was already laughed at for his baggy clothes and taped glasses. Next morning, however, he had gotten up to find his hair exactly as it had been before Aunt Petu- nia had sheared it off. He had been given a week in his cupboard for this, even though he had tried to explain that he couldn’t explain how it had grown back so quickly.
+        Another time, Aunt Petunia had been trying to force him into a revolting old sweater of Dudley’s (brown with orange puff balls). The harder she tried to pull it over his head, the smaller it seemed to become, until finally it might have fitted a hand puppet, but certainly wouldn’t fit Harry."</string>
+    <string name="string_book_1_chapter_2_page_8">"Aunt Petunia had decided it must have shrunk in the wash and, to his great relief, Harry wasn’t pun- ished.
+        On the other hand, he’d gotten into terrible trouble for being found on the roof of the school kitchens. Dudley’s gang had been chasing him as usual when, as much to Harry’s surprise as anyone else’s, there he was sitting on the chimney. The Dursleys had re- ceived a very angry letter from Harry’s headmistress telling them Harry had been climbing school buildings. But all he’d tried to do (as he shouted at Uncle Vernon through the locked door of his cup- board) was jump behind the big trash cans outside the kitchen doors. Harry supposed that the wind must have caught him in mid-jump.
+        But today, nothing was going to go wrong. It was even worth be- ing with Dudley and Piers to be spending the day somewhere that wasn’t school, his cupboard, or Mrs. Figg’s cabbage-smelling living room.
+        While he drove, Uncle Vernon complained to Aunt Petunia. He liked to complain about things: people at work, Harry, the council, Harry, the bank, and Harry were just a few of his favorite subjects. This morning, it was motorcycles.
+        “. . . roaring along like maniacs, the young hoodlums,” he said, as a motorcycle overtook them.
+        “I had a dream about a motorcycle,” said Harry, remembering suddenly. “It was flying.”
+        Uncle Vernon nearly crashed into the car in front. He turned right around in his seat and yelled at Harry, his face like a gigantic beet with a mustache: “MOTORCYCLES DON’T FLY!”
+        Dudley and Piers sniggered."</string>
+    <string name="string_book_1_chapter_2_page_9">"“I know they don’t,” said Harry. “It was only a dream.”
+        But he wished he hadn’t said anything. If there was one thing the Dursleys hated even more than his asking questions, it was his talk- ing about anything acting in a way it shouldn’t, no matter if it was in a dream or even a cartoon — they seemed to think he might get dangerous ideas.
+        It was a very sunny Saturday and the zoo was crowded with fam- ilies. The Dursleys bought Dudley and Piers large chocolate ice creams at the entrance and then, because the smiling lady in the van had asked Harry what he wanted before they could hurry him away, they bought him a cheap lemon ice pop. It wasn’t bad, either, Harry thought, licking it as they watched a gorilla scratching its head who looked remarkably like Dudley, except that it wasn’t blond.
+        Harry had the best morning he’d had in a long time. He was careful to walk a little way apart from the Dursleys so that Dudley and Piers, who were starting to get bored with the animals by lunchtime, wouldn’t fall back on their favorite hobby of hitting him. They ate in the zoo restaurant, and when Dudley had a tantrum because his knickerbocker glory didn’t have enough ice cream on top, Uncle Vernon bought him another one and Harry was allowed to finish the first.
+        Harry felt, afterward, that he should have known it was all too good to last.
+        After lunch they went to the reptile house. It was cool and dark in there, with lit windows all along the walls. Behind the glass, all sorts of lizards and snakes were crawling and slithering over bits of wood and stone."</string>
+    <string name="string_book_1_chapter_2_page_10">"Dudley and Piers wanted to see huge, poisonous cobras and thick, man-crushing pythons. Dudley quickly found the largest snake in the place. It could have wrapped its body twice around Uncle Vernon’s car and crushed it into a trash can — but at the moment it didn’t look in the mood. In fact, it was fast asleep.
+        Dudley stood with his nose pressed against the glass, staring at the glistening brown coils.
+        “Make it move,” he whined at his father. Uncle Vernon tapped on the glass, but the snake didn’t budge.
+        “Do it again,” Dudley ordered. Uncle Vernon rapped the glass smartly with his knuckles, but the snake just snoozed on.
+        “This is boring,” Dudley moaned. He shuffled away.
+        Harry moved in front of the tank and looked intently at the snake. He wouldn’t have been surprised if it had died of boredom itself — no company except stupid people drumming their fingers on the glass trying to disturb it all day long. It was worse than hav- ing a cupboard as a bedroom, where the only visitor was Aunt Petu- nia hammering on the door to wake you up; at least he got to visit the rest of the house.
+        The snake suddenly opened its beady eyes. Slowly, very slowly, it raised its head until its eyes were on a level with Harry’s.
+        It winked.
+        Harry stared. Then he looked quickly around to see if anyone was watching. They weren’t. He looked back at the snake and winked, too.
+        The snake jerked its head toward Uncle Vernon and Dudley, then raised its eyes to the ceiling. It gave Harry a look that said quite plainly:
+        “I get that all the time.”"</string>
+    <string name="string_book_1_chapter_2_page_11">"“I know,” Harry murmured through the glass, though he wasn’t sure the snake could hear him. “It must be really annoying.”
+        The snake nodded vigorously.
+        “Where do you come from, anyway?” Harry asked.
+        The snake jabbed its tail at a little sign next to the glass. Harry peered at it.
+        Boa Constrictor, Brazil.
+        “Was it nice there?”
+        The boa constrictor jabbed its tail at the sign again and Harry read on: This specimen was bred in the zoo. “Oh, I see — so you’ve never been to Brazil?”
+        As the snake shook its head, a deafening shout behind Harry made both of them jump. “DUDLEY! MR. DURSLEY! COME AND LOOK AT THIS SNAKE! YOU WON’T BELIEVE WHAT IT’S DOING!”
+        Dudley came waddling toward them as fast as he could.
+        “Out of the way, you,” he said, punching Harry in the ribs. Caught by surprise, Harry fell hard on the concrete floor. What came next happened so fast no one saw how it happened — one second, Piers and Dudley were leaning right up close to the glass, the next, they had leapt back with howls of horror.
+        Harry sat up and gasped; the glass front of the boa constrictor’s tank had vanished. The great snake was uncoiling itself rapidly, slithering out onto the floor. People throughout the reptile house screamed and started running for the exits.
+        As the snake slid swiftly past him, Harry could have sworn a low, hissing voice said, “Brazil, here I come. . . . Thanksss, amigo.”
+        The keeper of the reptile house was in shock."</string>
+    <string name="string_book_1_chapter_2_page_12">"“But the glass,” he kept saying, “where did the glass go?”
+        The zoo director himself made Aunt Petunia a cup of strong, sweet tea while he apologized over and over again. Piers and Dud- ley could only gibber. As far as Harry had seen, the snake hadn’t done anything except snap playfully at their heels as it passed, but by the time they were all back in Uncle Vernon’s car, Dudley was telling them how it had nearly bitten off his leg, while Piers was swearing it had tried to squeeze him to death. But worst of all, for Harry at least, was Piers calming down enough to say, “Harry was talking to it, weren’t you, Harry?”
+        Uncle Vernon waited until Piers was safely out of the house be- fore starting on Harry. He was so angry he could hardly speak. He managed to say, “Go — cupboard — stay — no meals,” before he collapsed into a chair, and Aunt Petunia had to run and get him a large brandy.
+        Harry lay in his dark cupboard much later, wishing he had a watch. He didn’t know what time it was and he couldn’t be sure the Durs- leys were asleep yet. Until they were, he couldn’t risk sneaking to the kitchen for some food.
+        He’d lived with the Dursleys almost ten years, ten miserable years, as long as he could remember, ever since he’d been a baby and his parents had died in that car crash. He couldn’t remember being in the car when his parents had died. Sometimes, when he strained his memory during long hours in his cupboard, he came up with a strange vision: a blinding flash of green light and a burn- ing pain on his forehead. This, he supposed, was the crash, though he couldn’t imagine where all the green light came from."</string>
+    <string name="string_book_1_chapter_2_page_13">"He couldn’t remember his parents at all. His aunt and uncle never spoke about them, and of course he was forbidden to ask questions. There were no photographs of them in the house.
+        When he had been younger, Harry had dreamed and dreamed of some unknown relation coming to take him away, but it had never happened; the Dursleys were his only family. Yet sometimes he thought (or maybe hoped) that strangers in the street seemed to know him. Very strange strangers they were, too. A tiny man in a violet top hat had bowed to him once while out shopping with Aunt Petunia and Dudley. After asking Harry furiously if he knew the man, Aunt Petunia had rushed them out of the shop without buying anything. A wild-looking old woman dressed all in green had waved merrily at him once on a bus. A bald man in a very long purple coat had actually shaken his hand in the street the other day and then walked away without a word. The weirdest thing about all these people was the way they seemed to vanish the second Harry tried to get a closer look.
+        At school, Harry had no one. Everybody knew that Dudley’s gang hated that odd Harry Potter in his baggy old clothes and bro- ken glasses, and nobody liked to disagree with Dudley’s gang."</string>
 
     <!--Book 1 Chapter 3 Pages-->
     <string name="string_book_1_chapter_3_page_1">""</string>
