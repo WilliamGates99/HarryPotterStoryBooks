@@ -40,6 +40,8 @@ public class PagesActivity extends AppCompatActivity {
 
     private MaterialCardView filterPanelCV;
 
+    private PagesAdapter pagesAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -133,7 +135,7 @@ public class PagesActivity extends AppCompatActivity {
     private void pagesRecyclerView() {
         List<DataItemPages> dataItemPagesList;
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
-        PagesAdapter pagesAdapter;
+//        PagesAdapter pagesAdapter;
 
         //TODO Complete the switch
         switch (itemChapters.getId()) {
@@ -208,14 +210,14 @@ public class PagesActivity extends AppCompatActivity {
 
     public void fontIncreaseOnClick(View view) {
         //TODO Save via SharedPreference
-        TextView textTV = findViewById(R.id.tv_list_pages_text);
-        textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, textTV.getTextSize() + 5.0f);
+        PagesAdapter.TEXT_SIZE_FLAG = 1;
+        pagesAdapter.notifyDataSetChanged();
     }
 
     public void fontDecreaseOnClick(View view) {
         //TODO Save via SharedPreference
-        TextView textTV = findViewById(R.id.tv_list_pages_text);
-        textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, textTV.getTextSize() - 5.0f);
+        PagesAdapter.TEXT_SIZE_FLAG = -1;
+        pagesAdapter.notifyDataSetChanged();
     }
 
     public void modeDarkOnClick(View view) {
