@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.dataProviders.BooksDataProvider;
@@ -62,10 +63,8 @@ public class BooksActivity extends AppCompatActivity {
         mDataSource.open();
         mDataSource.seedDataBase(ChaptersDataProvider.dataItemChaptersList);
 
-        /*TODO Edit
         ImageView continueIV = findViewById(R.id.iv_books_continue);
         continueIV.setClipToOutline(true);
-         */
     }
 
     private void booksRecyclerView() {
