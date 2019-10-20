@@ -40,7 +40,7 @@ public class PagesAdapter extends RecyclerView.Adapter<PagesAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final DataItemPages item = mItems.get(position);
 
-        holder.numberTV.setText(item.getNumber());
+        holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.textTV.setText(item.getText());
 
         float currentSize = holder.textTV.getTextSize();

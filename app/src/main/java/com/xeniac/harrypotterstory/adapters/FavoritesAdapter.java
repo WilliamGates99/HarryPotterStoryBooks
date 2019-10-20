@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.xeniac.harrypotterstory.PagesActivity;
 import com.xeniac.harrypotterstory.R;
-import com.xeniac.harrypotterstory.database.DataSource;
+import com.xeniac.harrypotterstory.database.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.util.List;
@@ -23,12 +23,12 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
 
     private List<DataItemChapters> mItems;
     private Context mContext;
-    private DataSource mDataSource;
+    private ChaptersDataSource mDataSource;
 
     public FavoritesAdapter(Context context, List<DataItemChapters> items) {
         this.mContext = context;
         this.mItems = items;
-        mDataSource = new DataSource(mContext);
+        mDataSource = new ChaptersDataSource(mContext);
         mDataSource.open();
     }
 

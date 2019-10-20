@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.xeniac.harrypotterstory.adapters.FavoritesAdapter;
-import com.xeniac.harrypotterstory.database.DataSource;
+import com.xeniac.harrypotterstory.database.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.Objects;
 
 public class FavoritesActivity extends AppCompatActivity {
 
-    private DataSource mDataSource;
+    private ChaptersDataSource mDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class FavoritesActivity extends AppCompatActivity {
     }
 
     private void favoritesInitializer() {
-        mDataSource = new DataSource(this);
+        mDataSource = new ChaptersDataSource(this);
         mDataSource.open();
         favoritesRecyclerView();
     }

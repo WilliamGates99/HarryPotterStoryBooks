@@ -18,9 +18,8 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.card.MaterialCardView;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.PagesAdapter;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_1;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_2;
-import com.xeniac.harrypotterstory.database.DataSource;
+import com.xeniac.harrypotterstory.database.ChaptersDataSource;
+import com.xeniac.harrypotterstory.database.PagesDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 import com.xeniac.harrypotterstory.models.DataItemPages;
 
@@ -31,7 +30,9 @@ import java.util.Objects;
 
 public class PagesActivity extends AppCompatActivity {
 
-    private DataSource mDataSource;
+
+    private PagesDataSource pagesDataSource;
+    private ChaptersDataSource chaptersDataSource;
     private DataItemChapters itemChapters;
 
     private ImageButton bookmarkGrayIB, bookmarkBlueIB;
@@ -66,13 +67,15 @@ public class PagesActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mDataSource.open();
+        chaptersDataSource.open();
+        pagesDataSource.open();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mDataSource.close();
+        chaptersDataSource.close();
+        pagesDataSource.close();
     }
 
     @Override
@@ -87,8 +90,11 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void pagesInitializer() {
-        mDataSource = new DataSource(this);
-        mDataSource.open();
+        chaptersDataSource = new ChaptersDataSource(this);
+        chaptersDataSource.open();
+
+        pagesDataSource = new PagesDataSource(this);
+        pagesDataSource.open();
 
         ImageView coverIV = findViewById(R.id.iv_pages_cover);
         TextView titleTV = findViewById(R.id.tv_pages_chapter_title);
@@ -117,7 +123,7 @@ public class PagesActivity extends AppCompatActivity {
         }
 
         titleTV.setText(itemChapters.getTitle());
-        numberTV.setText(itemChapters.getNumber());
+        numberTV.setText(String.valueOf(itemChapters.getNumber()));
 
         try {
             String imageFile = itemChapters.getCover();
@@ -135,21 +141,11 @@ public class PagesActivity extends AppCompatActivity {
     private void pagesRecyclerView() {
         List<DataItemPages> dataItemPagesList;
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
-//        PagesAdapter pagesAdapter;
 
-        //TODO Complete the switch
-        switch (itemChapters.getId()) {
-            case "book_1_chapter_1":
-                dataItemPagesList = PagesDataProviderBook1_1.dataItemPagesList;
-                pagesAdapter = new PagesAdapter(this, dataItemPagesList);
-                pagesRV.setAdapter(pagesAdapter);
-                break;
-            case "book_1_chapter_2":
-                dataItemPagesList = PagesDataProviderBook1_2.dataItemPagesList;
-                pagesAdapter = new PagesAdapter(this, dataItemPagesList);
-                pagesRV.setAdapter(pagesAdapter);
-                break;
-        }
+        dataItemPagesList = pagesDataSource.getAllItems(itemChapters.getId());
+        pagesAdapter = new PagesAdapter(this, dataItemPagesList);
+        pagesRV.setAdapter(pagesAdapter);
+
     }
 
     private String storeURLInitializer() {
@@ -182,14 +178,14 @@ public class PagesActivity extends AppCompatActivity {
 
     public void bookmarkGrayOnClick(View view) {
         itemChapters.setFavorite(true);
-        mDataSource.updateFavorite(itemChapters);
+        chaptersDataSource.updateFavorite(itemChapters);
         bookmarkBlueIB.setVisibility(View.VISIBLE);
         bookmarkGrayIB.setVisibility(View.GONE);
     }
 
     public void bookmarkBlueOnClick(View view) {
         itemChapters.setFavorite(false);
-        mDataSource.updateFavorite(itemChapters);
+        chaptersDataSource.updateFavorite(itemChapters);
         bookmarkBlueIB.setVisibility(View.GONE);
         bookmarkGrayIB.setVisibility(View.VISIBLE);
     }

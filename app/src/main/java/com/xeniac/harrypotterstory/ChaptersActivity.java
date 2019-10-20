@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
-import com.xeniac.harrypotterstory.database.DataSource;
+import com.xeniac.harrypotterstory.database.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemBooks;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
@@ -22,7 +22,7 @@ import java.util.Objects;
 
 public class ChaptersActivity extends AppCompatActivity {
 
-    private DataSource mDataSource;
+    private ChaptersDataSource chaptersDataSource;
     private DataItemBooks itemBooks;
 
     @Override
@@ -46,19 +46,19 @@ public class ChaptersActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mDataSource.open();
+        chaptersDataSource.open();
         chaptersRecyclerView();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mDataSource.close();
+        chaptersDataSource.close();
     }
 
     private void chaptersInitializer() {
-        mDataSource = new DataSource(this);
-        mDataSource.open();
+        chaptersDataSource = new ChaptersDataSource(this);
+        chaptersDataSource.open();
 
         setTitle(itemBooks.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
@@ -78,7 +78,7 @@ public class ChaptersActivity extends AppCompatActivity {
 
     private void chaptersRecyclerView() {
         List<DataItemChapters> dataItemChaptersList =
-                mDataSource.getAllItems(itemBooks.getTitle(), false);
+                chaptersDataSource.getAllItems(itemBooks.getTitle(), false);
 
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
         chaptersRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));

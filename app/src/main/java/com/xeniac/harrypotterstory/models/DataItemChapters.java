@@ -9,9 +9,10 @@ import com.xeniac.harrypotterstory.database.ChaptersTable;
 public class DataItemChapters implements Parcelable {
 
     private String id;
-    private String number;
+    private int number;
     private int title;
-    private String page;
+    private int pages;
+    private int readPages;
     private int bookTitle;
     private String cover;
     private boolean favorite;
@@ -19,12 +20,13 @@ public class DataItemChapters implements Parcelable {
     public DataItemChapters() {
     }
 
-    public DataItemChapters(String id, String number, int title, String page,
-                            int bookTitle, String cover, boolean favorite) {
+    public DataItemChapters(String id, int number, int title, int pages,
+                            int readPages, int bookTitle, String cover, boolean favorite) {
         this.id = id;
         this.number = number;
         this.title = title;
-        this.page = page;
+        this.pages = pages;
+        this.readPages = readPages;
         this.bookTitle = bookTitle;
         this.cover = cover;
         this.favorite = favorite;
@@ -38,11 +40,11 @@ public class DataItemChapters implements Parcelable {
         this.id = id;
     }
 
-    public String getNumber() {
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
@@ -54,12 +56,20 @@ public class DataItemChapters implements Parcelable {
         this.title = title;
     }
 
-    public String getPage() {
-        return page;
+    public int getPages() {
+        return pages;
     }
 
-    public void setPage(String page) {
-        this.page = page;
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    public int getReadPages() {
+        return readPages;
+    }
+
+    public void setReadPages(int readPages) {
+        this.readPages = readPages;
     }
 
     public int getBookTitle() {
@@ -87,12 +97,13 @@ public class DataItemChapters implements Parcelable {
     }
 
     public ContentValues toValues() {
-        ContentValues values = new ContentValues(7);
+        ContentValues values = new ContentValues(8);
 
         values.put(ChaptersTable.COLUMN_ID, id);
         values.put(ChaptersTable.COLUMN_NUMBER, number);
         values.put(ChaptersTable.COLUMN_TITLE, title);
-        values.put(ChaptersTable.COLUMN_PAGE, page);
+        values.put(ChaptersTable.COLUMN_PAGES, pages);
+        values.put(ChaptersTable.COLUMN_READ_PAGES, readPages);
         values.put(ChaptersTable.COLUMN_BOOK_TITLE, bookTitle);
         values.put(ChaptersTable.COLUMN_COVER, cover);
         values.put(ChaptersTable.COLUMN_FAVORITE, favorite);
@@ -104,9 +115,10 @@ public class DataItemChapters implements Parcelable {
     public String toString() {
         return "DataItemChapters{" +
                 "id='" + id + '\'' +
-                ", number='" + number + '\'' +
+                ", number=" + number +
                 ", title=" + title +
-                ", page='" + page + '\'' +
+                ", pages=" + pages +
+                ", readPages=" + readPages +
                 ", bookTitle=" + bookTitle +
                 ", cover='" + cover + '\'' +
                 ", favorite=" + favorite +
@@ -121,19 +133,21 @@ public class DataItemChapters implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.id);
-        dest.writeString(this.number);
+        dest.writeInt(this.number);
         dest.writeInt(this.title);
-        dest.writeString(this.page);
+        dest.writeInt(this.pages);
+        dest.writeInt(this.readPages);
         dest.writeInt(this.bookTitle);
         dest.writeString(this.cover);
         dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
     }
 
-    private DataItemChapters(Parcel in) {
+    protected DataItemChapters(Parcel in) {
         this.id = in.readString();
-        this.number = in.readString();
+        this.number = in.readInt();
         this.title = in.readInt();
-        this.page = in.readString();
+        this.pages = in.readInt();
+        this.readPages = in.readInt();
         this.bookTitle = in.readInt();
         this.cover = in.readString();
         this.favorite = in.readByte() != 0;

@@ -12,12 +12,12 @@ import com.xeniac.harrypotterstory.models.DataItemChapters;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataSource {
+public class ChaptersDataSource {
 
     private SQLiteDatabase mDatabase;
     private SQLiteOpenHelper mDbOpenHelper;
 
-    public DataSource(Context context) {
+    public ChaptersDataSource(Context context) {
         mDbOpenHelper = new DBOpenHelper(context);
         mDatabase = mDbOpenHelper.getWritableDatabase();
     }
@@ -49,10 +49,10 @@ public class DataSource {
     }
 
     private boolean chapterExist(String chapterId) {
-        String[] quantitiesId = {chapterId};
+        String[] chaptersId = {chapterId};
         Cursor cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS, ChaptersTable.ALL_IDS,
-                ChaptersTable.COLUMN_ID + "=?", quantitiesId, null,
-                null, ChaptersTable.COLUMN_TITLE);
+                ChaptersTable.COLUMN_ID + "=?", chaptersId,
+                null, null, null);
 
         boolean exists = (cursor.getCount() > 0);
         cursor.close();
@@ -79,9 +79,10 @@ public class DataSource {
         while (cursor.moveToNext()) {
             DataItemChapters item = new DataItemChapters();
             item.setId(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
-            item.setNumber(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_NUMBER)));
+            item.setNumber(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_NUMBER)));
             item.setTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TITLE)));
-            item.setPage(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_PAGE)));
+            item.setPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_PAGES)));
+            item.setReadPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READ_PAGES)));
             item.setBookTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_TITLE)));
             item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
@@ -99,7 +100,8 @@ public class DataSource {
         values.put(ChaptersTable.COLUMN_ID, item.getId());
         values.put(ChaptersTable.COLUMN_NUMBER, item.getNumber());
         values.put(ChaptersTable.COLUMN_TITLE, item.getTitle());
-        values.put(ChaptersTable.COLUMN_PAGE, item.getPage());
+        values.put(ChaptersTable.COLUMN_PAGES, item.getPages());
+        values.put(ChaptersTable.COLUMN_READ_PAGES, item.getReadPages());
         values.put(ChaptersTable.COLUMN_BOOK_TITLE, item.getBookTitle());
         values.put(ChaptersTable.COLUMN_COVER, item.getCover());
         values.put(ChaptersTable.COLUMN_FAVORITE, item.isFavorite());
