@@ -139,13 +139,10 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void pagesRecyclerView() {
-        List<DataItemPages> dataItemPagesList;
+        List<DataItemPages> dataItemPagesList = pagesDataSource.getAllItems(itemChapters.getId());
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
-
-        dataItemPagesList = pagesDataSource.getAllItems(itemChapters.getId());
         pagesAdapter = new PagesAdapter(this, dataItemPagesList);
         pagesRV.setAdapter(pagesAdapter);
-
     }
 
     private String storeURLInitializer() {
