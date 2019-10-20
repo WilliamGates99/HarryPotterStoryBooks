@@ -143,6 +143,8 @@ public class PagesActivity extends AppCompatActivity {
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
         pagesAdapter = new PagesAdapter(this, dataItemPagesList);
         pagesRV.setAdapter(pagesAdapter);
+
+        //TODO Change Page Read on scroll changed
     }
 
     private String storeURLInitializer() {

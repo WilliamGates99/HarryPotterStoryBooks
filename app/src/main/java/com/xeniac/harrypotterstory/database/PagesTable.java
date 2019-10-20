@@ -9,7 +9,8 @@ public class PagesTable {
     public static final String COLUMN_READ = "read";
 
     static final String[] ALL_IDS = {COLUMN_ID};
-    static final String[] ALL_COLUMNS = {COLUMN_ID, COLUMN_NUMBER, COLUMN_TEXT, COLUMN_READ};
+    static final String[] ALL_COLUMNS = {COLUMN_ID, COLUMN_NUMBER, COLUMN_TEXT,
+            COLUMN_CHAPTER_ID, COLUMN_READ};
 
     static final String SQL_CREATE =
             "CREATE TABLE " + TABLE_PAGES + "(" +

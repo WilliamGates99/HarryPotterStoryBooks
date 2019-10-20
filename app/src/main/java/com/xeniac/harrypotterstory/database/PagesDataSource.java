@@ -79,6 +79,7 @@ public class PagesDataSource {
             item.setId(cursor.getString(cursor.getColumnIndex(PagesTable.COLUMN_ID)));
             item.setNumber(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_NUMBER)));
             item.setText(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_TEXT)));
+            item.setChapterId(cursor.getString(cursor.getColumnIndex(PagesTable.COLUMN_CHAPTER_ID)));
             item.setRead(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_READ)) > 0);
             dataItemPagesList.add(item);
         }
@@ -87,13 +88,14 @@ public class PagesDataSource {
         return dataItemPagesList;
     }
 
-    public void updateFavorite(DataItemPages item) {
+    public void updateRead(DataItemPages item) {
         String[] ids = {item.getId()};
 
         ContentValues values = new ContentValues();
         values.put(PagesTable.COLUMN_ID, item.getId());
         values.put(PagesTable.COLUMN_NUMBER, item.getNumber());
         values.put(PagesTable.COLUMN_TEXT, item.getText());
+        values.put(PagesTable.COLUMN_CHAPTER_ID, item.getChapterId());
         values.put(PagesTable.COLUMN_READ, item.isRead());
 
         mDatabase.update(ChaptersTable.TABLE_CHAPTERS, values,
