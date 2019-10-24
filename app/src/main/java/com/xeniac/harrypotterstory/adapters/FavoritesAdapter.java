@@ -56,7 +56,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
 
         holder.bookmarkBlueIB.setOnClickListener(v -> {
             item.setFavorite(false);
-            chaptersDataSource.updateFavorite(item);
+            chaptersDataSource.updateChapters(item);
             try {
                 mItems.remove(position);
                 notifyItemRemoved(position);

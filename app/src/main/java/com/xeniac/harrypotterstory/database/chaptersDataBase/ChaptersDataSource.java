@@ -122,43 +122,7 @@ public class ChaptersDataSource {
         return item;
     }
 
-    public void updateFavorite(DataItemChapters item) {
-        String[] ids = {item.getId()};
-
-        ContentValues values = new ContentValues();
-        values.put(ChaptersTable.COLUMN_ID, item.getId());
-        values.put(ChaptersTable.COLUMN_NUMBER, item.getNumber());
-        values.put(ChaptersTable.COLUMN_TITLE, item.getTitle());
-        values.put(ChaptersTable.COLUMN_TOTAL_PAGES, item.getTotalPages());
-        values.put(ChaptersTable.COLUMN_READ_PAGES, item.getReadPages());
-        values.put(ChaptersTable.COLUMN_BOOK_ID, item.getBookId());
-        values.put(ChaptersTable.COLUMN_COVER, item.getCover());
-        values.put(ChaptersTable.COLUMN_FAVORITE, item.isFavorite());
-        values.put(ChaptersTable.COLUMN_READING, item.isReading());
-
-        mDatabase.update(ChaptersTable.TABLE_CHAPTERS, values,
-                ChaptersTable.COLUMN_ID + "=?", ids);
-    }
-
-    public void updateReading(DataItemChapters item) {
-        String[] ids = {item.getId()};
-
-        ContentValues values = new ContentValues();
-        values.put(ChaptersTable.COLUMN_ID, item.getId());
-        values.put(ChaptersTable.COLUMN_NUMBER, item.getNumber());
-        values.put(ChaptersTable.COLUMN_TITLE, item.getTitle());
-        values.put(ChaptersTable.COLUMN_TOTAL_PAGES, item.getTotalPages());
-        values.put(ChaptersTable.COLUMN_READ_PAGES, item.getReadPages());
-        values.put(ChaptersTable.COLUMN_BOOK_ID, item.getBookId());
-        values.put(ChaptersTable.COLUMN_COVER, item.getCover());
-        values.put(ChaptersTable.COLUMN_FAVORITE, item.isFavorite());
-        values.put(ChaptersTable.COLUMN_READING, item.isReading());
-
-        mDatabase.update(ChaptersTable.TABLE_CHAPTERS, values,
-                ChaptersTable.COLUMN_ID + "=?", ids);
-    }
-
-    public void updateReadPages(DataItemChapters item) {
+    public void updateChapters(DataItemChapters item) {
         String[] ids = {item.getId()};
 
         ContentValues values = new ContentValues();

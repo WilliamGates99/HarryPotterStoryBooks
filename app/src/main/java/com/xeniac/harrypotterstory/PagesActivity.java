@@ -185,14 +185,14 @@ public class PagesActivity extends AppCompatActivity {
 
     public void bookmarkGrayOnClick(View view) {
         itemChapters.setFavorite(true);
-        chaptersDataSource.updateFavorite(itemChapters);
+        chaptersDataSource.updateChapters(itemChapters);
         bookmarkBlueIB.setVisibility(View.VISIBLE);
         bookmarkGrayIB.setVisibility(View.GONE);
     }
 
     public void bookmarkBlueOnClick(View view) {
         itemChapters.setFavorite(false);
-        chaptersDataSource.updateFavorite(itemChapters);
+        chaptersDataSource.updateChapters(itemChapters);
         bookmarkBlueIB.setVisibility(View.GONE);
         bookmarkGrayIB.setVisibility(View.VISIBLE);
     }

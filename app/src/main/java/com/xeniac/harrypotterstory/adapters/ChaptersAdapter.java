@@ -62,14 +62,14 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
 
         holder.bookmarkBlueIB.setOnClickListener(v -> {
             item.setFavorite(false);
-            chaptersDataSource.updateFavorite(item);
+            chaptersDataSource.updateChapters(item);
             holder.bookmarkBlueIB.setVisibility(View.GONE);
             holder.bookmarkGrayIB.setVisibility(View.VISIBLE);
         });
 
         holder.bookmarkGrayIB.setOnClickListener(v -> {
             item.setFavorite(true);
-            chaptersDataSource.updateFavorite(item);
+            chaptersDataSource.updateChapters(item);
             holder.bookmarkBlueIB.setVisibility(View.VISIBLE);
             holder.bookmarkGrayIB.setVisibility(View.GONE);
         });
@@ -78,11 +78,11 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
             for (DataItemChapters itemChapters :
                     chaptersDataSource.getAllItems(null, false)) {
                 itemChapters.setReading(false);
-                chaptersDataSource.updateReading(itemChapters);
+                chaptersDataSource.updateChapters(itemChapters);
             }
 
             item.setReading(true);
-            chaptersDataSource.updateReading(item);
+            chaptersDataSource.updateChapters(item);
             BooksActivity.NOW_READING_ID = item.getId();
             Intent intent = new Intent(mContext, PagesActivity.class);
             intent.putExtra(ITEM_KEY, item);

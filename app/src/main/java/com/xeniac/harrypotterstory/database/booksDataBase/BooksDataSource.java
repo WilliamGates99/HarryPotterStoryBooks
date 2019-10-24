@@ -110,19 +110,4 @@ public class BooksDataSource {
         cursor.close();
         return bookCover;
     }
-
-//    public void updateFavorite(DataItemBooks item) {
-//        String[] ids = {item.getId()};
-//
-//        ContentValues values = new ContentValues();
-//        values.put(BooksTable.COLUMN_ID, item.getId());
-//        values.put(BooksTable.COLUMN_TITLE, item.getTitle());
-//        values.put(BooksTable.COLUMN_GIST, item.getGist());
-//        values.put(BooksTable.COLUMN_COVER, item.getCover());
-//        values.put(BooksTable.COLUMN_TOTAL_PAGES, item.getTotalPages());
-//        values.put(BooksTable.COLUMN_READ_PAGES, item.getReadPages());
-//
-//        mDatabase.update(BooksTable.TABLE_BOOKS, values,
-//                BooksTable.COLUMN_ID + "=?", ids);
-//    }
 }

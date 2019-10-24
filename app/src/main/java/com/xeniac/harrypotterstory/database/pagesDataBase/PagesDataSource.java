@@ -90,7 +90,7 @@ public class PagesDataSource {
         return dataItemPagesList;
     }
 
-    public void updateRead(DataItemPages item) {
+    public void updatePages(DataItemPages item) {
         String[] ids = {item.getId()};
 
         ContentValues values = new ContentValues();
