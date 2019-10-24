@@ -1,7 +1,10 @@
 package com.xeniac.harrypotterstory.models;
 
+import android.content.ContentValues;
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import com.xeniac.harrypotterstory.database.booksDataBase.BooksTable;
 
 public class DataItemBooks implements Parcelable {
 
@@ -9,15 +12,20 @@ public class DataItemBooks implements Parcelable {
     private int title;
     private int gist;
     private String cover;
+    private int totalPages;
+    private int readPages;
 
     public DataItemBooks() {
     }
 
-    public DataItemBooks(String id, int title, int gist, String cover) {
+    public DataItemBooks(String id, int title, int gist, String cover,
+                         int totalPages, int readPages) {
         this.id = id;
         this.title = title;
         this.gist = gist;
         this.cover = cover;
+        this.totalPages = totalPages;
+        this.readPages = readPages;
     }
 
     public String getId() {
@@ -52,6 +60,35 @@ public class DataItemBooks implements Parcelable {
         this.cover = cover;
     }
 
+    public int getTotalPages() {
+        return totalPages;
+    }
+
+    public void setTotalPages(int totalPages) {
+        this.totalPages = totalPages;
+    }
+
+    public int getReadPages() {
+        return readPages;
+    }
+
+    public void setReadPages(int readPages) {
+        this.readPages = readPages;
+    }
+
+    public ContentValues toValues() {
+        ContentValues values = new ContentValues(6);
+
+        values.put(BooksTable.COLUMN_ID, id);
+        values.put(BooksTable.COLUMN_TITLE, title);
+        values.put(BooksTable.COLUMN_GIST, gist);
+        values.put(BooksTable.COLUMN_COVER, cover);
+        values.put(BooksTable.COLUMN_TOTAL_PAGES, totalPages);
+        values.put(BooksTable.COLUMN_READ_PAGES, readPages);
+
+        return values;
+    }
+
     @Override
     public String toString() {
         return "DataItemBooks{" +
@@ -59,6 +96,8 @@ public class DataItemBooks implements Parcelable {
                 ", title=" + title +
                 ", gist=" + gist +
                 ", cover='" + cover + '\'' +
+                ", totalPages=" + totalPages +
+                ", readPages=" + readPages +
                 '}';
     }
 
@@ -73,13 +112,17 @@ public class DataItemBooks implements Parcelable {
         dest.writeInt(this.title);
         dest.writeInt(this.gist);
         dest.writeString(this.cover);
+        dest.writeInt(this.totalPages);
+        dest.writeInt(this.readPages);
     }
 
-    private DataItemBooks(Parcel in) {
+    protected DataItemBooks(Parcel in) {
         this.id = in.readString();
         this.title = in.readInt();
         this.gist = in.readInt();
         this.cover = in.readString();
+        this.totalPages = in.readInt();
+        this.readPages = in.readInt();
     }
 
     public static final Creator<DataItemBooks> CREATOR = new Creator<DataItemBooks>() {

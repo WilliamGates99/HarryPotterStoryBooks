@@ -1,4 +1,4 @@
-package com.xeniac.harrypotterstory.database;
+package com.xeniac.harrypotterstory.database.pagesDataBase;
 
 public class PagesTable {
     static final String TABLE_PAGES = "pages";
@@ -12,7 +12,7 @@ public class PagesTable {
     static final String[] ALL_COLUMNS = {COLUMN_ID, COLUMN_NUMBER, COLUMN_TEXT,
             COLUMN_CHAPTER_ID, COLUMN_READ};
 
-    static final String SQL_CREATE =
+    public static final String SQL_CREATE =
             "CREATE TABLE " + TABLE_PAGES + "(" +
                     COLUMN_ID + " TEXT PRIMARY KEY," +
                     COLUMN_NUMBER + " INTEGER," +

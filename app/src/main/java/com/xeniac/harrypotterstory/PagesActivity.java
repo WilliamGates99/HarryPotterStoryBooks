@@ -18,8 +18,9 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.card.MaterialCardView;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.PagesAdapter;
-import com.xeniac.harrypotterstory.database.ChaptersDataSource;
-import com.xeniac.harrypotterstory.database.PagesDataSource;
+import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
+import com.xeniac.harrypotterstory.database.pagesDataBase.PagesDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 import com.xeniac.harrypotterstory.models.DataItemPages;
 
@@ -30,7 +31,7 @@ import java.util.Objects;
 
 public class PagesActivity extends AppCompatActivity {
 
-
+    private BooksDataSource booksDataSource;
     private PagesDataSource pagesDataSource;
     private ChaptersDataSource chaptersDataSource;
     private DataItemChapters itemChapters;
@@ -67,6 +68,7 @@ public class PagesActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        booksDataSource.open();
         chaptersDataSource.open();
         pagesDataSource.open();
     }
@@ -74,6 +76,7 @@ public class PagesActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        booksDataSource.close();
         chaptersDataSource.close();
         pagesDataSource.close();
     }
@@ -90,6 +93,9 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void pagesInitializer() {
+        booksDataSource = new BooksDataSource(this);
+        booksDataSource.open();
+
         chaptersDataSource = new ChaptersDataSource(this);
         chaptersDataSource.open();
 
@@ -145,6 +151,7 @@ public class PagesActivity extends AppCompatActivity {
         pagesRV.setAdapter(pagesAdapter);
 
         //TODO Change Page Read on scroll changed
+
     }
 
     private String storeURLInitializer() {
@@ -163,8 +170,9 @@ public class PagesActivity extends AppCompatActivity {
                 getResources().getString(R.string.app_name) + " app.\n\n" + storeURLInitializer();
                 */
 
-        String shareString = "Let's read " + getResources().getString(itemChapters.getTitle()) +
-                " chapter of " + getResources().getString(itemChapters.getBookTitle()) +
+        String shareString = "Let's read " +
+                getResources().getString(itemChapters.getTitle()) + " chapter of " +
+                getResources().getString(booksDataSource.getBookTitle(itemChapters.getBookId())) +
                 " book together." + "\n\n" + storeURLInitializer();
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);

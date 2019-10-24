@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.xeniac.harrypotterstory.PagesActivity;
 import com.xeniac.harrypotterstory.R;
-import com.xeniac.harrypotterstory.database.ChaptersDataSource;
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.util.List;
@@ -49,7 +49,7 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
 
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.titleTV.setText(item.getTitle());
-        holder.pageTV.setText(String.valueOf(item.getPages()));
+        holder.pageTV.setText(String.valueOf(item.getTotalPages()));
 
         if (item.isFavorite()) {
             holder.bookmarkBlueIB.setVisibility(View.VISIBLE);

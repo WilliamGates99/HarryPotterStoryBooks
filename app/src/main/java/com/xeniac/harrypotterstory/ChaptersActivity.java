@@ -2,7 +2,6 @@ package com.xeniac.harrypotterstory;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.drawable.Drawable;
@@ -11,13 +10,11 @@ import android.widget.ImageView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
-import com.xeniac.harrypotterstory.database.ChaptersDataSource;
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemBooks;
-import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 import java.util.Objects;
 
 public class ChaptersActivity extends AppCompatActivity {
@@ -77,12 +74,9 @@ public class ChaptersActivity extends AppCompatActivity {
     }
 
     private void chaptersRecyclerView() {
-        List<DataItemChapters> dataItemChaptersList =
-                chaptersDataSource.getAllItems(itemBooks.getTitle(), false);
-
+        ChaptersAdapter chaptersAdapter = new ChaptersAdapter(this,
+                chaptersDataSource.getAllItems(itemBooks.getId(), false));
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
-        chaptersRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        ChaptersAdapter chaptersAdapter = new ChaptersAdapter(this, dataItemChaptersList);
         chaptersRV.setAdapter(chaptersAdapter);
     }
 }

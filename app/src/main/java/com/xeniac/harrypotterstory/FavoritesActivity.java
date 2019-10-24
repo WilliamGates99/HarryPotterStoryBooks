@@ -7,15 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.xeniac.harrypotterstory.adapters.FavoritesAdapter;
-import com.xeniac.harrypotterstory.database.ChaptersDataSource;
-import com.xeniac.harrypotterstory.models.DataItemChapters;
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 
-import java.util.List;
 import java.util.Objects;
 
 public class FavoritesActivity extends AppCompatActivity {
 
-    private ChaptersDataSource mDataSource;
+    private ChaptersDataSource chaptersDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,28 +28,27 @@ public class FavoritesActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mDataSource.open();
+        chaptersDataSource.open();
         favoritesRecyclerView();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mDataSource.close();
+        chaptersDataSource.close();
     }
 
     private void favoritesInitializer() {
-        mDataSource = new ChaptersDataSource(this);
-        mDataSource.open();
+        chaptersDataSource = new ChaptersDataSource(this);
+        chaptersDataSource.open();
+
         favoritesRecyclerView();
     }
 
     private void favoritesRecyclerView() {
-        List<DataItemChapters> dataItemChaptersList =
-                mDataSource.getAllItems(0, true);
-
+        FavoritesAdapter favoritesAdapter = new FavoritesAdapter(this,
+                chaptersDataSource.getAllItems(null, true));
         RecyclerView favoritesRV = findViewById(R.id.rv_favorites);
-        FavoritesAdapter favoritesAdapter = new FavoritesAdapter(this, dataItemChaptersList);
         favoritesRV.setAdapter(favoritesAdapter);
     }
 }

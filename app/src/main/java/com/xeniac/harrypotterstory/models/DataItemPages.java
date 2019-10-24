@@ -2,7 +2,7 @@ package com.xeniac.harrypotterstory.models;
 
 import android.content.ContentValues;
 
-import com.xeniac.harrypotterstory.database.PagesTable;
+import com.xeniac.harrypotterstory.database.pagesDataBase.PagesTable;
 
 public class DataItemPages {
 

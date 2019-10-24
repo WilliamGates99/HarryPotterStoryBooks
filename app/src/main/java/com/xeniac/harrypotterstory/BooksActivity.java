@@ -31,11 +31,13 @@ import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDat
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_7;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_8;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_9;
-import com.xeniac.harrypotterstory.database.ChaptersDataSource;
-import com.xeniac.harrypotterstory.database.PagesDataSource;
+import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
+import com.xeniac.harrypotterstory.database.pagesDataBase.PagesDataSource;
 
 public class BooksActivity extends AppCompatActivity {
 
+    private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
     private PagesDataSource pagesDataSource;
 
@@ -52,6 +54,7 @@ public class BooksActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        booksDataSource.open();
         chaptersDataSource.open();
         pagesDataSource.open();
     }
@@ -59,6 +62,7 @@ public class BooksActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        booksDataSource.close();
         chaptersDataSource.close();
         pagesDataSource.close();
     }
@@ -80,6 +84,7 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void booksInitializer() {
+        seedBooksData();
         seedChaptersData();
         seedPagesData();
 
@@ -88,10 +93,16 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void booksRecyclerView() {
-        BooksAdapter booksAdapter = new BooksAdapter(this, BooksDataProvider.dataItemBooksList);
+        BooksAdapter booksAdapter = new BooksAdapter(this, booksDataSource.getAllItems());
         RecyclerView booksRV = findViewById(R.id.rv_books);
         booksRV.setHasFixedSize(true);
         booksRV.setAdapter(booksAdapter);
+    }
+
+    private void seedBooksData() {
+        booksDataSource = new BooksDataSource(this);
+        booksDataSource.open();
+        booksDataSource.seedDataBase(BooksDataProvider.dataItemBooksList);
     }
 
     private void seedChaptersData() {

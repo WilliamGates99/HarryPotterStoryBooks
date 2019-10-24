@@ -14,7 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.xeniac.harrypotterstory.PagesActivity;
 import com.xeniac.harrypotterstory.R;
-import com.xeniac.harrypotterstory.database.ChaptersDataSource;
+import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.util.List;
@@ -23,13 +24,16 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
 
     private List<DataItemChapters> mItems;
     private Context mContext;
-    private ChaptersDataSource mDataSource;
+    private BooksDataSource booksDataSource;
+    private ChaptersDataSource chaptersDataSource;
 
     public FavoritesAdapter(Context context, List<DataItemChapters> items) {
         this.mContext = context;
         this.mItems = items;
-        mDataSource = new ChaptersDataSource(mContext);
-        mDataSource.open();
+        booksDataSource = new BooksDataSource(mContext);
+        booksDataSource.open();
+        chaptersDataSource = new ChaptersDataSource(mContext);
+        chaptersDataSource.open();
     }
 
     @NonNull
@@ -46,14 +50,13 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final DataItemChapters item = mItems.get(position);
 
-        holder.numberTV.setText(item.getNumber());
-        holder.numberTV.setText(item.getNumber());
+        holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.titleTV.setText(item.getTitle());
-        holder.bookTV.setText(item.getBookTitle());
+        holder.bookTV.setText(booksDataSource.getBookTitle(item.getBookId()));
 
         holder.bookmarkBlueIB.setOnClickListener(v -> {
             item.setFavorite(false);
-            mDataSource.updateFavorite(item);
+            chaptersDataSource.updateFavorite(item);
             try {
                 mItems.remove(position);
                 notifyItemRemoved(position);

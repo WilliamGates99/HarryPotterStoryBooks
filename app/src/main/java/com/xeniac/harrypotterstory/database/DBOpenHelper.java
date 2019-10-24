@@ -6,17 +6,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.xeniac.harrypotterstory.database.booksDataBase.BooksTable;
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersTable;
+import com.xeniac.harrypotterstory.database.pagesDataBase.PagesTable;
+
 public class DBOpenHelper extends SQLiteOpenHelper {
 
     private static final String DB_FILE_NAME = "harry_potter_story.db";
     private static int DB_VERSION = 1;
 
-    DBOpenHelper(@Nullable Context context) {
+    public DBOpenHelper(@Nullable Context context) {
         super(context, DB_FILE_NAME, null, DB_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL(BooksTable.SQL_CREATE);
         db.execSQL(ChaptersTable.SQL_CREATE);
         db.execSQL(PagesTable.SQL_CREATE);
     }

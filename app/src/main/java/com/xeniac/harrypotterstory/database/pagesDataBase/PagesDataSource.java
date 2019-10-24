@@ -1,4 +1,4 @@
-package com.xeniac.harrypotterstory.database;
+package com.xeniac.harrypotterstory.database.pagesDataBase;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersTable;
+import com.xeniac.harrypotterstory.database.DBOpenHelper;
 import com.xeniac.harrypotterstory.models.DataItemPages;
 
 import java.util.ArrayList;
@@ -98,7 +100,7 @@ public class PagesDataSource {
         values.put(PagesTable.COLUMN_CHAPTER_ID, item.getChapterId());
         values.put(PagesTable.COLUMN_READ, item.isRead());
 
-        mDatabase.update(ChaptersTable.TABLE_CHAPTERS, values,
-                ChaptersTable.COLUMN_ID + "=?", ids);
+        mDatabase.update(PagesTable.TABLE_PAGES, values,
+                PagesTable.COLUMN_ID + "=?", ids);
     }
 }
