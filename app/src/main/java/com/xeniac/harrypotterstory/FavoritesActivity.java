@@ -38,6 +38,16 @@ public class FavoritesActivity extends AppCompatActivity {
         chaptersDataSource.close();
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        return super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onSupportNavigateUp();
+    }
+
     private void favoritesInitializer() {
         chaptersDataSource = new ChaptersDataSource(this);
         chaptersDataSource.open();

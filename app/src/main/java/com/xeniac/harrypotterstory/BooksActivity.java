@@ -6,12 +6,18 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
+import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.dataProviders.BooksDataProvider;
 import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_1;
@@ -34,8 +40,15 @@ import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDat
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.database.pagesDataBase.PagesDataSource;
+import com.xeniac.harrypotterstory.models.DataItemChapters;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class BooksActivity extends AppCompatActivity {
+
+    //TODO Shared Preferences
+    public static String NOW_READING_ID = null;
 
     private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
@@ -48,7 +61,6 @@ public class BooksActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_books);
         setSupportActionBar(toolbar);
         booksInitializer();
-        booksRecyclerView();
     }
 
     @Override
@@ -87,9 +99,8 @@ public class BooksActivity extends AppCompatActivity {
         seedBooksData();
         seedChaptersData();
         seedPagesData();
-
-        ImageView continueIV = findViewById(R.id.iv_books_continue);
-        continueIV.setClipToOutline(true);
+        booksRecyclerView();
+        continueReading();
     }
 
     private void booksRecyclerView() {
@@ -97,6 +108,43 @@ public class BooksActivity extends AppCompatActivity {
         RecyclerView booksRV = findViewById(R.id.rv_books);
         booksRV.setHasFixedSize(true);
         booksRV.setAdapter(booksAdapter);
+    }
+
+    private void continueReading() {
+        FrameLayout continueFL = findViewById(R.id.fl_books_continue);
+
+        if (NOW_READING_ID == null) {
+            continueFL.setVisibility(View.GONE);
+        } else {
+            DataItemChapters item = chaptersDataSource.getReadingItem();
+
+            ImageView continueIV = findViewById(R.id.iv_books_continue);
+            LinearLayout continueLL = findViewById(R.id.ll_books_continue);
+            TextView continueTitleTV = findViewById(R.id.tv_books_continue_title);
+            TextView readPagesTV = findViewById(R.id.tv_books_continue_page_read);
+            TextView totalPagesTV = findViewById(R.id.tv_books_continue_page_total);
+
+            continueFL.setVisibility(View.VISIBLE);
+            continueTitleTV.setText(item.getTitle());
+            readPagesTV.setText(String.valueOf(item.getReadPages()));
+            totalPagesTV.setText(String.valueOf(item.getTotalPages()));
+
+            try {
+                String imageFile = booksDataSource.getBookCover(item.getBookId());
+                InputStream inputStream = getAssets().open(imageFile);
+                Drawable drawable = Drawable.createFromStream(inputStream, null);
+                continueIV.setImageDrawable(drawable);
+                continueIV.setClipToOutline(true);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            continueLL.setOnClickListener(v -> {
+                Intent intent = new Intent(BooksActivity.this, PagesActivity.class);
+                intent.putExtra(ChaptersAdapter.ITEM_KEY, item);
+                startActivity(intent);
+            });
+        }
     }
 
     private void seedBooksData() {

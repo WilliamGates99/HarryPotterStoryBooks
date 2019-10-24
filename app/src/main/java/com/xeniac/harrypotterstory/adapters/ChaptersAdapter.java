@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.xeniac.harrypotterstory.BooksActivity;
 import com.xeniac.harrypotterstory.PagesActivity;
 import com.xeniac.harrypotterstory.R;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
@@ -74,6 +75,15 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
         });
 
         holder.listLL.setOnClickListener(v -> {
+            for (DataItemChapters itemChapters :
+                    chaptersDataSource.getAllItems(null, false)) {
+                itemChapters.setReading(false);
+                chaptersDataSource.updateReading(itemChapters);
+            }
+
+            item.setReading(true);
+            chaptersDataSource.updateReading(item);
+            BooksActivity.NOW_READING_ID = item.getId();
             Intent intent = new Intent(mContext, PagesActivity.class);
             intent.putExtra(ITEM_KEY, item);
             mContext.startActivity(intent);

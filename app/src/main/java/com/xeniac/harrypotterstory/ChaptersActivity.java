@@ -53,6 +53,16 @@ public class ChaptersActivity extends AppCompatActivity {
         chaptersDataSource.close();
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        return super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onSupportNavigateUp();
+    }
+
     private void chaptersInitializer() {
         chaptersDataSource = new ChaptersDataSource(this);
         chaptersDataSource.open();

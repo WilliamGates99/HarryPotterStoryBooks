@@ -96,6 +96,21 @@ public class BooksDataSource {
         return bookTitle;
     }
 
+    public String getBookCover(String bookFilter) {
+        String bookCover = null;
+
+        String[] bookId = {bookFilter};
+        Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_COLUMNS,
+                BooksTable.COLUMN_ID + "=?", bookId, null, null, null);
+
+        while (cursor.moveToNext()) {
+            bookCover = cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_COVER));
+        }
+
+        cursor.close();
+        return bookCover;
+    }
+
 //    public void updateFavorite(DataItemBooks item) {
 //        String[] ids = {item.getId()};
 //
