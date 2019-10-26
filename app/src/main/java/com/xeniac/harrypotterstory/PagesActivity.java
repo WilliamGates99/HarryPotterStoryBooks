@@ -151,7 +151,6 @@ public class PagesActivity extends AppCompatActivity {
         pagesRV.setAdapter(pagesAdapter);
 
         //TODO Change Page Read on scroll changed
-
     }
 
     private String storeURLInitializer() {

@@ -25,6 +25,7 @@ public class PagesDataSource {
 
     public void open() {
         mDatabase = mDbOpenHelper.getWritableDatabase();
+        mDatabase.setForeignKeyConstraintsEnabled(true);
     }
 
     public void close() {
