@@ -8,12 +8,12 @@ import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersTable;
 
 public class DataItemChapters implements Parcelable {
 
-    private String id;
+    private int id;
     private int number;
     private int title;
     private int totalPages;
     private int readPages;
-    private String bookId;
+    private int bookId;
     private String cover;
     private boolean favorite;
     private boolean reading;
@@ -21,8 +21,8 @@ public class DataItemChapters implements Parcelable {
     public DataItemChapters() {
     }
 
-    public DataItemChapters(String id, int number, int title, int totalPages, int readPages,
-                            String bookId, String cover, boolean favorite, boolean reading) {
+    public DataItemChapters(int id, int number, int title, int totalPages, int readPages,
+                            int bookId, String cover, boolean favorite, boolean reading) {
         this.id = id;
         this.number = number;
         this.title = title;
@@ -34,11 +34,11 @@ public class DataItemChapters implements Parcelable {
         this.reading = reading;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -74,11 +74,11 @@ public class DataItemChapters implements Parcelable {
         this.readPages = readPages;
     }
 
-    public String getBookId() {
+    public int getBookId() {
         return bookId;
     }
 
-    public void setBookId(String bookId) {
+    public void setBookId(int bookId) {
         this.bookId = bookId;
     }
 
@@ -125,12 +125,12 @@ public class DataItemChapters implements Parcelable {
     @Override
     public String toString() {
         return "DataItemChapters{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", number=" + number +
                 ", title=" + title +
                 ", totalPages=" + totalPages +
                 ", readPages=" + readPages +
-                ", bookId='" + bookId + '\'' +
+                ", bookId=" + bookId +
                 ", cover='" + cover + '\'' +
                 ", favorite=" + favorite +
                 ", reading=" + reading +
@@ -144,24 +144,24 @@ public class DataItemChapters implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(this.id);
+        dest.writeInt(this.id);
         dest.writeInt(this.number);
         dest.writeInt(this.title);
         dest.writeInt(this.totalPages);
         dest.writeInt(this.readPages);
-        dest.writeString(this.bookId);
+        dest.writeInt(this.bookId);
         dest.writeString(this.cover);
         dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
         dest.writeByte(this.reading ? (byte) 1 : (byte) 0);
     }
 
-    protected DataItemChapters(Parcel in) {
-        this.id = in.readString();
+    private DataItemChapters(Parcel in) {
+        this.id = in.readInt();
         this.number = in.readInt();
         this.title = in.readInt();
         this.totalPages = in.readInt();
         this.readPages = in.readInt();
-        this.bookId = in.readString();
+        this.bookId = in.readInt();
         this.cover = in.readString();
         this.favorite = in.readByte() != 0;
         this.reading = in.readByte() != 0;

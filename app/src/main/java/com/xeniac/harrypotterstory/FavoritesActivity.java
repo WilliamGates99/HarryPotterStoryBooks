@@ -57,7 +57,7 @@ public class FavoritesActivity extends AppCompatActivity {
 
     private void favoritesRecyclerView() {
         FavoritesAdapter favoritesAdapter = new FavoritesAdapter(this,
-                chaptersDataSource.getAllItems(null, true));
+                chaptersDataSource.getAllItems(0, true));
         RecyclerView favoritesRV = findViewById(R.id.rv_favorites);
         favoritesRV.setAdapter(favoritesAdapter);
     }

@@ -76,7 +76,7 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
 
         holder.listLL.setOnClickListener(v -> {
             for (DataItemChapters itemChapters :
-                    chaptersDataSource.getAllItems(null, false)) {
+                    chaptersDataSource.getAllItems(0, false)) {
                 itemChapters.setReading(false);
                 chaptersDataSource.updateChapters(itemChapters);
             }

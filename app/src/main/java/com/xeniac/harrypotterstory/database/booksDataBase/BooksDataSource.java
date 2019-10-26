@@ -49,8 +49,8 @@ public class BooksDataSource {
         }
     }
 
-    private boolean bookExist(String bookId) {
-        String[] booksId = {bookId};
+    private boolean bookExist(int bookId) {
+        String[] booksId = {String.valueOf(bookId)};
         Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_IDS,
                 BooksTable.COLUMN_ID + "=?", booksId,
                 null, null, null);
@@ -68,7 +68,7 @@ public class BooksDataSource {
 
         while (cursor.moveToNext()) {
             DataItemBooks item = new DataItemBooks();
-            item.setId(cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_ID)));
+            item.setId(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_ID)));
             item.setTitle(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TITLE)));
             item.setGist(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_GIST)));
             item.setCover(cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_COVER)));
@@ -81,10 +81,10 @@ public class BooksDataSource {
         return dataItemBooksList;
     }
 
-    public int getBookTitle(String bookFilter) {
+    public int getBookTitle(int bookFilter) {
         int bookTitle = 0;
 
-        String[] bookId = {bookFilter};
+        String[] bookId = {String.valueOf(bookFilter)};
         Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_COLUMNS,
                 BooksTable.COLUMN_ID + "=?", bookId, null, null, null);
 
@@ -96,10 +96,10 @@ public class BooksDataSource {
         return bookTitle;
     }
 
-    public String getBookCover(String bookFilter) {
+    public String getBookCover(int bookFilter) {
         String bookCover = null;
 
-        String[] bookId = {bookFilter};
+        String[] bookId = {String.valueOf(bookFilter)};
         Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_COLUMNS,
                 BooksTable.COLUMN_ID + "=?", bookId, null, null, null);
 

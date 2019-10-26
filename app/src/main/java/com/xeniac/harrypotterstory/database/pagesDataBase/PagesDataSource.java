@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersTable;
 import com.xeniac.harrypotterstory.database.DBOpenHelper;
 import com.xeniac.harrypotterstory.models.DataItemPages;
 
@@ -50,8 +49,8 @@ public class PagesDataSource {
         }
     }
 
-    private boolean pageExist(String pageId) {
-        String[] pagesId = {pageId};
+    private boolean pageExist(int pageId) {
+        String[] pagesId = {String.valueOf(pageId)};
         Cursor cursor = mDatabase.query(PagesTable.TABLE_PAGES, PagesTable.ALL_IDS,
                 PagesTable.COLUMN_ID + "=?", pagesId,
                 null, null, null);
@@ -61,16 +60,16 @@ public class PagesDataSource {
         return exists;
     }
 
-    public List<DataItemPages> getAllItems(String chapterFilter) {
+    public List<DataItemPages> getAllItems(int chapterFilter) {
         List<DataItemPages> dataItemPagesList = new ArrayList<>();
 
         Cursor cursor;
 
-        if (chapterFilter == null) {
+        if (chapterFilter == 0) {
             cursor = mDatabase.query(PagesTable.TABLE_PAGES, PagesTable.ALL_COLUMNS, null,
                     null, null, null, null);
         } else {
-            String[] chapters = {chapterFilter};
+            String[] chapters = {String.valueOf(chapterFilter)};
             cursor = mDatabase.query(PagesTable.TABLE_PAGES,
                     PagesTable.ALL_COLUMNS, PagesTable.COLUMN_CHAPTER_ID + "=?",
                     chapters, null, null, null);
@@ -78,10 +77,10 @@ public class PagesDataSource {
 
         while (cursor.moveToNext()) {
             DataItemPages item = new DataItemPages();
-            item.setId(cursor.getString(cursor.getColumnIndex(PagesTable.COLUMN_ID)));
+            item.setId(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_ID)));
             item.setNumber(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_NUMBER)));
             item.setText(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_TEXT)));
-            item.setChapterId(cursor.getString(cursor.getColumnIndex(PagesTable.COLUMN_CHAPTER_ID)));
+            item.setChapterId(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_CHAPTER_ID)));
             item.setRead(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_READ)) > 0);
             dataItemPagesList.add(item);
         }
@@ -90,17 +89,17 @@ public class PagesDataSource {
         return dataItemPagesList;
     }
 
-    public void updatePages(DataItemPages item) {
-        String[] ids = {item.getId()};
-
-        ContentValues values = new ContentValues();
-        values.put(PagesTable.COLUMN_ID, item.getId());
-        values.put(PagesTable.COLUMN_NUMBER, item.getNumber());
-        values.put(PagesTable.COLUMN_TEXT, item.getText());
-        values.put(PagesTable.COLUMN_CHAPTER_ID, item.getChapterId());
-        values.put(PagesTable.COLUMN_READ, item.isRead());
-
-        mDatabase.update(PagesTable.TABLE_PAGES, values,
-                PagesTable.COLUMN_ID + "=?", ids);
-    }
+//    public void updatePages(DataItemPages item) {
+//        String[] ids = {String.valueOf(item.getId())};
+//
+//        ContentValues values = new ContentValues();
+//        values.put(PagesTable.COLUMN_ID, item.getId());
+//        values.put(PagesTable.COLUMN_NUMBER, item.getNumber());
+//        values.put(PagesTable.COLUMN_TEXT, item.getText());
+//        values.put(PagesTable.COLUMN_CHAPTER_ID, item.getChapterId());
+//        values.put(PagesTable.COLUMN_READ, item.isRead());
+//
+//        mDatabase.update(PagesTable.TABLE_PAGES, values,
+//                PagesTable.COLUMN_ID + "=?", ids);
+//    }
 }

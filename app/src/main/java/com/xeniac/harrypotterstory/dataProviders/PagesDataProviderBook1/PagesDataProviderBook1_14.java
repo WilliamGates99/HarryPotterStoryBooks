@@ -13,20 +13,20 @@ public class PagesDataProviderBook1_14 {
     static {
         dataItemPagesList = new ArrayList<>();
 
-        addItem(new DataItemPages("page_1", 1, R.string.string_book_1_chapter_14_page_1, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_2", 2, R.string.string_book_1_chapter_14_page_2, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_3", 3, R.string.string_book_1_chapter_14_page_3, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_4", 4, R.string.string_book_1_chapter_14_page_4, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_5", 5, R.string.string_book_1_chapter_14_page_5, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_6", 6, R.string.string_book_1_chapter_14_page_6, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_7", 7, R.string.string_book_1_chapter_14_page_7, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_8", 8, R.string.string_book_1_chapter_14_page_8, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_9", 9, R.string.string_book_1_chapter_14_page_9, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_10", 10, R.string.string_book_1_chapter_14_page_10, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_11", 11, R.string.string_book_1_chapter_14_page_11, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_12", 12, R.string.string_book_1_chapter_14_page_12, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_13", 13, R.string.string_book_1_chapter_14_page_13, "book_1_chapter_14", false));
-        addItem(new DataItemPages("page_14", 14, R.string.string_book_1_chapter_14_page_14, "book_1_chapter_14", false));
+        addItem(new DataItemPages(1141, 1, R.string.string_book_1_chapter_14_page_1, 114, false));
+        addItem(new DataItemPages(1142, 2, R.string.string_book_1_chapter_14_page_2, 114, false));
+        addItem(new DataItemPages(1143, 3, R.string.string_book_1_chapter_14_page_3, 114, false));
+        addItem(new DataItemPages(1144, 4, R.string.string_book_1_chapter_14_page_4, 114, false));
+        addItem(new DataItemPages(1145, 5, R.string.string_book_1_chapter_14_page_5, 114, false));
+        addItem(new DataItemPages(1146, 6, R.string.string_book_1_chapter_14_page_6, 114, false));
+        addItem(new DataItemPages(1147, 7, R.string.string_book_1_chapter_14_page_7, 114, false));
+        addItem(new DataItemPages(1148, 8, R.string.string_book_1_chapter_14_page_8, 114, false));
+        addItem(new DataItemPages(1149, 9, R.string.string_book_1_chapter_14_page_9, 114, false));
+        addItem(new DataItemPages(11410, 10, R.string.string_book_1_chapter_14_page_10, 114, false));
+        addItem(new DataItemPages(11411, 11, R.string.string_book_1_chapter_14_page_11, 114, false));
+        addItem(new DataItemPages(11412, 12, R.string.string_book_1_chapter_14_page_12, 114, false));
+        addItem(new DataItemPages(11413, 13, R.string.string_book_1_chapter_14_page_13, 114, false));
+        addItem(new DataItemPages(11414, 14, R.string.string_book_1_chapter_14_page_14, 114, false));
     }
 
     private static void addItem(DataItemPages item) {

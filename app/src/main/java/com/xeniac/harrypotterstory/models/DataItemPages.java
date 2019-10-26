@@ -6,16 +6,16 @@ import com.xeniac.harrypotterstory.database.pagesDataBase.PagesTable;
 
 public class DataItemPages {
 
-    private String id;
+    private int id;
     private int number;
     private int text;
-    private String chapterId;
+    private int chapterId;
     private boolean read;
 
     public DataItemPages() {
     }
 
-    public DataItemPages(String id, int number, int text, String chapterId, boolean read) {
+    public DataItemPages(int id, int number, int text, int chapterId, boolean read) {
         this.id = id;
         this.number = number;
         this.text = text;
@@ -23,11 +23,11 @@ public class DataItemPages {
         this.read = read;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -47,11 +47,11 @@ public class DataItemPages {
         this.text = text;
     }
 
-    public String getChapterId() {
+    public int getChapterId() {
         return chapterId;
     }
 
-    public void setChapterId(String chapterId) {
+    public void setChapterId(int chapterId) {
         this.chapterId = chapterId;
     }
 
@@ -78,10 +78,10 @@ public class DataItemPages {
     @Override
     public String toString() {
         return "DataItemPages{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", number=" + number +
                 ", text=" + text +
-                ", chapterId='" + chapterId + '\'' +
+                ", chapterId=" + chapterId +
                 ", read=" + read +
                 '}';
     }

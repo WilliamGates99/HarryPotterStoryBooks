@@ -49,8 +49,8 @@ public class ChaptersDataSource {
         }
     }
 
-    private boolean chapterExist(String chapterId) {
-        String[] chaptersId = {chapterId};
+    private boolean chapterExist(int chapterId) {
+        String[] chaptersId = {String.valueOf(chapterId)};
         Cursor cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS, ChaptersTable.ALL_IDS,
                 ChaptersTable.COLUMN_ID + "=?", chaptersId,
                 null, null, null);
@@ -60,18 +60,18 @@ public class ChaptersDataSource {
         return exists;
     }
 
-    public List<DataItemChapters> getAllItems(String bookFilter, boolean favoriteFilter) {
+    public List<DataItemChapters> getAllItems(int bookFilter, boolean favoriteFilter) {
         List<DataItemChapters> dataItemChaptersList = new ArrayList<>();
 
         Cursor cursor;
 
-        if (bookFilter == null && favoriteFilter) {
+        if (bookFilter == 0 && favoriteFilter) {
             String[] favorites = {"1"};
             cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS,
                     ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_FAVORITE + "=?",
                     favorites, null, null, null);
-        } else if (bookFilter != null && !favoriteFilter) {
-            String[] books = {bookFilter};
+        } else if (bookFilter != 0 && !favoriteFilter) {
+            String[] books = {String.valueOf(bookFilter)};
             cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS,
                     ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_BOOK_ID + "=?",
                     books, null, null, null);
@@ -82,12 +82,12 @@ public class ChaptersDataSource {
 
         while (cursor.moveToNext()) {
             DataItemChapters item = new DataItemChapters();
-            item.setId(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
+            item.setId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
             item.setNumber(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_NUMBER)));
             item.setTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TITLE)));
             item.setTotalPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TOTAL_PAGES)));
             item.setReadPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READ_PAGES)));
-            item.setBookId(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
+            item.setBookId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
             item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
             item.setReading(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READING)) > 0);
@@ -107,12 +107,12 @@ public class ChaptersDataSource {
                 favorites, null, null, null);
 
         while (cursor.moveToNext()) {
-            item.setId(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
+            item.setId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
             item.setNumber(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_NUMBER)));
             item.setTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TITLE)));
             item.setTotalPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TOTAL_PAGES)));
             item.setReadPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READ_PAGES)));
-            item.setBookId(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
+            item.setBookId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
             item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
             item.setReading(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READING)) > 0);
@@ -123,7 +123,7 @@ public class ChaptersDataSource {
     }
 
     public void updateChapters(DataItemChapters item) {
-        String[] ids = {item.getId()};
+        String[] ids = {String.valueOf(item.getId())};
 
         ContentValues values = new ContentValues();
         values.put(ChaptersTable.COLUMN_ID, item.getId());

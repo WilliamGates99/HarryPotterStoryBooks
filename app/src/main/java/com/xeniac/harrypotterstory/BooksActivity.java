@@ -48,7 +48,7 @@ import java.io.InputStream;
 public class BooksActivity extends AppCompatActivity {
 
     //TODO Shared Preferences
-    public static String NOW_READING_ID = null;
+    public static int NOW_READING_ID = 0;
 
     private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
@@ -113,7 +113,7 @@ public class BooksActivity extends AppCompatActivity {
     private void continueReading() {
         FrameLayout continueFL = findViewById(R.id.fl_books_continue);
 
-        if (NOW_READING_ID == null) {
+        if (NOW_READING_ID == 0) {
             continueFL.setVisibility(View.GONE);
         } else {
             DataItemChapters item = chaptersDataSource.getReadingItem();

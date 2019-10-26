@@ -8,7 +8,7 @@ import com.xeniac.harrypotterstory.database.booksDataBase.BooksTable;
 
 public class DataItemBooks implements Parcelable {
 
-    private String id;
+    private int id;
     private int title;
     private int gist;
     private String cover;
@@ -18,8 +18,7 @@ public class DataItemBooks implements Parcelable {
     public DataItemBooks() {
     }
 
-    public DataItemBooks(String id, int title, int gist, String cover,
-                         int totalPages, int readPages) {
+    public DataItemBooks(int id, int title, int gist, String cover, int totalPages, int readPages) {
         this.id = id;
         this.title = title;
         this.gist = gist;
@@ -28,11 +27,11 @@ public class DataItemBooks implements Parcelable {
         this.readPages = readPages;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -92,7 +91,7 @@ public class DataItemBooks implements Parcelable {
     @Override
     public String toString() {
         return "DataItemBooks{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", title=" + title +
                 ", gist=" + gist +
                 ", cover='" + cover + '\'' +
@@ -108,7 +107,7 @@ public class DataItemBooks implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(this.id);
+        dest.writeInt(this.id);
         dest.writeInt(this.title);
         dest.writeInt(this.gist);
         dest.writeString(this.cover);
@@ -116,8 +115,8 @@ public class DataItemBooks implements Parcelable {
         dest.writeInt(this.readPages);
     }
 
-    protected DataItemBooks(Parcel in) {
-        this.id = in.readString();
+    private DataItemBooks(Parcel in) {
+        this.id = in.readInt();
         this.title = in.readInt();
         this.gist = in.readInt();
         this.cover = in.readString();

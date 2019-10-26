@@ -1,5 +1,7 @@
 package com.xeniac.harrypotterstory.database.pagesDataBase;
 
+import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersTable;
+
 public class PagesTable {
     static final String TABLE_PAGES = "pages";
     public static final String COLUMN_ID = "id";
@@ -14,9 +16,10 @@ public class PagesTable {
 
     public static final String SQL_CREATE =
             "CREATE TABLE " + TABLE_PAGES + "(" +
-                    COLUMN_ID + " TEXT PRIMARY KEY," +
+                    COLUMN_ID + " INTEGER PRIMARY KEY," +
                     COLUMN_NUMBER + " INTEGER," +
                     COLUMN_TEXT + " INTEGER," +
-                    COLUMN_CHAPTER_ID + " TEXT," +
-                    COLUMN_READ + " INTEGER" + ");";
+                    COLUMN_CHAPTER_ID + " INTEGER," +
+                    COLUMN_READ + " INTEGER," +
+                    "FOREIGN KEY (" + COLUMN_CHAPTER_ID + ") REFERENCES books(" + ChaptersTable.COLUMN_ID + "));";
 }
