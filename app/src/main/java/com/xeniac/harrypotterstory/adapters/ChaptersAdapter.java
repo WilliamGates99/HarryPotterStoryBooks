@@ -2,6 +2,7 @@ package com.xeniac.harrypotterstory.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -83,7 +84,11 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
 
             item.setReading(true);
             chaptersDataSource.updateChapters(item);
-            BooksActivity.NOW_READING_ID = item.getId();
+
+            SharedPreferences.Editor editor = mContext.getSharedPreferences(
+                    BooksActivity.READING_CHECK, Context.MODE_PRIVATE).edit();
+            editor.putBoolean(BooksActivity.READING_CHECK_KEY, true).apply();
+
             Intent intent = new Intent(mContext, PagesActivity.class);
             intent.putExtra(ITEM_KEY, item);
             mContext.startActivity(intent);

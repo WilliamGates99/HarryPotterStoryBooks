@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
@@ -47,8 +48,8 @@ import java.io.InputStream;
 
 public class BooksActivity extends AppCompatActivity {
 
-    //TODO Shared Preferences
-    public static int NOW_READING_ID = 0;
+    public static final String READING_CHECK = "reading_check";
+    public static final String READING_CHECK_KEY = "reading_check_key";
 
     private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
@@ -111,9 +112,11 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void continueReading() {
+        SharedPreferences preferences = getSharedPreferences(READING_CHECK, MODE_PRIVATE);
+        boolean readingCheck = preferences.getBoolean(READING_CHECK_KEY, false);
         FrameLayout continueFL = findViewById(R.id.fl_books_continue);
 
-        if (NOW_READING_ID == 0) {
+        if (!readingCheck) {
             continueFL.setVisibility(View.GONE);
         } else {
             DataItemChapters item = chaptersDataSource.getReadingItem();
