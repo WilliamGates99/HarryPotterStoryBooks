@@ -158,20 +158,20 @@ public class BooksActivity extends AppCompatActivity {
 
     private void continueBar() {
         LinearLayout continueBarLL = findViewById(R.id.ll_books_continue_bar);
-        LinearLayout continueGreenBarLL = findViewById(R.id.ll_books_continue_bar_green);
-        LinearLayout continueGrayBarLL = findViewById(R.id.ll_books_continue_bar_gray);
+        LinearLayout continueBarGreenLL = findViewById(R.id.ll_books_continue_bar_green);
+        LinearLayout continueBarGrayLL = findViewById(R.id.ll_books_continue_bar_gray);
 
         LinearLayout.LayoutParams paramsGreen =
-                (LinearLayout.LayoutParams) continueGreenBarLL.getLayoutParams();
+                (LinearLayout.LayoutParams) continueBarGreenLL.getLayoutParams();
         LinearLayout.LayoutParams paramsTransparent =
-                (LinearLayout.LayoutParams) continueGrayBarLL.getLayoutParams();
+                (LinearLayout.LayoutParams) continueBarGrayLL.getLayoutParams();
 
         paramsGreen.weight = chapterReadPages;
         paramsTransparent.weight = chapterTotalPages - chapterReadPages;
 
         continueBarLL.setWeightSum(chapterTotalPages);
-        continueGreenBarLL.setLayoutParams(paramsGreen);
-        continueGrayBarLL.setLayoutParams(paramsTransparent);
+        continueBarGreenLL.setLayoutParams(paramsGreen);
+        continueBarGrayLL.setLayoutParams(paramsTransparent);
     }
 
     private void seedBooksData() {

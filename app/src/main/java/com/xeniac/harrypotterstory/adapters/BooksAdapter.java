@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -58,6 +59,21 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
             e.printStackTrace();
         }
 
+        float chapterTotalPages = item.getTotalPages();
+        float chapterReadPages = item.getReadPages();
+
+        LinearLayout.LayoutParams paramsGreen =
+                (LinearLayout.LayoutParams) holder.barGeenLL.getLayoutParams();
+        LinearLayout.LayoutParams paramsTransparent =
+                (LinearLayout.LayoutParams) holder.barGrayLL.getLayoutParams();
+
+        paramsGreen.weight = chapterReadPages;
+        paramsTransparent.weight = chapterTotalPages - chapterReadPages;
+
+        holder.barLL.setWeightSum(chapterTotalPages);
+        holder.barGeenLL.setLayoutParams(paramsGreen);
+        holder.barGrayLL.setLayoutParams(paramsTransparent);
+
         holder.listRL.setOnClickListener(v -> {
             Intent intent = new Intent(mContext, ChaptersActivity.class);
             intent.putExtra(ITEM_KEY, item);
@@ -77,6 +93,9 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
         ImageView coverIV;
         TextView titleTV;
         TextView gistTV;
+        LinearLayout barLL;
+        LinearLayout barGeenLL;
+        LinearLayout barGrayLL;
 
         ViewHolder(View itemView) {
             super(itemView);
@@ -85,6 +104,9 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
             coverIV = itemView.findViewById(R.id.iv_list_books_cover);
             titleTV = itemView.findViewById(R.id.tv_list_books_title);
             gistTV = itemView.findViewById(R.id.tv_list_books_gist);
+            barLL = itemView.findViewById(R.id.ll_list_books_bar);
+            barGeenLL = itemView.findViewById(R.id.ll_list_books_bar_green);
+            barGrayLL = itemView.findViewById(R.id.ll_list_books_bar_gray);
 
             mView = itemView;
         }

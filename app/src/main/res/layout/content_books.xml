@@ -166,7 +166,7 @@
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="3dp"
-                        android:layout_gravity="center_vertical|start"
+                        app:cardBackgroundColor="@color/colorMediumGray"
                         app:cardCornerRadius="5dp"
                         app:cardPreventCornerOverlap="true">
 
