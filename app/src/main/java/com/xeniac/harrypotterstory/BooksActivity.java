@@ -55,6 +55,8 @@ public class BooksActivity extends AppCompatActivity {
     private ChaptersDataSource chaptersDataSource;
     private PagesDataSource pagesDataSource;
 
+    private float chapterTotalPages, chapterReadPages;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,6 +123,9 @@ public class BooksActivity extends AppCompatActivity {
         } else {
             DataItemChapters item = chaptersDataSource.getReadingItem();
 
+            chapterTotalPages = (float) item.getTotalPages();
+            chapterReadPages = (float) item.getReadPages();
+
             ImageView continueIV = findViewById(R.id.iv_books_continue);
             LinearLayout continueLL = findViewById(R.id.ll_books_continue);
             TextView continueTitleTV = findViewById(R.id.tv_books_continue_title);
@@ -131,6 +136,7 @@ public class BooksActivity extends AppCompatActivity {
             continueTitleTV.setText(item.getTitle());
             readPagesTV.setText(String.valueOf(item.getReadPages()));
             totalPagesTV.setText(String.valueOf(item.getTotalPages()));
+            continueBar();
 
             try {
                 String imageFile = booksDataSource.getBookCover(item.getBookId());
@@ -148,6 +154,24 @@ public class BooksActivity extends AppCompatActivity {
                 startActivity(intent);
             });
         }
+    }
+
+    private void continueBar() {
+        LinearLayout continueBarLL = findViewById(R.id.ll_books_continue_bar);
+        LinearLayout continueGreenBarLL = findViewById(R.id.ll_books_continue_bar_green);
+        LinearLayout continueGrayBarLL = findViewById(R.id.ll_books_continue_bar_gray);
+
+        LinearLayout.LayoutParams paramsGreen =
+                (LinearLayout.LayoutParams) continueGreenBarLL.getLayoutParams();
+        LinearLayout.LayoutParams paramsTransparent =
+                (LinearLayout.LayoutParams) continueGrayBarLL.getLayoutParams();
+
+        paramsGreen.weight = chapterReadPages;
+        paramsTransparent.weight = chapterTotalPages - chapterReadPages;
+
+        continueBarLL.setWeightSum(chapterTotalPages);
+        continueGreenBarLL.setLayoutParams(paramsGreen);
+        continueGrayBarLL.setLayoutParams(paramsTransparent);
     }
 
     private void seedBooksData() {

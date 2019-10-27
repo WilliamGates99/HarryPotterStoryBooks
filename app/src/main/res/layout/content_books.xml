@@ -165,10 +165,38 @@
 
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
-                        android:layout_height="5dp"
-                        app:cardBackgroundColor="@color/colorAccentGreen"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center_vertical|start"
                         app:cardCornerRadius="5dp"
-                        app:cardPreventCornerOverlap="true" />
+                        app:cardPreventCornerOverlap="true">
+
+                        <LinearLayout
+                            android:id="@+id/ll_books_continue_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="17">
+
+                            <LinearLayout
+                                android:id="@+id/ll_books_continue_bar_green"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:background="@color/colorAccentGreen"
+                                android:orientation="horizontal" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_books_continue_bar_gray"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@android:color/transparent"
+                                android:orientation="horizontal" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
 
                 </LinearLayout>
 
