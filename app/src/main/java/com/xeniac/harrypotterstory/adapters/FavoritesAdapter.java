@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.xeniac.harrypotterstory.BooksActivity;
+import com.xeniac.harrypotterstory.FavoritesActivity;
 import com.xeniac.harrypotterstory.PagesActivity;
 import com.xeniac.harrypotterstory.R;
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
@@ -63,6 +64,11 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
                 mItems.remove(position);
                 notifyItemRemoved(position);
                 notifyItemRangeChanged(position, getItemCount());
+
+                if (mItems.isEmpty()) {
+                    ((FavoritesActivity) mContext).onResume();
+                }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

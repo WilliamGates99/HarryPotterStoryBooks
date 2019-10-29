@@ -26,7 +26,7 @@ public class FavoritesActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
         chaptersDataSource.open();
         favoritesCondition();
