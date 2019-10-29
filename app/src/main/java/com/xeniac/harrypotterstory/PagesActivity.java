@@ -3,6 +3,7 @@ package com.xeniac.harrypotterstory;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -151,6 +152,15 @@ public class PagesActivity extends AppCompatActivity {
         pagesRV.setAdapter(pagesAdapter);
 
         //TODO Change Page Read on scroll changed
+//        NestedScrollView nestedScrollView = findViewById(R.id.nsv_pages);
+//        LinearLayoutManager linearLayoutManager = (LinearLayoutManager) pagesRV.getLayoutManager();
+//
+//        nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+//            @Override
+//            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+//
+//            }
+//        });
     }
 
     private String storeURLInitializer() {
