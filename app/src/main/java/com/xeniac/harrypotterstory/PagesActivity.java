@@ -153,6 +153,7 @@ public class PagesActivity extends AppCompatActivity {
         pagesRV.setAdapter(pagesAdapter);
 
         nestedScrollView = findViewById(R.id.nsv_pages);
+        DataItemBooks book = booksDataSource.getBook(chapter.getBookId());
 
         if (chapter.getReadScroll() > 0 && chapter.getTotalScroll() != 0) {
             nestedScrollView.post(() ->
@@ -164,14 +165,12 @@ public class PagesActivity extends AppCompatActivity {
 
             if (chapter.getTotalScroll() == 0) {
                 chapter.setTotalScroll(nestedScrollView.getChildAt(0).getMeasuredHeight() - 1692);
-                chaptersDataSource.updateChapters(chapter);
+                book.setTotalScroll(book.getTotalScroll() + chapter.getTotalScroll());
             }
 
             chapter.setReadScroll(scrollY);
+            book.setReadScroll(book.getReadScroll() + scrollY - oldScrollY);
             chaptersDataSource.updateChapters(chapter);
-
-            DataItemBooks book = booksDataSource.getBook(chapter.getBookId());
-            book.setReadScroll(book.getReadScroll() + chapter.getReadScroll());
             booksDataSource.updateBooks(book);
         });
     }

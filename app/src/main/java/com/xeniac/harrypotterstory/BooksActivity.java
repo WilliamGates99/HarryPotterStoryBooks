@@ -72,6 +72,7 @@ public class BooksActivity extends AppCompatActivity {
         booksDataSource.open();
         chaptersDataSource.open();
         pagesDataSource.open();
+        continueReading();
     }
 
     @Override
@@ -136,7 +137,8 @@ public class BooksActivity extends AppCompatActivity {
             continueTitleTV.setText(item.getTitle());
             //TODO Edit
             readPagesTV.setText(String.valueOf(item.getReadScroll()));
-            totalPagesTV.setText(String.valueOf(item.getPages()));
+//            totalPagesTV.setText(String.valueOf(item.getPages()));
+            totalPagesTV.setText(String.valueOf(item.getTotalScroll()));
             continueBar();
 
             try {
