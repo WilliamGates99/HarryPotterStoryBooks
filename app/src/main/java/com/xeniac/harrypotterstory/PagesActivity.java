@@ -154,6 +154,11 @@ public class PagesActivity extends AppCompatActivity {
 
         nestedScrollView = findViewById(R.id.nsv_pages);
 
+        if (chapter.getReadScroll() > 0 && chapter.getTotalScroll() != 0) {
+            nestedScrollView.post(() ->
+                    nestedScrollView.smoothScrollTo(0, chapter.getReadScroll()));
+        }
+
         nestedScrollView.setOnScrollChangeListener((NestedScrollView.OnScrollChangeListener) (
                 v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
 
