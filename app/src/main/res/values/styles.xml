@@ -1,8 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@android:color/transparent</item>
         <item name="colorPrimaryDark">@android:color/transparent</item>
         <item name="colorAccent">@color/colorAccentBlue</item>
@@ -21,5 +19,10 @@
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="Widget.MaterialComponents.ActionBar.Solid" />
+
+    <style name="AppTheme.Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
 
 </resources>
