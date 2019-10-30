@@ -12,19 +12,20 @@ public class DataItemBooks implements Parcelable {
     private int title;
     private int gist;
     private String cover;
-    private int totalPages;
-    private int readPages;
+    private int totalScroll;
+    private int readScroll;
 
     public DataItemBooks() {
     }
 
-    public DataItemBooks(int id, int title, int gist, String cover, int totalPages, int readPages) {
+    public DataItemBooks(int id, int title, int gist, String cover,
+                         int totalScroll, int readScroll) {
         this.id = id;
         this.title = title;
         this.gist = gist;
         this.cover = cover;
-        this.totalPages = totalPages;
-        this.readPages = readPages;
+        this.totalScroll = totalScroll;
+        this.readScroll = readScroll;
     }
 
     public int getId() {
@@ -59,20 +60,20 @@ public class DataItemBooks implements Parcelable {
         this.cover = cover;
     }
 
-    public int getTotalPages() {
-        return totalPages;
+    public int getTotalScroll() {
+        return totalScroll;
     }
 
-    public void setTotalPages(int totalPages) {
-        this.totalPages = totalPages;
+    public void setTotalScroll(int totalScroll) {
+        this.totalScroll = totalScroll;
     }
 
-    public int getReadPages() {
-        return readPages;
+    public int getReadScroll() {
+        return readScroll;
     }
 
-    public void setReadPages(int readPages) {
-        this.readPages = readPages;
+    public void setReadScroll(int readScroll) {
+        this.readScroll = readScroll;
     }
 
     public ContentValues toValues() {
@@ -82,8 +83,8 @@ public class DataItemBooks implements Parcelable {
         values.put(BooksTable.COLUMN_TITLE, title);
         values.put(BooksTable.COLUMN_GIST, gist);
         values.put(BooksTable.COLUMN_COVER, cover);
-        values.put(BooksTable.COLUMN_TOTAL_PAGES, totalPages);
-        values.put(BooksTable.COLUMN_READ_PAGES, readPages);
+        values.put(BooksTable.COLUMN_TOTAL_SCROLL, totalScroll);
+        values.put(BooksTable.COLUMN_READ_SCROLL, readScroll);
 
         return values;
     }
@@ -95,8 +96,8 @@ public class DataItemBooks implements Parcelable {
                 ", title=" + title +
                 ", gist=" + gist +
                 ", cover='" + cover + '\'' +
-                ", totalPages=" + totalPages +
-                ", readPages=" + readPages +
+                ", totalScroll=" + totalScroll +
+                ", readScroll=" + readScroll +
                 '}';
     }
 
@@ -111,8 +112,8 @@ public class DataItemBooks implements Parcelable {
         dest.writeInt(this.title);
         dest.writeInt(this.gist);
         dest.writeString(this.cover);
-        dest.writeInt(this.totalPages);
-        dest.writeInt(this.readPages);
+        dest.writeInt(this.totalScroll);
+        dest.writeInt(this.readScroll);
     }
 
     private DataItemBooks(Parcel in) {
@@ -120,8 +121,8 @@ public class DataItemBooks implements Parcelable {
         this.title = in.readInt();
         this.gist = in.readInt();
         this.cover = in.readString();
-        this.totalPages = in.readInt();
-        this.readPages = in.readInt();
+        this.totalScroll = in.readInt();
+        this.readScroll = in.readInt();
     }
 
     public static final Creator<DataItemBooks> CREATOR = new Creator<DataItemBooks>() {

@@ -55,7 +55,7 @@ public class BooksActivity extends AppCompatActivity {
     private ChaptersDataSource chaptersDataSource;
     private PagesDataSource pagesDataSource;
 
-    private float chapterTotalPages, chapterReadPages;
+    private float chapterTotalScroll, chapterReadScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,8 +123,8 @@ public class BooksActivity extends AppCompatActivity {
         } else {
             DataItemChapters item = chaptersDataSource.getReadingItem();
 
-            chapterTotalPages = (float) item.getTotalPages();
-            chapterReadPages = (float) item.getReadPages();
+            chapterTotalScroll = (float) item.getTotalScroll();
+            chapterReadScroll = (float) item.getReadScroll();
 
             ImageView continueIV = findViewById(R.id.iv_books_continue);
             LinearLayout continueLL = findViewById(R.id.ll_books_continue);
@@ -134,8 +134,9 @@ public class BooksActivity extends AppCompatActivity {
 
             continueFL.setVisibility(View.VISIBLE);
             continueTitleTV.setText(item.getTitle());
-            readPagesTV.setText(String.valueOf(item.getReadPages()));
-            totalPagesTV.setText(String.valueOf(item.getTotalPages()));
+            //TODO Edit
+            readPagesTV.setText(String.valueOf(item.getReadScroll()));
+            totalPagesTV.setText(String.valueOf(item.getPages()));
             continueBar();
 
             try {
@@ -166,10 +167,10 @@ public class BooksActivity extends AppCompatActivity {
         LinearLayout.LayoutParams paramsTransparent =
                 (LinearLayout.LayoutParams) continueBarGrayLL.getLayoutParams();
 
-        paramsGreen.weight = chapterReadPages;
-        paramsTransparent.weight = chapterTotalPages - chapterReadPages;
+        paramsGreen.weight = chapterReadScroll;
+        paramsTransparent.weight = chapterTotalScroll - chapterReadScroll;
 
-        continueBarLL.setWeightSum(chapterTotalPages);
+        continueBarLL.setWeightSum(chapterTotalScroll);
         continueBarGreenLL.setLayoutParams(paramsGreen);
         continueBarGrayLL.setLayoutParams(paramsTransparent);
     }

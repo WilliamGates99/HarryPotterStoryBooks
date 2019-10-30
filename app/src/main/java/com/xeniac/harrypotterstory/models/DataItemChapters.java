@@ -11,8 +11,9 @@ public class DataItemChapters implements Parcelable {
     private int id;
     private int number;
     private int title;
-    private int totalPages;
-    private int readPages;
+    private int pages;
+    private int totalScroll;
+    private int readScroll;
     private int bookId;
     private String cover;
     private boolean favorite;
@@ -21,13 +22,15 @@ public class DataItemChapters implements Parcelable {
     public DataItemChapters() {
     }
 
-    public DataItemChapters(int id, int number, int title, int totalPages, int readPages,
-                            int bookId, String cover, boolean favorite, boolean reading) {
+    public DataItemChapters(int id, int number, int title, int pages, int totalScroll,
+                            int readScroll, int bookId, String cover,
+                            boolean favorite, boolean reading) {
         this.id = id;
         this.number = number;
         this.title = title;
-        this.totalPages = totalPages;
-        this.readPages = readPages;
+        this.pages = pages;
+        this.totalScroll = totalScroll;
+        this.readScroll = readScroll;
         this.bookId = bookId;
         this.cover = cover;
         this.favorite = favorite;
@@ -58,20 +61,28 @@ public class DataItemChapters implements Parcelable {
         this.title = title;
     }
 
-    public int getTotalPages() {
-        return totalPages;
+    public int getPages() {
+        return pages;
     }
 
-    public void setTotalPages(int totalPages) {
-        this.totalPages = totalPages;
+    public void setPages(int pages) {
+        this.pages = pages;
     }
 
-    public int getReadPages() {
-        return readPages;
+    public int getTotalScroll() {
+        return totalScroll;
     }
 
-    public void setReadPages(int readPages) {
-        this.readPages = readPages;
+    public void setTotalScroll(int totalScroll) {
+        this.totalScroll = totalScroll;
+    }
+
+    public int getReadScroll() {
+        return readScroll;
+    }
+
+    public void setReadScroll(int readScroll) {
+        this.readScroll = readScroll;
     }
 
     public int getBookId() {
@@ -107,13 +118,14 @@ public class DataItemChapters implements Parcelable {
     }
 
     public ContentValues toValues() {
-        ContentValues values = new ContentValues(9);
+        ContentValues values = new ContentValues(10);
 
         values.put(ChaptersTable.COLUMN_ID, id);
         values.put(ChaptersTable.COLUMN_NUMBER, number);
         values.put(ChaptersTable.COLUMN_TITLE, title);
-        values.put(ChaptersTable.COLUMN_TOTAL_PAGES, totalPages);
-        values.put(ChaptersTable.COLUMN_READ_PAGES, readPages);
+        values.put(ChaptersTable.COLUMN_PAGES, pages);
+        values.put(ChaptersTable.COLUMN_TOTAL_SCROLL, totalScroll);
+        values.put(ChaptersTable.COLUMN_READ_SCROLL, readScroll);
         values.put(ChaptersTable.COLUMN_BOOK_ID, bookId);
         values.put(ChaptersTable.COLUMN_COVER, cover);
         values.put(ChaptersTable.COLUMN_FAVORITE, favorite);
@@ -128,8 +140,9 @@ public class DataItemChapters implements Parcelable {
                 "id=" + id +
                 ", number=" + number +
                 ", title=" + title +
-                ", totalPages=" + totalPages +
-                ", readPages=" + readPages +
+                ", pages=" + pages +
+                ", totalScroll=" + totalScroll +
+                ", readScroll=" + readScroll +
                 ", bookId=" + bookId +
                 ", cover='" + cover + '\'' +
                 ", favorite=" + favorite +
@@ -147,8 +160,9 @@ public class DataItemChapters implements Parcelable {
         dest.writeInt(this.id);
         dest.writeInt(this.number);
         dest.writeInt(this.title);
-        dest.writeInt(this.totalPages);
-        dest.writeInt(this.readPages);
+        dest.writeInt(this.pages);
+        dest.writeInt(this.totalScroll);
+        dest.writeInt(this.readScroll);
         dest.writeInt(this.bookId);
         dest.writeString(this.cover);
         dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
@@ -159,8 +173,9 @@ public class DataItemChapters implements Parcelable {
         this.id = in.readInt();
         this.number = in.readInt();
         this.title = in.readInt();
-        this.totalPages = in.readInt();
-        this.readPages = in.readInt();
+        this.pages = in.readInt();
+        this.totalScroll = in.readInt();
+        this.readScroll = in.readInt();
         this.bookId = in.readInt();
         this.cover = in.readString();
         this.favorite = in.readByte() != 0;

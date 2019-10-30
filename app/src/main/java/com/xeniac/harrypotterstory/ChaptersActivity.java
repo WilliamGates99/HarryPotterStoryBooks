@@ -20,7 +20,7 @@ import java.util.Objects;
 public class ChaptersActivity extends AppCompatActivity {
 
     private ChaptersDataSource chaptersDataSource;
-    private DataItemBooks itemBooks;
+    private DataItemBooks book;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +30,10 @@ public class ChaptersActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
 
-        itemBooks = Objects.requireNonNull(getIntent().getExtras()).
+        book = Objects.requireNonNull(getIntent().getExtras()).
                 getParcelable(BooksAdapter.ITEM_KEY);
 
-        if (itemBooks == null) {
+        if (book == null) {
             throw new AssertionError("Null data item received!");
         } else {
             chaptersInitializer();
@@ -67,11 +67,11 @@ public class ChaptersActivity extends AppCompatActivity {
         chaptersDataSource = new ChaptersDataSource(this);
         chaptersDataSource.open();
 
-        setTitle(itemBooks.getTitle());
+        setTitle(book.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
 
         try {
-            String imageFile = itemBooks.getCover();
+            String imageFile = book.getCover();
             InputStream inputStream = getAssets().open(imageFile);
             Drawable drawable = Drawable.createFromStream(inputStream, null);
             coverIV.setImageDrawable(drawable);
@@ -85,7 +85,7 @@ public class ChaptersActivity extends AppCompatActivity {
 
     private void chaptersRecyclerView() {
         ChaptersAdapter chaptersAdapter = new ChaptersAdapter(this,
-                chaptersDataSource.getAllItems(itemBooks.getId(), false));
+                chaptersDataSource.getAllItems(book.getId(), false));
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
         chaptersRV.setAdapter(chaptersAdapter);
     }

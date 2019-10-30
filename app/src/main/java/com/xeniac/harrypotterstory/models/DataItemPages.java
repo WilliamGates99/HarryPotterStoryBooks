@@ -10,17 +10,15 @@ public class DataItemPages {
     private int number;
     private int text;
     private int chapterId;
-    private boolean read;
 
     public DataItemPages() {
     }
 
-    public DataItemPages(int id, int number, int text, int chapterId, boolean read) {
+    public DataItemPages(int id, int number, int text, int chapterId) {
         this.id = id;
         this.number = number;
         this.text = text;
         this.chapterId = chapterId;
-        this.read = read;
     }
 
     public int getId() {
@@ -55,22 +53,13 @@ public class DataItemPages {
         this.chapterId = chapterId;
     }
 
-    public boolean isRead() {
-        return read;
-    }
-
-    public void setRead(boolean read) {
-        this.read = read;
-    }
-
     public ContentValues toValues() {
-        ContentValues values = new ContentValues(5);
+        ContentValues values = new ContentValues(4);
 
         values.put(PagesTable.COLUMN_ID, id);
         values.put(PagesTable.COLUMN_NUMBER, number);
         values.put(PagesTable.COLUMN_TEXT, text);
         values.put(PagesTable.COLUMN_CHAPTER_ID, chapterId);
-        values.put(PagesTable.COLUMN_READ, read);
 
         return values;
     }
@@ -82,7 +71,6 @@ public class DataItemPages {
                 ", number=" + number +
                 ", text=" + text +
                 ", chapterId=" + chapterId +
-                ", read=" + read +
                 '}';
     }
 }

@@ -3,7 +3,6 @@ package com.xeniac.harrypotterstory;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -22,6 +21,7 @@ import com.xeniac.harrypotterstory.adapters.PagesAdapter;
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.database.pagesDataBase.PagesDataSource;
+import com.xeniac.harrypotterstory.models.DataItemBooks;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 import com.xeniac.harrypotterstory.models.DataItemPages;
 
@@ -35,8 +35,9 @@ public class PagesActivity extends AppCompatActivity {
     private BooksDataSource booksDataSource;
     private PagesDataSource pagesDataSource;
     private ChaptersDataSource chaptersDataSource;
-    private DataItemChapters itemChapters;
+    private DataItemChapters chapter;
 
+    private NestedScrollView nestedScrollView;
     private ImageButton bookmarkGrayIB, bookmarkBlueIB;
     private ImageButton filterBlackIB, filterBlueIB;
     private ImageButton filterModeDarkIB, filterModeLightIB;
@@ -56,10 +57,10 @@ public class PagesActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
         setTitle(null);
 
-        itemChapters = Objects.requireNonNull(getIntent().getExtras()).
+        chapter = Objects.requireNonNull(getIntent().getExtras()).
                 getParcelable(ChaptersAdapter.ITEM_KEY);
 
-        if (itemChapters == null) {
+        if (chapter == null) {
             throw new AssertionError("Null data item received!");
         } else {
             pagesInitializer();
@@ -121,7 +122,7 @@ public class PagesActivity extends AppCompatActivity {
 
         filterPanelCV = findViewById(R.id.cv_pages_filter_panel);
 
-        if (itemChapters.isFavorite()) {
+        if (chapter.isFavorite()) {
             bookmarkBlueIB.setVisibility(View.VISIBLE);
             bookmarkGrayIB.setVisibility(View.GONE);
         } else {
@@ -129,11 +130,11 @@ public class PagesActivity extends AppCompatActivity {
             bookmarkGrayIB.setVisibility(View.VISIBLE);
         }
 
-        titleTV.setText(itemChapters.getTitle());
-        numberTV.setText(String.valueOf(itemChapters.getNumber()));
+        titleTV.setText(chapter.getTitle());
+        numberTV.setText(String.valueOf(chapter.getNumber()));
 
         try {
-            String imageFile = itemChapters.getCover();
+            String imageFile = chapter.getCover();
             InputStream inputStream = getAssets().open(imageFile);
             Drawable drawable = Drawable.createFromStream(inputStream, null);
             coverIV.setImageDrawable(drawable);
@@ -146,21 +147,28 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void pagesRecyclerView() {
-        List<DataItemPages> dataItemPagesList = pagesDataSource.getAllItems(itemChapters.getId());
+        List<DataItemPages> dataItemPagesList = pagesDataSource.getAllItems(chapter.getId());
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
         pagesAdapter = new PagesAdapter(this, dataItemPagesList);
         pagesRV.setAdapter(pagesAdapter);
 
-        //TODO Change Page Read on scroll changed
-//        NestedScrollView nestedScrollView = findViewById(R.id.nsv_pages);
-//        LinearLayoutManager linearLayoutManager = (LinearLayoutManager) pagesRV.getLayoutManager();
-//
-//        nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
-//            @Override
-//            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-//
-//            }
-//        });
+        nestedScrollView = findViewById(R.id.nsv_pages);
+
+        nestedScrollView.setOnScrollChangeListener((NestedScrollView.OnScrollChangeListener) (
+                v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
+
+            if (chapter.getTotalScroll() == 0) {
+                chapter.setTotalScroll(nestedScrollView.getChildAt(0).getMeasuredHeight() - 1692);
+                chaptersDataSource.updateChapters(chapter);
+            }
+
+            chapter.setReadScroll(scrollY);
+            chaptersDataSource.updateChapters(chapter);
+
+            DataItemBooks book = booksDataSource.getBook(chapter.getBookId());
+            book.setReadScroll(book.getReadScroll() + chapter.getReadScroll());
+            booksDataSource.updateBooks(book);
+        });
     }
 
     private String storeURLInitializer() {
@@ -168,7 +176,6 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void upOnClick(View view) {
-        NestedScrollView nestedScrollView = findViewById(R.id.nsv_pages);
         nestedScrollView.smoothScrollTo(0, 0);
     }
 
@@ -180,8 +187,8 @@ public class PagesActivity extends AppCompatActivity {
                 */
 
         String shareString = "Let's read " +
-                getResources().getString(itemChapters.getTitle()) + " chapter of " +
-                getResources().getString(booksDataSource.getBookTitle(itemChapters.getBookId())) +
+                getResources().getString(chapter.getTitle()) + " chapter of " +
+                getResources().getString(booksDataSource.getBookTitle(chapter.getBookId())) +
                 " book together." + "\n\n" + storeURLInitializer();
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
@@ -193,15 +200,15 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void bookmarkGrayOnClick(View view) {
-        itemChapters.setFavorite(true);
-        chaptersDataSource.updateChapters(itemChapters);
+        chapter.setFavorite(true);
+        chaptersDataSource.updateChapters(chapter);
         bookmarkBlueIB.setVisibility(View.VISIBLE);
         bookmarkGrayIB.setVisibility(View.GONE);
     }
 
     public void bookmarkBlueOnClick(View view) {
-        itemChapters.setFavorite(false);
-        chaptersDataSource.updateChapters(itemChapters);
+        chapter.setFavorite(false);
+        chaptersDataSource.updateChapters(chapter);
         bookmarkBlueIB.setVisibility(View.GONE);
         bookmarkGrayIB.setVisibility(View.VISIBLE);
     }

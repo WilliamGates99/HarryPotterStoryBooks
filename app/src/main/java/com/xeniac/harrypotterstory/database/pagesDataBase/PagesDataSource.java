@@ -81,25 +81,10 @@ public class PagesDataSource {
             item.setNumber(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_NUMBER)));
             item.setText(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_TEXT)));
             item.setChapterId(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_CHAPTER_ID)));
-            item.setRead(cursor.getInt(cursor.getColumnIndex(PagesTable.COLUMN_READ)) > 0);
             dataItemPagesList.add(item);
         }
 
         cursor.close();
         return dataItemPagesList;
     }
-
-//    public void updatePages(DataItemPages item) {
-//        String[] ids = {String.valueOf(item.getId())};
-//
-//        ContentValues values = new ContentValues();
-//        values.put(PagesTable.COLUMN_ID, item.getId());
-//        values.put(PagesTable.COLUMN_NUMBER, item.getNumber());
-//        values.put(PagesTable.COLUMN_TEXT, item.getText());
-//        values.put(PagesTable.COLUMN_CHAPTER_ID, item.getChapterId());
-//        values.put(PagesTable.COLUMN_READ, item.isRead());
-//
-//        mDatabase.update(PagesTable.TABLE_PAGES, values,
-//                PagesTable.COLUMN_ID + "=?", ids);
-//    }
 }

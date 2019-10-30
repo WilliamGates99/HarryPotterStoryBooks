@@ -51,7 +51,7 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
 
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.titleTV.setText(item.getTitle());
-        holder.pageTV.setText(String.valueOf(item.getTotalPages()));
+        holder.pageTV.setText(String.valueOf(item.getPages()));
 
         if (item.isFavorite()) {
             holder.bookmarkBlueIB.setVisibility(View.VISIBLE);

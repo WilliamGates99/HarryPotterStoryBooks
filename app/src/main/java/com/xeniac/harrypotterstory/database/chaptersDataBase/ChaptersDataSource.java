@@ -85,8 +85,9 @@ public class ChaptersDataSource {
             item.setId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
             item.setNumber(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_NUMBER)));
             item.setTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TITLE)));
-            item.setTotalPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TOTAL_PAGES)));
-            item.setReadPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READ_PAGES)));
+            item.setPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_PAGES)));
+            item.setTotalScroll(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TOTAL_SCROLL)));
+            item.setReadScroll(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READ_SCROLL)));
             item.setBookId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
             item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
@@ -110,8 +111,9 @@ public class ChaptersDataSource {
             item.setId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
             item.setNumber(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_NUMBER)));
             item.setTitle(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TITLE)));
-            item.setTotalPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TOTAL_PAGES)));
-            item.setReadPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READ_PAGES)));
+            item.setPages(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_PAGES)));
+            item.setTotalScroll(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_TOTAL_SCROLL)));
+            item.setReadScroll(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READ_SCROLL)));
             item.setBookId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
             item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
@@ -129,8 +131,9 @@ public class ChaptersDataSource {
         values.put(ChaptersTable.COLUMN_ID, item.getId());
         values.put(ChaptersTable.COLUMN_NUMBER, item.getNumber());
         values.put(ChaptersTable.COLUMN_TITLE, item.getTitle());
-        values.put(ChaptersTable.COLUMN_TOTAL_PAGES, item.getTotalPages());
-        values.put(ChaptersTable.COLUMN_READ_PAGES, item.getReadPages());
+        values.put(ChaptersTable.COLUMN_PAGES, item.getPages());
+        values.put(ChaptersTable.COLUMN_TOTAL_SCROLL, item.getTotalScroll());
+        values.put(ChaptersTable.COLUMN_READ_SCROLL, item.getReadScroll());
         values.put(ChaptersTable.COLUMN_BOOK_ID, item.getBookId());
         values.put(ChaptersTable.COLUMN_COVER, item.getCover());
         values.put(ChaptersTable.COLUMN_FAVORITE, item.isFavorite());
