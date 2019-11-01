@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.xeniac.harrypotterstory.adapters.FavoritesAdapter;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
@@ -19,10 +20,18 @@ public class FavoritesActivity extends AppCompatActivity {
     private ChaptersDataSource chaptersDataSource;
     private List<DataItemChapters> dataItemChaptersList;
 
+    private RecyclerView favoritesRV;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        favoritesInitializer();
+        setContentView(R.layout.activity_favorites);
+        Toolbar toolbar = findViewById(R.id.toolbar_favorites);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
+        chaptersDataSource = new ChaptersDataSource(this);
+        chaptersDataSource.open();
+        favoritesCondition();
     }
 
     @Override
@@ -48,24 +57,17 @@ public class FavoritesActivity extends AppCompatActivity {
         super.onSupportNavigateUp();
     }
 
-    private void favoritesInitializer() {
-        chaptersDataSource = new ChaptersDataSource(this);
-        chaptersDataSource.open();
-        favoritesCondition();
-    }
-
     private void favoritesCondition() {
         dataItemChaptersList = chaptersDataSource.getAllItems(0, true);
+        favoritesRV = findViewById(R.id.rv_favorites);
+        RelativeLayout favoritesEmptyRL = findViewById(R.id.rl_favorites_empty);
+
         if (dataItemChaptersList.isEmpty()) {
-            setContentView(R.layout.activity_favorites_empty);
-            Toolbar toolbar = findViewById(R.id.toolbar_favorites);
-            setSupportActionBar(toolbar);
-            Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
+            favoritesRV.setVisibility(View.GONE);
+            favoritesEmptyRL.setVisibility(View.VISIBLE);
         } else {
-            setContentView(R.layout.activity_favorites);
-            Toolbar toolbar = findViewById(R.id.toolbar_favorites);
-            setSupportActionBar(toolbar);
-            Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
+            favoritesEmptyRL.setVisibility(View.GONE);
+            favoritesRV.setVisibility(View.VISIBLE);
             favoritesRecyclerView();
         }
     }
@@ -73,7 +75,6 @@ public class FavoritesActivity extends AppCompatActivity {
     private void favoritesRecyclerView() {
         dataItemChaptersList = chaptersDataSource.getAllItems(0, true);
         FavoritesAdapter favoritesAdapter = new FavoritesAdapter(this, dataItemChaptersList);
-        RecyclerView favoritesRV = findViewById(R.id.rv_favorites);
         favoritesRV.setAdapter(favoritesAdapter);
     }
 

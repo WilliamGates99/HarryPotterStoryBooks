@@ -151,11 +151,14 @@ public class PagesActivity extends AppCompatActivity {
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
         pagesAdapter = new PagesAdapter(this, dataItemPagesList);
         pagesRV.setAdapter(pagesAdapter);
+        scrollViewMethod();
+    }
 
+    private void scrollViewMethod() {
         nestedScrollView = findViewById(R.id.nsv_pages);
         DataItemBooks book = booksDataSource.getBook(chapter.getBookId());
 
-        if (chapter.getReadScroll() > 0 && chapter.getTotalScroll() != 0) {
+        if (chapter.getReadScroll() > 0) {
             nestedScrollView.post(() ->
                     nestedScrollView.smoothScrollTo(0, chapter.getReadScroll()));
         }
@@ -168,7 +171,10 @@ public class PagesActivity extends AppCompatActivity {
                 book.setTotalScroll(book.getTotalScroll() + chapter.getTotalScroll());
             }
 
-            chapter.setReadScroll(scrollY);
+            if (chapter.getReadScroll() < scrollY) {
+                chapter.setReadScroll(scrollY);
+            }
+
             book.setReadScroll(book.getReadScroll() + scrollY - oldScrollY);
             chaptersDataSource.updateChapters(chapter);
             booksDataSource.updateBooks(book);
