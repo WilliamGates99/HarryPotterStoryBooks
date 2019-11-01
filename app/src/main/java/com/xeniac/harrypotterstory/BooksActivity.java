@@ -129,16 +129,12 @@ public class BooksActivity extends AppCompatActivity {
 
             ImageView continueIV = findViewById(R.id.iv_books_continue);
             LinearLayout continueLL = findViewById(R.id.ll_books_continue);
-            TextView continueTitleTV = findViewById(R.id.tv_books_continue_title);
-            TextView readPagesTV = findViewById(R.id.tv_books_continue_page_read);
-            TextView totalPagesTV = findViewById(R.id.tv_books_continue_page_total);
+            TextView continueChapterTV = findViewById(R.id.tv_books_continue_chapter_title);
+            TextView continueBookTV = findViewById(R.id.tv_books_continue_book_title);
 
             continueFL.setVisibility(View.VISIBLE);
-            continueTitleTV.setText(item.getTitle());
-            //TODO Edit
-            readPagesTV.setText(String.valueOf(item.getReadScroll()));
-//            totalPagesTV.setText(String.valueOf(item.getPages()));
-            totalPagesTV.setText(String.valueOf(item.getTotalScroll()));
+            continueChapterTV.setText(item.getTitle());
+            continueBookTV.setText(booksDataSource.getBookTitle(item.getBookId()));
             continueBar();
 
             try {

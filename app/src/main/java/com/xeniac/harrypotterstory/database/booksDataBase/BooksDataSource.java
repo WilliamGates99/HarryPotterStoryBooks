@@ -72,8 +72,6 @@ public class BooksDataSource {
             item.setTitle(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TITLE)));
             item.setGist(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_GIST)));
             item.setCover(cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_COVER)));
-            item.setTotalScroll(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TOTAL_SCROLL)));
-            item.setReadScroll(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_READ_SCROLL)));
             dataItemBooksList.add(item);
         }
 
@@ -94,8 +92,6 @@ public class BooksDataSource {
             item.setTitle(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TITLE)));
             item.setGist(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_GIST)));
             item.setCover(cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_COVER)));
-            item.setTotalScroll(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TOTAL_SCROLL)));
-            item.setReadScroll(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_READ_SCROLL)));
         }
 
         cursor.close();
@@ -140,8 +136,6 @@ public class BooksDataSource {
         values.put(BooksTable.COLUMN_TITLE, item.getTitle());
         values.put(BooksTable.COLUMN_GIST, item.getGist());
         values.put(BooksTable.COLUMN_COVER, item.getCover());
-        values.put(BooksTable.COLUMN_TOTAL_SCROLL, item.getTotalScroll());
-        values.put(BooksTable.COLUMN_READ_SCROLL, item.getReadScroll());
 
         mDatabase.update(BooksTable.TABLE_BOOKS, values,
                 BooksTable.COLUMN_ID + "=?", ids);

@@ -21,7 +21,6 @@ import com.xeniac.harrypotterstory.adapters.PagesAdapter;
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.database.pagesDataBase.PagesDataSource;
-import com.xeniac.harrypotterstory.models.DataItemBooks;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 import com.xeniac.harrypotterstory.models.DataItemPages;
 
@@ -156,7 +155,6 @@ public class PagesActivity extends AppCompatActivity {
 
     private void scrollViewMethod() {
         nestedScrollView = findViewById(R.id.nsv_pages);
-        DataItemBooks book = booksDataSource.getBook(chapter.getBookId());
 
         if (chapter.getReadScroll() > 0) {
             nestedScrollView.post(() ->
@@ -168,16 +166,13 @@ public class PagesActivity extends AppCompatActivity {
 
             if (chapter.getTotalScroll() == 0) {
                 chapter.setTotalScroll(nestedScrollView.getChildAt(0).getMeasuredHeight() - 1692);
-                book.setTotalScroll(book.getTotalScroll() + chapter.getTotalScroll());
             }
 
             if (chapter.getReadScroll() < scrollY) {
                 chapter.setReadScroll(scrollY);
             }
 
-            book.setReadScroll(book.getReadScroll() + scrollY - oldScrollY);
             chaptersDataSource.updateChapters(chapter);
-            booksDataSource.updateBooks(book);
         });
     }
 
