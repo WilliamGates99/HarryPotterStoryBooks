@@ -51,7 +51,7 @@
                 android:maxLines="1"
                 android:text="@string/string_books_continue_title"
                 android:textAlignment="gravity"
-                android:textColor="@color/colorDarkGray"
+                android:textColor="@color/colorDarkestGray"
                 android:textSize="13sp"
                 android:textStyle="normal" />
 
@@ -92,7 +92,7 @@
                         android:maxLines="1"
                         android:text="The Boy Who Lived"
                         android:textAlignment="gravity"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@android:color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
@@ -107,7 +107,7 @@
                         android:maxLines="1"
                         android:text="Harry Potter and the Order of the Phoenix"
                         android:textAlignment="gravity"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@android:color/white"
                         android:textSize="12sp"
                         android:textStyle="normal"
                         tools:ignore="HardcodedText" />

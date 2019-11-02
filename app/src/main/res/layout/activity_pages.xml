@@ -12,6 +12,7 @@
         android:id="@+id/appbar_pages"
         android:layout_width="match_parent"
         android:layout_height="90dp"
+        android:background="@android:color/transparent"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:theme="@style/AppTheme.AppBarOverlay">

@@ -1,11 +1,15 @@
 package com.xeniac.harrypotterstory;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Application;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -13,6 +17,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.card.MaterialCardView;
@@ -117,7 +122,45 @@ public class PagesActivity extends AppCompatActivity {
         filterModeLightIB = findViewById(R.id.ib_pages_filter_mode_light);
 
         //TODO Edit
-        filterModeLightIB.setImageState(FOCUSED_STATE_SET, true);
+        switch (AppCompatDelegate.getDefaultNightMode()) {
+            case AppCompatDelegate.MODE_NIGHT_NO:
+                filterModeDarkIB.setPressed(false);
+                filterModeLightIB.setPressed(true);
+                Toast.makeText(this, "Light", Toast.LENGTH_SHORT).show();
+                break;
+            case AppCompatDelegate.MODE_NIGHT_YES:
+                filterModeLightIB.setPressed(false);
+                filterModeDarkIB.setPressed(true);
+                Toast.makeText(this, "Night", Toast.LENGTH_SHORT).show();
+                break;
+            case AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM:
+                Toast.makeText(this, "System", Toast.LENGTH_SHORT).show();
+                break;
+            case AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY:
+                Toast.makeText(this, "Battery", Toast.LENGTH_SHORT).show();
+                break;
+            case AppCompatDelegate.MODE_NIGHT_UNSPECIFIED:
+                Toast.makeText(this, "Unspecified", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+//        switch (getResources().getConfiguration().uiMode && Configuration.UI_MODE_NIGHT_MASK) {
+//            case Configuration.UI_MODE_NIGHT_NO:
+//                filterModeDarkIB.setPressed(false);
+//                filterModeLightIB.setPressed(true);
+//                Toast.makeText(this, "Light", Toast.LENGTH_SHORT).show();
+//                break;
+//            case Configuration.UI_MODE_NIGHT_YES:
+//                filterModeLightIB.setPressed(false);
+//                filterModeDarkIB.setPressed(true);
+//                Toast.makeText(this, "Night", Toast.LENGTH_SHORT).show();
+//                break;
+//            case Configuration.UI_MODE_NIGHT_UNDEFINED:
+//                filterModeDarkIB.setPressed(false);
+//                filterModeLightIB.setPressed(true);
+//                Toast.makeText(this, "Undefined", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
 
         filterPanelCV = findViewById(R.id.cv_pages_filter_panel);
 
@@ -244,9 +287,15 @@ public class PagesActivity extends AppCompatActivity {
 
     public void modeDarkOnClick(View view) {
         //TODO Edit
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+//        filterModeLightIB.setImageState(FOCUSED_STATE_SET, false);
+//        filterModeDarkIB.setImageState(FOCUSED_STATE_SET, true);
     }
 
     public void modeLightOnClick(View view) {
         //TODO Edit
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+//        filterModeDarkIB.setImageState(FOCUSED_STATE_SET, false);
+//        filterModeLightIB.setImageState(FOCUSED_STATE_SET, true);
     }
 }
