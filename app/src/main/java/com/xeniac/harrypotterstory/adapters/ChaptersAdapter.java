@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -52,6 +53,9 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.titleTV.setText(item.getTitle());
         holder.pageTV.setText(String.valueOf(item.getPages()));
+
+        holder.progressBar.setProgress(
+                (int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
 
         if (item.isFavorite()) {
             holder.bookmarkBlueIB.setVisibility(View.VISIBLE);
@@ -109,6 +113,7 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
         TextView pageTV;
         ImageButton bookmarkGrayIB;
         ImageButton bookmarkBlueIB;
+        ProgressBar progressBar;
 
         ViewHolder(View itemView) {
             super(itemView);
@@ -119,6 +124,7 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
             pageTV = itemView.findViewById(R.id.tv_list_chapters_page);
             bookmarkGrayIB = itemView.findViewById(R.id.ib_list_chapters_bookmark_gray);
             bookmarkBlueIB = itemView.findViewById(R.id.ib_list_chapters_bookmark_blue);
+            progressBar = itemView.findViewById(R.id.pb_list_chapters_number);
 
             mView = itemView;
         }

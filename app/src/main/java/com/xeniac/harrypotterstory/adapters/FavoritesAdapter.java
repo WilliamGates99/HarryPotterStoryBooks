@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -56,6 +57,9 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.titleTV.setText(item.getTitle());
         holder.bookTV.setText(booksDataSource.getBookTitle(item.getBookId()));
+
+        holder.progressBar.setProgress(
+                (int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
 
         holder.bookmarkBlueIB.setOnClickListener(v -> {
             item.setFavorite(false);
@@ -107,6 +111,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
         TextView titleTV;
         TextView bookTV;
         ImageButton bookmarkBlueIB;
+        ProgressBar progressBar;
 
         ViewHolder(View itemView) {
             super(itemView);
@@ -116,6 +121,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
             titleTV = itemView.findViewById(R.id.tv_list_favorites_title);
             bookTV = itemView.findViewById(R.id.tv_list_favorites_book);
             bookmarkBlueIB = itemView.findViewById(R.id.ib_list_favorites_bookmark_blue);
+            progressBar = itemView.findViewById(R.id.pb_list_favorites_number);
 
             mView = itemView;
         }
