@@ -233,13 +233,11 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void fontIncreaseOnClick(View view) {
-        //TODO Save via SharedPreference
         PagesAdapter.TEXT_SIZE_FLAG = 1;
         pagesAdapter.notifyDataSetChanged();
     }
 
     public void fontDecreaseOnClick(View view) {
-        //TODO Save via SharedPreference
         PagesAdapter.TEXT_SIZE_FLAG = -1;
         pagesAdapter.notifyDataSetChanged();
     }
