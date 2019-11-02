@@ -165,10 +165,10 @@ public class BooksActivity extends AppCompatActivity {
         LinearLayout.LayoutParams paramsTransparent =
                 (LinearLayout.LayoutParams) continueBarGrayLL.getLayoutParams();
 
-        paramsGreen.weight = chapterReadScroll;
-        paramsTransparent.weight = chapterTotalScroll - chapterReadScroll;
+        continueBarLL.setWeightSum(100);
+        paramsGreen.weight = chapterReadScroll * 100 / chapterTotalScroll;
+        paramsTransparent.weight = continueBarLL.getWeightSum() - paramsGreen.weight;
 
-        continueBarLL.setWeightSum(chapterTotalScroll);
         continueBarGreenLL.setLayoutParams(paramsGreen);
         continueBarGrayLL.setLayoutParams(paramsTransparent);
     }
