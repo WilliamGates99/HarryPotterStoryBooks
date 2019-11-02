@@ -53,7 +53,6 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.titleTV.setText(item.getTitle());
         holder.pageTV.setText(String.valueOf(item.getPages()));
-
         holder.progressBar.setProgress(
                 (int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
 

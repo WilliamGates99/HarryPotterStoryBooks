@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
@@ -54,8 +55,6 @@ public class BooksActivity extends AppCompatActivity {
     private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
     private PagesDataSource pagesDataSource;
-
-    private float chapterTotalScroll, chapterReadScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,18 +123,17 @@ public class BooksActivity extends AppCompatActivity {
         } else {
             DataItemChapters item = chaptersDataSource.getReadingItem();
 
-            chapterTotalScroll = (float) item.getTotalScroll();
-            chapterReadScroll = (float) item.getReadScroll();
-
             ImageView continueIV = findViewById(R.id.iv_books_continue);
             LinearLayout continueLL = findViewById(R.id.ll_books_continue);
             TextView continueChapterTV = findViewById(R.id.tv_books_continue_chapter_title);
             TextView continueBookTV = findViewById(R.id.tv_books_continue_book_title);
+            ProgressBar continuePB = findViewById(R.id.pb_books_continue);
 
             continueFL.setVisibility(View.VISIBLE);
             continueChapterTV.setText(item.getTitle());
             continueBookTV.setText(booksDataSource.getBookTitle(item.getBookId()));
-            continueBar();
+            continuePB.setProgress(
+                    (int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
 
             try {
                 String imageFile = booksDataSource.getBookCover(item.getBookId());
@@ -153,24 +151,6 @@ public class BooksActivity extends AppCompatActivity {
                 startActivity(intent);
             });
         }
-    }
-
-    private void continueBar() {
-        LinearLayout continueBarLL = findViewById(R.id.ll_books_continue_bar);
-        LinearLayout continueBarGreenLL = findViewById(R.id.ll_books_continue_bar_green);
-        LinearLayout continueBarGrayLL = findViewById(R.id.ll_books_continue_bar_gray);
-
-        LinearLayout.LayoutParams paramsGreen =
-                (LinearLayout.LayoutParams) continueBarGreenLL.getLayoutParams();
-        LinearLayout.LayoutParams paramsTransparent =
-                (LinearLayout.LayoutParams) continueBarGrayLL.getLayoutParams();
-
-        continueBarLL.setWeightSum(100);
-        paramsGreen.weight = chapterReadScroll * 100 / chapterTotalScroll;
-        paramsTransparent.weight = continueBarLL.getWeightSum() - paramsGreen.weight;
-
-        continueBarGreenLL.setLayoutParams(paramsGreen);
-        continueBarGrayLL.setLayoutParams(paramsTransparent);
     }
 
     private void seedBooksData() {

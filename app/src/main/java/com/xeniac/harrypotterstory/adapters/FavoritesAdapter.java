@@ -57,7 +57,6 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.titleTV.setText(item.getTitle());
         holder.bookTV.setText(booksDataSource.getBookTitle(item.getBookId()));
-
         holder.progressBar.setProgress(
                 (int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
 
