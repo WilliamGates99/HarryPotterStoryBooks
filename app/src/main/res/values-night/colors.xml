@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorWindowBackground">#1F1F1F</color>
     <color name="colorAccentBlue">#3F7CF6</color>
     <color name="colorAccentGreen">#14F072</color>
     <color name="colorWhite">#000000</color>

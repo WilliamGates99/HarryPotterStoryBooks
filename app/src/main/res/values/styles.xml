@@ -4,6 +4,7 @@
         <item name="colorPrimary">@android:color/transparent</item>
         <item name="colorPrimaryDark">@android:color/transparent</item>
         <item name="colorAccent">@color/colorAccentBlue</item>
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <item name="android:fontFamily">@font/open_sans_regular</item>
     </style>
