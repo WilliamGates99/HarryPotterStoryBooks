@@ -42,7 +42,6 @@
                 android:adjustViewBounds="true"
                 android:background="@drawable/shape_round_image"
                 android:contentDescription="Book Cover"
-                android:src="@drawable/ic_cover_books_1"
                 tools:ignore="HardcodedText" />
 
             <LinearLayout

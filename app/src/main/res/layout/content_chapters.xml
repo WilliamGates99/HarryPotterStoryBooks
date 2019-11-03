@@ -26,7 +26,6 @@
             android:background="@drawable/shape_round_image"
             android:contentDescription="Book Cover"
             android:elevation="25dp"
-            android:src="@drawable/ic_cover_books_1"
             tools:ignore="HardcodedText" />
 
         <androidx.recyclerview.widget.RecyclerView

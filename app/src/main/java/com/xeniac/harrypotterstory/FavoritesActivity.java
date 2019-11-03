@@ -4,14 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.xeniac.harrypotterstory.adapters.FavoritesAdapter;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Objects;
 
@@ -65,6 +69,14 @@ public class FavoritesActivity extends AppCompatActivity {
         if (dataItemChaptersList.isEmpty()) {
             favoritesRV.setVisibility(View.GONE);
             favoritesEmptyRL.setVisibility(View.VISIBLE);
+            ImageView voldemortIV = findViewById(R.id.iv_favorites_voldemort);
+            try {
+                InputStream inputStream = getAssets().open("ic_favorites_voldemort.png");
+                Drawable drawable = Drawable.createFromStream(inputStream, null);
+                voldemortIV.setImageDrawable(drawable);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             favoritesEmptyRL.setVisibility(View.GONE);
             favoritesRV.setVisibility(View.VISIBLE);
