@@ -40,10 +40,10 @@ public class PagesActivity extends AppCompatActivity {
 
     private NestedScrollView nestedScrollView;
     private ImageButton bookmarkGrayIB, bookmarkBlueIB;
-    private ImageButton filterBlackIB, filterBlueIB;
-    private ImageButton filterModeDarkIB, filterModeLightIB;
+    private ImageButton settingsBlackIB, settingsBlueIB;
+    private ImageButton settingsModeDarkIB, settingsModeLightIB;
 
-    private MaterialCardView filterPanelCV;
+    private MaterialCardView settingsPanelCV;
 
     private PagesAdapter pagesAdapter;
 
@@ -112,10 +112,10 @@ public class PagesActivity extends AppCompatActivity {
         bookmarkGrayIB = findViewById(R.id.ib_pages_bookmark_gray);
         bookmarkBlueIB = findViewById(R.id.ib_pages_bookmark_blue);
 
-        filterBlackIB = findViewById(R.id.ib_pages_filter_black);
-        filterBlueIB = findViewById(R.id.ib_pages_filter_blue);
+        settingsBlackIB = findViewById(R.id.ib_pages_settings_black);
+        settingsBlueIB = findViewById(R.id.ib_pages_settings_blue);
 
-        filterPanelCV = findViewById(R.id.cv_pages_filter_panel);
+        settingsPanelCV = findViewById(R.id.cv_pages_settings_panel);
 
         if (chapter.isFavorite()) {
             bookmarkBlueIB.setVisibility(View.VISIBLE);
@@ -139,7 +139,7 @@ public class PagesActivity extends AppCompatActivity {
         }
 
         pagesRecyclerView();
-        filterModeTogglesMethod();
+        settingsModeTogglesMethod();
     }
 
     private void pagesRecyclerView() {
@@ -215,18 +215,18 @@ public class PagesActivity extends AppCompatActivity {
         bookmarkGrayIB.setVisibility(View.VISIBLE);
     }
 
-    public void filterBlackOnClick(View view) {
-        filterBlackIB.setVisibility(View.GONE);
-        filterBlueIB.setVisibility(View.VISIBLE);
+    public void settingsBlackOnClick(View view) {
+        settingsBlackIB.setVisibility(View.GONE);
+        settingsBlueIB.setVisibility(View.VISIBLE);
         float distance = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 -200, getResources().getDisplayMetrics());
-        filterPanelCV.animate().translationY(distance);
+        settingsPanelCV.animate().translationY(distance);
     }
 
-    public void filterBlueOnClick(View view) {
-        filterBlueIB.setVisibility(View.GONE);
-        filterBlackIB.setVisibility(View.VISIBLE);
-        filterPanelCV.animate().translationY(0);
+    public void settingsBlueOnClick(View view) {
+        settingsBlueIB.setVisibility(View.GONE);
+        settingsBlackIB.setVisibility(View.VISIBLE);
+        settingsPanelCV.animate().translationY(0);
     }
 
     public void fontIncreaseOnClick(View view) {
@@ -239,9 +239,9 @@ public class PagesActivity extends AppCompatActivity {
         pagesAdapter.notifyDataSetChanged();
     }
 
-    private void filterModeTogglesMethod() {
-        filterModeDarkIB = findViewById(R.id.ib_pages_filter_mode_dark);
-        filterModeLightIB = findViewById(R.id.ib_pages_filter_mode_light);
+    private void settingsModeTogglesMethod() {
+        settingsModeDarkIB = findViewById(R.id.ib_pages_settings_mode_dark);
+        settingsModeLightIB = findViewById(R.id.ib_pages_settings_mode_light);
 
         SharedPreferences preferences = getSharedPreferences(
                 SubApplication.DARK_MODE_CHECK, MODE_PRIVATE);
@@ -249,11 +249,11 @@ public class PagesActivity extends AppCompatActivity {
                 SubApplication.DARK_MODE_CHECK_KEY, false);
 
         if (darkMode) {
-            filterModeLightIB.setPressed(false);
-            filterModeDarkIB.setPressed(true);
+            settingsModeLightIB.setPressed(false);
+            settingsModeDarkIB.setPressed(true);
         } else {
-            filterModeDarkIB.setPressed(false);
-            filterModeLightIB.setPressed(true);
+            settingsModeDarkIB.setPressed(false);
+            settingsModeLightIB.setPressed(true);
         }
 
         lightModeToggleMethod();
@@ -261,10 +261,10 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void lightModeToggleMethod() {
-        if (filterModeLightIB.isPressed()) {
-            filterModeLightIB.setClickable(false);
+        if (settingsModeLightIB.isPressed()) {
+            settingsModeLightIB.setClickable(false);
         } else {
-            filterModeLightIB.setOnClickListener(v -> {
+            settingsModeLightIB.setOnClickListener(v -> {
                 SharedPreferences.Editor editor = getSharedPreferences(
                         SubApplication.DARK_MODE_CHECK, MODE_PRIVATE).edit();
                 editor.putBoolean(SubApplication.DARK_MODE_CHECK_KEY, false).apply();
@@ -275,10 +275,10 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void darkModeToggleMethod() {
-        if (filterModeDarkIB.isPressed()) {
-            filterModeDarkIB.setClickable(false);
+        if (settingsModeDarkIB.isPressed()) {
+            settingsModeDarkIB.setClickable(false);
         } else {
-            filterModeDarkIB.setOnClickListener(v -> {
+            settingsModeDarkIB.setOnClickListener(v -> {
                 SharedPreferences.Editor editor = getSharedPreferences(
                         SubApplication.DARK_MODE_CHECK, MODE_PRIVATE).edit();
                 editor.putBoolean(SubApplication.DARK_MODE_CHECK_KEY, true).apply();

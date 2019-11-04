@@ -136,7 +136,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_pages_filter_panel"
+        android:id="@+id/cv_pages_settings_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/ll_pages_bottom_view"
@@ -154,30 +154,30 @@
             android:orientation="horizontal">
 
             <RelativeLayout
-                android:id="@+id/rl_pages_filter_font"
+                android:id="@+id/rl_pages_settings_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp">
 
                 <TextView
-                    android:id="@+id/tv_pages_filter_font"
+                    android:id="@+id/tv_pages_settings_font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/cv_pages_filter_font"
-                    android:layout_alignEnd="@+id/cv_pages_filter_font"
+                    android:layout_alignStart="@+id/cv_pages_settings_font"
+                    android:layout_alignEnd="@+id/cv_pages_settings_font"
                     android:fontFamily="@font/open_sans_bold"
                     android:gravity="center"
-                    android:text="@string/string_pages_filter_font"
+                    android:text="@string/string_pages_settings_font"
                     android:textAlignment="gravity"
                     android:textColor="@android:color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cv_pages_filter_font"
+                    android:id="@+id/cv_pages_settings_font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_pages_filter_font"
+                    android:layout_below="@+id/tv_pages_settings_font"
                     android:layout_marginTop="5dp"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="10dp"
@@ -194,7 +194,7 @@
                         android:weightSum="2">
 
                         <ImageButton
-                            android:id="@+id/ib_pages_filter_font_decrease"
+                            android:id="@+id/ib_pages_settings_font_decrease"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -205,11 +205,11 @@
                             android:paddingTop="15dp"
                             android:paddingEnd="10dp"
                             android:paddingBottom="15dp"
-                            android:src="@drawable/ic_pages_filter_font_decrease"
+                            android:src="@drawable/ic_pages_settings_font_decrease"
                             tools:ignore="HardcodedText" />
 
                         <ImageButton
-                            android:id="@+id/ib_pages_filter_font_increase"
+                            android:id="@+id/ib_pages_settings_font_increase"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -220,7 +220,7 @@
                             android:paddingTop="15dp"
                             android:paddingEnd="20dp"
                             android:paddingBottom="15dp"
-                            android:src="@drawable/ic_pages_filter_font_increase"
+                            android:src="@drawable/ic_pages_settings_font_increase"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -230,29 +230,29 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/rl_pages_filter_mode"
+                android:id="@+id/rl_pages_settings_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/tv_pages_filter_mode"
+                    android:id="@+id/tv_pages_settings_mode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/cv_pages_filter_mode"
-                    android:layout_alignEnd="@+id/cv_pages_filter_mode"
+                    android:layout_alignStart="@+id/cv_pages_settings_mode"
+                    android:layout_alignEnd="@+id/cv_pages_settings_mode"
                     android:fontFamily="@font/open_sans_bold"
                     android:gravity="center"
-                    android:text="@string/string_pages_filter_mode"
+                    android:text="@string/string_pages_settings_mode"
                     android:textAlignment="gravity"
                     android:textColor="@android:color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cv_pages_filter_mode"
+                    android:id="@+id/cv_pages_settings_mode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_pages_filter_mode"
+                    android:layout_below="@+id/tv_pages_settings_mode"
                     android:layout_marginTop="5dp"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="10dp"
@@ -269,7 +269,7 @@
                         android:weightSum="2">
 
                         <ImageButton
-                            android:id="@+id/ib_pages_filter_mode_dark"
+                            android:id="@+id/ib_pages_settings_mode_dark"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -279,11 +279,11 @@
                             android:paddingTop="15dp"
                             android:paddingEnd="10dp"
                             android:paddingBottom="15dp"
-                            android:src="@drawable/ic_pages_filter_mode_dark"
+                            android:src="@drawable/ic_pages_settings_mode_dark"
                             tools:ignore="HardcodedText" />
 
                         <ImageButton
-                            android:id="@+id/ib_pages_filter_mode_light"
+                            android:id="@+id/ib_pages_settings_mode_light"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -293,7 +293,7 @@
                             android:paddingTop="15dp"
                             android:paddingEnd="20dp"
                             android:paddingBottom="15dp"
-                            android:src="@drawable/ic_pages_filter_mode_light"
+                            android:src="@drawable/ic_pages_settings_mode_light"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -414,28 +414,28 @@
             android:clipToPadding="false">
 
             <ImageButton
-                android:id="@+id/ib_pages_filter_black"
+                android:id="@+id/ib_pages_settings_black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Filter"
-                android:onClick="filterBlackOnClick"
+                android:onClick="settingsBlackOnClick"
                 android:padding="15dp"
-                android:src="@drawable/ic_pages_filter_black"
+                android:src="@drawable/ic_pages_settings_black"
                 android:visibility="visible"
                 tools:ignore="HardcodedText" />
 
             <ImageButton
-                android:id="@+id/ib_pages_filter_blue"
+                android:id="@+id/ib_pages_settings_blue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Filter"
-                android:onClick="filterBlueOnClick"
+                android:onClick="settingsBlueOnClick"
                 android:padding="15dp"
-                android:src="@drawable/ic_pages_filter_blue"
+                android:src="@drawable/ic_pages_settings_blue"
                 android:visibility="gone"
                 tools:ignore="HardcodedText" />
 
