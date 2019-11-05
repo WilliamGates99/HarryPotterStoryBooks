@@ -11,10 +11,10 @@
     <!--Chapters Activity-->
     <string name="string_chapters_page">" PAGE"</string>
 
-    <!--Favorites Activity-->
-    <string name="string_favorites_title">Favorites</string>
+    <!--Favorite Chapters Activity-->
+    <string name="string_favorites_title">Favorite Chapters</string>
     <string name="string_favorites_empty_msg_title">WHOOPS</string>
-    <string name="string_favorites_empty_msg_description">You haven\'t added any chapter to your favorites yet</string>
+    <string name="string_favorites_empty_msg_description">You do not have any favorite chapter yet</string>
     <string name="string_favorites_empty_button">Browse Now</string>
 
     <!--Pages Activity-->
