@@ -79,25 +79,6 @@ public class BooksDataSource {
         return dataItemBooksList;
     }
 
-    public DataItemBooks getBook(int bookFilter) {
-        DataItemBooks item = new DataItemBooks();
-
-        String[] bookId = {String.valueOf(bookFilter)};
-        Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_COLUMNS,
-                BooksTable.COLUMN_ID + "=?", bookId,
-                null, null, null);
-
-        while (cursor.moveToNext()) {
-            item.setId(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_ID)));
-            item.setTitle(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TITLE)));
-            item.setGist(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_GIST)));
-            item.setCover(cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_COVER)));
-        }
-
-        cursor.close();
-        return item;
-    }
-
     public int getBookTitle(int bookFilter) {
         int bookTitle = 0;
 
@@ -126,18 +107,5 @@ public class BooksDataSource {
 
         cursor.close();
         return bookCover;
-    }
-
-    public void updateBooks(DataItemBooks item) {
-        String[] ids = {String.valueOf(item.getId())};
-
-        ContentValues values = new ContentValues();
-        values.put(BooksTable.COLUMN_ID, item.getId());
-        values.put(BooksTable.COLUMN_TITLE, item.getTitle());
-        values.put(BooksTable.COLUMN_GIST, item.getGist());
-        values.put(BooksTable.COLUMN_COVER, item.getCover());
-
-        mDatabase.update(BooksTable.TABLE_BOOKS, values,
-                BooksTable.COLUMN_ID + "=?", ids);
     }
 }
