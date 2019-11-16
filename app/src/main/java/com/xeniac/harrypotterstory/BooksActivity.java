@@ -166,10 +166,19 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void seedPagesData() {
+        seedPagesBook1();
+        seedPagesBook2();
+        seedPagesBook3();
+        seedPagesBook4();
+        seedPagesBook5();
+        seedPagesBook6();
+        seedPagesBook7();
+    }
+
+    private void seedPagesBook1() {
         pagesDataSource = new PagesDataSource(this);
         pagesDataSource.open();
 
-        //TODO Add Other Data Providers
         pagesDataSource.seedDataBase(PagesDataProviderBook1_1.dataItemPagesList);
         pagesDataSource.seedDataBase(PagesDataProviderBook1_2.dataItemPagesList);
         pagesDataSource.seedDataBase(PagesDataProviderBook1_3.dataItemPagesList);
@@ -187,5 +196,225 @@ public class BooksActivity extends AppCompatActivity {
         pagesDataSource.seedDataBase(PagesDataProviderBook1_15.dataItemPagesList);
         pagesDataSource.seedDataBase(PagesDataProviderBook1_16.dataItemPagesList);
         pagesDataSource.seedDataBase(PagesDataProviderBook1_17.dataItemPagesList);
+    }
+
+    private void seedPagesBook2() {
+        pagesDataSource = new PagesDataSource(this);
+        pagesDataSource.open();
+
+        //TODO Remove Comments
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_1.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_2.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_3.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_4.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_5.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_6.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_7.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_8.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_9.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_10.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_11.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_12.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_13.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_14.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_15.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_16.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_17.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook2_18.dataItemPagesList);
+    }
+
+    private void seedPagesBook3() {
+        pagesDataSource = new PagesDataSource(this);
+        pagesDataSource.open();
+
+        //TODO Remove Comments
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_1.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_2.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_3.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_4.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_5.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_6.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_7.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_8.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_9.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_10.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_11.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_12.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_13.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_14.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_15.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_16.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_17.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_18.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_19.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_20.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_21.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook3_22.dataItemPagesList);
+    }
+
+    private void seedPagesBook4() {
+        pagesDataSource = new PagesDataSource(this);
+        pagesDataSource.open();
+
+        //TODO Remove Comments
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_1.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_2.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_3.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_4.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_5.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_6.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_7.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_8.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_9.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_10.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_11.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_12.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_13.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_14.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_15.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_16.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_17.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_18.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_19.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_20.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_21.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_22.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_23.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_24.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_25.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_26.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_27.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_28.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_29.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_30.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_31.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_32.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook4_33.dataItemPagesList);
+    }
+
+    private void seedPagesBook5() {
+        pagesDataSource = new PagesDataSource(this);
+        pagesDataSource.open();
+
+        //TODO Remove Comments
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_1.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_2.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_3.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_4.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_5.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_6.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_7.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_8.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_9.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_10.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_11.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_12.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_13.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_14.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_15.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_16.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_17.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_18.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_19.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_20.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_21.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_22.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_23.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_24.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_25.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_26.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_27.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_28.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_29.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_30.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_31.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_32.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_33.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_34.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_35.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_36.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_37.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook5_38.dataItemPagesList);
+    }
+
+    private void seedPagesBook6() {
+        pagesDataSource = new PagesDataSource(this);
+        pagesDataSource.open();
+
+        //TODO Remove Comments
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_1.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_2.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_3.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_4.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_5.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_6.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_7.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_8.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_9.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_10.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_11.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_12.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_13.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_14.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_15.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_16.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_17.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_18.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_19.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_20.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_21.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_22.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_23.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_24.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_25.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_26.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_27.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_28.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_29.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook6_30.dataItemPagesList);
+    }
+
+    private void seedPagesBook7() {
+        pagesDataSource = new PagesDataSource(this);
+        pagesDataSource.open();
+
+        //TODO Remove Comments
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_1.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_2.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_3.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_4.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_5.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_6.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_7.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_8.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_9.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_10.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_11.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_12.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_13.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_14.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_15.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_16.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_17.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_18.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_19.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_20.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_21.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_22.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_23.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_24.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_25.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_26.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_27.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_28.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_29.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_30.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_31.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_32.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_33.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_34.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_35.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_36.dataItemPagesList);
+//        pagesDataSource.seedDataBase(PagesDataProviderBook7_37.dataItemPagesList);
     }
 }
