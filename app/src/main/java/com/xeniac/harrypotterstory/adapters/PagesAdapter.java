@@ -43,17 +43,16 @@ public class PagesAdapter extends RecyclerView.Adapter<PagesAdapter.ViewHolder> 
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.textTV.setText(item.getText());
 
-        float currentSize = holder.textTV.getTextSize();
-
         switch (TEXT_SIZE_FLAG) {
-            case 0:
-                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize);
-                break;
             case 1:
-                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize + 3.0f);
+                float currentSize = holder.textTV.getTextSize();
+                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize + 5.0f);
                 break;
             case -1:
-                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize - 3.0f);
+                currentSize = holder.textTV.getTextSize();
+                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize - 5.0f);
+                break;
+            default:
                 break;
         }
     }
