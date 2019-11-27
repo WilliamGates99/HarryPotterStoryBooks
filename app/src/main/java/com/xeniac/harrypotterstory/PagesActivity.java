@@ -165,10 +165,7 @@ public class PagesActivity extends AppCompatActivity {
                 chapter.setTotalScroll(nestedScrollView.getChildAt(0).getMeasuredHeight() - 1692);
             }
 
-            if (chapter.getReadScroll() < scrollY) {
-                chapter.setReadScroll(scrollY);
-            }
-
+            chapter.setReadScroll(scrollY);
             chaptersDataSource.updateChapters(chapter);
         });
     }
