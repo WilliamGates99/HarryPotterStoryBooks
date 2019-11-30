@@ -93,7 +93,7 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:id="@+id/tv_list_chapters_page"
+                android:id="@+id/tv_list_chapters_page_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_list_chapters_title"
@@ -109,11 +109,12 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
+                android:id="@+id/tv_list_chapters_page_constant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_list_chapters_title"
                 android:layout_marginTop="5dp"
-                android:layout_toEndOf="@id/tv_list_chapters_page"
+                android:layout_toEndOf="@id/tv_list_chapters_page_number"
                 android:ellipsize="end"
                 android:fontFamily="@font/open_sans_regular"
                 android:gravity="center_vertical|start"
@@ -157,17 +158,38 @@
                 android:contentDescription="Bookmark"
                 android:padding="10dp"
                 android:src="@drawable/ic_bookmark_gray"
-                android:visibility="visible"
+                android:visibility="gone"
                 tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_list_chapters_soon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_layout_red"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/string_chapters_soon"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="SmallSp" />
 
         </RelativeLayout>
 
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/ll_list_chapters_divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="15dp"
-        android:background="@color/colorMediumGray" />
+        android:background="@color/colorMediumGray"
+        android:orientation="horizontal" />
 
 </LinearLayout>

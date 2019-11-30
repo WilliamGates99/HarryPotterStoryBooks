@@ -10,6 +10,7 @@
 
     <!--Chapters Activity-->
     <string name="string_chapters_page">" PAGE"</string>
+    <string name="string_chapters_soon">"SOON"</string>
 
     <!--Favorite Chapters Activity-->
     <string name="string_favorites_title">Favorite Chapters</string>

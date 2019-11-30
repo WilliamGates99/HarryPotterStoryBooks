@@ -3,6 +3,7 @@
     <color name="colorWindowBackground">#FFFFFF</color>
     <color name="colorAccentBlue">#3F7CF6</color>
     <color name="colorAccentGreen">#14F072</color>
+    <color name="colorAccentRed">#FF4040</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorLightGray">#E2E2E2</color>
@@ -10,6 +11,6 @@
     <color name="colorDarkGray">#7B7B7B</color>
     <color name="colorDarkestGray">#3D3D3D</color>
     <color name="colorBottomView">#FFFFFF</color>
-    <color name="colorCardBorder">#5389F7</color>
+    <color name="colorCardStroke">#5389F7</color>
 
 </resources>
