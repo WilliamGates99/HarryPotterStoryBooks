@@ -103,10 +103,10 @@ public class ChaptersDataSource {
     public DataItemChapters getReadingItem() {
         DataItemChapters item = new DataItemChapters();
 
-        String[] favorites = {"1"};
+        String[] readings = {"1"};
         Cursor cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS,
                 ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_READING + "=?",
-                favorites, null, null, null);
+                readings, null, null, null);
 
         while (cursor.moveToNext()) {
             item.setId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
