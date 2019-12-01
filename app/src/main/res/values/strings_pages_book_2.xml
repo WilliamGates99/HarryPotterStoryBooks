@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
+
+    <!--Book 2 Chapter 1 Pages-->
+    <string name="string_book_2_chapter_1_page_1">"    "</string>
+    <string name="string_book_2_chapter_1_page_2">"    "</string>
+    <string name="string_book_2_chapter_1_page_3">"    "</string>
+    <string name="string_book_2_chapter_1_page_4">"    "</string>
+    <string name="string_book_2_chapter_1_page_5">"    "</string>
+    <string name="string_book_2_chapter_1_page_6">"    "</string>
+    <string name="string_book_2_chapter_1_page_7">"    "</string>
+    <string name="string_book_2_chapter_1_page_8">"    "</string>
+    <string name="string_book_2_chapter_1_page_9">"    "</string>
+    <string name="string_book_2_chapter_1_page_10">"    "</string>
+    <string name="string_book_2_chapter_1_page_11">"    "</string>
+
+    <!--Book 2 Chapter 2 Pages-->
+    <string name="string_book_2_chapter_2_page_1">"    "</string>
+    <string name="string_book_2_chapter_2_page_2">"    "</string>
+    <string name="string_book_2_chapter_2_page_3">"    "</string>
+    <string name="string_book_2_chapter_2_page_4">"    "</string>
+    <string name="string_book_2_chapter_2_page_5">"    "</string>
+    <string name="string_book_2_chapter_2_page_6">"    "</string>
+    <string name="string_book_2_chapter_2_page_7">"    "</string>
+    <string name="string_book_2_chapter_2_page_8">"    "</string>
+    <string name="string_book_2_chapter_2_page_9">"    "</string>
+    <string name="string_book_2_chapter_2_page_10">"    "</string>
+    <string name="string_book_2_chapter_2_page_11">"    "</string>
+    <string name="string_book_2_chapter_2_page_12">"    "</string>
+
+    <!--Book 2 Chapter 3 Pages-->
+    <string name="string_book_2_chapter_3_page_1">"    "</string>
+    <string name="string_book_2_chapter_3_page_2">"    "</string>
+    <string name="string_book_2_chapter_3_page_3">"    "</string>
+    <string name="string_book_2_chapter_3_page_4">"    "</string>
+    <string name="string_book_2_chapter_3_page_5">"    "</string>
+    <string name="string_book_2_chapter_3_page_6">"    "</string>
+    <string name="string_book_2_chapter_3_page_7">"    "</string>
+    <string name="string_book_2_chapter_3_page_8">"    "</string>
+    <string name="string_book_2_chapter_3_page_9">"    "</string>
+    <string name="string_book_2_chapter_3_page_10">"    "</string>
+    <string name="string_book_2_chapter_3_page_11">"    "</string>
+    <string name="string_book_2_chapter_3_page_12">"    "</string>
+    <string name="string_book_2_chapter_3_page_13">"    "</string>
+    <string name="string_book_2_chapter_3_page_14">"    "</string>
+    <string name="string_book_2_chapter_3_page_15">"    "</string>
+    <string name="string_book_2_chapter_3_page_16">"    "</string>
+    <string name="string_book_2_chapter_3_page_17">"    "</string>
+    <string name="string_book_2_chapter_3_page_18">"    "</string>
+
+    <!--Book 2 Chapter 4 Pages-->
+    <string name="string_book_2_chapter_4_page_1">"    "</string>
+    <string name="string_book_2_chapter_4_page_2">"    "</string>
+    <string name="string_book_2_chapter_4_page_3">"    "</string>
+    <string name="string_book_2_chapter_4_page_4">"    "</string>
+    <string name="string_book_2_chapter_4_page_5">"    "</string>
+    <string name="string_book_2_chapter_4_page_6">"    "</string>
+    <string name="string_book_2_chapter_4_page_7">"    "</string>
+    <string name="string_book_2_chapter_4_page_8">"    "</string>
+    <string name="string_book_2_chapter_4_page_9">"    "</string>
+    <string name="string_book_2_chapter_4_page_10">"    "</string>
+    <string name="string_book_2_chapter_4_page_11">"    "</string>
+    <string name="string_book_2_chapter_4_page_12">"    "</string>
+    <string name="string_book_2_chapter_4_page_13">"    "</string>
+    <string name="string_book_2_chapter_4_page_14">"    "</string>
+    <string name="string_book_2_chapter_4_page_15">"    "</string>
+    <string name="string_book_2_chapter_4_page_16">"    "</string>
+    <string name="string_book_2_chapter_4_page_17">"    "</string>
+    <string name="string_book_2_chapter_4_page_18">"    "</string>
+    <string name="string_book_2_chapter_4_page_19">"    "</string>
+    <string name="string_book_2_chapter_4_page_20">"    "</string>
+    <string name="string_book_2_chapter_4_page_21">"    "</string>
+    <string name="string_book_2_chapter_4_page_22">"    "</string>
+    <string name="string_book_2_chapter_4_page_23">"    "</string>
+
+    <!--Book 2 Chapter 5 Pages-->
+    <string name="string_book_2_chapter_5_page_1">"    "</string>
+    <string name="string_book_2_chapter_5_page_2">"    "</string>
+    <string name="string_book_2_chapter_5_page_3">"    "</string>
+    <string name="string_book_2_chapter_5_page_4">"    "</string>
+    <string name="string_book_2_chapter_5_page_5">"    "</string>
+    <string name="string_book_2_chapter_5_page_6">"    "</string>
+    <string name="string_book_2_chapter_5_page_7">"    "</string>
+    <string name="string_book_2_chapter_5_page_8">"    "</string>
+    <string name="string_book_2_chapter_5_page_9">"    "</string>
+    <string name="string_book_2_chapter_5_page_10">"    "</string>
+    <string name="string_book_2_chapter_5_page_11">"    "</string>
+    <string name="string_book_2_chapter_5_page_12">"    "</string>
+    <string name="string_book_2_chapter_5_page_13">"    "</string>
+    <string name="string_book_2_chapter_5_page_14">"    "</string>
+    <string name="string_book_2_chapter_5_page_15">"    "</string>
+    <string name="string_book_2_chapter_5_page_16">"    "</string>
+    <string name="string_book_2_chapter_5_page_17">"    "</string>
+    <string name="string_book_2_chapter_5_page_18">"    "</string>
+    <string name="string_book_2_chapter_5_page_19">"    "</string>
+    <string name="string_book_2_chapter_5_page_20">"    "</string>
+    <string name="string_book_2_chapter_5_page_21">"    "</string>
+
+    <!--Book 2 Chapter 6 Pages-->
+    <string name="string_book_2_chapter_6_page_1">"    "</string>
+    <string name="string_book_2_chapter_6_page_2">"    "</string>
+    <string name="string_book_2_chapter_6_page_3">"    "</string>
+    <string name="string_book_2_chapter_6_page_4">"    "</string>
+    <string name="string_book_2_chapter_6_page_5">"    "</string>
+    <string name="string_book_2_chapter_6_page_6">"    "</string>
+    <string name="string_book_2_chapter_6_page_7">"    "</string>
+    <string name="string_book_2_chapter_6_page_8">"    "</string>
+    <string name="string_book_2_chapter_6_page_9">"    "</string>
+    <string name="string_book_2_chapter_6_page_10">"    "</string>
+    <string name="string_book_2_chapter_6_page_11">"    "</string>
+    <string name="string_book_2_chapter_6_page_12">"    "</string>
+    <string name="string_book_2_chapter_6_page_13">"    "</string>
+    <string name="string_book_2_chapter_6_page_14">"    "</string>
+    <string name="string_book_2_chapter_6_page_15">"    "</string>
+    <string name="string_book_2_chapter_6_page_16">"    "</string>
+    <string name="string_book_2_chapter_6_page_17">"    "</string>
+    <string name="string_book_2_chapter_6_page_18">"    "</string>
+
+    <!--Book 2 Chapter 7 Pages-->
+    <string name="string_book_2_chapter_7_page_1">"    "</string>
+    <string name="string_book_2_chapter_7_page_2">"    "</string>
+    <string name="string_book_2_chapter_7_page_3">"    "</string>
+    <string name="string_book_2_chapter_7_page_4">"    "</string>
+    <string name="string_book_2_chapter_7_page_5">"    "</string>
+    <string name="string_book_2_chapter_7_page_6">"    "</string>
+    <string name="string_book_2_chapter_7_page_7">"    "</string>
+    <string name="string_book_2_chapter_7_page_8">"    "</string>
+    <string name="string_book_2_chapter_7_page_9">"    "</string>
+    <string name="string_book_2_chapter_7_page_10">"    "</string>
+    <string name="string_book_2_chapter_7_page_11">"    "</string>
+    <string name="string_book_2_chapter_7_page_12">"    "</string>
+    <string name="string_book_2_chapter_7_page_13">"    "</string>
+    <string name="string_book_2_chapter_7_page_14">"    "</string>
+    <string name="string_book_2_chapter_7_page_15">"    "</string>
+    <string name="string_book_2_chapter_7_page_16">"    "</string>
+    <string name="string_book_2_chapter_7_page_17">"    "</string>
+    <string name="string_book_2_chapter_7_page_18">"    "</string>
+
+    <!--Book 2 Chapter 8 Pages-->
+    <string name="string_book_2_chapter_8_page_1">"    "</string>
+    <string name="string_book_2_chapter_8_page_2">"    "</string>
+    <string name="string_book_2_chapter_8_page_3">"    "</string>
+    <string name="string_book_2_chapter_8_page_4">"    "</string>
+    <string name="string_book_2_chapter_8_page_5">"    "</string>
+    <string name="string_book_2_chapter_8_page_6">"    "</string>
+    <string name="string_book_2_chapter_8_page_7">"    "</string>
+    <string name="string_book_2_chapter_8_page_8">"    "</string>
+    <string name="string_book_2_chapter_8_page_9">"    "</string>
+    <string name="string_book_2_chapter_8_page_10">"    "</string>
+    <string name="string_book_2_chapter_8_page_11">"    "</string>
+    <string name="string_book_2_chapter_8_page_12">"    "</string>
+    <string name="string_book_2_chapter_8_page_13">"    "</string>
+    <string name="string_book_2_chapter_8_page_14">"    "</string>
+    <string name="string_book_2_chapter_8_page_15">"    "</string>
+    <string name="string_book_2_chapter_8_page_16">"    "</string>
+    <string name="string_book_2_chapter_8_page_17">"    "</string>
+    <string name="string_book_2_chapter_8_page_18">"    "</string>
+
+    <!--Book 2 Chapter 9 Pages-->
+    <string name="string_book_2_chapter_9_page_1">"    "</string>
+    <string name="string_book_2_chapter_9_page_2">"    "</string>
+    <string name="string_book_2_chapter_9_page_3">"    "</string>
+    <string name="string_book_2_chapter_9_page_4">"    "</string>
+    <string name="string_book_2_chapter_9_page_5">"    "</string>
+    <string name="string_book_2_chapter_9_page_6">"    "</string>
+    <string name="string_book_2_chapter_9_page_7">"    "</string>
+    <string name="string_book_2_chapter_9_page_8">"    "</string>
+    <string name="string_book_2_chapter_9_page_9">"    "</string>
+    <string name="string_book_2_chapter_9_page_10">"    "</string>
+    <string name="string_book_2_chapter_9_page_11">"    "</string>
+    <string name="string_book_2_chapter_9_page_12">"    "</string>
+    <string name="string_book_2_chapter_9_page_13">"    "</string>
+    <string name="string_book_2_chapter_9_page_14">"    "</string>
+    <string name="string_book_2_chapter_9_page_15">"    "</string>
+    <string name="string_book_2_chapter_9_page_16">"    "</string>
+    <string name="string_book_2_chapter_9_page_17">"    "</string>
+    <string name="string_book_2_chapter_9_page_18">"    "</string>
+    <string name="string_book_2_chapter_9_page_19">"    "</string>
+    <string name="string_book_2_chapter_9_page_20">"    "</string>
+    <string name="string_book_2_chapter_9_page_21">"    "</string>
+
+    <!--Book 2 Chapter 10 Pages-->
+    <string name="string_book_2_chapter_10_page_1">"    "</string>
+    <string name="string_book_2_chapter_10_page_2">"    "</string>
+    <string name="string_book_2_chapter_10_page_3">"    "</string>
+    <string name="string_book_2_chapter_10_page_4">"    "</string>
+    <string name="string_book_2_chapter_10_page_5">"    "</string>
+    <string name="string_book_2_chapter_10_page_6">"    "</string>
+    <string name="string_book_2_chapter_10_page_7">"    "</string>
+    <string name="string_book_2_chapter_10_page_8">"    "</string>
+    <string name="string_book_2_chapter_10_page_9">"    "</string>
+    <string name="string_book_2_chapter_10_page_10">"    "</string>
+    <string name="string_book_2_chapter_10_page_11">"    "</string>
+    <string name="string_book_2_chapter_10_page_12">"    "</string>
+    <string name="string_book_2_chapter_10_page_13">"    "</string>
+    <string name="string_book_2_chapter_10_page_14">"    "</string>
+    <string name="string_book_2_chapter_10_page_15">"    "</string>
+    <string name="string_book_2_chapter_10_page_16">"    "</string>
+    <string name="string_book_2_chapter_10_page_17">"    "</string>
+    <string name="string_book_2_chapter_10_page_18">"    "</string>
+    <string name="string_book_2_chapter_10_page_19">"    "</string>
+    <string name="string_book_2_chapter_10_page_20">"    "</string>
+    <string name="string_book_2_chapter_10_page_21">"    "</string>
+
+    <!--Book 2 Chapter 11 Pages-->
+    <string name="string_book_2_chapter_11_page_1">"    "</string>
+    <string name="string_book_2_chapter_11_page_2">"    "</string>
+    <string name="string_book_2_chapter_11_page_3">"    "</string>
+    <string name="string_book_2_chapter_11_page_4">"    "</string>
+    <string name="string_book_2_chapter_11_page_5">"    "</string>
+    <string name="string_book_2_chapter_11_page_6">"    "</string>
+    <string name="string_book_2_chapter_11_page_7">"    "</string>
+    <string name="string_book_2_chapter_11_page_8">"    "</string>
+    <string name="string_book_2_chapter_11_page_9">"    "</string>
+    <string name="string_book_2_chapter_11_page_10">"    "</string>
+    <string name="string_book_2_chapter_11_page_11">"    "</string>
+    <string name="string_book_2_chapter_11_page_12">"    "</string>
+    <string name="string_book_2_chapter_11_page_13">"    "</string>
+    <string name="string_book_2_chapter_11_page_14">"    "</string>
+    <string name="string_book_2_chapter_11_page_15">"    "</string>
+    <string name="string_book_2_chapter_11_page_16">"    "</string>
+    <string name="string_book_2_chapter_11_page_17">"    "</string>
+    <string name="string_book_2_chapter_11_page_18">"    "</string>
+    <string name="string_book_2_chapter_11_page_19">"    "</string>
+    <string name="string_book_2_chapter_11_page_20">"    "</string>
+    <string name="string_book_2_chapter_11_page_21">"    "</string>
+    <string name="string_book_2_chapter_11_page_22">"    "</string>
+    <string name="string_book_2_chapter_11_page_23">"    "</string>
+
+    <!--Book 2 Chapter 12 Pages-->
+    <string name="string_book_2_chapter_12_page_1">"    "</string>
+    <string name="string_book_2_chapter_12_page_2">"    "</string>
+    <string name="string_book_2_chapter_12_page_3">"    "</string>
+    <string name="string_book_2_chapter_12_page_4">"    "</string>
+    <string name="string_book_2_chapter_12_page_5">"    "</string>
+    <string name="string_book_2_chapter_12_page_6">"    "</string>
+    <string name="string_book_2_chapter_12_page_7">"    "</string>
+    <string name="string_book_2_chapter_12_page_8">"    "</string>
+    <string name="string_book_2_chapter_12_page_9">"    "</string>
+    <string name="string_book_2_chapter_12_page_10">"    "</string>
+    <string name="string_book_2_chapter_12_page_11">"    "</string>
+    <string name="string_book_2_chapter_12_page_12">"    "</string>
+    <string name="string_book_2_chapter_12_page_13">"    "</string>
+    <string name="string_book_2_chapter_12_page_14">"    "</string>
+    <string name="string_book_2_chapter_12_page_15">"    "</string>
+    <string name="string_book_2_chapter_12_page_16">"    "</string>
+    <string name="string_book_2_chapter_12_page_17">"    "</string>
+    <string name="string_book_2_chapter_12_page_18">"    "</string>
+    <string name="string_book_2_chapter_12_page_19">"    "</string>
+    <string name="string_book_2_chapter_12_page_20">"    "</string>
+    <string name="string_book_2_chapter_12_page_21">"    "</string>
+    <string name="string_book_2_chapter_12_page_22">"    "</string>
+
+    <!--Book 2 Chapter 13 Pages-->
+    <string name="string_book_2_chapter_13_page_1">"    "</string>
+    <string name="string_book_2_chapter_13_page_2">"    "</string>
+    <string name="string_book_2_chapter_13_page_3">"    "</string>
+    <string name="string_book_2_chapter_13_page_4">"    "</string>
+    <string name="string_book_2_chapter_13_page_5">"    "</string>
+    <string name="string_book_2_chapter_13_page_6">"    "</string>
+    <string name="string_book_2_chapter_13_page_7">"    "</string>
+    <string name="string_book_2_chapter_13_page_8">"    "</string>
+    <string name="string_book_2_chapter_13_page_9">"    "</string>
+    <string name="string_book_2_chapter_13_page_10">"    "</string>
+    <string name="string_book_2_chapter_13_page_11">"    "</string>
+    <string name="string_book_2_chapter_13_page_12">"    "</string>
+    <string name="string_book_2_chapter_13_page_13">"    "</string>
+    <string name="string_book_2_chapter_13_page_14">"    "</string>
+    <string name="string_book_2_chapter_13_page_15">"    "</string>
+    <string name="string_book_2_chapter_13_page_16">"    "</string>
+    <string name="string_book_2_chapter_13_page_17">"    "</string>
+    <string name="string_book_2_chapter_13_page_18">"    "</string>
+    <string name="string_book_2_chapter_13_page_19">"    "</string>
+    <string name="string_book_2_chapter_13_page_20">"    "</string>
+    <string name="string_book_2_chapter_13_page_21">"    "</string>
+    <string name="string_book_2_chapter_13_page_22">"    "</string>
+    <string name="string_book_2_chapter_13_page_23">"    "</string>
+    <string name="string_book_2_chapter_13_page_24">"    "</string>
+    <string name="string_book_2_chapter_13_page_25">"    "</string>
+    <string name="string_book_2_chapter_13_page_26">"    "</string>
+    <string name="string_book_2_chapter_13_page_27">"    "</string>
+    <string name="string_book_2_chapter_13_page_28">"    "</string>
+    <string name="string_book_2_chapter_13_page_29">"    "</string>
+    <string name="string_book_2_chapter_13_page_30">"    "</string>
+    <string name="string_book_2_chapter_13_page_31">"    "</string>
+    <string name="string_book_2_chapter_13_page_32">"    "</string>
+    <string name="string_book_2_chapter_13_page_33">"    "</string>
+
+    <!--Book 2 Chapter 14 Pages-->
+    <string name="string_book_2_chapter_14_page_1">"    "</string>
+    <string name="string_book_2_chapter_14_page_2">"    "</string>
+    <string name="string_book_2_chapter_14_page_3">"    "</string>
+    <string name="string_book_2_chapter_14_page_4">"    "</string>
+    <string name="string_book_2_chapter_14_page_5">"    "</string>
+    <string name="string_book_2_chapter_14_page_6">"    "</string>
+    <string name="string_book_2_chapter_14_page_7">"    "</string>
+    <string name="string_book_2_chapter_14_page_8">"    "</string>
+    <string name="string_book_2_chapter_14_page_9">"    "</string>
+    <string name="string_book_2_chapter_14_page_10">"    "</string>
+    <string name="string_book_2_chapter_14_page_11">"    "</string>
+    <string name="string_book_2_chapter_14_page_12">"    "</string>
+    <string name="string_book_2_chapter_14_page_13">"    "</string>
+    <string name="string_book_2_chapter_14_page_14">"    "</string>
+    <string name="string_book_2_chapter_14_page_15">"    "</string>
+    <string name="string_book_2_chapter_14_page_16">"    "</string>
+
+    <!--Book 2 Chapter 15 Pages-->
+    <string name="string_book_2_chapter_15_page_1">"    "</string>
+    <string name="string_book_2_chapter_15_page_2">"    "</string>
+    <string name="string_book_2_chapter_15_page_3">"    "</string>
+    <string name="string_book_2_chapter_15_page_4">"    "</string>
+    <string name="string_book_2_chapter_15_page_5">"    "</string>
+    <string name="string_book_2_chapter_15_page_6">"    "</string>
+    <string name="string_book_2_chapter_15_page_7">"    "</string>
+    <string name="string_book_2_chapter_15_page_8">"    "</string>
+    <string name="string_book_2_chapter_15_page_9">"    "</string>
+    <string name="string_book_2_chapter_15_page_10">"    "</string>
+    <string name="string_book_2_chapter_15_page_11">"    "</string>
+    <string name="string_book_2_chapter_15_page_12">"    "</string>
+    <string name="string_book_2_chapter_15_page_13">"    "</string>
+    <string name="string_book_2_chapter_15_page_14">"    "</string>
+    <string name="string_book_2_chapter_15_page_15">"    "</string>
+    <string name="string_book_2_chapter_15_page_16">"    "</string>
+    <string name="string_book_2_chapter_15_page_17">"    "</string>
+    <string name="string_book_2_chapter_15_page_18">"    "</string>
+
+    <!--Book 2 Chapter 16 Pages-->
+    <string name="string_book_2_chapter_16_page_1">"    "</string>
+    <string name="string_book_2_chapter_16_page_2">"    "</string>
+    <string name="string_book_2_chapter_16_page_3">"    "</string>
+    <string name="string_book_2_chapter_16_page_4">"    "</string>
+    <string name="string_book_2_chapter_16_page_5">"    "</string>
+    <string name="string_book_2_chapter_16_page_6">"    "</string>
+    <string name="string_book_2_chapter_16_page_7">"    "</string>
+    <string name="string_book_2_chapter_16_page_8">"    "</string>
+    <string name="string_book_2_chapter_16_page_9">"    "</string>
+    <string name="string_book_2_chapter_16_page_10">"    "</string>
+    <string name="string_book_2_chapter_16_page_11">"    "</string>
+    <string name="string_book_2_chapter_16_page_12">"    "</string>
+    <string name="string_book_2_chapter_16_page_13">"    "</string>
+    <string name="string_book_2_chapter_16_page_14">"    "</string>
+    <string name="string_book_2_chapter_16_page_15">"    "</string>
+    <string name="string_book_2_chapter_16_page_16">"    "</string>
+    <string name="string_book_2_chapter_16_page_17">"    "</string>
+    <string name="string_book_2_chapter_16_page_18">"    "</string>
+    <string name="string_book_2_chapter_16_page_19">"    "</string>
+    <string name="string_book_2_chapter_16_page_20">"    "</string>
+    <string name="string_book_2_chapter_16_page_21">"    "</string>
+    <string name="string_book_2_chapter_16_page_22">"    "</string>
+    <string name="string_book_2_chapter_16_page_23">"    "</string>
+
+    <!--Book 2 Chapter 17 Pages-->
+    <string name="string_book_2_chapter_17_page_1">"    "</string>
+    <string name="string_book_2_chapter_17_page_2">"    "</string>
+    <string name="string_book_2_chapter_17_page_3">"    "</string>
+    <string name="string_book_2_chapter_17_page_4">"    "</string>
+    <string name="string_book_2_chapter_17_page_5">"    "</string>
+    <string name="string_book_2_chapter_17_page_6">"    "</string>
+    <string name="string_book_2_chapter_17_page_7">"    "</string>
+    <string name="string_book_2_chapter_17_page_8">"    "</string>
+    <string name="string_book_2_chapter_17_page_9">"    "</string>
+    <string name="string_book_2_chapter_17_page_10">"    "</string>
+    <string name="string_book_2_chapter_17_page_11">"    "</string>
+    <string name="string_book_2_chapter_17_page_12">"    "</string>
+    <string name="string_book_2_chapter_17_page_13">"    "</string>
+    <string name="string_book_2_chapter_17_page_14">"    "</string>
+    <string name="string_book_2_chapter_17_page_15">"    "</string>
+    <string name="string_book_2_chapter_17_page_16">"    "</string>
+    <string name="string_book_2_chapter_17_page_17">"    "</string>
+    <string name="string_book_2_chapter_17_page_18">"    "</string>
+    <string name="string_book_2_chapter_17_page_19">"    "</string>
+    <string name="string_book_2_chapter_17_page_20">"    "</string>
+    <string name="string_book_2_chapter_17_page_21">"    "</string>
+
+    <!--Book 2 Chapter 18 Pages-->
+    <string name="string_book_2_chapter_18_page_1">"    "</string>
+    <string name="string_book_2_chapter_18_page_2">"    "</string>
+    <string name="string_book_2_chapter_18_page_3">"    "</string>
+    <string name="string_book_2_chapter_18_page_4">"    "</string>
+    <string name="string_book_2_chapter_18_page_5">"    "</string>
+    <string name="string_book_2_chapter_18_page_6">"    "</string>
+    <string name="string_book_2_chapter_18_page_7">"    "</string>
+    <string name="string_book_2_chapter_18_page_8">"    "</string>
+    <string name="string_book_2_chapter_18_page_9">"    "</string>
+    <string name="string_book_2_chapter_18_page_10">"    "</string>
+    <string name="string_book_2_chapter_18_page_11">"    "</string>
+    <string name="string_book_2_chapter_18_page_12">"    "</string>
+    <string name="string_book_2_chapter_18_page_13">"    "</string>
+    <string name="string_book_2_chapter_18_page_14">"    "</string>
+    <string name="string_book_2_chapter_18_page_15">"    "</string>
+
+</resources>
