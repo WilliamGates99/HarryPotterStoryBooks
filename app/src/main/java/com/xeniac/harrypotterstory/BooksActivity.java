@@ -224,7 +224,6 @@ import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 
 public class BooksActivity extends AppCompatActivity {
 
@@ -281,7 +280,6 @@ public class BooksActivity extends AppCompatActivity {
         seedBooksData();
         seedChaptersData();
         seedPagesData();
-        checkChaptersRelease();
         booksRecyclerView();
         continueReading();
     }
@@ -343,21 +341,6 @@ public class BooksActivity extends AppCompatActivity {
         chaptersDataSource = new ChaptersDataSource(this);
         chaptersDataSource.open();
         chaptersDataSource.seedDataBase(ChaptersDataProvider.dataItemChaptersList);
-    }
-
-    private void checkChaptersRelease() {
-        List<DataItemChapters> chaptersDB =
-                chaptersDataSource.getAllItems(0, false);
-        List<DataItemChapters> chaptersProvider = ChaptersDataProvider.dataItemChaptersList;
-
-        for (int i = 0; i < chaptersProvider.size(); i++) {
-            DataItemChapters itemDB = chaptersDB.get(i);
-            DataItemChapters itemProvider = chaptersProvider.get(i);
-
-            if (!itemDB.isReleased() && itemProvider.isReleased()) {
-                chaptersDataSource.updateChapters(itemProvider);
-            }
-        }
     }
 
     private void seedPagesData() {

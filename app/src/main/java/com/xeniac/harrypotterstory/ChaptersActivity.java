@@ -10,11 +10,14 @@ import android.widget.ImageView;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
+import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemBooks;
+import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 import java.util.Objects;
 
 public class ChaptersActivity extends AppCompatActivity {
@@ -84,9 +87,25 @@ public class ChaptersActivity extends AppCompatActivity {
     }
 
     private void chaptersRecyclerView() {
+        checkChaptersRelease();
         ChaptersAdapter chaptersAdapter = new ChaptersAdapter(this,
                 chaptersDataSource.getAllItems(book.getId(), false));
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
         chaptersRV.setAdapter(chaptersAdapter);
+    }
+
+    private void checkChaptersRelease() {
+        List<DataItemChapters> chaptersDB =
+                chaptersDataSource.getAllItems(book.getId(), false);
+        List<DataItemChapters> chaptersProvider = ChaptersDataProvider.dataItemChaptersList;
+
+        for (int i = 0; i < chaptersDB.size(); i++) {
+            DataItemChapters itemDB = chaptersDB.get(i);
+            DataItemChapters itemProvider = chaptersProvider.get(i);
+
+            if (!itemDB.isReleased() && itemProvider.isReleased()) {
+                chaptersDataSource.updateChapters(itemProvider);
+            }
+        }
     }
 }
