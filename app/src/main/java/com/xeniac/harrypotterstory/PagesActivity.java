@@ -356,7 +356,8 @@ public class PagesActivity extends AppCompatActivity {
                 v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
 
             if (chapter.getTotalScroll() == 0) {
-                chapter.setTotalScroll(nestedScrollView.getChildAt(0).getMeasuredHeight() - 1692);
+                chapter.setTotalScroll(
+                        v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight());
             }
 
             chapter.setReadScroll(scrollY);
