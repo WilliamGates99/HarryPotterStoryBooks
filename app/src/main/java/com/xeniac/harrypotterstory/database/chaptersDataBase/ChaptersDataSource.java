@@ -91,7 +91,6 @@ public class ChaptersDataSource {
             item.setBookId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
             item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
-            item.setReading(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READING)) > 0);
             item.setReleased(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_RELEASED)) > 0);
             dataItemChaptersList.add(item);
         }
@@ -118,7 +117,6 @@ public class ChaptersDataSource {
             item.setBookId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_BOOK_ID)));
             item.setCover(cursor.getString(cursor.getColumnIndex(ChaptersTable.COLUMN_COVER)));
             item.setFavorite(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_FAVORITE)) > 0);
-            item.setReading(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_READING)) > 0);
             item.setReleased(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_RELEASED)) > 0);
         }
 
@@ -139,7 +137,6 @@ public class ChaptersDataSource {
         values.put(ChaptersTable.COLUMN_BOOK_ID, item.getBookId());
         values.put(ChaptersTable.COLUMN_COVER, item.getCover());
         values.put(ChaptersTable.COLUMN_FAVORITE, item.isFavorite());
-        values.put(ChaptersTable.COLUMN_READING, item.isReading());
         values.put(ChaptersTable.COLUMN_RELEASED, item.isReleased());
 
         mDatabase.update(ChaptersTable.TABLE_CHAPTERS, values,

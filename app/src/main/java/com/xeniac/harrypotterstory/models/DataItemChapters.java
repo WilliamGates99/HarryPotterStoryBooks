@@ -17,15 +17,14 @@ public class DataItemChapters implements Parcelable {
     private int bookId;
     private String cover;
     private boolean favorite;
-    private boolean reading;
     private boolean released;
 
     public DataItemChapters() {
     }
 
     public DataItemChapters(int id, int number, int title, int pages, int totalScroll,
-                            int readScroll, int bookId, String cover, boolean favorite,
-                            boolean reading, boolean released) {
+                            int readScroll, int bookId, String cover,
+                            boolean favorite, boolean released) {
         this.id = id;
         this.number = number;
         this.title = title;
@@ -35,7 +34,6 @@ public class DataItemChapters implements Parcelable {
         this.bookId = bookId;
         this.cover = cover;
         this.favorite = favorite;
-        this.reading = reading;
         this.released = released;
     }
 
@@ -111,14 +109,6 @@ public class DataItemChapters implements Parcelable {
         this.favorite = favorite;
     }
 
-    public boolean isReading() {
-        return reading;
-    }
-
-    public void setReading(boolean reading) {
-        this.reading = reading;
-    }
-
     public boolean isReleased() {
         return released;
     }
@@ -139,7 +129,6 @@ public class DataItemChapters implements Parcelable {
         values.put(ChaptersTable.COLUMN_BOOK_ID, bookId);
         values.put(ChaptersTable.COLUMN_COVER, cover);
         values.put(ChaptersTable.COLUMN_FAVORITE, favorite);
-        values.put(ChaptersTable.COLUMN_READING, reading);
         values.put(ChaptersTable.COLUMN_RELEASED, released);
 
         return values;
@@ -157,7 +146,6 @@ public class DataItemChapters implements Parcelable {
                 ", bookId=" + bookId +
                 ", cover='" + cover + '\'' +
                 ", favorite=" + favorite +
-                ", reading=" + reading +
                 ", released=" + released +
                 '}';
     }
@@ -178,7 +166,6 @@ public class DataItemChapters implements Parcelable {
         dest.writeInt(this.bookId);
         dest.writeString(this.cover);
         dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
-        dest.writeByte(this.reading ? (byte) 1 : (byte) 0);
         dest.writeByte(this.released ? (byte) 1 : (byte) 0);
     }
 
@@ -192,7 +179,6 @@ public class DataItemChapters implements Parcelable {
         this.bookId = in.readInt();
         this.cover = in.readString();
         this.favorite = in.readByte() != 0;
-        this.reading = in.readByte() != 0;
         this.released = in.readByte() != 0;
     }
 

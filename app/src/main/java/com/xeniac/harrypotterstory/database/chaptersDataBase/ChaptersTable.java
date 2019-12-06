@@ -13,13 +13,12 @@ public class ChaptersTable {
     public static final String COLUMN_BOOK_ID = "bookId";
     public static final String COLUMN_COVER = "cover";
     public static final String COLUMN_FAVORITE = "favorite";
-    public static final String COLUMN_READING = "reading";
     public static final String COLUMN_RELEASED = "released";
 
     static final String[] ALL_IDS = {COLUMN_ID};
     static final String[] ALL_COLUMNS = {COLUMN_ID, COLUMN_NUMBER, COLUMN_TITLE,
             COLUMN_PAGES, COLUMN_TOTAL_SCROLL, COLUMN_READ_SCROLL, COLUMN_BOOK_ID,
-            COLUMN_COVER, COLUMN_FAVORITE, COLUMN_READING, COLUMN_RELEASED};
+            COLUMN_COVER, COLUMN_FAVORITE, COLUMN_RELEASED};
 
     public static final String SQL_CREATE =
             "CREATE TABLE " + TABLE_CHAPTERS + "(" +
@@ -32,7 +31,6 @@ public class ChaptersTable {
                     COLUMN_BOOK_ID + " INTEGER," +
                     COLUMN_COVER + " TEXT," +
                     COLUMN_FAVORITE + " INTEGER," +
-                    COLUMN_READING + " INTEGER," +
                     COLUMN_RELEASED + " INTEGER," +
                     "FOREIGN KEY (" + COLUMN_BOOK_ID + ") REFERENCES books(" + BooksTable.COLUMN_ID + "));";
 }

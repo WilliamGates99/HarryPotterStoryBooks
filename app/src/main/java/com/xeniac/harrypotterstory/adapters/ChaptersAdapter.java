@@ -84,15 +84,6 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
             });
 
             holder.listLL.setOnClickListener(v -> {
-                for (DataItemChapters itemChapters :
-                        chaptersDataSource.getAllItems(0, false)) {
-                    itemChapters.setReading(false);
-                    chaptersDataSource.updateChapters(itemChapters);
-                }
-
-                item.setReading(true);
-                chaptersDataSource.updateChapters(item);
-
                 SharedPreferences.Editor editor = mContext.getSharedPreferences(
                         BooksActivity.READING_CHECK, Context.MODE_PRIVATE).edit();
                 editor.putInt(BooksActivity.READING_CHECK_KEY, item.getId()).apply();
