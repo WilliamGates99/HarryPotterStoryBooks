@@ -69,6 +69,7 @@ public class ChaptersActivity extends AppCompatActivity {
     private void chaptersInitializer() {
         chaptersDataSource = new ChaptersDataSource(this);
         chaptersDataSource.open();
+        seedChaptersData();
 
         setTitle(book.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
@@ -92,6 +93,12 @@ public class ChaptersActivity extends AppCompatActivity {
                 chaptersDataSource.getAllItems(book.getId(), false));
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
         chaptersRV.setAdapter(chaptersAdapter);
+    }
+
+    private void seedChaptersData() {
+        chaptersDataSource = new ChaptersDataSource(this);
+        chaptersDataSource.open();
+        chaptersDataSource.seedDataBase(ChaptersDataProvider.dataItemChaptersList);
     }
 
     private void checkChaptersRelease() {
