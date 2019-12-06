@@ -50,9 +50,9 @@ public class ChaptersDataSource {
     }
 
     private boolean chapterExist(int chapterId) {
-        String[] chaptersId = {String.valueOf(chapterId)};
+        String[] chapterIds = {String.valueOf(chapterId)};
         Cursor cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS, ChaptersTable.ALL_IDS,
-                ChaptersTable.COLUMN_ID + "=?", chaptersId,
+                ChaptersTable.COLUMN_ID + "=?", chapterIds,
                 null, null, null);
 
         boolean exists = (cursor.getCount() > 0);
@@ -60,21 +60,21 @@ public class ChaptersDataSource {
         return exists;
     }
 
-    public List<DataItemChapters> getAllItems(int bookFilter, boolean favoriteFilter) {
+    public List<DataItemChapters> getAllItems(int bookId, boolean favorite) {
         List<DataItemChapters> dataItemChaptersList = new ArrayList<>();
 
         Cursor cursor;
 
-        if (bookFilter == 0 && favoriteFilter) {
+        if (bookId == 0 && favorite) {
             String[] favorites = {"1"};
             cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS,
                     ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_FAVORITE + "=?",
                     favorites, null, null, null);
-        } else if (bookFilter != 0 && !favoriteFilter) {
-            String[] books = {String.valueOf(bookFilter)};
+        } else if (bookId != 0 && !favorite) {
+            String[] bookIds = {String.valueOf(bookId)};
             cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS,
                     ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_BOOK_ID + "=?",
-                    books, null, null, null);
+                    bookIds, null, null, null);
         } else {
             cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS, ChaptersTable.ALL_COLUMNS,
                     null, null, null, null, null);
@@ -99,13 +99,13 @@ public class ChaptersDataSource {
         return dataItemChaptersList;
     }
 
-    public DataItemChapters getReadingItem(int itemId) {
+    public DataItemChapters getReadingItem(int chapterId) {
         DataItemChapters item = new DataItemChapters();
 
-        String[] chapterId = {String.valueOf(itemId)};
+        String[] chapterIds = {String.valueOf(chapterId)};
         Cursor cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS,
                 ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_ID + "=?",
-                chapterId, null, null, null);
+                chapterIds, null, null, null);
 
         while (cursor.moveToNext()) {
             item.setId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));

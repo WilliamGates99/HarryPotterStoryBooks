@@ -50,9 +50,9 @@ public class BooksDataSource {
     }
 
     private boolean bookExist(int bookId) {
-        String[] booksId = {String.valueOf(bookId)};
+        String[] bookIds = {String.valueOf(bookId)};
         Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_IDS,
-                BooksTable.COLUMN_ID + "=?", booksId,
+                BooksTable.COLUMN_ID + "=?", bookIds,
                 null, null, null);
 
         boolean exists = (cursor.getCount() > 0);
@@ -79,12 +79,12 @@ public class BooksDataSource {
         return dataItemBooksList;
     }
 
-    public int getBookTitle(int bookFilter) {
+    public int getBookTitle(int bookId) {
         int bookTitle = 0;
 
-        String[] bookId = {String.valueOf(bookFilter)};
+        String[] bookIds = {String.valueOf(bookId)};
         Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_COLUMNS,
-                BooksTable.COLUMN_ID + "=?", bookId, null, null, null);
+                BooksTable.COLUMN_ID + "=?", bookIds, null, null, null);
 
         while (cursor.moveToNext()) {
             bookTitle = cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TITLE));
@@ -94,12 +94,12 @@ public class BooksDataSource {
         return bookTitle;
     }
 
-    public String getBookCover(int bookFilter) {
+    public String getBookCover(int bookId) {
         String bookCover = null;
 
-        String[] bookId = {String.valueOf(bookFilter)};
+        String[] bookIds = {String.valueOf(bookId)};
         Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS, BooksTable.ALL_COLUMNS,
-                BooksTable.COLUMN_ID + "=?", bookId, null, null, null);
+                BooksTable.COLUMN_ID + "=?", bookIds, null, null, null);
 
         while (cursor.moveToNext()) {
             bookCover = cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_COVER));

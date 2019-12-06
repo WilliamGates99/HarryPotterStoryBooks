@@ -60,19 +60,19 @@ public class PagesDataSource {
         return exists;
     }
 
-    public List<DataItemPages> getAllItems(int chapterFilter) {
+    public List<DataItemPages> getAllItems(int chapterId) {
         List<DataItemPages> dataItemPagesList = new ArrayList<>();
 
         Cursor cursor;
 
-        if (chapterFilter == 0) {
+        if (chapterId == 0) {
             cursor = mDatabase.query(PagesTable.TABLE_PAGES, PagesTable.ALL_COLUMNS, null,
                     null, null, null, null);
         } else {
-            String[] chapters = {String.valueOf(chapterFilter)};
+            String[] chapterIds = {String.valueOf(chapterId)};
             cursor = mDatabase.query(PagesTable.TABLE_PAGES,
                     PagesTable.ALL_COLUMNS, PagesTable.COLUMN_CHAPTER_ID + "=?",
-                    chapters, null, null, null);
+                    chapterIds, null, null, null);
         }
 
         while (cursor.moveToNext()) {
