@@ -92,14 +92,14 @@ public class BooksActivity extends AppCompatActivity {
     private void continueReading() {
         chaptersDataSource = new ChaptersDataSource(this);
         SharedPreferences preferences = getSharedPreferences(READING_CHECK, MODE_PRIVATE);
-        boolean readingCheck = preferences.getBoolean(READING_CHECK_KEY, false);
+        int readingChapterId = preferences.getInt(READING_CHECK_KEY, 0);
         FrameLayout continueFL = findViewById(R.id.fl_books_continue);
 
-        if (!readingCheck) {
+        if (readingChapterId == 0) {
             continueFL.setVisibility(View.GONE);
         } else {
             chaptersDataSource.open();
-            DataItemChapters item = chaptersDataSource.getReadingItem();
+            DataItemChapters item = chaptersDataSource.getReadingItem(readingChapterId);
 
             ImageView continueIV = findViewById(R.id.iv_books_continue);
             LinearLayout continueLL = findViewById(R.id.ll_books_continue);
@@ -110,8 +110,7 @@ public class BooksActivity extends AppCompatActivity {
             continueFL.setVisibility(View.VISIBLE);
             continueChapterTV.setText(item.getTitle());
             continueBookTV.setText(booksDataSource.getBookTitle(item.getBookId()));
-            continuePB.setProgress(
-                    (int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
+            continuePB.setProgress((int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
 
             try {
                 String imageFile = booksDataSource.getBookCover(item.getBookId());

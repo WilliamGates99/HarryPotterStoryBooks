@@ -100,13 +100,13 @@ public class ChaptersDataSource {
         return dataItemChaptersList;
     }
 
-    public DataItemChapters getReadingItem() {
+    public DataItemChapters getReadingItem(int itemId) {
         DataItemChapters item = new DataItemChapters();
 
-        String[] readings = {"1"};
+        String[] chapterId = {String.valueOf(itemId)};
         Cursor cursor = mDatabase.query(ChaptersTable.TABLE_CHAPTERS,
-                ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_READING + "=?",
-                readings, null, null, null);
+                ChaptersTable.ALL_COLUMNS, ChaptersTable.COLUMN_ID + "=?",
+                chapterId, null, null, null);
 
         while (cursor.moveToNext()) {
             item.setId(cursor.getInt(cursor.getColumnIndex(ChaptersTable.COLUMN_ID)));
