@@ -95,7 +95,6 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
 
                 SharedPreferences.Editor editor = mContext.getSharedPreferences(
                         BooksActivity.READING_CHECK, Context.MODE_PRIVATE).edit();
-//                editor.putBoolean(BooksActivity.READING_CHECK_KEY, true).apply();
                 editor.putInt(BooksActivity.READING_CHECK_KEY, item.getId()).apply();
 
                 Intent intent = new Intent(mContext, PagesActivity.class);
