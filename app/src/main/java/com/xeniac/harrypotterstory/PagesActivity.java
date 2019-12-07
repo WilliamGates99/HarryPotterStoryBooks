@@ -287,6 +287,7 @@ public class PagesActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        nestedScrollView.smoothScrollBy(0, 0);
         super.onBackPressed();
     }
 
