@@ -60,7 +60,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
 
         holder.listRL.setOnClickListener(v -> {
             Intent intent = new Intent(mContext, ChaptersActivity.class);
-            intent.putExtra(ITEM_KEY, item);
+            intent.putExtra(ITEM_KEY, item.getId());
             mContext.startActivity(intent);
         });
     }

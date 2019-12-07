@@ -1,12 +1,10 @@
 package com.xeniac.harrypotterstory.models;
 
 import android.content.ContentValues;
-import android.os.Parcel;
-import android.os.Parcelable;
 
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersTable;
 
-public class DataItemChapters implements Parcelable {
+public class DataItemChapters {
 
     private int id;
     private int number;
@@ -149,48 +147,4 @@ public class DataItemChapters implements Parcelable {
                 ", released=" + released +
                 '}';
     }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.id);
-        dest.writeInt(this.number);
-        dest.writeInt(this.title);
-        dest.writeInt(this.pages);
-        dest.writeInt(this.totalScroll);
-        dest.writeInt(this.readScroll);
-        dest.writeInt(this.bookId);
-        dest.writeString(this.cover);
-        dest.writeByte(this.favorite ? (byte) 1 : (byte) 0);
-        dest.writeByte(this.released ? (byte) 1 : (byte) 0);
-    }
-
-    private DataItemChapters(Parcel in) {
-        this.id = in.readInt();
-        this.number = in.readInt();
-        this.title = in.readInt();
-        this.pages = in.readInt();
-        this.totalScroll = in.readInt();
-        this.readScroll = in.readInt();
-        this.bookId = in.readInt();
-        this.cover = in.readString();
-        this.favorite = in.readByte() != 0;
-        this.released = in.readByte() != 0;
-    }
-
-    public static final Creator<DataItemChapters> CREATOR = new Creator<DataItemChapters>() {
-        @Override
-        public DataItemChapters createFromParcel(Parcel source) {
-            return new DataItemChapters(source);
-        }
-
-        @Override
-        public DataItemChapters[] newArray(int size) {
-            return new DataItemChapters[size];
-        }
-    };
 }

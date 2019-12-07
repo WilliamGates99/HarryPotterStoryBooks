@@ -89,7 +89,7 @@ public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHo
                 editor.putInt(BooksActivity.READING_CHECK_KEY, item.getId()).apply();
 
                 Intent intent = new Intent(mContext, PagesActivity.class);
-                intent.putExtra(ITEM_KEY, item);
+                intent.putExtra(ITEM_KEY, item.getId());
                 mContext.startActivity(intent);
             });
         } else {

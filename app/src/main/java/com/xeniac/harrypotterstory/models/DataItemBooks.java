@@ -1,12 +1,10 @@
 package com.xeniac.harrypotterstory.models;
 
 import android.content.ContentValues;
-import android.os.Parcel;
-import android.os.Parcelable;
 
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksTable;
 
-public class DataItemBooks implements Parcelable {
+public class DataItemBooks {
 
     private int id;
     private int title;
@@ -75,36 +73,4 @@ public class DataItemBooks implements Parcelable {
                 ", cover='" + cover + '\'' +
                 '}';
     }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.id);
-        dest.writeInt(this.title);
-        dest.writeInt(this.gist);
-        dest.writeString(this.cover);
-    }
-
-    private DataItemBooks(Parcel in) {
-        this.id = in.readInt();
-        this.title = in.readInt();
-        this.gist = in.readInt();
-        this.cover = in.readString();
-    }
-
-    public static final Creator<DataItemBooks> CREATOR = new Creator<DataItemBooks>() {
-        @Override
-        public DataItemBooks createFromParcel(Parcel source) {
-            return new DataItemBooks(source);
-        }
-
-        @Override
-        public DataItemBooks[] newArray(int size) {
-            return new DataItemBooks[size];
-        }
-    };
 }

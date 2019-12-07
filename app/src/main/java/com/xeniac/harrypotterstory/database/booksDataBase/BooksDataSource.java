@@ -79,6 +79,25 @@ public class BooksDataSource {
         return dataItemBooksList;
     }
 
+    public DataItemBooks getReadingItem(int bookId) {
+        DataItemBooks item = new DataItemBooks();
+
+        String[] bookIds = {String.valueOf(bookId)};
+        Cursor cursor = mDatabase.query(BooksTable.TABLE_BOOKS,
+                BooksTable.ALL_COLUMNS, BooksTable.COLUMN_ID + "=?",
+                bookIds, null, null, null);
+
+        while (cursor.moveToNext()) {
+            item.setId(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_ID)));
+            item.setTitle(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_TITLE)));
+            item.setGist(cursor.getInt(cursor.getColumnIndex(BooksTable.COLUMN_GIST)));
+            item.setCover(cursor.getString(cursor.getColumnIndex(BooksTable.COLUMN_COVER)));
+        }
+
+        cursor.close();
+        return item;
+    }
+
     public int getBookTitle(int bookId) {
         int bookTitle = 0;
 

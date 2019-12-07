@@ -229,15 +229,16 @@ import java.util.Objects;
 public class PagesActivity extends AppCompatActivity {
 
     private BooksDataSource booksDataSource;
-    private PagesDataSource pagesDataSource;
     private ChaptersDataSource chaptersDataSource;
+    private PagesDataSource pagesDataSource;
+
+    private int chapterId;
     private DataItemChapters chapter;
 
     private NestedScrollView nestedScrollView;
     private ImageButton bookmarkGrayIB, bookmarkBlueIB;
     private ImageButton settingsBlackIB, settingsBlueIB;
     private ImageButton settingsModeDarkIB, settingsModeLightIB;
-
     private MaterialCardView settingsPanelCV;
 
     private PagesAdapter pagesAdapter;
@@ -253,22 +254,17 @@ public class PagesActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
         setTitle(null);
 
-        chapter = Objects.requireNonNull(getIntent().getExtras()).
-                getParcelable(ChaptersAdapter.ITEM_KEY);
-
-        if (chapter == null) {
-            throw new AssertionError("Null data item received!");
-        } else {
-            pagesInitializer();
-        }
+        chapterId = Objects.requireNonNull(getIntent().getExtras()).
+                getInt(ChaptersAdapter.ITEM_KEY);
+        pagesInitializer();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        booksDataSource.open();
         chaptersDataSource.open();
         pagesDataSource.open();
+        pagesLayout();
     }
 
     @Override
@@ -293,23 +289,21 @@ public class PagesActivity extends AppCompatActivity {
 
     private void pagesInitializer() {
         booksDataSource = new BooksDataSource(this);
-        booksDataSource.open();
-
         chaptersDataSource = new ChaptersDataSource(this);
         chaptersDataSource.open();
-
+        chapter = chaptersDataSource.getReadingItem(chapterId);
         seedPagesData();
+        pagesLayout();
+    }
 
+    private void pagesLayout() {
         ImageView coverIV = findViewById(R.id.iv_pages_cover);
         TextView titleTV = findViewById(R.id.tv_pages_chapter_title);
         TextView numberTV = findViewById(R.id.tv_pages_chapter_number);
-
         bookmarkGrayIB = findViewById(R.id.ib_pages_bookmark_gray);
         bookmarkBlueIB = findViewById(R.id.ib_pages_bookmark_blue);
-
         settingsBlackIB = findViewById(R.id.ib_pages_settings_black);
         settingsBlueIB = findViewById(R.id.ib_pages_settings_blue);
-
         settingsPanelCV = findViewById(R.id.cv_pages_settings_panel);
 
         if (chapter.isFavorite()) {
@@ -366,15 +360,17 @@ public class PagesActivity extends AppCompatActivity {
         });
     }
 
-    private String storeURLInitializer() {
-        return "https://play.google.com/store/apps/detiraails?id=" + getPackageName();
-    }
-
     public void upOnClick(View view) {
         nestedScrollView.smoothScrollTo(0, 0);
     }
 
+    private String storeURLInitializer() {
+        return "https://play.google.com/store/apps/detiraails?id=" + getPackageName();
+    }
+
     public void shareOnClick(View view) {
+        booksDataSource.open();
+
         String shareString = "Let's read " +
                 getResources().getString(chapter.getTitle()) + " chapter of " +
                 getResources().getString(booksDataSource.getBookTitle(chapter.getBookId())) +

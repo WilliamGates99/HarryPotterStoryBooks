@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider;
+import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemBooks;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
@@ -22,7 +23,9 @@ import java.util.Objects;
 
 public class ChaptersActivity extends AppCompatActivity {
 
+    private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
+    private int bookId;
     private DataItemBooks book;
 
     @Override
@@ -33,14 +36,8 @@ public class ChaptersActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
 
-        book = Objects.requireNonNull(getIntent().getExtras()).
-                getParcelable(BooksAdapter.ITEM_KEY);
-
-        if (book == null) {
-            throw new AssertionError("Null data item received!");
-        } else {
-            chaptersInitializer();
-        }
+        bookId = Objects.requireNonNull(getIntent().getExtras()).getInt(BooksAdapter.ITEM_KEY);
+        chaptersInitializer();
     }
 
     @Override
@@ -53,6 +50,7 @@ public class ChaptersActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        booksDataSource.close();
         chaptersDataSource.close();
     }
 
@@ -68,9 +66,10 @@ public class ChaptersActivity extends AppCompatActivity {
     }
 
     private void chaptersInitializer() {
-        chaptersDataSource = new ChaptersDataSource(this);
-        chaptersDataSource.open();
         seedChaptersData();
+        booksDataSource = new BooksDataSource(this);
+        booksDataSource.open();
+        book = booksDataSource.getReadingItem(bookId);
 
         setTitle(book.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
@@ -103,6 +102,7 @@ public class ChaptersActivity extends AppCompatActivity {
     }
 
     private void checkChaptersRelease() {
+        chaptersDataSource.open();
         List<DataItemChapters> chaptersDB = chaptersDataSource.getAllItems(0, false);
         List<DataItemChapters> chaptersProvider = ChaptersDataProvider.dataItemChaptersList;
 

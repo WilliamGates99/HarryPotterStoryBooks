@@ -3,7 +3,6 @@ package com.xeniac.harrypotterstory;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -19,6 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.android.material.card.MaterialCardView;
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.dataProviders.BooksDataProvider;
@@ -50,7 +50,6 @@ public class BooksActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         booksDataSource.open();
-        chaptersDataSource.open();
         continueReading();
     }
 
@@ -78,6 +77,8 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void booksInitializer() {
+        booksDataSource = new BooksDataSource(this);
+        chaptersDataSource = new ChaptersDataSource(this);
         seedBooksData();
         booksRecyclerView();
         continueReading();
@@ -91,7 +92,6 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void continueReading() {
-        chaptersDataSource = new ChaptersDataSource(this);
         SharedPreferences preferences = getSharedPreferences(READING_CHECK, MODE_PRIVATE);
         int readingChapterId = preferences.getInt(READING_CHECK_KEY, 0);
         LinearLayout continueLL = findViewById(R.id.ll_books_continue);
@@ -102,7 +102,7 @@ public class BooksActivity extends AppCompatActivity {
             chaptersDataSource.open();
             DataItemChapters item = chaptersDataSource.getReadingItem(readingChapterId);
 
-            CardView continueCV = findViewById(R.id.cv_books_continue);
+            MaterialCardView continueCV = findViewById(R.id.cv_books_continue);
             ImageView continueIV = findViewById(R.id.iv_books_continue);
             RelativeLayout continueRL = findViewById(R.id.rl_books_continue);
             TextView continueChapterTV = findViewById(R.id.tv_books_continue_chapter_title);
@@ -126,15 +126,14 @@ public class BooksActivity extends AppCompatActivity {
             }
 
             continueRL.setOnClickListener(v -> {
-                Intent intent = new Intent(BooksActivity.this, PagesActivity.class);
-                intent.putExtra(ChaptersAdapter.ITEM_KEY, item);
+                Intent intent = new Intent(this, PagesActivity.class);
+                intent.putExtra(ChaptersAdapter.ITEM_KEY, item.getId());
                 startActivity(intent);
             });
         }
     }
 
     private void seedBooksData() {
-        booksDataSource = new BooksDataSource(this);
         booksDataSource.open();
         booksDataSource.seedDataBase(BooksDataProvider.dataItemBooksList);
     }

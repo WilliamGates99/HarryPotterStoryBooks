@@ -83,7 +83,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
             editor.putInt(BooksActivity.READING_CHECK_KEY, item.getId()).apply();
 
             Intent intent = new Intent(mContext, PagesActivity.class);
-            intent.putExtra(ChaptersAdapter.ITEM_KEY, item);
+            intent.putExtra(ChaptersAdapter.ITEM_KEY, item.getId());
             mContext.startActivity(intent);
         });
     }
