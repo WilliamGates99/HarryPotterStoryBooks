@@ -365,7 +365,7 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private String storeURLInitializer() {
-        return "https://play.google.com/store/apps/detiraails?id=" + getPackageName();
+        return "https://play.google.com/store/apps/details?id=" + getPackageName();
     }
 
     public void shareOnClick(View view) {
