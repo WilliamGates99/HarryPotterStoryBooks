@@ -58,12 +58,13 @@ public class ChaptersActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        return super.onSupportNavigateUp();
+        super.onBackPressed();
+        return false;
     }
 
     @Override
     public void onBackPressed() {
-        super.onSupportNavigateUp();
+        super.onBackPressed();
     }
 
     private void chaptersInitializer() {
@@ -102,8 +103,7 @@ public class ChaptersActivity extends AppCompatActivity {
     }
 
     private void checkChaptersRelease() {
-        List<DataItemChapters> chaptersDB =
-                chaptersDataSource.getAllItems(book.getId(), false);
+        List<DataItemChapters> chaptersDB = chaptersDataSource.getAllItems(0, false);
         List<DataItemChapters> chaptersProvider = ChaptersDataProvider.dataItemChaptersList;
 
         for (int i = 0; i < chaptersDB.size(); i++) {
