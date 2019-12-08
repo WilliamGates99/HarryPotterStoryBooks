@@ -365,7 +365,7 @@ public class PagesActivity extends AppCompatActivity {
         nestedScrollView.smoothScrollTo(0, 0);
     }
 
-    private String storeURLInitializer() {
+    private String storeURL() {
         return "https://play.google.com/store/apps/details?id=" + getPackageName();
     }
 
@@ -375,7 +375,7 @@ public class PagesActivity extends AppCompatActivity {
         String shareString = "Let's read " +
                 getResources().getString(chapter.getTitle()) + " chapter of " +
                 getResources().getString(booksDataSource.getBookTitle(chapter.getBookId())) +
-                " book together." + "\n\n" + storeURLInitializer();
+                " book together." + "\n\n" + storeURL();
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
