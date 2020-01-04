@@ -1,6 +1,7 @@
 package com.xeniac.harrypotterstory.adapters;
 
 import android.content.Context;
+import android.text.Html;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,7 +42,7 @@ public class PagesAdapter extends RecyclerView.Adapter<PagesAdapter.ViewHolder> 
         final DataItemPages item = mItems.get(position);
 
         holder.numberTV.setText(String.valueOf(item.getNumber()));
-        holder.textTV.setText(item.getText());
+        holder.textTV.setText(Html.fromHtml(mContext.getString(item.getText())));
 
         switch (TEXT_SIZE_FLAG) {
             case 1:
