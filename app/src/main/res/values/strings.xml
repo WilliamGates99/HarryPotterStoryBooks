@@ -1,7 +1,7 @@
 <resources>
 
     <!--App Name-->
-    <string name="app_name">Harry Potter Story</string>
+    <string name="app_name">Harry Potter Story (Unofficial)</string>
 
     <!--Books Activity-->
     <string name="string_books_title">Harry Potter Story</string>
