@@ -91,13 +91,14 @@ public class PagesActivity extends AppCompatActivity {
     @Override
     public boolean onSupportNavigateUp() {
         nestedScrollView.smoothScrollBy(0, 0);
-        return super.onSupportNavigateUp();
+        super.onBackPressed();
+        return false;
     }
 
     @Override
     public void onBackPressed() {
         nestedScrollView.smoothScrollBy(0, 0);
-        super.onSupportNavigateUp();
+        super.onBackPressed();
     }
 
     private void pagesInitializer() {

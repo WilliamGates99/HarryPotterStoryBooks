@@ -51,6 +51,7 @@ public class ChaptersActivity extends AppCompatActivity {
         super.onResume();
         booksDataSource.open();
         chaptersDataSource.open();
+        continueReading();
         chaptersRecyclerView();
     }
 
