@@ -53,13 +53,12 @@ public class FavoritesActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        super.onBackPressed();
-        return false;
+        return super.onSupportNavigateUp();
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        super.onSupportNavigateUp();
     }
 
     private void favoritesCondition() {
@@ -92,6 +91,6 @@ public class FavoritesActivity extends AppCompatActivity {
     }
 
     public void browseOnClick(View view) {
-        super.onBackPressed();
+        super.onSupportNavigateUp();
     }
 }

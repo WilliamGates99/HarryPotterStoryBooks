@@ -3,13 +3,9 @@
     <!--App Name-->
     <string name="app_name">Harry Potter Story</string>
 
-    <!--Books Activity-->
-    <string name="string_books_title">Harry Potter Story</string>
-    <string name="string_books_menu_favorites">Favorites</string>
-    <string name="string_books_continue_title">Continue reading</string>
-    <string name="string_books_list_title">Books List</string>
-
     <!--Chapters Activity-->
+    <string name="string_chapters_menu_favorites">Favorites</string>
+    <string name="string_chapters_continue_title">Continue reading</string>
     <string name="string_chapters_page">" PAGE"</string>
     <string name="string_chapters_soon">"SOON"</string>
 
