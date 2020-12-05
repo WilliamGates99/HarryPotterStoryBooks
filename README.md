@@ -17,7 +17,7 @@ The Harry Potter novels are mainly directed at a young adult audience as opposed
 </br>
 </br>
 
-* ⚠️Disclaimer: This application is not the original book series and only contains the first 8 chapters of the saga.
+* This application is not the original book series and only contains the first 8 chapters of the saga.
 * Down below, You can see some screenshots of the app:
 </br>
 <p align="middle">
