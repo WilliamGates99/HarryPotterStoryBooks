@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/menu_chapters_favorites"
+        android:id="@+id/menu_books_favorites"
         android:icon="@drawable/ic_menu_bookmark"
-        android:title="@string/string_chapters_menu_favorites"
+        android:title="@string/string_books_menu_favorites"
         app:showAsAction="always" />
 
 </menu>

@@ -24,8 +24,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ChaptersActivity"
-            android:label="@string/app_name"
+            android:name=".BooksActivity"
+            android:label="@string/string_books_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -33,14 +33,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FavoritesActivity"
-            android:label="@string/string_favorites_title"
-            android:parentActivityName=".ChaptersActivity"
+            android:name=".ChaptersActivity"
+            android:parentActivityName=".BooksActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ChaptersActivity" />
+                android:value=".BooksActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FavoritesActivity"
+            android:label="@string/string_favorites_title"
+            android:parentActivityName=".BooksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BooksActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>

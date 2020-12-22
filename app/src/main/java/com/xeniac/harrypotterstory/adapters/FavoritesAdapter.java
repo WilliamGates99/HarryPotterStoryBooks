@@ -14,7 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.xeniac.harrypotterstory.ChaptersActivity;
+import com.xeniac.harrypotterstory.BooksActivity;
 import com.xeniac.harrypotterstory.FavoritesActivity;
 import com.xeniac.harrypotterstory.PagesActivity;
 import com.xeniac.harrypotterstory.R;
@@ -79,8 +79,8 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.View
 
         holder.listLL.setOnClickListener(v -> {
             SharedPreferences.Editor editor = mContext.getSharedPreferences(
-                    ChaptersActivity.READING_CHECK, Context.MODE_PRIVATE).edit();
-            editor.putInt(ChaptersActivity.READING_CHECK_KEY, item.getId()).apply();
+                    BooksActivity.READING_CHECK, Context.MODE_PRIVATE).edit();
+            editor.putInt(BooksActivity.READING_CHECK_KEY, item.getId()).apply();
 
             Intent intent = new Intent(mContext, PagesActivity.class);
             intent.putExtra(ChaptersAdapter.ITEM_KEY, item.getId());

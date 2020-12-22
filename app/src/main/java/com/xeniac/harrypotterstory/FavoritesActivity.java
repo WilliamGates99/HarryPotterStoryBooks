@@ -92,6 +92,6 @@ public class FavoritesActivity extends AppCompatActivity {
     }
 
     public void browseOnClick(View view) {
-        super.onSupportNavigateUp();
+        super.onBackPressed();
     }
 }

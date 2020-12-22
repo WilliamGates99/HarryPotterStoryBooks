@@ -3,9 +3,13 @@
     <!--App Name-->
     <string name="app_name">Harry Potter Story</string>
 
+    <!--Books Activity-->
+    <string name="string_books_title">Harry Potter Story</string>
+    <string name="string_books_menu_favorites">Favorites</string>
+    <string name="string_books_continue_title">Continue reading</string>
+    <string name="string_books_list_title">Books List</string>
+
     <!--Chapters Activity-->
-    <string name="string_chapters_menu_favorites">Favorites</string>
-    <string name="string_chapters_continue_title">Continue reading</string>
     <string name="string_chapters_page">" PAGE"</string>
     <string name="string_chapters_soon">"SOON"</string>
 
@@ -24,8 +28,20 @@
 
     <!--Books Title-->
     <string name="string_books_title_1">Harry Potter and the Sorcerer\'s Stone</string>
+    <string name="string_books_title_2">Harry Potter and the Chamber of Secrets</string>
+    <string name="string_books_title_3">Harry Potter and the Prisoner of Azkaban</string>
+    <string name="string_books_title_4">Harry Potter and the Goblet of Fire</string>
+    <string name="string_books_title_5">Harry Potter and the Order of the Phoenix</string>
+    <string name="string_books_title_6">Harry Potter and the Half-Blood Prince</string>
+    <string name="string_books_title_7">Harry Potter and the Deathly Hallows</string>
 
     <!--Books Gist-->
     <string name="string_books_title_gist_1">Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter \'H\'.</string>
+    <string name="string_books_title_gist_2">There is a plot, Harry Potter. A plot to make most terrible things happen at Hogwarts School of Witchcraft and Wizardry this year.</string>
+    <string name="string_books_title_gist_3">Welcome to the Knight Bus, emergency transport for the stranded witch or wizard. Just stick out your wand hand, step on board and we can take you anywhere you want to go.</string>
+    <string name="string_books_title_gist_4">There will be three tasks, spaced throughout the school year, and they will test the champions in many different ways … their magical prowess - their daring - their powers of deduction - and, of course, their ability to cope with danger.</string>
+    <string name="string_books_title_gist_5">You are sharing the Dark Lord\'s thoughts and emotions. The Headmaster thinks it inadvisable for this to continue. He wishes me to teach you how to close your mind to the Dark Lord.</string>
+    <string name="string_books_title_gist_6">There it was, hanging in the sky above the school: the blazing green skull with a serpent tongue, the mark Death Eaters left behind whenever they had entered a building… wherever they had murdered…</string>
+    <string name="string_books_title_gist_7">Give me Harry Potter,\' said Voldemort\'s voice, \'and none shall be harmed. Give me Harry Potter, and I shall leave the school untouched. Give me Harry Potter, and you will be rewarded.</string>
 
 </resources>
