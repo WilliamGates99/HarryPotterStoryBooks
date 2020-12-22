@@ -8,8 +8,8 @@ android {
         applicationId "com.xeniac.harrypotterstory"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 8
-        versionName '1.1.0'
+        versionCode 20
+        versionName '2.0.0'
     }
 
     buildTypes {
