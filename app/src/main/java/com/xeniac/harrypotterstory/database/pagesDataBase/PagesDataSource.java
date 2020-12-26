@@ -16,7 +16,7 @@ import java.util.List;
 public class PagesDataSource {
 
     private SQLiteDatabase mDatabase;
-    private SQLiteOpenHelper mDbOpenHelper;
+    private final SQLiteOpenHelper mDbOpenHelper;
 
     public PagesDataSource(Context context) {
         mDbOpenHelper = new DBOpenHelper(context);

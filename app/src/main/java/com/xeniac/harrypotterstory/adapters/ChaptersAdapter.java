@@ -25,9 +25,9 @@ import java.util.List;
 public class ChaptersAdapter extends RecyclerView.Adapter<ChaptersAdapter.ViewHolder> {
 
     public static final String ITEM_KEY = "item_key";
-    private List<DataItemChapters> mItems;
-    private Context mContext;
-    private ChaptersDataSource chaptersDataSource;
+    private final List<DataItemChapters> mItems;
+    private final Context mContext;
+    private final ChaptersDataSource chaptersDataSource;
 
     public ChaptersAdapter(Context context, List<DataItemChapters> items) {
         this.mContext = context;

@@ -24,8 +24,8 @@ import java.util.List;
 public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> {
 
     public static final String ITEM_KEY = "item_key";
-    private List<DataItemBooks> mItems;
-    private Context mContext;
+    private final List<DataItemBooks> mItems;
+    private final Context mContext;
 
     public BooksAdapter(Context context, List<DataItemBooks> items) {
         this.mContext = context;

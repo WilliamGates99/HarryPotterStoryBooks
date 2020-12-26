@@ -19,8 +19,8 @@ import java.util.List;
 public class PagesAdapter extends RecyclerView.Adapter<PagesAdapter.ViewHolder> {
 
     public static byte TEXT_SIZE_FLAG = 0;
-    private List<DataItemPages> mItems;
-    private Context mContext;
+    private final List<DataItemPages> mItems;
+    private final Context mContext;
 
     public PagesAdapter(Context context, List<DataItemPages> items) {
         this.mContext = context;
@@ -48,10 +48,12 @@ public class PagesAdapter extends RecyclerView.Adapter<PagesAdapter.ViewHolder> 
             case 1:
                 float currentSize = holder.textTV.getTextSize();
                 holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize + 5.0f);
+                TEXT_SIZE_FLAG=0;
                 break;
             case -1:
                 currentSize = holder.textTV.getTextSize();
                 holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize - 5.0f);
+                TEXT_SIZE_FLAG=0;
                 break;
             default:
                 break;

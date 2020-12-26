@@ -26,10 +26,10 @@ import java.util.List;
 
 public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.ViewHolder> {
 
-    private List<DataItemChapters> mItems;
-    private Context mContext;
-    private BooksDataSource booksDataSource;
-    private ChaptersDataSource chaptersDataSource;
+    private final List<DataItemChapters> mItems;
+    private final Context mContext;
+    private final BooksDataSource booksDataSource;
+    private final ChaptersDataSource chaptersDataSource;
 
     public FavoritesAdapter(Context context, List<DataItemChapters> items) {
         this.mContext = context;
