@@ -229,364 +229,117 @@
     Ron Weasley was outside Harry’s window.]]></string>
 
     <!--Book 2 Chapter 3 Pages-->
-    <string name="string_book_2_chapter_3_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_3_page_18"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 4 Pages-->
-    <string name="string_book_2_chapter_4_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_21"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_22"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_4_page_23"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 5 Pages-->
-    <string name="string_book_2_chapter_5_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_5_page_21"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 6 Pages-->
-    <string name="string_book_2_chapter_6_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_6_page_18"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 7 Pages-->
-    <string name="string_book_2_chapter_7_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_7_page_18"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 8 Pages-->
-    <string name="string_book_2_chapter_8_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_8_page_18"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 9 Pages-->
-    <string name="string_book_2_chapter_9_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_9_page_21"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 10 Pages-->
-    <string name="string_book_2_chapter_10_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_10_page_21"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 11 Pages-->
-    <string name="string_book_2_chapter_11_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_21"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_22"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_11_page_23"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 12 Pages-->
-    <string name="string_book_2_chapter_12_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_21"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_12_page_22"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 13 Pages-->
-    <string name="string_book_2_chapter_13_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_21"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_22"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_23"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_24"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_25"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_26"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_27"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_28"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_29"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_30"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_31"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_32"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_13_page_33"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 14 Pages-->
-    <string name="string_book_2_chapter_14_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_14_page_16"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 15 Pages-->
-    <string name="string_book_2_chapter_15_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_15_page_18"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 16 Pages-->
-    <string name="string_book_2_chapter_16_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_21"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_22"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_16_page_23"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 17 Pages-->
-    <string name="string_book_2_chapter_17_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_15"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_16"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_17"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_18"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_19"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_20"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_17_page_21"><![CDATA[]]></string>
-
-    <!--Book 2 Chapter 18 Pages-->
-    <string name="string_book_2_chapter_18_page_1"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_2"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_3"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_4"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_5"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_6"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_7"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_8"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_9"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_10"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_11"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_12"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_13"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_14"><![CDATA[]]></string>
-    <string name="string_book_2_chapter_18_page_15"><![CDATA[]]></string>
+    <string name="string_book_2_chapter_3_page_1"><![CDATA[Ron!” breathed Harry, creeping to the window and pushing it up so they could talk through the bars. “Ron, how did you — What the — ?”<br/>
+    Harry’s mouth fell open as the full impact of what he was seeing hit him. Ron was leaning out of the back window of an old turquoise car, which was parked in midair. Grinning at Harry from the front seats were Fred and George, Ron’s elder twin brothers.<br/>
+    “All right, Harry?” asked George.<br/>
+    “What’s been going on?” said Ron. “Why haven’t you been answering my letters? I’ve asked you to stay about twelve times, and then Dad came home and said you’d got an official warning for using magic in front of Muggles —”<br/>
+    “It wasn’t me — and how did he know?”<br/>
+    “He works for the Ministry,” said Ron. “You know we’re not supposed to do spells outside school —”]]></string>
+    <string name="string_book_2_chapter_3_page_2"><![CDATA[“You should talk,” said Harry, staring at the floating car.<br/>
+    “Oh, this doesn’t count,” said Ron. “We’re only borrowing this. It’s Dad’s, we didn’t enchant it. But doing magic in front of those Muggles you live with —”<br/>
+    “I told you, I didn’t — but it’ll take too long to explain now — look, can you tell them at Hogwarts that the Dursleys have locked me up and won’t let me come back, and obviously I can’t magic myself out, because the Ministry’ll think that’s the second spell I’ve done in three days, so —”<br/>
+    “Stop gibbering,” said Ron. “We’ve come to take you home with us.”<br/>
+    “But you can’t magic me out either —”<br/>
+    “We don’t need to,” said Ron, jerking his head toward the front seat and grinning. “You forget who I’ve got with me.”<br/>
+    “Tie that around the bars,” said Fred, throwing the end of a rope to Harry.<br/>
+    Harry. “If the Dursleys wake up, I’m dead,” said Harry as he tied the rope tightly around a bar and Fred revved up the car.<br/>
+    “Don’t worry,” said Fred, “and stand back.”<br/>
+    Harry moved back into the shadows next to Hedwig, who seemed to have realized how important this was and kept still and silent. The car revved louder and louder and suddenly, with a crunching noise, the bars were pulled clean out of the window as Fred drove straight up in the air. Harry ran back to the window to see the bars dangling a few feet above the ground. Panting, Ron hoisted them up into the car. Harry listened anxiously, but there was no sound from the Dursleys’ bedroom.<br/>
+    When the bars were safely in the back seat with Ron, Fred reversed as close as possible to Harry’s window.]]></string>
+    <string name="string_book_2_chapter_3_page_3"><![CDATA[“Get in,” Ron said.<br/>
+    “But all my Hogwarts stuff — my wand — my broomstick —”<br/>
+    “Where is it?”<br/>
+    “Locked in the cupboard under the stairs, and I can’t get out of this room —”<br/>
+    “No problem,” said George from the front passenger seat. “Out of the way, Harry.”<br/>
+    Fred and George climbed catlike through the window into Harry’s room. You had to hand it to them, thought Harry, as George took an ordinary hairpin from his pocket and started to pick the lock.<br/>
+    “A lot of wizards think it’s a waste of time, knowing this sort of Muggle trick,” said Fred, “but we feel they’re skills worth learning, even if they are a bit slow.”<br/>
+    There was a small click and the door swung open.<br/>
+    “So — we’ll get your trunk — you grab anything you need from your room and hand it out to Ron,” whispered George.<br/>
+    “Watch out for the bottom stair — it creaks,” Harry whispered back as the twins disappeared onto the dark landing.<br/>
+    Harry dashed around his room, collecting his things and passing them out of the window to Ron. Then he went to help Fred and George heave his trunk up the stairs. Harry heard Uncle Vernon cough.<br/>
+    At last, panting, they reached the landing, then carried the trunk through Harry’s room to the open window. Fred climbed back into the car to pull with Ron, and Harry and George pushed from the bedroom side. Inch by inch, the trunk slid through the window.<br/>
+    Uncle Vernon coughed again.]]></string>
+    <string name="string_book_2_chapter_3_page_4"><![CDATA[“A bit more,” panted Fred, who was pulling from inside the car. “One good push —”<br/>
+    Harry and George threw their shoulders against the trunk and it slid out of the window into the back seat of the car.<br/>
+    “Okay, let’s go,” George whispered.<br/>
+    But as Harry climbed onto the windowsill there came a sudden loud screech from behind him, followed immediately by the thunder of Uncle Vernon’s voice.<br/>
+    “THAT RUDDY OWL!”<br/>
+    “I’ve forgotten Hedwig!”<br/>
+    Harry tore back across the room as the landing light clicked on — he snatched up Hedwig’s cage, dashed to the window, and passed it out to Ron. He was scrambling back onto the chest of drawers when Uncle Vernon hammered on the unlocked door — and it crashed open.<br/>
+    For a split second, Uncle Vernon stood framed in the doorway; then he let out a bellow like an angry bull and dived at Harry, grabbing him by the ankle.<br/>
+    Ron, Fred, and George seized Harry’s arms and pulled as hard as they could.<br/>
+    “Petunia!” roared Uncle Vernon. “He’s getting away! HE’S GETTING AWAY!”<br/>
+    But the Weasleys gave a gigantic tug and Harry’s leg slid out of Uncle Vernon’s grasp — Harry was in the car — he’d slammed the door shut —<br/>
+    “Put your foot down, Fred!” yelled Ron, and the car shot suddenly toward the moon.]]></string>
+    <string name="string_book_2_chapter_3_page_5"><![CDATA[Harry couldn’t believe it — he was free. He rolled down the window, the night air whipping his hair, and looked back at the shrinking rooftops of Privet Drive. Uncle Vernon, Aunt Petunia, and Dudley were all hanging, dumbstruck, out of Harry’s window.<br/>
+    “See you next summer!” Harry yelled.<br/>
+    The Weasleys roared with laughter and Harry settled back in his seat, grinning from ear to ear.<br/>
+    “Let Hedwig out,” he told Ron. “She can fly behind us. She hasn’t had a chance to stretch her wings for ages.”<br/>
+    George handed the hairpin to Ron and, a moment later, Hedwig soared joyfully out of the window to glide alongside them like a ghost.<br/>
+    “So — what’s the story, Harry?” said Ron impatiently. “What’s been happening?”<br/>
+    Harry told them all about Dobby, the warning he’d given Harry and the fiasco of the violet pudding. There was a long, shocked silence when he had finished.<br/>
+    “Very fishy,” said Fred finally.<br/>
+    “Definitely dodgy,” agreed George. “So he wouldn’t even tell you who’s supposed to be plotting all this stuff?”<br/>
+    “I don’t think he could,” said Harry. “I told you, every time he got close to letting something slip, he started banging his head against the wall.”<br/>
+    He saw Fred and George look at each other.<br/>
+    “What, you think he was lying to me?” said Harry.<br/>
+    “Well,” said Fred, “put it this way — house-elves have got powerful magic of their own, but they can’t usually use it without their master’s permission. I reckon old Dobby was sent to stop you coming back to Hogwarts. Someone’s idea of a joke. Can you think of anyone at school with a grudge against you?”]]></string>
+    <string name="string_book_2_chapter_3_page_6"><![CDATA[“Yes,” said Harry and Ron together, instantly.<br/>
+    “Draco Malfoy,” Harry explained. “He hates me.”<br/>
+    “Draco Malfoy?” said George, turning around. “Not Lucius Malfoy’s son?”<br/>
+    “Must be, it’s not a very common name, is it?” said Harry. “Why?”<br/>
+    “I’ve heard Dad talking about him,” said George. “He was a big supporter of You-Know-Who.”<br/>
+    “And when You-Know-Who disappeared,” said Fred, craning around to look at Harry, “Lucius Malfoy came back saying he’d never meant any of it. Load of dung — Dad reckons he was right in You-Know-Who’s inner circle.”<br/>
+    Harry had heard these rumors about Malfoy’s family before, and they didn’t surprise him at all. Malfoy made Dudley Dursley look like a kind, thoughtful, and sensitive boy.<br/>
+    “I don’t know whether the Malfoys own a house-elf. . . .” said Harry.<br/>
+    “Well, whoever owns him will be an old wizarding family, and they’ll be rich,” said Fred.<br/>
+    “Yeah, Mum’s always wishing we had a house-elf to do the ironing,” said George. “But all we’ve got is a lousy old ghoul in the attic and gnomes all over the garden. House-elves come with big old manors and castles and places like that; you wouldn’t catch one in our house. . . .”]]></string>
+    <string name="string_book_2_chapter_3_page_7"><![CDATA[Harry was silent. Judging by the fact that Draco Malfoy usually had the best of everything, his family was rolling in wizard gold; he could just see Malfoy strutting around a large manor house. Sending the family servant to stop Harry from going back to Hogwarts also sounded exactly like the sort of thing Malfoy would do. Had Harry been stupid to take Dobby seriously?<br/>
+    “I’m glad we came to get you, anyway,” said Ron. “I was getting really worried when you didn’t answer any of my letters. I thought it was Errol’s fault at first —”<br/>
+    “Who’s Errol?”<br/>
+    “Our owl. He’s ancient. It wouldn’t be the first time he’d collapsed on a delivery. So then I tried to borrow Hermes —”<br/>
+    “Who?”<br/>
+    “The owl Mum and Dad bought Percy when he was made prefect,” said Fred from the front.<br/>
+    “But Percy wouldn’t lend him to me,” said Ron. “Said he needed him.”<br/>
+    “Percy’s been acting very oddly this summer,” said George, frowning. “And he has been sending a lot of letters and spending a load of time shut up in his room. . . . I mean, there’s only so many times you can polish a prefect badge. . . . You’re driving too far west, Fred,” he added, pointing at a compass on the dashboard. Fred twiddled the steering wheel.<br/>
+    “So, does your dad know you’ve got the car?” said Harry, guessing the answer.<br/>
+    “Er, no,” said Ron, “he had to work tonight. Hopefully we’ll be able to get it back in the garage without Mum noticing we flew it.”<br/>
+    “What does your dad do at the Ministry of Magic, anyway?”<br/>
+    “He works in the most boring department,” said Ron. “The Misuse of Muggle Artifacts Office.”]]></string>
+    <string name="string_book_2_chapter_3_page_8"><![CDATA[“The what?”<br/>
+    “It’s all to do with bewitching things that are Muggle-made, you know, in case they end up back in a Muggle shop or house. Like, last year, some old witch died and her tea set was sold to an antiques shop. This Muggle woman bought it, took it home, and tried to serve her friends tea in it. It was a nightmare — Dad was working overtime for weeks.”<br/>
+    “What happened?”<br/>
+    “The teapot went berserk and squirted boiling tea all over the place and one man ended up in the hospital with the sugar tongs clamped to his nose. Dad was going frantic — it’s only him and an old warlock called Perkins in the office — and they had to do Memory Charms and all sorts of stuff to cover it up —”<br/>
+    “But your dad — this car —”<br/>
+    Fred laughed. “Yeah, Dad’s crazy about everything to do with Muggles; our shed’s full of Muggle stuff. He takes it apart, puts spells on it, and puts it back together again. If he raided our house he’d have to put himself under arrest. It drives Mum mad.”<br/>
+    “That’s the main road,” said George, peering down through the windshield. “We’ll be there in ten minutes. . . . Just as well, it’s getting light. . . .”<br/>
+    A faint pinkish glow was visible along the horizon to the east.<br/>
+    Fred brought the car lower, and Harry saw a dark patchwork of fields and clumps of trees.<br/>
+    “We’re a little way outside the village,” said George. “Ottery St. Catchpole.”<br/>
+    Lower and lower went the flying car. The edge of a brilliant red sun was now gleaming through the trees.]]></string>
+    <string name="string_book_2_chapter_3_page_9"><![CDATA[“Touchdown!” said Fred as, with a slight bump, they hit the ground. They had landed next to a tumbledown garage in a small yard, and Harry looked out for the first time at Ron’s house.<br/>
+    It looked as though it had once been a large stone pigpen, but extra rooms had been added here and there until it was several stories high and so crooked it looked as though it were held up by magic (which, Harry reminded himself, it probably was). Four or five chimneys were perched on top of the red roof. A lopsided sign stuck in the ground near the entrance read, the burrow. Around the front door lay a jumble of rubber boots and a very rusty cauldron. Several fat brown chickens were pecking their way around the yard.<br/>
+    “It’s not much,” said Ron.<br/>
+    “It’s wonderful,” said Harry happily, thinking of Privet Drive.<br/>
+    They got out of the car.<br/>
+    “Now, we’ll go upstairs really quietly,” said Fred, “and wait for Mum to call us for breakfast. Then, Ron, you come bounding downstairs going, ‘Mum, look who turned up in the night!’ and she’ll be all pleased to see Harry and no one need ever know we flew the car.”<br/>
+    “Right,” said Ron. “Come on, Harry, I sleep at the — at the top —”<br/>
+    Ron had gone a nasty greenish color, his eyes fixed on the house. The other three wheeled around.<br/>
+    Mrs. Weasley was marching across the yard, scattering chickens, and for a short, plump, kind-faced woman, it was remarkable how much she looked like a saber-toothed tiger.<br/>
+    “Ah,” said Fred.]]></string>
+    <string name="string_book_2_chapter_3_page_10"><![CDATA[“Oh, dear,” said George.<br/>
+    Mrs. Weasley came to a halt in front of them, her hands on her hips, staring from one guilty face to the next. She was wearing a flowered apron with a wand sticking out of the pocket.<br/>
+    “So,” she said.<br/>
+    “ ’Morning, Mum,” said George, in what he clearly thought was a jaunty, winning voice.<br/>
+    “Have you any idea how worried I’ve been?” said Mrs. Weasley in a deadly whisper.<br/>
+    “Sorry, Mum, but see, we had to —”<br/>
+    All three of Mrs. Weasley’s sons were taller than she was, but they cowered as her rage broke over them.<br/>
+    “Beds empty! No note! Car gone — could have crashed — out of my mind with worry — did you care? — never, as long as I’ve lived — you wait until your father gets home, we never had trouble like this from Bill or Charlie or Percy —”<br/>
+    “Perfect Percy,” muttered Fred.<br/>
+    “YOU COULD DO WITH TAKING A LEAF OUT OF PERCY’S BOOK!” yelled Mrs. Weasley, prodding a finger in Fred’s chest. “You could have died, you could have been seen, you could have lost your father his job —”<br/>
+    It seemed to go on for hours. Mrs. Weasley had shouted herself hoarse before she turned on Harry, who backed away.<br/>
+    “I’m very pleased to see you, Harry, dear,” she said. “Come in and have some breakfast.”<br/>
+    She turned and walked back into the house and Harry, after a nervous glance at Ron, who nodded encouragingly, followed her.<br/>
+    The kitchen was small and rather cramped. There was a scrubbed wooden table and chairs in the middle, and Harry sat down on the edge of his seat, looking around. He had never been in a wizard house before.]]></string>
 
 </resources>
