@@ -21,22 +21,8 @@ import com.google.android.material.card.MaterialCardView;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
 import com.xeniac.harrypotterstory.adapters.PagesAdapter;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_1;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_10;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_11;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_12;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_13;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_14;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_15;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_16;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_17;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_2;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_3;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_4;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_5;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_6;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_7;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_8;
-import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook1.PagesDataProviderBook1_9;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook2.PagesDataProviderBook2_1;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook2.PagesDataProviderBook2_10;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook2.PagesDataProviderBook2_11;
@@ -511,48 +497,6 @@ public class PagesActivity extends AppCompatActivity {
                 break;
             case 13:
                 pagesDataSource.seedDataBase(PagesDataProviderBook1_3.dataItemPagesList);
-                break;
-            case 14:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_4.dataItemPagesList);
-                break;
-            case 15:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_5.dataItemPagesList);
-                break;
-            case 16:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_6.dataItemPagesList);
-                break;
-            case 17:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_7.dataItemPagesList);
-                break;
-            case 18:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_8.dataItemPagesList);
-                break;
-            case 19:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_9.dataItemPagesList);
-                break;
-            case 110:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_10.dataItemPagesList);
-                break;
-            case 111:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_11.dataItemPagesList);
-                break;
-            case 112:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_12.dataItemPagesList);
-                break;
-            case 113:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_13.dataItemPagesList);
-                break;
-            case 114:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_14.dataItemPagesList);
-                break;
-            case 115:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_15.dataItemPagesList);
-                break;
-            case 116:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_16.dataItemPagesList);
-                break;
-            case 117:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_17.dataItemPagesList);
                 break;
         }
     }
