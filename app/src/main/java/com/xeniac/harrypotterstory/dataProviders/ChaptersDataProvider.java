@@ -17,6 +17,7 @@ public class ChaptersDataProvider {
         //Book 1
         addItem(new DataItemChapters(11, 1, R.string.string_book_1_chapters_title_1, 17, 0, 0, 1, "ic_cover_chapters_1_1.jpg", false, true));
         addItem(new DataItemChapters(12, 2, R.string.string_book_1_chapters_title_2, 13, 0, 0, 1, "ic_cover_chapters_1_2.jpg", false, true));
+        //Chapter 3 has 15 pages but the free version contains only 3 pages.
         addItem(new DataItemChapters(13, 3, R.string.string_book_1_chapters_title_3, 15, 0, 0, 1, "ic_cover_chapters_1_3.jpg", false, true));
         addItem(new DataItemChapters(14, 4, R.string.string_book_1_chapters_title_4, 15, 0, 0, 1, "ic_cover_chapters_1_4.jpg", false, false));
         addItem(new DataItemChapters(15, 5, R.string.string_book_1_chapters_title_5, 27, 0, 0, 1, "ic_cover_chapters_1_5.jpg", false, false));
