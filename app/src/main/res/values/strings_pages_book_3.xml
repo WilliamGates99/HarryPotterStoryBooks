@@ -2,7 +2,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
 
     <!--Book 3 Chapter 1 Pages-->
-    <string name="string_book_3_chapter_1_page_1"><![CDATA[]]></string>
+    <string name="string_book_3_chapter_1_page_1"><![CDATA[Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework but was forced to do it in secret, in the dead of night. And he also happened to be a wizard.<br/>
+    It was nearly midnight, and he was lying on his stomach in bed, the blankets drawn right over his head like a tent, a flashlight in one hand and a large leather-bound book (A History of Magic by Bathilda Bagshot) propped open against the pillow. Harry moved the tip of his eagle-feather quill down the page, frowning as he looked for something that would help him write his essay, “Witch Burning in the Fourteenth Century Was Completely Pointless — discuss.”<br/>
+    The quill paused at the top of a likely-looking paragraph. Harry pushed his round glasses up the bridge of his nose, moved his flashlight closer to the book, and read:]]></string>
     <string name="string_book_3_chapter_1_page_2"><![CDATA[]]></string>
     <string name="string_book_3_chapter_1_page_3"><![CDATA[]]></string>
     <string name="string_book_3_chapter_1_page_4"><![CDATA[]]></string>
