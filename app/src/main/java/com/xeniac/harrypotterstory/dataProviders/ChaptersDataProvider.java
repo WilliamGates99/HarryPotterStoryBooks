@@ -57,7 +57,7 @@ public class ChaptersDataProvider {
 
         //Book 3
         addItem(new DataItemChapters(31, 1, R.string.string_book_3_chapters_title_1, 15, 0, 0, 3, "ic_cover_chapters_3_1.jpg", false, true));
-        addItem(new DataItemChapters(32, 2, R.string.string_book_3_chapters_title_2, 15, 0, 0, 3, "ic_cover_chapters_3_2.jpg", false, false));
+        addItem(new DataItemChapters(32, 2, R.string.string_book_3_chapters_title_2, 15, 0, 0, 3, "ic_cover_chapters_3_2.jpg", false, true));
         addItem(new DataItemChapters(33, 3, R.string.string_book_3_chapters_title_3, 18, 0, 0, 3, "ic_cover_chapters_3_3.jpg", false, false));
         addItem(new DataItemChapters(34, 4, R.string.string_book_3_chapters_title_4, 20, 0, 0, 3, "ic_cover_chapters_3_4.jpg", false, false));
         addItem(new DataItemChapters(35, 5, R.string.string_book_3_chapters_title_5, 27, 0, 0, 3, "ic_cover_chapters_3_5.jpg", false, false));
