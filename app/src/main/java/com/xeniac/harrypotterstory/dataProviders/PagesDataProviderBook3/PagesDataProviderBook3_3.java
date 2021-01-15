@@ -25,12 +25,6 @@ public class PagesDataProviderBook3_3 {
         addItem(new DataItemPages(3310, 10, R.string.string_book_3_chapter_3_page_10, 33));
         addItem(new DataItemPages(3311, 11, R.string.string_book_3_chapter_3_page_11, 33));
         addItem(new DataItemPages(3312, 12, R.string.string_book_3_chapter_3_page_12, 33));
-        addItem(new DataItemPages(3313, 13, R.string.string_book_3_chapter_3_page_13, 33));
-        addItem(new DataItemPages(3314, 14, R.string.string_book_3_chapter_3_page_14, 33));
-        addItem(new DataItemPages(3315, 15, R.string.string_book_3_chapter_3_page_15, 33));
-        addItem(new DataItemPages(3316, 16, R.string.string_book_3_chapter_3_page_16, 33));
-        addItem(new DataItemPages(3317, 17, R.string.string_book_3_chapter_3_page_17, 33));
-        addItem(new DataItemPages(3318, 18, R.string.string_book_3_chapter_3_page_18, 33));
     }
 
     private static void addItem(DataItemPages item) {
