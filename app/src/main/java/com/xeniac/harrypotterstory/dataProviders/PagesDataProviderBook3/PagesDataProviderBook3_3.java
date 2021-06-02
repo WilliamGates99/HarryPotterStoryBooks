@@ -25,6 +25,7 @@ public class PagesDataProviderBook3_3 {
         addItem(new DataItemPages(3310, 10, R.string.string_book_3_chapter_3_page_10, 33));
         addItem(new DataItemPages(3311, 11, R.string.string_book_3_chapter_3_page_11, 33));
         addItem(new DataItemPages(3312, 12, R.string.string_book_3_chapter_3_page_12, 33));
+        addItem(new DataItemPages(3313, 13, R.string.string_book_3_chapter_3_page_13, 33));
     }
 
     private static void addItem(DataItemPages item) {
