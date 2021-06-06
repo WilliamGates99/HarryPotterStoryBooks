@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/georgia_regular"
-        android:justificationMode="none"
+        android:justificationMode="inter_word"
         android:lineSpacingExtra="20dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar. Ornare suspendisse sed nisi lacus sed viverra. Odio ut sem nulla pharetra diam sit. Mollis aliquam ut porttitor leo a diam sollicitudin. Enim ut sem viverra aliquet eget sit amet tellus cras. Neque ornare aenean euismod elementum nisi quis eleifend."
         android:textColor="@color/colorBlack"
