@@ -16,7 +16,6 @@ public class ChaptersDataProvider {
         //Book 1
         addItem(new DataItemChapters(11, 1, R.string.string_book_1_chapters_title_1, 17, 0, 0, 1, "ic_cover_chapters_1_1.jpg", false, true));
         addItem(new DataItemChapters(12, 2, R.string.string_book_1_chapters_title_2, 13, 0, 0, 1, "ic_cover_chapters_1_2.jpg", false, true));
-        //Chapter 3 has 15 pages but the free version contains only 3 pages.
         addItem(new DataItemChapters(13, 3, R.string.string_book_1_chapters_title_3, 15, 0, 0, 1, "ic_cover_chapters_1_3.jpg", false, true));
         addItem(new DataItemChapters(14, 4, R.string.string_book_1_chapters_title_4, 15, 0, 0, 1, "ic_cover_chapters_1_4.jpg", false, false));
         addItem(new DataItemChapters(15, 5, R.string.string_book_1_chapters_title_5, 27, 0, 0, 1, "ic_cover_chapters_1_5.jpg", false, false));
@@ -36,8 +35,7 @@ public class ChaptersDataProvider {
         //Book 2
         addItem(new DataItemChapters(21, 1, R.string.string_book_2_chapters_title_1, 11, 0, 0, 2, "ic_cover_chapters_2_1.jpg", false, true));
         addItem(new DataItemChapters(22, 2, R.string.string_book_2_chapters_title_2, 12, 0, 0, 2, "ic_cover_chapters_2_2.jpg", false, true));
-        //Chapter 3 has 18 pages but the free version contains only 10 pages.
-        addItem(new DataItemChapters(23, 3, R.string.string_book_2_chapters_title_3, 10, 0, 0, 2, "ic_cover_chapters_2_3.jpg", false, true));
+        addItem(new DataItemChapters(23, 3, R.string.string_book_2_chapters_title_3, 18, 0, 0, 2, "ic_cover_chapters_2_3.jpg", false, true));
         addItem(new DataItemChapters(24, 4, R.string.string_book_2_chapters_title_4, 23, 0, 0, 2, "ic_cover_chapters_2_4.jpg", false, false));
         addItem(new DataItemChapters(25, 5, R.string.string_book_2_chapters_title_5, 21, 0, 0, 2, "ic_cover_chapters_2_5.jpg", false, false));
         addItem(new DataItemChapters(26, 6, R.string.string_book_2_chapters_title_6, 18, 0, 0, 2, "ic_cover_chapters_2_6.jpg", false, false));
@@ -57,8 +55,7 @@ public class ChaptersDataProvider {
         //Book 3
         addItem(new DataItemChapters(31, 1, R.string.string_book_3_chapters_title_1, 15, 0, 0, 3, "ic_cover_chapters_3_1.jpg", false, true));
         addItem(new DataItemChapters(32, 2, R.string.string_book_3_chapters_title_2, 15, 0, 0, 3, "ic_cover_chapters_3_2.jpg", false, true));
-        //Chapter 3 has 18 pages but the free version contains only 12 pages.
-        addItem(new DataItemChapters(33, 3, R.string.string_book_3_chapters_title_3, 12, 0, 0, 3, "ic_cover_chapters_3_3.jpg", false, true));
+        addItem(new DataItemChapters(33, 3, R.string.string_book_3_chapters_title_3, 18, 0, 0, 3, "ic_cover_chapters_3_3.jpg", false, true));
         addItem(new DataItemChapters(34, 4, R.string.string_book_3_chapters_title_4, 20, 0, 0, 3, "ic_cover_chapters_3_4.jpg", false, false));
         addItem(new DataItemChapters(35, 5, R.string.string_book_3_chapters_title_5, 27, 0, 0, 3, "ic_cover_chapters_3_5.jpg", false, false));
         addItem(new DataItemChapters(36, 6, R.string.string_book_3_chapters_title_6, 27, 0, 0, 3, "ic_cover_chapters_3_6.jpg", false, false));
@@ -82,9 +79,9 @@ public class ChaptersDataProvider {
         //TODO Edit released parameter
         //Book 4
         addItem(new DataItemChapters(41, 1, R.string.string_book_4_chapters_title_1, 15, 0, 0, 4, "ic_cover_chapters_4_1.jpg", false, true));
-        addItem(new DataItemChapters(42, 2, R.string.string_book_4_chapters_title_2, 10, 0, 0, 4, "ic_cover_chapters_4_2.jpg", false, false));
-        addItem(new DataItemChapters(43, 3, R.string.string_book_4_chapters_title_3, 13, 0, 0, 4, "ic_cover_chapters_4_3.jpg", false, false));
-        addItem(new DataItemChapters(44, 4, R.string.string_book_4_chapters_title_4, 12, 0, 0, 4, "ic_cover_chapters_4_4.jpg", false, false));
+        addItem(new DataItemChapters(42, 2, R.string.string_book_4_chapters_title_2, 10, 0, 0, 4, "ic_cover_chapters_4_2.jpg", false, true));
+        addItem(new DataItemChapters(43, 3, R.string.string_book_4_chapters_title_3, 13, 0, 0, 4, "ic_cover_chapters_4_3.jpg", false, true));
+        addItem(new DataItemChapters(44, 4, R.string.string_book_4_chapters_title_4, 12, 0, 0, 4, "ic_cover_chapters_4_4.jpg", false, true));
         addItem(new DataItemChapters(45, 5, R.string.string_book_4_chapters_title_5, 14, 0, 0, 4, "ic_cover_chapters_4_5.jpg", false, false));
         addItem(new DataItemChapters(46, 6, R.string.string_book_4_chapters_title_6, 10, 0, 0, 4, "ic_cover_chapters_4_6.jpg", false, false));
         addItem(new DataItemChapters(47, 7, R.string.string_book_4_chapters_title_7, 20, 0, 0, 4, "ic_cover_chapters_4_7.jpg", false, false));
