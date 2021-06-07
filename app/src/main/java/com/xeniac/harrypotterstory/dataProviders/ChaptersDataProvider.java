@@ -113,7 +113,7 @@ public class ChaptersDataProvider {
 
         //TODO Edit released parameter
         //Book 5
-        addItem(new DataItemChapters(51, 1, R.string.string_book_5_chapters_title_1, 19, 0, 0, 5, "ic_cover_chapters_5_1.jpg", false, false));
+        addItem(new DataItemChapters(51, 1, R.string.string_book_5_chapters_title_1, 19, 0, 0, 5, "ic_cover_chapters_5_1.jpg", false, true));
         addItem(new DataItemChapters(52, 2, R.string.string_book_5_chapters_title_2, 22, 0, 0, 5, "ic_cover_chapters_5_2.jpg", false, false));
         addItem(new DataItemChapters(53, 3, R.string.string_book_5_chapters_title_3, 17, 0, 0, 5, "ic_cover_chapters_5_3.jpg", false, false));
         addItem(new DataItemChapters(54, 4, R.string.string_book_5_chapters_title_4, 20, 0, 0, 5, "ic_cover_chapters_5_4.jpg", false, false));
