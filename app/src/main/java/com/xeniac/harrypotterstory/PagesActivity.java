@@ -413,6 +413,9 @@ public class PagesActivity extends AppCompatActivity {
             case 54:
                 pagesDataSource.seedDataBase(PagesDataProviderBook5_4.dataItemPagesList);
                 break;
+            case 55:
+                pagesDataSource.seedDataBase(PagesDataProviderBook5_5.dataItemPagesList);
+                break;
         }
     }
 

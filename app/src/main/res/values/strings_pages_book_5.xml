@@ -857,863 +857,218 @@
     “Hello, Harry,” he said grimly, “I see you’ve met my mother.”]]></string>
 
     <!--Book 5 Chapter 5 Pages-->
-    <string name="string_book_5_chapter_5_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_5_page_19"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 6 Pages-->
-    <string name="string_book_5_chapter_6_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_6_page_23"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 7 Pages-->
-    <string name="string_book_5_chapter_7_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_7_page_16"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 8 Pages-->
-    <string name="string_book_5_chapter_8_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_8_page_15"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 9 Pages-->
-    <string name="string_book_5_chapter_9_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_9_page_27"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 10 Pages-->
-    <string name="string_book_5_chapter_10_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_10_page_21"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 11 Pages-->
-    <string name="string_book_5_chapter_11_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_11_page_21"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 12 Pages-->
-    <string name="string_book_5_chapter_12_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_27"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_28"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_12_page_29"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 13 Pages-->
-    <string name="string_book_5_chapter_13_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_27"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_28"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_13_page_29"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 14 Pages-->
-    <string name="string_book_5_chapter_14_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_14_page_27"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 15 Pages-->
-    <string name="string_book_5_chapter_15_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_15_page_24"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 16 Pages-->
-    <string name="string_book_5_chapter_16_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_16_page_20"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 17 Pages-->
-    <string name="string_book_5_chapter_17_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_17_page_24"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 18 Pages-->
-    <string name="string_book_5_chapter_18_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_18_page_23"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 19 Pages-->
-    <string name="string_book_5_chapter_19_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_19_page_23"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 20 Pages-->
-    <string name="string_book_5_chapter_20_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_20_page_21"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 21 Pages-->
-    <string name="string_book_5_chapter_21_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_21_page_25"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 22 Pages-->
-    <string name="string_book_5_chapter_22_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_22_page_26"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 23 Pages-->
-    <string name="string_book_5_chapter_23_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_23_page_24"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 24 Pages-->
-    <string name="string_book_5_chapter_24_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_24_page_27"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 25 Pages-->
-    <string name="string_book_5_chapter_25_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_25_page_27"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 26 Pages-->
-    <string name="string_book_5_chapter_26_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_27"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_28"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_26_page_29"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 27 Pages-->
-    <string name="string_book_5_chapter_27_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_27_page_25"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 28 Pages-->
-    <string name="string_book_5_chapter_28_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_28_page_27"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 29 Pages-->
-    <string name="string_book_5_chapter_29_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_29_page_25"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 30 Pages-->
-    <string name="string_book_5_chapter_30_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_26"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_30_page_27"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 31 Pages-->
-    <string name="string_book_5_chapter_31_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_31_page_26"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 32 Pages-->
-    <string name="string_book_5_chapter_32_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_32_page_22"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 33 Pages-->
-    <string name="string_book_5_chapter_33_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_33_page_13"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 34 Pages-->
-    <string name="string_book_5_chapter_34_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_34_page_17"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 35 Pages-->
-    <string name="string_book_5_chapter_35_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_35_page_26"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 36 Pages-->
-    <string name="string_book_5_chapter_36_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_36_page_13"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 37 Pages-->
-    <string name="string_book_5_chapter_37_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_37_page_25"><![CDATA[]]></string>
-
-    <!--Book 5 Chapter 38 Pages-->
-    <string name="string_book_5_chapter_38_page_1"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_2"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_3"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_4"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_5"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_6"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_7"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_8"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_9"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_10"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_11"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_12"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_13"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_14"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_15"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_16"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_17"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_18"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_19"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_20"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_21"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_22"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_23"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_24"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_25"><![CDATA[]]></string>
-    <string name="string_book_5_chapter_38_page_26"><![CDATA[]]></string>
+    <string name="string_book_5_chapter_5_page_1"><![CDATA[Your — ?”<br/>
+    “My dear old mum, yeah,” said Sirius. “We’ve been trying to get her down for a month but we think she put a Permanent Sticking Charm on the back of the canvas. Let’s get downstairs, quick, before they all wake up again.”<br/>
+    “But what’s a portrait of your mother doing here?” Harry asked, bewildered, as they went through the door from the hall and led the way down a flight of narrow stone steps, the others just behind them.<br/>
+    “Hasn’t anyone told you? This was my parents’ house,” said Sirius. “But I’m the last Black left, so it’s mine now. I offered it to Dumbledore for headquarters — about the only useful thing I’ve been able to do.”<br/>
+    Harry, who had expected a better welcome, noted how hard and bitter Sirius’s voice sounded. He followed his godfather to the bottom of the stairs and through a door leading into the basement kitchen.<br/>
+    It was scarcely less gloomy than the hall above, a cavernous room with rough stone walls. Most of the light was coming from a large fire at the far end of the room. A haze of pipe smoke hung in the air like battle fumes, through which loomed the menacing shapes of heavy iron pots and pans hanging from the dark ceiling. Many chairs had been crammed into the room for the meeting and a long wooden table stood in the middle of the room, littered with rolls of parchment, goblets, empty wine bottles, and a heap of what appeared to be rags. Mr. Weasley and his eldest son, Bill, were talking quietly with their heads together at the end of the table.]]></string>
+    <string name="string_book_5_chapter_5_page_2"><![CDATA[Mrs. Weasley cleared her throat. Her husband, a thin, balding, redhaired man, who wore horn-rimmed glasses, looked around and jumped to his feet.<br/>
+    “Harry!” Mr. Weasley said, hurrying forward to greet him and shaking his hand vigorously. “Good to see you!”<br/>
+    Over his shoulder Harry saw Bill, who still wore his long hair in a ponytail, hastily rolling up the lengths of parchment left on the table.<br/>
+    “Journey all right, Harry?” Bill called, trying to gather up twelve scrolls at once. “Mad-Eye didn’t make you come via Greenland, then?”<br/>
+    “He tried,” said Tonks, striding over to help Bill and immediately sending a candle toppling onto the last piece of parchment. “Oh no — sorry —”<br/>
+    “Here, dear,” said Mrs. Weasley, sounding exasperated, and she repaired the parchment with a wave of her wand: In the flash of light caused by Mrs. Weasley’s charm, Harry caught a glimpse of what looked like the plan of a building.<br/>
+    Mrs. Weasley had seen him looking. She snatched the plan off the table and stuffed it into Bill’s heavily laden arms.<br/>
+    “This sort of thing ought to be cleared away promptly at the end of meetings,” she snapped before sweeping off toward an ancient dresser from which she started unloading dinner plates.<br/>
+    Bill took out his wand, muttered “Evanesco!” and the scrolls vanished.<br/>
+    “Sit down, Harry,” said Sirius. “You’ve met Mundungus, haven’t you?”]]></string>
+    <string name="string_book_5_chapter_5_page_3"><![CDATA[The thing Harry had taken to be a pile of rags gave a prolonged, grunting snore and then jerked awake.<br/>
+    “Some’n say m’ name?” Mundungus mumbled sleepily. “I ’gree with Sirius. . . .”<br/>
+    He raised a very grubby hand in the air as though voting, his droopy, bloodshot eyes unfocused. Ginny giggled.<br/>
+    “The meeting’s over, Dung,” said Sirius, as they all sat down around him at the table. “Harry’s arrived.”<br/>
+    “Eh?” said Mundungus, peering balefully at Harry through his matted ginger hair. “Blimey, so ’e ’as. Yeah . . . you all right, ’arry?”<br/>
+    “Yeah,” said Harry.<br/>
+    Mundungus fumbled nervously in his pockets, still staring at Harry, and pulled out a grimy black pipe. He stuck it in his mouth, ignited the end of it with his wand, and took a deep pull on it. Great billowing clouds of greenish smoke obscured him in seconds.<br/>
+    “Owe you a ’pology,” grunted a voice from the middle of the smelly cloud.<br/>
+    “For the last time, Mundungus,” called Mrs. Weasley, “will you please not smoke that thing in the kitchen, especially not when we’re about to eat!”<br/>
+    “Ah,” said Mundungus. “Right. Sorry, Molly.”<br/>
+    The cloud of smoke vanished as Mundungus stowed his pipe back in his pocket, but an acrid smell of burning socks lingered.<br/>
+    “And if you want dinner before midnight I’ll need a hand,” Mrs. Weasley said to the room at large. “No, you can stay where you are, Harry dear, you’ve had a long journey —”<br/>
+    “What can I do, Molly?” said Tonks enthusiastically, bounding forward.<br/>
+    Mrs. Weasley hesitated, looking apprehensive.<br/>
+    “Er — no, it’s all right, Tonks, you have a rest too, you’ve done enough today —”<br/>
+    “No, no, I want to help!” said Tonks brightly, knocking over a chair as she hurried toward the dresser from which Ginny was collecting cutlery.]]></string>
+    <string name="string_book_5_chapter_5_page_4"><![CDATA[Soon a series of heavy knives were chopping meat and vegetables of their own accord, supervised by Mr. Weasley, while Mrs. Weasley stirred a cauldron dangling over the fire and the others took out plates, more goblets, and food from the pantry. Harry was left at the table with Sirius and Mundungus, who was still blinking mournfully at him.<br/>
+    “Seen old Figgy since?” he asked.<br/>
+    “No,” said Harry, “I haven’t seen anyone.”<br/>
+    “See, I wouldn’t ’ave left,” said Mundungus, leaning forward, a pleading note in his voice, “but I ’ad a business opportunity —”<br/>
+    Harry felt something brush against his knees and started, but it was only Crookshanks, Hermione’s bandy-legged ginger cat, who wound himself once around Harry’s legs, purring, then jumped onto Sirius’s lap and curled up. Sirius scratched him absentmindedly behind the ears as he turned, still grim-faced, to Harry.<br/>
+    “Had a good summer so far?”<br/>
+    “No, it’s been lousy,” said Harry.<br/>
+    For the first time, something like a grin flitted across Sirius’s face.<br/>
+    “Don’t know what you’re complaining about, myself.”<br/>
+    “What?” said Harry incredulously.<br/>
+    “Personally, I’d have welcomed a dementor attack. A deadly struggle for my soul would have broken the monotony nicely. You think you’ve had it bad, at least you’ve been able to get out and about, stretch your legs, get into a few fights. . . . I’ve been stuck inside for a month.”<br/>
+    “How come?” asked Harry, frowning.<br/>
+    “Because the Ministry of Magic’s still after me, and Voldemort will know all about me being an Animagus by now, Wormtail will have told him, so my big disguise is useless. There’s not much I can do for the Order of the Phoenix . . . or so Dumbledore feels.”]]></string>
+    <string name="string_book_5_chapter_5_page_5"><![CDATA[There was something about the slightly flattened tone of voice in which Sirius uttered Dumbledore’s name that told Harry that Sirius was not very happy with the headmaster either. Harry felt a sudden upsurge of affection for his godfather.<br/>
+    “At least you’ve known what’s been going on,” he said bracingly.<br/>
+    “Oh yeah,” said Sirius sarcastically. “Listening to Snape’s reports, having to take all his snide hints that he’s out there risking his life while I’m sat on my backside here having a nice comfortable time . . . asking me how the cleaning’s going —”<br/>
+    “What cleaning?” asked Harry.<br/>
+    “Trying to make this place fit for human habitation,” said Sirius, waving a hand around the dismal kitchen. “No one’s lived here for ten years, not since my dear mother died, unless you count her old house-elf, and he’s gone round the twist, hasn’t cleaned anything in ages —”<br/>
+    “Sirius?” said Mundungus, who did not appear to have paid any attention to this conversation, but had been minutely examining an empty goblet. “This solid silver, mate?”<br/>
+    “Yes,” said Sirius, surveying it with distaste. “Finest fifteenthcentury goblin-wrought silver, embossed with the Black family crest.”<br/>
+    “That’d come off, though,” muttered Mundungus, polishing it with his cuff.<br/>
+    “Fred — George — NO, JUST CARRY THEM!” Mrs. Weasley shrieked.<br/>
+    Harry, Sirius, and Mundungus looked around and, a split second later, dived away from the table. Fred and George had bewitched a large cauldron of stew, an iron flagon of butterbeer, and a heavy wooden breadboard, complete with knife, to hurtle through the air toward them. The stew skidded the length of the table and came to a halt just before the end, leaving a long black burn on the wooden surface, the flagon of butterbeer fell with a crash, spilling its contents everywhere, and the bread knife slipped off the board and landed, point down and quivering ominously, exactly where Sirius’s right hand had been seconds before.]]></string>
+    <string name="string_book_5_chapter_5_page_6"><![CDATA[“FOR HEAVEN’S SAKE!” screamed Mrs. Weasley. “THERE WAS NO NEED — I’VE HAD ENOUGH OF THIS — JUST BECAUSE YOU’RE ALLOWED TO USE MAGIC NOW YOU DON’T HAVE TO WHIP YOUR WANDS OUT FOR EVERY TINY LITTLE THING!”<br/>
+    “We were just trying to save a bit of time!” said Fred, hurrying forward and wrenching the bread knife out of the table. “Sorry Sirius, mate — didn’t mean to —”<br/>
+    Harry and Sirius were both laughing. Mundungus, who had toppled backward off his chair, was swearing as he got to his feet. Crookshanks had given an angry hiss and shot off under the dresser, from whence his large yellow eyes glowed in the darkness.<br/>
+    “Boys,” Mr. Weasley said, lifting the stew back into the middle of the table, “your mother’s right, you’re supposed to show a sense of responsibility now you’ve come of age —”<br/>
+    “— none of your brothers caused this sort of trouble!” Mrs. Weasley raged at the twins, slamming a fresh flagon of butterbeer onto the table and spilling almost as much again. “Bill didn’t feel the need to Apparate every few feet! Charlie didn’t Charm everything he met! Percy —”<br/>
+    She stopped dead, catching her breath with a frightened look at her husband, whose expression was suddenly wooden.<br/>
+    “Let’s eat,” said Bill quickly.<br/>
+    “It looks wonderful, Molly,” said Lupin, ladling stew onto a plate for her and handing it across the table.<br/>
+    For a few minutes there was silence but for the chink of plates and cutlery and the scraping of chairs as everyone settled down to their food. Then Mrs. Weasley turned to Sirius and said, “I’ve been meaning to tell you, there’s something trapped in that writing desk in the drawing room, it keeps rattling and shaking. Of course, it could just be a boggart, but I thought we ought to ask Alastor to have a look at it before we let it out.”]]></string>
+    <string name="string_book_5_chapter_5_page_7"><![CDATA[“Whatever you like,” said Sirius indifferently.<br/>
+    “The curtains in there are full of doxies too,” Mrs. Weasley went on. “I thought we might try and tackle them tomorrow.”<br/>
+    “I look forward to it,” said Sirius. Harry heard the sarcasm in his voice, but he was not sure that anyone else did.<br/>
+    Opposite Harry, Tonks was entertaining Hermione and Ginny by transforming her nose between mouthfuls. Screwing up her eyes each time with the same pained expression she had worn back in Harry’s bedroom, her nose swelled to a beaklike protuberance like Snape’s, shrank to something resembling a button mushroom, and then sprouted a great deal of hair from each nostril. Apparently this was a regular mealtime entertainment, because after a while Hermione and Ginny started requesting their favorite noses.<br/>
+    “Do that one like a pig snout, Tonks . . .”<br/>
+    Tonks obliged, and Harry, looking up, had the fleeting impression that a female Dudley was grinning at him from across the table.<br/>
+    Mr. Weasley, Bill, and Lupin were having an intense discussion about goblins.<br/>
+    “They’re not giving anything away yet,” said Bill. “I still can’t work out whether they believe he’s back or not. ’Course, they might prefer not to take sides at all. Keep out of it.”<br/>
+    “I’m sure they’d never go over to You-Know-Who,” said Mr. Weasley, shaking his head. “They’ve suffered losses too. Remember that goblin family he murdered last time, somewhere near Nottingham?”<br/>
+    “I think it depends what they’re offered,” said Lupin. “And I’m not talking about gold; if they’re offered freedoms we’ve been denying them for centuries they’re going to be tempted. Have you still not had any luck with Ragnok, Bill?”<br/>
+    “He’s feeling pretty anti-wizard at the moment,” said Bill. “He hasn’t stopped raging about the Bagman business, he reckons the Ministry did a cover-up, those goblins never got their gold from him, you know —”]]></string>
+    <string name="string_book_5_chapter_5_page_8"><![CDATA[A gale of laughter from the middle of the table drowned the rest of Bill’s words. Fred, George, Ron, and Mundungus were rolling around in their seats.<br/>
+    “. . . and then,” choked Mundungus, tears running down his face, “and then, if you’ll believe it, ’e says to me, ’e says, ‘ ’ere, Dung, where didja get all them toads from? ’Cos some son of a Bludger’s gone and nicked all mine!’ And I says, ‘Nicked all your toads, Will, what next? So you’ll be wanting some more, then?’ And if you’ll believe me, lads, the gormless gargoyle buys all ’is own toads back orf me for twice what ’e paid in the first place —”<br/>
+    “I don’t think we need to hear any more of your business dealings, thank you very much, Mundungus,” said Mrs. Weasley sharply, as Ron slumped forward onto the table, howling with laughter.<br/>
+    “Beg pardon, Molly,” said Mundungus at once, wiping his eyes and winking at Harry. “But, you know, Will nicked ’em orf Warty Harris in the first place so I wasn’t really doing nothing wrong —”<br/>
+    “I don’t know where you learned about right and wrong, Mundungus, but you seem to have missed a few crucial lessons,” said Mrs. Weasley coldly.<br/>
+    Fred and George buried their faces in their goblets of butterbeer; George was hiccuping. For some reason, Mrs. Weasley threw a very nasty look at Sirius before getting to her feet and going to fetch a large rhubarb crumble for pudding. Harry looked round at his godfather.<br/>
+    “Molly doesn’t approve of Mundungus,” said Sirius in an undertone.<br/>
+    “How come he’s in the Order?” Harry said very quietly.<br/>
+    “He’s useful,” Sirius muttered. “Knows all the crooks — well, he would, seeing as he’s one himself. But he’s also very loyal to Dumbledore, who helped him out of a tight spot once. It pays to have someone like Dung around, he hears things we don’t. But Molly thinks inviting him to stay for dinner is going too far. She hasn’t forgiven him for slipping off duty when he was supposed to be tailing you.”]]></string>
+    <string name="string_book_5_chapter_5_page_9"><![CDATA[Three helpings of rhubarb crumble and custard later and the waistband on Harry’s jeans was feeling uncomfortably tight (which was saying something, as the jeans had once been Dudley’s). He lay down his spoon in a lull in the general conversation. Mr. Weasley was leaning back in his chair, looking replete and relaxed, Tonks was yawning widely, her nose now back to normal, and Ginny, who had lured Crookshanks out from under the dresser, was sitting cross-legged on the floor, rolling butterbeer corks for him to chase.<br/>
+    “Nearly time for bed, I think,” said Mrs. Weasley on a yawn.<br/>
+    “Not just yet, Molly,” said Sirius, pushing away his empty plate and turning to look at Harry. “You know, I’m surprised at you. I thought the first thing you’d do when you got here would be to start asking questions about Voldemort.”<br/>
+    The atmosphere in the room changed with the rapidity Harry associated with the arrival of dementors. Where seconds before it had been sleepily relaxed, it was now alert, even tense. A frisson had gone around the table at the mention of Voldemort’s name. Lupin, who had been about to take a sip of wine, lowered his goblet slowly, looking wary.<br/>
+    “I did!” said Harry indignantly. “I asked Ron and Hermione but they said we’re not allowed in the Order, so —”<br/>
+    “And they’re quite right,” said Mrs. Weasley. “You’re too young.”<br/>
+    She was sitting bolt upright in her chair, her fists clenched upon its arms, every trace of drowsiness gone.<br/>
+    “Since when did someone have to be in the Order of the Phoenix to ask questions?” asked Sirius. “Harry’s been trapped in that Muggle house for a month. He’s got the right to know what’s been happen —”]]></string>
+    <string name="string_book_5_chapter_5_page_10"><![CDATA[“Hang on!” interrupted George loudly.<br/>
+    “How come Harry gets his questions answered?” said Fred angrily.<br/>
+    “We’ve been trying to get stuff out of you for a month and you haven’t told us a single stinking thing!” said George.<br/>
+    “ ‘You’re too young, you’re not in the Order,’ ” said Fred, in a highpitched voice that sounded uncannily like his mother’s. “Harry’s not even of age!”<br/>
+    “It’s not my fault you haven’t been told what the Order’s doing,” said Sirius calmly. “That’s your parents’ decision. Harry, on the other hand —”<br/>
+    “It’s not down to you to decide what’s good for Harry!” said Mrs. Weasley sharply. Her normally kindly face looked dangerous. “You haven’t forgotten what Dumbledore said, I suppose?”<br/>
+    “Which bit?” Sirius asked politely, but with an air as though readying himself for a fight.<br/>
+    “The bit about not telling Harry more than he needs to know,” said Mrs. Weasley, placing a heavy emphasis on the last three words.<br/>
+    Ron, Hermione, Fred, and George’s heads turned from Sirius to Mrs. Weasley as though following a tennis rally. Ginny was kneeling amid a pile of abandoned butterbeer corks, watching the conversation with her mouth slightly open. Lupin’s eyes were fixed on Sirius.<br/>
+    “I don’t intend to tell him more than he needs to know, Molly,” said Sirius. “But as he was the one who saw Voldemort come back” (again, there was a collective shudder around the table at the name), “he has more right than most to —”<br/>
+    “He’s not a member of the Order of the Phoenix!” said Mrs. Weasley. “He’s only fifteen and —”<br/>
+    “— and he’s dealt with as much as most in the Order,” said Sirius, “and more than some —”<br/>
+    “No one’s denying what he’s done!” said Mrs. Weasley, her voice rising, her fists trembling on the arms of her chair. “But he’s still —”<br/>
+    “He’s not a child!” said Sirius impatiently.]]></string>
+    <string name="string_book_5_chapter_5_page_11"><![CDATA[“He’s not an adult either!” said Mrs. Weasley, the color rising in her cheeks. “He’s not James, Sirius!”<br/>
+    “I’m perfectly clear who he is, thanks, Molly,” said Sirius coldly.<br/>
+    “I’m not sure you are!” said Mrs. Weasley. “Sometimes, the way you talk about him, it’s as though you think you’ve got your best friend back!”<br/>
+    “What’s wrong with that?” said Harry.<br/>
+    “What’s wrong, Harry, is that you are not your father, however much you might look like him!” said Mrs. Weasley, her eyes still boring into Sirius. “You are still at school and adults responsible for you should not forget it!”<br/>
+    “Meaning I’m an irresponsible godfather?” demanded Sirius, his voice rising.<br/>
+    “Meaning you’ve been known to act rashly, Sirius, which is why Dumbledore keeps reminding you to stay at home and —”<br/>
+    “We’ll leave my instructions from Dumbledore out of this, if you please!” said Sirius loudly.<br/>
+    “Arthur!” said Mrs. Weasley, rounding on her husband. “Arthur, back me up!”<br/>
+    Mr. Weasley did not speak at once. He took off his glasses and cleaned them slowly on his robes, not looking at his wife. Only when he had replaced them carefully on his nose did he say, “Dumbledore knows the position has changed, Molly. He accepts that Harry will have to be filled in to a certain extent now that he is staying at headquarters —”<br/>
+    “Yes, but there’s a difference between that and inviting him to ask whatever he likes!”<br/>
+    “Personally,” said Lupin quietly, looking away from Sirius at last, as Mrs. Weasley turned quickly to him, hopeful that finally she was about to get an ally, “I think it better that Harry gets the facts — not all the facts, Molly, but the general picture — from us, rather than a garbled version from . . . others.”]]></string>
+    <string name="string_book_5_chapter_5_page_12"><![CDATA[His expression was mild, but Harry felt sure that Lupin, at least, knew that some Extendable Ears had survived Mrs. Weasley’s purge.<br/>
+    “Well,” said Mrs. Weasley, breathing deeply and looking around the table for support that did not come, “well . . . I can see I’m going to be overruled. I’ll just say this: Dumbledore must have had his reasons for not wanting Harry to know too much, and speaking as someone who has got Harry’s best interests at heart —”<br/>
+    “He’s not your son,” said Sirius quietly.<br/>
+    “He’s as good as,” said Mrs. Weasley fiercely. “Who else has he got?”<br/>
+    “He’s got me!”<br/>
+    “Yes,” said Mrs. Weasley, her lip curling. “The thing is, it’s been rather difficult for you to look after him while you’ve been locked up in Azkaban, hasn’t it?”<br/>
+    Sirius started to rise from his chair.<br/>
+    “Molly, you’re not the only person at this table who cares about Harry,” said Lupin sharply. “Sirius, sit down.”<br/>
+    Mrs. Weasley’s lower lip was trembling. Sirius sank slowly back into his chair, his face white.<br/>
+    “I think Harry ought to be allowed a say in this,” Lupin continued. “He’s old enough to decide for himself.”<br/>
+    “I want to know what’s been going on,” Harry said at once.<br/>
+    He did not look at Mrs. Weasley. He had been touched by what she had said about his being as good as a son, but he was also impatient at her mollycoddling. . . . Sirius was right, he was not a child.<br/>
+    “Very well,” said Mrs. Weasley, her voice cracking. “Ginny — Ron — Hermione — Fred — George — I want you out of this kitchen, now.”<br/>
+    There was instant uproar.<br/>
+    “We’re of age!” Fred and George bellowed together.<br/>
+    “If Harry’s allowed, why can’t I?” shouted Ron.<br/>
+    “Mum, I want to!” wailed Ginny.]]></string>
+    <string name="string_book_5_chapter_5_page_13"><![CDATA[“NO!” shouted Mrs. Weasley, standing up, her eyes overbright. “I absolutely forbid —”<br/>
+    “Molly, you can’t stop Fred and George,” said Mr. Weasley wearily. “They are of age —”<br/>
+    “They’re still at school —”<br/>
+    “But they’re legally adults now,” said Mr. Weasley in the same tired voice.<br/>
+    Mrs. Weasley was now scarlet in the face.<br/>
+    “I — oh, all right then, Fred and George can stay, but Ron —”<br/>
+    “Harry’ll tell me and Hermione everything you say anyway!” said Ron hotly. “Won’t — won’t you?” he added uncertainly, meeting Harry’s eyes.<br/>
+    For a split second, Harry considered telling Ron that he wouldn’t tell him a single word, that he could try a taste of being kept in the dark and see how he liked it. But the nasty impulse vanished as they looked at each other.<br/>
+    “ ’Course I will,” Harry said. Ron and Hermione beamed.<br/>
+    “Fine!” shouted Mrs. Weasley. “Fine! Ginny — BED!”<br/>
+    Ginny did not go quietly. They could hear her raging and storming at her mother all the way up the stairs, and when she reached the hall Mrs. Black’s earsplitting shrieks were added to the din. Lupin hurried off to the portrait to restore calm. It was only after he had returned, closing the kitchen door behind him and taking his seat at the table again, that Sirius spoke.<br/>
+    “Okay, Harry . . . what do you want to know?”<br/>
+    Harry took a deep breath and asked the question that had been obsessing him for a month.<br/>
+    “Where’s Voldemort? What’s he doing? I’ve been trying to watch the Muggle news,” he said, ignoring the renewed shudders and winces at the name, “and there hasn’t been anything that looks like him yet, no funny deaths or anything —”]]></string>
+    <string name="string_book_5_chapter_5_page_14"><![CDATA[“That’s because there haven’t been any suspicious deaths yet,” said Sirius, “not as far as we know, anyway. . . . And we know quite a lot.”<br/>
+    “More than he thinks we do anyway,” said Lupin.<br/>
+    “How come he’s stopped killing people?” Harry asked. He knew that Voldemort had murdered more than once in the last year alone.<br/>
+    “Because he doesn’t want to draw attention to himself at the moment,” said Sirius. “It would be dangerous for him. His comeback didn’t come off quite the way he wanted it to, you see. He messed it up.”<br/>
+    “Or rather, you messed it up for him,” said Lupin with a satisfied smile.<br/>
+    “How?” Harry asked perplexedly.<br/>
+    “You weren’t supposed to survive!” said Sirius. “Nobody apart from his Death Eaters was supposed to know he’d come back. But you survived to bear witness.”<br/>
+    “And the very last person he wanted alerted to his return the moment he got back was Dumbledore,” said Lupin. “And you made sure Dumbledore knew at once.”<br/>
+    “How has that helped?” Harry asked.<br/>
+    “Are you kidding?” said Bill incredulously. “Dumbledore was the only one You-Know-Who was ever scared of !”<br/>
+    “Thanks to you, Dumbledore was able to recall the Order of the Phoenix about an hour after Voldemort returned,” said Sirius.<br/>
+    “So what’s the Order been doing?” said Harry, looking around at them all.<br/>
+    “Working as hard as we can to make sure Voldemort can’t carry out his plans,” said Sirius.<br/>
+    “How d’you know what his plans are?” Harry asked quickly.<br/>
+    “Dumbledore’s got a shrewd idea,” said Lupin, “and Dumbledore’s shrewd ideas normally turn out to be accurate.”<br/>
+    “So what does Dumbledore reckon he’s planning?”]]></string>
+    <string name="string_book_5_chapter_5_page_15"><![CDATA[“Well, firstly, he wants to build up his army again,” said Sirius. “In the old days he had huge numbers at his command; witches and wizards he’d bullied or bewitched into following him, his faithful Death Eaters, a great variety of Dark creatures. You heard him planning to recruit the giants; well, they’ll be just one group he’s after. He’s certainly not going to try and take on the Ministry of Magic with only a dozen Death Eaters.”<br/>
+    “So you’re trying to stop him getting more followers?”<br/>
+    “We’re doing our best,” said Lupin.<br/>
+    “How?”<br/>
+    “Well, the main thing is to try and convince as many people as possible that You-Know-Who really has returned, to put them on their guard,” said Bill. “It’s proving tricky, though.”<br/>
+    “Why?”<br/>
+    “Because of the Ministry’s attitude,” said Tonks. “You saw Cornelius Fudge after You-Know-Who came back, Harry. Well, he hasn’t shifted his position at all. He’s absolutely refusing to believe it’s happened.”<br/>
+    “But why?” said Harry desperately. “Why’s he being so stupid? If Dumbledore —”<br/>
+    “Ah, well, you’ve put your finger on the problem,” said Mr. Weasley with a wry smile. “Dumbledore.”<br/>
+    “Fudge is frightened of him, you see,” said Tonks sadly.<br/>
+    “Frightened of Dumbledore?” said Harry incredulously.<br/>
+    “Frightened of what he’s up to,” said Mr. Weasley. “You see, Fudge thinks Dumbledore’s plotting to overthrow him. He thinks Dumbledore wants to be Minister of Magic.”<br/>
+    “But Dumbledore doesn’t want —”<br/>
+    “Of course he doesn’t,” said Mr. Weasley. “He’s never wanted the Minister’s job, even though a lot of people wanted him to take it when Millicent Bagnold retired. Fudge came to power instead, but he’s never quite forgotten how much popular support Dumbledore had, even though Dumbledore never applied for the job.”]]></string>
+    <string name="string_book_5_chapter_5_page_16"><![CDATA[“Deep down, Fudge knows Dumbledore’s much cleverer than he is, a much more powerful wizard, and in the early days of his Ministry he was forever asking Dumbledore for help and advice,” said Lupin. “But it seems that he’s become fond of power now, and much more confident. He loves being Minister of Magic, and he’s managed to convince himself that he’s the clever one and Dumbledore’s simply stirring up trouble for the sake of it.”<br/>
+    “How can he think that?” said Harry angrily. “How can he think Dumbledore would just make it all up — that I’d make it all up?”<br/>
+    “Because accepting that Voldemort’s back would mean trouble like the Ministry hasn’t had to cope with for nearly fourteen years,” said Sirius bitterly. “Fudge just can’t bring himself to face it. It’s so much more comfortable to convince himself Dumbledore’s lying to destabilize him.”<br/>
+    “You see the problem,” said Lupin. “While the Ministry insists there is nothing to fear from Voldemort, it’s hard to convince people he’s back, especially as they really don’t want to believe it in the first place. What’s more, the Ministry’s leaning heavily on the Daily Prophet not to report any of what they’re calling Dumbledore’s rumormongering, so most of the Wizarding community are completely unaware anything’s happened, and that makes them easy targets for the Death Eaters if they’re using the Imperius Curse.”<br/>
+    “But you’re telling people, aren’t you?” said Harry, looking around at Mr. Weasley, Sirius, Bill, Mundungus, Lupin, and Tonks. “You’re letting people know he’s back?”<br/>
+    They all smiled humorlessly.<br/>
+    “Well, as everyone thinks I’m a mad mass murderer and the Ministry’s put a ten-thousand-Galleon price on my head, I can hardly stroll up the street and start handing out leaflets, can I?” said Sirius restlessly.<br/>
+    “And I’m not a very popular dinner guest with most of the community,” said Lupin. “It’s an occupational hazard of being a werewolf.”]]></string>
+    <string name="string_book_5_chapter_5_page_17"><![CDATA[“Tonks and Arthur would lose their jobs at the Ministry if they started shooting their mouths off,” said Sirius, “and it’s very important for us to have spies inside the Ministry, because you can bet Voldemort will have them.”<br/>
+    “We’ve managed to convince a couple of people, though,” said Mr. Weasley. “Tonks here, for one — she’s too young to have been in the Order of the Phoenix last time, and having Aurors on our side is a huge advantage — Kingsley Shacklebolt’s been a real asset too. He’s in charge of the hunt for Sirius, so he’s been feeding the Ministry information that Sirius is in Tibet.”<br/>
+    “But if none of you’s putting the news out that Voldemort’s back —” Harry began.<br/>
+    “Who said none of us was putting the news out?” said Sirius. “Why d’you think Dumbledore’s in such trouble?”<br/>
+    “What d’you mean?” Harry asked.<br/>
+    “They’re trying to discredit him,” said Lupin. “Didn’t you see the Daily Prophet last week? They reported that he’d been voted out of the Chairmanship of the International Confederation of Wizards because he’s getting old and losing his grip, but it’s not true, he was voted out by Ministry wizards after he made a speech announcing Voldemort’s return. They’ve demoted him from Chief Warlock on the Wizengamot — that’s the Wizard High Court — and they’re talking about taking away his Order of Merlin, First Class, too.”<br/>
+    “But Dumbledore says he doesn’t care what they do as long as they don’t take him off the Chocolate Frog cards,” said Bill, grinning.<br/>
+    “It’s no laughing matter,” said Mr. Weasley shortly. “If he carries on defying the Ministry like this, he could end up in Azkaban and the last thing we want is Dumbledore locked up. While You-Know-Who knows Dumbledore’s out there and wise to what he’s up to, he’s going to go cautiously for a while. If Dumbledore’s out of the way — well, You-Know-Who will have a clear field.”]]></string>
+    <string name="string_book_5_chapter_5_page_18"><![CDATA[“But if Voldemort’s trying to recruit more Death Eaters, it’s bound to get out that he’s come back, isn’t it?” asked Harry desperately.<br/>
+    “Voldemort doesn’t march up to people’s houses and bang on their front doors, Harry,” said Sirius. “He tricks, jinxes, and blackmails them. He’s well-practiced at operating in secrecy. In any case, gathering followers is only one thing he’s interested in, he’s got other plans too, plans he can put into operation very quietly indeed, and he’s concentrating on them at the moment.”<br/>
+    “What’s he after apart from followers?” Harry asked swiftly.<br/>
+    He thought he saw Sirius and Lupin exchange the most fleeting of looks before Sirius said, “Stuff he can only get by stealth.”<br/>
+    When Harry continued to look puzzled, Sirius said, “Like a weapon. Something he didn’t have last time.”<br/>
+    “When he was powerful before?”<br/>
+    “Yes.”<br/>
+    “Like what kind of weapon?” said Harry. “Something worse than the Avada Kedavra — ?”<br/>
+    “That’s enough.”<br/>
+    Mrs. Weasley spoke from the shadows beside the door. Harry had not noticed her return from taking Ginny upstairs. Her arms were crossed and she looked furious.<br/>
+    “I want you in bed, now. All of you,” she added, looking around at Fred, George, Ron, and Hermione.<br/>
+    “You can’t boss us —” Fred began.<br/>
+    “Watch me,” snarled Mrs. Weasley. She was trembling slightly as she looked at Sirius. “You’ve given Harry plenty of information. Any more and you might just as well induct him into the Order straightaway.”<br/>
+    “Why not?” said Harry quickly. “I’ll join, I want to join, I want to fight —”<br/>
+    “No.”<br/>
+    It was not Mrs. Weasley who spoke this time, but Lupin.]]></string>
+    <string name="string_book_5_chapter_5_page_19"><![CDATA[“The Order is comprised only of overage wizards,” he said. “Wizards who have left school,” he added, as Fred and George opened their mouths. “There are dangers involved of which you can have no idea, any of you . . . I think Molly’s right, Sirius. We’ve said enough.”<br/>
+    Sirius half-shrugged but did not argue. Mrs. Weasley beckoned imperiously to her sons and Hermione. One by one they stood up and Harry, recognizing defeat, followed suit.]]></string>
 
 </resources>
