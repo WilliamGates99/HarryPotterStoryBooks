@@ -183,13 +183,12 @@ public class ChaptersDataProvider {
         addItem(new DataItemChapters(629, 29, R.string.string_book_6_chapters_title_29, 22, 0, 0, 6, "ic_cover_chapters_6_29.jpg", false, false));
         addItem(new DataItemChapters(630, 30, R.string.string_book_6_chapters_title_30, 20, 0, 0, 6, "ic_cover_chapters_6_30.jpg", false, false));
 
-        //TODO Edit released parameter
         //Book 7
         addItem(new DataItemChapters(71, 1, R.string.string_book_7_chapters_title_1, 12, 0, 0, 7, "ic_cover_chapters_7_1.jpg", false, true));
         addItem(new DataItemChapters(72, 2, R.string.string_book_7_chapters_title_2, 17, 0, 0, 7, "ic_cover_chapters_7_2.jpg", false, true));
         addItem(new DataItemChapters(73, 3, R.string.string_book_7_chapters_title_3, 13, 0, 0, 7, "ic_cover_chapters_7_3.jpg", false, true));
         addItem(new DataItemChapters(74, 4, R.string.string_book_7_chapters_title_4, 20, 0, 0, 7, "ic_cover_chapters_7_4.jpg", false, true));
-        addItem(new DataItemChapters(75, 5, R.string.string_book_7_chapters_title_5, 23, 0, 0, 7, "ic_cover_chapters_7_5.jpg", false, false));
+        addItem(new DataItemChapters(75, 5, R.string.string_book_7_chapters_title_5, 23, 0, 0, 7, "ic_cover_chapters_7_5.jpg", false, true));
         addItem(new DataItemChapters(76, 6, R.string.string_book_7_chapters_title_6, 25, 0, 0, 7, "ic_cover_chapters_7_6.jpg", false, false));
         addItem(new DataItemChapters(77, 7, R.string.string_book_7_chapters_title_7, 26, 0, 0, 7, "ic_cover_chapters_7_7.jpg", false, false));
         addItem(new DataItemChapters(78, 8, R.string.string_book_7_chapters_title_8, 23, 0, 0, 7, "ic_cover_chapters_7_8.jpg", false, false));
