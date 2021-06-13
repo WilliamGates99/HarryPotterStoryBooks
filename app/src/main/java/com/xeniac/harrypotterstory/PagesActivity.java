@@ -47,6 +47,8 @@ import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook6.PagesDat
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook7.PagesDataProviderBook7_1;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook7.PagesDataProviderBook7_2;
 import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook7.PagesDataProviderBook7_3;
+import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook7.PagesDataProviderBook7_4;
+import com.xeniac.harrypotterstory.dataProviders.PagesDataProviderBook7.PagesDataProviderBook7_5;
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.database.pagesDataBase.PagesDataSource;
@@ -447,6 +449,9 @@ public class PagesActivity extends AppCompatActivity {
                 break;
             case 73:
                 pagesDataSource.seedDataBase(PagesDataProviderBook7_3.dataItemPagesList);
+                break;
+            case 74:
+                pagesDataSource.seedDataBase(PagesDataProviderBook7_4.dataItemPagesList);
                 break;
         }
     }
