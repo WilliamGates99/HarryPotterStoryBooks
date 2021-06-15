@@ -14,7 +14,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.xeniac.harrypotterstory.BooksActivity;
 import com.xeniac.harrypotterstory.Constants;
 import com.xeniac.harrypotterstory.FavoritesActivity;
 import com.xeniac.harrypotterstory.PagesActivity;
