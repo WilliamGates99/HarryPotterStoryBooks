@@ -33,16 +33,13 @@ public class FavoritesActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_favorites);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
-        chaptersDataSource = new ChaptersDataSource(this);
-        chaptersDataSource.open();
-        favoritesCondition();
+        favoritesInit();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        chaptersDataSource.open();
-        favoritesCondition();
+        getFavoriteChapters();
     }
 
     @Override
@@ -57,12 +54,16 @@ public class FavoritesActivity extends AppCompatActivity {
         return false;
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    private void favoritesInit() {
+        LocaleModifier localeModifier = new LocaleModifier(this);
+        localeModifier.setLocale();
+
+        chaptersDataSource = new ChaptersDataSource(this);
+        getFavoriteChapters();
     }
 
-    private void favoritesCondition() {
+    private void getFavoriteChapters() {
+        chaptersDataSource.open();
         dataItemChaptersList = chaptersDataSource.getAllItems(0, true);
         favoritesRV = findViewById(R.id.rv_favorites);
         RelativeLayout favoritesEmptyRL = findViewById(R.id.rl_favorites_empty);
@@ -86,7 +87,7 @@ public class FavoritesActivity extends AppCompatActivity {
     }
 
     private void favoritesRecyclerView() {
-        dataItemChaptersList = chaptersDataSource.getAllItems(0, true);
+        chaptersDataSource.open();
         FavoritesAdapter favoritesAdapter = new FavoritesAdapter(this, dataItemChaptersList);
         favoritesRV.setAdapter(favoritesAdapter);
     }

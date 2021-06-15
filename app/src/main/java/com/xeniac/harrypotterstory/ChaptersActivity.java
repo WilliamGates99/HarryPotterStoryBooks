@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -14,19 +15,16 @@ import com.xeniac.harrypotterstory.dataProviders.ChaptersDataProvider;
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.models.DataItemBooks;
-import com.xeniac.harrypotterstory.models.DataItemChapters;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 import java.util.Objects;
 
 public class ChaptersActivity extends AppCompatActivity {
 
     private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
-    private int bookId;
-    private DataItemBooks book;
+    private DataItemBooks currentBook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +33,12 @@ public class ChaptersActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_chapters);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
-
-        bookId = Objects.requireNonNull(getIntent().getExtras()).getInt(BooksAdapter.ITEM_KEY);
-        chaptersInitializer();
+        chaptersInit();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        chaptersDataSource.open();
         chaptersRecyclerView();
     }
 
@@ -60,22 +55,39 @@ public class ChaptersActivity extends AppCompatActivity {
         return false;
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    private void chaptersInit() {
+        LocaleModifier localeModifier = new LocaleModifier(this);
+        localeModifier.setLocale();
+
+        booksDataSource = new BooksDataSource(this);
+        chaptersDataSource = new ChaptersDataSource(this);
+
+        booksDataSource.open();
+        int currentBookId = getIntent().getExtras().getInt(BooksAdapter.ITEM_KEY);
+        currentBook = booksDataSource.getReadingItem(currentBookId);
+
+        seedChaptersData();
+        setTitleAndCover();
+        chaptersRecyclerView();
     }
 
-    private void chaptersInitializer() {
-        seedChaptersData();
-        booksDataSource = new BooksDataSource(this);
-        booksDataSource.open();
-        book = booksDataSource.getReadingItem(bookId);
+    private void seedChaptersData() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+        boolean chaptersSeeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTERS_SEEDED, false);
 
-        setTitle(book.getTitle());
+        if (!chaptersSeeded) {
+            chaptersDataSource.open();
+            chaptersDataSource.seedDataBase(ChaptersDataProvider.dataItemChaptersList);
+            seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTERS_SEEDED, true).apply();
+        }
+    }
+
+    private void setTitleAndCover() {
+        setTitle(currentBook.getTitle());
         ImageView coverIV = findViewById(R.id.iv_chapters_cover);
 
         try {
-            String imageFile = book.getCover();
+            String imageFile = currentBook.getCover();
             InputStream inputStream = getAssets().open(imageFile);
             Drawable drawable = Drawable.createFromStream(inputStream, null);
             coverIV.setImageDrawable(drawable);
@@ -83,36 +95,13 @@ public class ChaptersActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        chaptersRecyclerView();
     }
 
     private void chaptersRecyclerView() {
-        checkChaptersRelease();
+        chaptersDataSource.open();
         ChaptersAdapter chaptersAdapter = new ChaptersAdapter(this,
-                chaptersDataSource.getAllItems(book.getId(), false));
+                chaptersDataSource.getAllItems(currentBook.getId(), false));
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
         chaptersRV.setAdapter(chaptersAdapter);
-    }
-
-    private void seedChaptersData() {
-        chaptersDataSource = new ChaptersDataSource(this);
-        chaptersDataSource.open();
-        chaptersDataSource.seedDataBase(ChaptersDataProvider.dataItemChaptersList);
-    }
-
-    private void checkChaptersRelease() {
-        chaptersDataSource.open();
-        List<DataItemChapters> chaptersDB = chaptersDataSource.getAllItems(0, false);
-        List<DataItemChapters> chaptersProvider = ChaptersDataProvider.dataItemChaptersList;
-
-        for (int i = 0; i < chaptersDB.size(); i++) {
-            DataItemChapters itemDB = chaptersDB.get(i);
-            DataItemChapters itemProvider = chaptersProvider.get(i);
-
-            if (!itemDB.isReleased() && itemProvider.isReleased()) {
-                chaptersDataSource.updateChapters(itemProvider);
-            }
-        }
     }
 }

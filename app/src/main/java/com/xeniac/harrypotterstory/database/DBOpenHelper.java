@@ -6,17 +6,17 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.xeniac.harrypotterstory.Constants;
 import com.xeniac.harrypotterstory.database.booksDataBase.BooksTable;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersTable;
 import com.xeniac.harrypotterstory.database.pagesDataBase.PagesTable;
 
 public class DBOpenHelper extends SQLiteOpenHelper {
 
-    private static final String DB_FILE_NAME = "harry_potter_story.db";
     private static int DB_VERSION = 1;
 
     public DBOpenHelper(@Nullable Context context) {
-        super(context, DB_FILE_NAME, null, DB_VERSION);
+        super(context, Constants.DB_FILE_NAME, null, DB_VERSION);
     }
 
     @Override
@@ -30,6 +30,13 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         oldVersion = DB_VERSION;
         newVersion = oldVersion + 1;
+        DB_VERSION = newVersion;
+    }
+
+    @Override
+    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        oldVersion = DB_VERSION;
+        newVersion = oldVersion - 1;
         DB_VERSION = newVersion;
     }
 }

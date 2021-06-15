@@ -76,13 +76,15 @@
                 android:ellipsize="end"
                 android:fontFamily="@font/open_sans_regular"
                 android:gravity="center_vertical|start"
+                android:justificationMode="inter_word"
                 android:maxLines="3"
                 android:text="Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'."
                 android:textAlignment="gravity"
                 android:textColor="@color/colorDarkGray"
                 android:textSize="14sp"
                 android:textStyle="normal"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                tools:targetApi="o" />
 
         </RelativeLayout>
 

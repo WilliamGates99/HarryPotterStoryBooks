@@ -24,7 +24,8 @@
     <string name="string_pages_settings_font">FONT SIZE</string>
     <string name="string_pages_settings_mode">DARK MODE</string>
     <string name="string_pages_list_page_title">"PAGE "</string>
-    <string name="string_pages_share_title">Share via…</string>
+    <string name="string_pages_share">Let\'s read <b>%1$s</b> chapter of <b>%2$s</b> book together.\n\n%3$s</string>
+    <string name="string_pages_share_chooser">Share via…</string>
 
     <!--Books Title-->
     <string name="string_books_title_1">Harry Potter and the Sorcerer\'s Stone</string>

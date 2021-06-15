@@ -53,11 +53,9 @@ import com.xeniac.harrypotterstory.database.booksDataBase.BooksDataSource;
 import com.xeniac.harrypotterstory.database.chaptersDataBase.ChaptersDataSource;
 import com.xeniac.harrypotterstory.database.pagesDataBase.PagesDataSource;
 import com.xeniac.harrypotterstory.models.DataItemChapters;
-import com.xeniac.harrypotterstory.models.DataItemPages;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 import java.util.Objects;
 
 public class PagesActivity extends AppCompatActivity {
@@ -66,7 +64,6 @@ public class PagesActivity extends AppCompatActivity {
     private ChaptersDataSource chaptersDataSource;
     private PagesDataSource pagesDataSource;
 
-    private int chapterId;
     private DataItemChapters chapter;
 
     private NestedScrollView nestedScrollView;
@@ -76,6 +73,8 @@ public class PagesActivity extends AppCompatActivity {
     private MaterialCardView settingsPanelCV;
 
     private PagesAdapter pagesAdapter;
+
+    private SharedPreferences settingsPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,17 +86,12 @@ public class PagesActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled((true));
         setTitle(null);
-
-        chapterId = Objects.requireNonNull(getIntent().getExtras()).
-                getInt(ChaptersAdapter.ITEM_KEY);
-        pagesInitializer();
+        pagesInit();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        chaptersDataSource.open();
-        pagesDataSource.open();
         pagesLayout();
     }
 
@@ -122,11 +116,18 @@ public class PagesActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    private void pagesInitializer() {
+    private void pagesInit() {
+        LocaleModifier localeModifier = new LocaleModifier(this);
+        localeModifier.setLocale();
+
         booksDataSource = new BooksDataSource(this);
         chaptersDataSource = new ChaptersDataSource(this);
+        pagesDataSource = new PagesDataSource(this);
+
         chaptersDataSource.open();
+        int chapterId = Objects.requireNonNull(getIntent().getExtras()).getInt(ChaptersAdapter.ITEM_KEY);
         chapter = chaptersDataSource.getReadingItem(chapterId);
+
         seedPagesData();
         pagesLayout();
     }
@@ -167,9 +168,9 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void pagesRecyclerView() {
-        List<DataItemPages> dataItemPagesList = pagesDataSource.getAllItems(chapter.getId());
+        pagesDataSource.open();
         RecyclerView pagesRV = findViewById(R.id.rv_pages);
-        pagesAdapter = new PagesAdapter(this, dataItemPagesList);
+        pagesAdapter = new PagesAdapter(this, pagesDataSource.getAllItems(chapter.getId()));
         pagesRV.setAdapter(pagesAdapter);
         scrollViewMethod();
     }
@@ -190,6 +191,7 @@ public class PagesActivity extends AppCompatActivity {
                         v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight());
             }
 
+            chaptersDataSource.open();
             chapter.setReadScroll(scrollY);
             chaptersDataSource.updateChapters(chapter);
         });
@@ -206,20 +208,19 @@ public class PagesActivity extends AppCompatActivity {
     public void shareOnClick(View view) {
         booksDataSource.open();
 
-        String shareString = "Let's read " +
-                getResources().getString(chapter.getTitle()) + " chapter of " +
-                getResources().getString(booksDataSource.getBookTitle(chapter.getBookId())) +
-                " book together." + "\n\n" + storeURL();
+        String shareString = String.format(getString(R.string.string_pages_share),
+                getResources().getString(chapter.getTitle()),
+                getResources().getString(booksDataSource.getBookTitle(chapter.getBookId()))
+                , storeURL());
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Result Sharing");
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
-        startActivity(Intent.createChooser(
-                shareIntent, getString(R.string.string_pages_share_title)));
+        startActivity(Intent.createChooser(shareIntent, getString(R.string.string_pages_share_chooser)));
     }
 
     public void bookmarkGrayOnClick(View view) {
+        chaptersDataSource.open();
         chapter.setFavorite(true);
         chaptersDataSource.updateChapters(chapter);
         bookmarkBlueIB.setVisibility(View.VISIBLE);
@@ -227,6 +228,7 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void bookmarkBlueOnClick(View view) {
+        chaptersDataSource.open();
         chapter.setFavorite(false);
         chaptersDataSource.updateChapters(chapter);
         bookmarkBlueIB.setVisibility(View.GONE);
@@ -263,12 +265,10 @@ public class PagesActivity extends AppCompatActivity {
         settingsModeDarkIB = findViewById(R.id.ib_pages_settings_mode_dark);
         settingsModeLightIB = findViewById(R.id.ib_pages_settings_mode_light);
 
-        SharedPreferences preferences = getSharedPreferences(
-                SubApplication.DARK_MODE_CHECK, MODE_PRIVATE);
-        boolean darkMode = preferences.getBoolean(
-                SubApplication.DARK_MODE_CHECK_KEY, false);
+        settingsPrefs = getSharedPreferences(Constants.PREFERENCE_SETTINGS, MODE_PRIVATE);
+        boolean nightMode = settingsPrefs.getBoolean(Constants.PREFERENCE_NIGHT_MODE_KEY, false);
 
-        if (darkMode) {
+        if (nightMode) {
             settingsModeLightIB.setPressed(false);
             settingsModeDarkIB.setPressed(true);
         } else {
@@ -285,10 +285,7 @@ public class PagesActivity extends AppCompatActivity {
             settingsModeLightIB.setClickable(false);
         } else {
             settingsModeLightIB.setOnClickListener(v -> {
-                SharedPreferences.Editor editor = getSharedPreferences(
-                        SubApplication.DARK_MODE_CHECK, MODE_PRIVATE).edit();
-                editor.putBoolean(SubApplication.DARK_MODE_CHECK_KEY, false).apply();
-
+                settingsPrefs.edit().putBoolean(Constants.PREFERENCE_NIGHT_MODE_KEY, false).apply();
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             });
         }
@@ -299,19 +296,13 @@ public class PagesActivity extends AppCompatActivity {
             settingsModeDarkIB.setClickable(false);
         } else {
             settingsModeDarkIB.setOnClickListener(v -> {
-                SharedPreferences.Editor editor = getSharedPreferences(
-                        SubApplication.DARK_MODE_CHECK, MODE_PRIVATE).edit();
-                editor.putBoolean(SubApplication.DARK_MODE_CHECK_KEY, true).apply();
-
+                settingsPrefs.edit().putBoolean(Constants.PREFERENCE_NIGHT_MODE_KEY, true).apply();
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             });
         }
     }
 
     private void seedPagesData() {
-        pagesDataSource = new PagesDataSource(this);
-        pagesDataSource.open();
-
         switch (chapter.getBookId()) {
             case 1:
                 seedPagesBook1();
@@ -338,123 +329,282 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private void seedPagesBook1() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+
         switch (chapter.getId()) {
             case 11:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_1.dataItemPagesList);
+                boolean chapter11Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_11_SEEDED, false);
+                if (!chapter11Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook1_1.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_11_SEEDED, true).apply();
+                }
                 break;
             case 12:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_2.dataItemPagesList);
-                break;
+                boolean chapter12Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_12_SEEDED, false);
+                if (!chapter12Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook1_2.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_12_SEEDED, true).apply();
+                    break;
+                }
             case 13:
-                pagesDataSource.seedDataBase(PagesDataProviderBook1_3.dataItemPagesList);
-                break;
+                boolean chapter13Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_13_SEEDED, false);
+                if (!chapter13Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook1_3.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_13_SEEDED, true).apply();
+                    break;
+                }
         }
     }
 
     private void seedPagesBook2() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+
         switch (chapter.getId()) {
             case 21:
-                pagesDataSource.seedDataBase(PagesDataProviderBook2_1.dataItemPagesList);
-                break;
+                boolean chapter21Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_21_SEEDED, false);
+                if (!chapter21Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook2_1.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_21_SEEDED, true).apply();
+                    break;
+                }
             case 22:
-                pagesDataSource.seedDataBase(PagesDataProviderBook2_2.dataItemPagesList);
+                boolean chapter22Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_22_SEEDED, false);
+                if (!chapter22Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook2_2.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_22_SEEDED, true).apply();
+                }
                 break;
             case 23:
-                pagesDataSource.seedDataBase(PagesDataProviderBook2_3.dataItemPagesList);
+                boolean chapter23Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_23_SEEDED, false);
+                if (!chapter23Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook2_3.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_23_SEEDED, true).apply();
+                }
                 break;
         }
     }
 
     private void seedPagesBook3() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+
         switch (chapter.getId()) {
             case 31:
-                pagesDataSource.seedDataBase(PagesDataProviderBook3_1.dataItemPagesList);
+                boolean chapter31Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_31_SEEDED, false);
+                if (!chapter31Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook3_1.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_31_SEEDED, true).apply();
+                }
                 break;
             case 32:
-                pagesDataSource.seedDataBase(PagesDataProviderBook3_2.dataItemPagesList);
+                boolean chapter32Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_32_SEEDED, false);
+                if (!chapter32Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook3_2.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_32_SEEDED, true).apply();
+                }
                 break;
             case 33:
-                pagesDataSource.seedDataBase(PagesDataProviderBook3_3.dataItemPagesList);
+                boolean chapter33Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_33_SEEDED, false);
+                if (!chapter33Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook3_3.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_33_SEEDED, true).apply();
+                }
                 break;
         }
     }
 
     private void seedPagesBook4() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+
         switch (chapter.getId()) {
             case 41:
-                pagesDataSource.seedDataBase(PagesDataProviderBook4_1.dataItemPagesList);
+                boolean chapter41Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_41_SEEDED, false);
+                if (!chapter41Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook4_1.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_41_SEEDED, true).apply();
+                }
                 break;
             case 42:
-                pagesDataSource.seedDataBase(PagesDataProviderBook4_2.dataItemPagesList);
+                boolean chapter42Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_42_SEEDED, false);
+                if (!chapter42Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook4_2.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_42_SEEDED, true).apply();
+                }
                 break;
             case 43:
-                pagesDataSource.seedDataBase(PagesDataProviderBook4_3.dataItemPagesList);
+                boolean chapter43Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_43_SEEDED, false);
+                if (!chapter43Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook4_3.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_43_SEEDED, true).apply();
+                }
                 break;
             case 44:
-                pagesDataSource.seedDataBase(PagesDataProviderBook4_4.dataItemPagesList);
+                boolean chapter44Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_44_SEEDED, false);
+                if (!chapter44Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook4_4.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_44_SEEDED, true).apply();
+                }
                 break;
             case 45:
-                pagesDataSource.seedDataBase(PagesDataProviderBook4_5.dataItemPagesList);
+                boolean chapter45Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_45_SEEDED, false);
+                if (!chapter45Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook4_5.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_45_SEEDED, true).apply();
+                }
                 break;
             case 46:
-                pagesDataSource.seedDataBase(PagesDataProviderBook4_6.dataItemPagesList);
+                boolean chapter46Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_46_SEEDED, false);
+                if (!chapter46Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook4_6.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_46_SEEDED, true).apply();
+                }
                 break;
         }
     }
 
     private void seedPagesBook5() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+
         switch (chapter.getId()) {
             case 51:
-                pagesDataSource.seedDataBase(PagesDataProviderBook5_1.dataItemPagesList);
+                boolean chapter51Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_51_SEEDED, false);
+                if (!chapter51Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook5_1.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_51_SEEDED, true).apply();
+                }
                 break;
             case 52:
-                pagesDataSource.seedDataBase(PagesDataProviderBook5_2.dataItemPagesList);
+                boolean chapter52Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_52_SEEDED, false);
+                if (!chapter52Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook5_2.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_52_SEEDED, true).apply();
+                }
                 break;
             case 53:
-                pagesDataSource.seedDataBase(PagesDataProviderBook5_3.dataItemPagesList);
+                boolean chapter53Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_53_SEEDED, false);
+                if (!chapter53Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook5_3.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_53_SEEDED, true).apply();
+                }
                 break;
             case 54:
-                pagesDataSource.seedDataBase(PagesDataProviderBook5_4.dataItemPagesList);
+                boolean chapter54Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_54_SEEDED, false);
+                if (!chapter54Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook5_4.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_54_SEEDED, true).apply();
+                }
                 break;
             case 55:
-                pagesDataSource.seedDataBase(PagesDataProviderBook5_5.dataItemPagesList);
+                boolean chapter55Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_55_SEEDED, false);
+                if (!chapter55Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook5_5.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_55_SEEDED, true).apply();
+                }
                 break;
         }
     }
 
     private void seedPagesBook6() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+
         switch (chapter.getId()) {
             case 61:
-                pagesDataSource.seedDataBase(PagesDataProviderBook6_1.dataItemPagesList);
+                boolean chapter61Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_61_SEEDED, false);
+                if (!chapter61Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook6_1.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_61_SEEDED, true).apply();
+                }
                 break;
             case 62:
-                pagesDataSource.seedDataBase(PagesDataProviderBook6_2.dataItemPagesList);
+                boolean chapter62Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_62_SEEDED, false);
+                if (!chapter62Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook6_2.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_62_SEEDED, true).apply();
+                }
                 break;
             case 63:
-                pagesDataSource.seedDataBase(PagesDataProviderBook6_3.dataItemPagesList);
+                boolean chapter63Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_63_SEEDED, false);
+                if (!chapter63Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook6_3.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_63_SEEDED, true).apply();
+                }
                 break;
             case 64:
-                pagesDataSource.seedDataBase(PagesDataProviderBook6_4.dataItemPagesList);
+                boolean chapter64Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_64_SEEDED, false);
+                if (!chapter64Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook6_4.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_64_SEEDED, true).apply();
+                }
                 break;
         }
     }
 
     private void seedPagesBook7() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+
         switch (chapter.getId()) {
             case 71:
-                pagesDataSource.seedDataBase(PagesDataProviderBook7_1.dataItemPagesList);
+                boolean chapter71Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_71_SEEDED, false);
+                if (!chapter71Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook7_1.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_71_SEEDED, true).apply();
+                }
                 break;
             case 72:
-                pagesDataSource.seedDataBase(PagesDataProviderBook7_2.dataItemPagesList);
+                boolean chapter72Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_72_SEEDED, false);
+                if (!chapter72Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook7_2.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_72_SEEDED, true).apply();
+                }
                 break;
             case 73:
-                pagesDataSource.seedDataBase(PagesDataProviderBook7_3.dataItemPagesList);
+                boolean chapter73Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_73_SEEDED, false);
+                if (!chapter73Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook7_3.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_73_SEEDED, true).apply();
+                }
                 break;
             case 74:
-                pagesDataSource.seedDataBase(PagesDataProviderBook7_4.dataItemPagesList);
+                boolean chapter74Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_74_SEEDED, false);
+                if (!chapter74Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook7_4.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_74_SEEDED, true).apply();
+                }
                 break;
             case 75:
-                pagesDataSource.seedDataBase(PagesDataProviderBook7_5.dataItemPagesList);
+                boolean chapter75Seeded = seedingPrefs.getBoolean(Constants.PREFERENCE_CHAPTER_75_SEEDED, false);
+                if (!chapter75Seeded) {
+                    pagesDataSource.open();
+                    pagesDataSource.seedDataBase(PagesDataProviderBook7_5.dataItemPagesList);
+                    seedingPrefs.edit().putBoolean(Constants.PREFERENCE_CHAPTER_75_SEEDED, true).apply();
+                }
                 break;
         }
     }

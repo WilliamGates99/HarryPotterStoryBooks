@@ -31,9 +31,6 @@ import java.io.InputStream;
 
 public class BooksActivity extends AppCompatActivity {
 
-    public static final String READING_CHECK = "reading_check";
-    public static final String READING_CHECK_KEY = "reading_check_key";
-
     private BooksDataSource booksDataSource;
     private ChaptersDataSource chaptersDataSource;
 
@@ -43,13 +40,12 @@ public class BooksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_books);
         Toolbar toolbar = findViewById(R.id.toolbar_books);
         setSupportActionBar(toolbar);
-        booksInitializer();
+        booksInit();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        booksDataSource.open();
         continueReading();
     }
 
@@ -68,7 +64,6 @@ public class BooksActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
         if (item.getItemId() == R.id.menu_books_favorites) {
             startActivity(new Intent(this, FavoritesActivity.class));
         }
@@ -76,7 +71,10 @@ public class BooksActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void booksInitializer() {
+    private void booksInit() {
+        LocaleModifier localeModifier = new LocaleModifier(this);
+        localeModifier.setLocale();
+
         booksDataSource = new BooksDataSource(this);
         chaptersDataSource = new ChaptersDataSource(this);
         seedBooksData();
@@ -84,7 +82,19 @@ public class BooksActivity extends AppCompatActivity {
         continueReading();
     }
 
+    private void seedBooksData() {
+        SharedPreferences seedingPrefs = getSharedPreferences(Constants.PREFERENCE_SEEDING, MODE_PRIVATE);
+        boolean booksSeeded = seedingPrefs.getBoolean(Constants.PREFERENCE_BOOKS_SEEDED, false);
+
+        if (!booksSeeded) {
+            booksDataSource.open();
+            booksDataSource.seedDataBase(BooksDataProvider.dataItemBooksList);
+            seedingPrefs.edit().putBoolean(Constants.PREFERENCE_BOOKS_SEEDED, true).apply();
+        }
+    }
+
     private void booksRecyclerView() {
+        booksDataSource.open();
         BooksAdapter booksAdapter = new BooksAdapter(this, booksDataSource.getAllItems());
         RecyclerView booksRV = findViewById(R.id.rv_books);
         booksRV.setHasFixedSize(true);
@@ -92,31 +102,32 @@ public class BooksActivity extends AppCompatActivity {
     }
 
     private void continueReading() {
-        SharedPreferences preferences = getSharedPreferences(READING_CHECK, MODE_PRIVATE);
-        int readingChapterId = preferences.getInt(READING_CHECK_KEY, 0);
+        SharedPreferences readingPrefs = getSharedPreferences(Constants.PREFERENCE_READING, MODE_PRIVATE);
+        int readingChapterId = readingPrefs.getInt(Constants.PREFERENCE_READING_KEY, 0);
         LinearLayout continueLL = findViewById(R.id.ll_books_continue);
 
         if (readingChapterId == 0) {
             continueLL.setVisibility(View.GONE);
         } else {
+            booksDataSource.open();
             chaptersDataSource.open();
-            DataItemChapters item = chaptersDataSource.getReadingItem(readingChapterId);
+            DataItemChapters currentChapter = chaptersDataSource.getReadingItem(readingChapterId);
 
             MaterialCardView continueCV = findViewById(R.id.cv_books_continue);
             ImageView continueIV = findViewById(R.id.iv_books_continue);
             RelativeLayout continueRL = findViewById(R.id.rl_books_continue);
-            TextView continueChapterTV = findViewById(R.id.tv_books_continue_chapter_title);
-            TextView continueBookTV = findViewById(R.id.tv_books_continue_book_title);
+            TextView continueChapterTitleTV = findViewById(R.id.tv_books_continue_chapter_title);
+            TextView continueBookTitleTV = findViewById(R.id.tv_books_continue_book_title);
             ProgressBar continuePB = findViewById(R.id.pb_books_continue);
 
             continueCV.setClipToOutline(false);
             continueLL.setVisibility(View.VISIBLE);
-            continueChapterTV.setText(item.getTitle());
-            continueBookTV.setText(booksDataSource.getBookTitle(item.getBookId()));
-            continuePB.setProgress((int) ((float) item.getReadScroll() * 100 / item.getTotalScroll()));
+            continueChapterTitleTV.setText(currentChapter.getTitle());
+            continueBookTitleTV.setText(booksDataSource.getBookTitle(currentChapter.getBookId()));
+            continuePB.setProgress((int) ((float) currentChapter.getReadScroll() * 100 / currentChapter.getTotalScroll()));
 
             try {
-                String imageFile = booksDataSource.getBookCover(item.getBookId());
+                String imageFile = booksDataSource.getBookCover(currentChapter.getBookId());
                 InputStream inputStream = getAssets().open(imageFile);
                 Drawable drawable = Drawable.createFromStream(inputStream, null);
                 continueIV.setImageDrawable(drawable);
@@ -127,14 +138,9 @@ public class BooksActivity extends AppCompatActivity {
 
             continueRL.setOnClickListener(v -> {
                 Intent intent = new Intent(this, PagesActivity.class);
-                intent.putExtra(ChaptersAdapter.ITEM_KEY, item.getId());
+                intent.putExtra(ChaptersAdapter.ITEM_KEY, currentChapter.getId());
                 startActivity(intent);
             });
         }
-    }
-
-    private void seedBooksData() {
-        booksDataSource.open();
-        booksDataSource.seedDataBase(BooksDataProvider.dataItemBooksList);
     }
 }
