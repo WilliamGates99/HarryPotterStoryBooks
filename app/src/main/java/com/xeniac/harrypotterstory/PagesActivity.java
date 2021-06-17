@@ -201,22 +201,22 @@ public class PagesActivity extends AppCompatActivity {
         nestedScrollView.smoothScrollTo(0, 0);
     }
 
-    private String storeURL() {
-        return "https://play.google.com/store/apps/details?id=" + getPackageName();
-    }
-
     public void shareOnClick(View view) {
         booksDataSource.open();
 
         String shareString = String.format(getString(R.string.string_pages_share),
                 getResources().getString(chapter.getTitle()),
                 getResources().getString(booksDataSource.getBookTitle(chapter.getBookId()))
-                , storeURL());
+                , getStoreURL());
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
         startActivity(Intent.createChooser(shareIntent, getString(R.string.string_pages_share_chooser)));
+    }
+
+    private String getStoreURL() {
+        return String.format(getString(R.string.string_pages_share_url), getPackageName());
     }
 
     public void bookmarkGrayOnClick(View view) {
