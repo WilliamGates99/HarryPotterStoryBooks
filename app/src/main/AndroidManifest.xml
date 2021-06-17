@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xeniac.harrypotterstory">
+    package="com.xeniac.harrypotterstorybooks">
 
-    <!--TODO change backup attributes to true before release-->
     <application
-        android:name=".SubApplication"
-        android:allowBackup="false"
-        android:fullBackupContent="false"
+        android:name="com.xeniac.harrypotterstorybooks.SubApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashActivity"
+            android:name="com.xeniac.harrypotterstorybooks.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Splash">
             <intent-filter>
@@ -22,24 +21,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BooksActivity"
+            android:name="com.xeniac.harrypotterstorybooks.BooksActivity"
             android:label="@string/string_books_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ChaptersActivity"
-            android:parentActivityName=".BooksActivity"
+            android:name="com.xeniac.harrypotterstorybooks.ChaptersActivity"
+            android:parentActivityName="com.xeniac.harrypotterstorybooks.BooksActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".FavoritesActivity"
+            android:name="com.xeniac.harrypotterstorybooks.FavoritesActivity"
             android:label="@string/string_favorites_title"
-            android:parentActivityName=".BooksActivity"
+            android:parentActivityName="com.xeniac.harrypotterstorybooks.BooksActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".PagesActivity"
-            android:parentActivityName=".ChaptersActivity"
+            android:name="com.xeniac.harrypotterstorybooks.PagesActivity"
+            android:parentActivityName="com.xeniac.harrypotterstorybooks.ChaptersActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
