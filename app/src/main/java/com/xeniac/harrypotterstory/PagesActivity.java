@@ -250,15 +250,25 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     public void fontIncreaseOnClick(View view) {
-        //TODO fix bug
-        PagesAdapter.TEXT_SIZE_FLAG = 1;
-        pagesAdapter.notifyDataSetChanged();
+        PagesAdapter.FONT_SIZE_COUNTER = (byte) (PagesAdapter.FONT_SIZE_COUNTER + 1);
+
+        if (PagesAdapter.FONT_SIZE_COUNTER < 2) {
+            PagesAdapter.FONT_SIZE_CHANGER = 1;
+            pagesAdapter.notifyDataSetChanged();
+        } else {
+            PagesAdapter.FONT_SIZE_COUNTER = 1;
+        }
     }
 
     public void fontDecreaseOnClick(View view) {
-        //TODO fix bug
-        PagesAdapter.TEXT_SIZE_FLAG = -1;
-        pagesAdapter.notifyDataSetChanged();
+        PagesAdapter.FONT_SIZE_COUNTER = (byte) (PagesAdapter.FONT_SIZE_COUNTER - 1);
+
+        if (PagesAdapter.FONT_SIZE_COUNTER > -2) {
+            PagesAdapter.FONT_SIZE_CHANGER = -1;
+            pagesAdapter.notifyDataSetChanged();
+        } else {
+            PagesAdapter.FONT_SIZE_COUNTER = -1;
+        }
     }
 
     private void settingsModeTogglesMethod() {

@@ -18,7 +18,10 @@ import java.util.List;
 
 public class PagesAdapter extends RecyclerView.Adapter<PagesAdapter.ViewHolder> {
 
-    public static byte TEXT_SIZE_FLAG = 0;
+    public static float CURRENT_TEXT_SIZE;
+    public static byte FONT_SIZE_COUNTER = 0;
+    public static byte FONT_SIZE_CHANGER = 0;
+
     private final List<DataItemPages> mItems;
     private final Context mContext;
 
@@ -44,19 +47,17 @@ public class PagesAdapter extends RecyclerView.Adapter<PagesAdapter.ViewHolder> 
         holder.numberTV.setText(String.valueOf(item.getNumber()));
         holder.textTV.setText(Html.fromHtml(mContext.getString(item.getText())));
 
-        switch (TEXT_SIZE_FLAG) {
+        switch (FONT_SIZE_CHANGER) {
             case 1:
-                float currentSize = holder.textTV.getTextSize();
-                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize + 5.0f);
-                TEXT_SIZE_FLAG=0;
+                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, CURRENT_TEXT_SIZE + 3.0f);
                 break;
             case -1:
-                currentSize = holder.textTV.getTextSize();
-                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, currentSize - 5.0f);
-                TEXT_SIZE_FLAG=0;
+                holder.textTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, CURRENT_TEXT_SIZE - 3.0f);
                 break;
-            default:
-                break;
+        }
+
+        if (item.equals(mItems.get(mItems.size() - 1))) {
+            CURRENT_TEXT_SIZE = holder.textTV.getTextSize();
         }
     }
 
