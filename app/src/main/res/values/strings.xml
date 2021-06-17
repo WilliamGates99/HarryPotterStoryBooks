@@ -12,6 +12,8 @@
     <!--Chapters Activity-->
     <string name="string_chapters_page">" PAGE"</string>
     <string name="string_chapters_soon">"SOON"</string>
+    <string name="string_chapters_continue">"CONTINUE READING"</string>
+    <string name="string_chapters_continue_chooser">Open with…</string>
 
     <!--Favorite Chapters Activity-->
     <string name="string_favorites_title">Favorite Chapters</string>

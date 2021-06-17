@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.xeniac.harrypotterstory.adapters.BooksAdapter;
 import com.xeniac.harrypotterstory.adapters.ChaptersAdapter;
@@ -69,6 +72,7 @@ public class ChaptersActivity extends AppCompatActivity {
         seedChaptersData();
         setTitleAndCover();
         chaptersRecyclerView();
+        continueOnClick();
     }
 
     private void seedChaptersData() {
@@ -103,5 +107,44 @@ public class ChaptersActivity extends AppCompatActivity {
                 chaptersDataSource.getAllItems(currentBook.getId(), false));
         RecyclerView chaptersRV = findViewById(R.id.rv_chapters);
         chaptersRV.setAdapter(chaptersAdapter);
+    }
+
+    private void continueOnClick() {
+        LinearLayout continueLL = findViewById(R.id.ll_chapters_continue);
+        continueLL.setOnClickListener(v ->
+                continueBook());
+    }
+
+    private void continueBook() {
+        String urlString = null;
+        switch (currentBook.getId()) {
+            case 1:
+                urlString = "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Sorcerer_s_Stone?id=wrOQLV6xB-wC";
+                break;
+            case 2:
+                urlString = "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Chamber_of_Secret?id=5iTebBW-w7QC";
+                break;
+            case 3:
+                urlString = "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Prisoner_of_Azkab?id=Sm5AKLXKxHgC";
+                break;
+            case 4:
+                urlString = "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Goblet_of_Fire?id=etukl7GfrxQC";
+                break;
+            case 5:
+                urlString = "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Order_of_the_Phoe?id=zpvysRGsBlwC";
+                break;
+            case 6:
+                urlString = "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Half_Blood_Prince?id=R7YsowJI9-IC";
+                break;
+            case 7:
+                urlString = "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Deathly_Hallows?id=_oaAHiFOZmgC";
+                break;
+        }
+
+        if (urlString != null) {
+            Uri storeURL = Uri.parse(urlString);
+            Intent openStoreIntent = new Intent(Intent.ACTION_VIEW, storeURL);
+            startActivity(Intent.createChooser(openStoreIntent, getString(R.string.string_chapters_continue_chooser)));
+        }
     }
 }
