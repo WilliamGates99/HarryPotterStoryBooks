@@ -216,7 +216,7 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private String getStoreURL() {
-        return String.format(getString(R.string.string_pages_share_url), getPackageName());
+        return "https://play.google.com/store/apps/details?id=" + getPackageName();
     }
 
     public void bookmarkGrayOnClick(View view) {
