@@ -1,4 +1,5 @@
-# Harry Potter Story
+# Harry Potter Story [![platform](https://img.shields.io/badge/platform-Android-success.svg)](https://www.android.com) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/WilliamGates99/HarryPotterStoryBooks) ![GitHub](https://img.shields.io/github/license/WilliamGates99/HarryPotterStoryBooks)
+
 [<img src="https://db3pap004files.storage.live.com/y4mb-P42Tek45p4GBpLX94uID_MdcDu1y2hUWojJjei1xWDNOFfH-NGbOyGXw8MzvJ6uoXN-ng3Afo1Oxz0-mWt-g-CjHUoyCPU8bJRjlLyliqXf9-CE6cG1Pmr5YEr7gPpuGvhrrOTT8t-x9XQWok-C2BCcF9Xcl6hpIwCxT5LC3jxGNq6uWZpKOtSxCPadcoZ?width=1001&height=334&cropmode=none" height="60" align="middle" />](https://myket.ir/app/com.xeniac.harrypotterstorybooks)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://db3pap004files.storage.live.com/y4mm_6qsbPPpZLN1hEBEYn4B-HXrdfNxhv1n6OSpAQZugzmAJRzUPY4sZxGBkLSHCJXyFkdKikHP5sT_dafk9KGLTv4J8BNZNO9N_tvn23aFwDJoNjnEyoapGPDymDiRXugbCCgtg76O4JrRUhOMdOXx9yeqg1bHrks65MQLpQc_Qp7nJ9J6hDwA7_S7LzjwypC?width=1024&height=916&cropmode=none" height="60" align="middle" />](https://drive.google.com/file/d/1rNMp6e5C4x-mk46h_gwS_Qirccclahhf/view?usp=sharing)
