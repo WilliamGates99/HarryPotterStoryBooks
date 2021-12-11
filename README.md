@@ -2,7 +2,10 @@
 
 [<img src="https://db3pap004files.storage.live.com/y4m5c2TaPjlkR5G-LRjwcPyhxDrOMMCgyWYNSaLFvk0-3z7vHqGR9skF_NtY7ykcJL1o7l_7PvOnrPkdezqpgdSiq57wSbcIlC5eU2BNcNaKtle26-i8ze6oa1FRAxsUK3K13gVLIB09g8Joia_MY3sINZAFcJs7fo1lKXs4e81aP2idDFR76_eVzxielPLfFMh?width=1239&height=368&cropmode=none" height="60" align="middle" />](https://cafebazaar.ir/app/com.xeniac.harrypotterstorybooks)
 &nbsp;&nbsp;&nbsp;
-[<img src="https://db3pap004files.storage.live.com/y4mb-P42Tek45p4GBpLX94uID_MdcDu1y2hUWojJjei1xWDNOFfH-NGbOyGXw8MzvJ6uoXN-ng3Afo1Oxz0-mWt-g-CjHUoyCPU8bJRjlLyliqXf9-CE6cG1Pmr5YEr7gPpuGvhrrOTT8t-x9XQWok-C2BCcF9Xcl6hpIwCxT5LC3jxGNq6uWZpKOtSxCPadcoZ?width=1001&height=334&cropmode=none" height="60" align="middle" />](https://myket.ir/app/com.xeniac.harrypotterstorybooks)
+ <a href="https://myket.ir/app/com.xeniac.harrypotterstorybooks" target="_blank">
+         <img alt="Qries" src="https://db3pap004files.storage.live.com/y4mb-P42Tek45p4GBpLX94uID_MdcDu1y2hUWojJjei1xWDNOFfH-NGbOyGXw8MzvJ6uoXN-ng3Afo1Oxz0-mWt-g-CjHUoyCPU8bJRjlLyliqXf9-CE6cG1Pmr5YEr7gPpuGvhrrOTT8t-x9XQWok-C2BCcF9Xcl6hpIwCxT5LC3jxGNq6uWZpKOtSxCPadcoZ?width=1001&height=334&cropmode=none"
+         height="60" align="middle" >
+      </a>
 
 </br>
 
