@@ -216,7 +216,7 @@ public class PagesActivity extends AppCompatActivity {
     }
 
     private String getStoreURL() {
-        return "https://play.google.com/store/apps/details?id=" + getPackageName();
+        return "https://github.com/WilliamGates99/HarryPotterStoryBooks/releases";
     }
 
     public void bookmarkGrayOnClick(View view) {
